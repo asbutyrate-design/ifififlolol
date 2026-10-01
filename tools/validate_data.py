@@ -21,6 +21,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -143,7 +144,22 @@ def main() -> int:
                 f"meta.counts.{k}: заявлено {declared.get(k)}, фактически {v}"
             )
 
-    # --- 3. Итог -------------------------------------------------------------
+    # --- Перекрёстная проверка: сборщик ↔ схема -------------------------------
+    # Флаги, которые build_data.py МОЖЕТ выдать, обязаны быть объявлены в схеме.
+    # Так рассинхрон («сборщик придумал новый флаг, схема о нём не знает»)
+    # обнаруживается сразу, а не через этап.
+    build_src = (REPO / "tools" / "build_data.py").read_text(encoding="utf-8")
+    emitted = set(re.findall(r'flags\.append\("([a-z_]+)"\)', build_src))
+    undeclared = sorted(emitted - allowed_flags)
+    if undeclared:
+        errors.append(
+            "build_data.py выдаёт флаги, не объявленные в схеме: "
+            + ", ".join(undeclared)
+        )
+    else:
+        print(f"сборщик ↔ схема: все {len(emitted)} флагов объявлены")
+
+    # --- Итог --------------------------------------------------------------- -------------------------------------------------------------
     for w in warnings:
         print(f"ПРЕДУПРЕЖДЕНИЕ: {w}")
     if errors:

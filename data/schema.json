@@ -199,6 +199,7 @@
           "items": { "type": "string", "enum": [
             "author_parsing_uncertain",
             "no_authors",
+            "authors_collective_only",
             "no_publications",
             "no_lead_marked",
             "broken_doi_in_source",
