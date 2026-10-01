@@ -21,6 +21,13 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Ответы заказчика — отдельный модуль: их применяем к данным поверх разбора.
+_ar_spec = __import__("importlib.util", fromlist=["util"]).spec_from_file_location(
+    "apply_reviews", Path(__file__).resolve().parent / "apply_reviews.py"
+)
+apply_reviews_mod = __import__("importlib.util", fromlist=["util"]).module_from_spec(_ar_spec)
+_ar_spec.loader.exec_module(apply_reviews_mod)
+
 REPO = Path(__file__).resolve().parent.parent
 DATA = REPO / "data"
 MD = REPO / "content-md"
@@ -45,12 +52,16 @@ RE_RU_FULLNAME = re.compile(
     r"([А-ЯЁ][а-яё]+(?:ич|вна|чна|евич|овна|евна|ична|инична))\b"
 )
 # Инициалы + фамилия (латиница): «V.G. Yankova», «E.A. Smolyarchuk»
+# Инициал в латинице бывает ДВУХБУКВЕННЫЙ: Ya., Yu., Ye., Zh., Kh., Ts., Sh.
+# Если допускать только одну букву, «Gribova Ya.V.» и «Medvedev Yu.V.» не находятся
+# вовсе, а «Grigorieva V.Yu.» обрезается до «Grigorieva V.» — теряется второй инициал.
+LETTER = r"[A-Z][a-z]?"
 RE_EN_NAME = re.compile(
-    r"\b((?:[A-Z]\.\s*){1,2})\s*([A-Z][a-z]+(?:-[A-Z][a-z]+)?)"
+    r"\b((?:" + LETTER + r"\.\s*){1,2})\s*([A-Z][a-z]+(?:-[A-Z][a-z]+)?)"
 )
 # Фамилия + инициалы (латиница): «Feldman N.B.», «Zhukova A.A.»
 RE_EN_NAME2 = re.compile(
-    r"\b([A-Z][a-z]+)\s+((?:[A-Z]\.\s*){1,2})"
+    r"\b([A-Z][a-z]+)\s+((?:" + LETTER + r"\.\s*){1,2})"
 )
 # ФИО полностью латиницей: «Kokorekin Vladimir Alekseevich»
 RE_EN_FULLNAME = re.compile(
@@ -58,7 +69,7 @@ RE_EN_FULLNAME = re.compile(
 )
 
 ROLE_PATTERNS = [
-    (r"руководител|project lead|project leader|head of the project", "руководитель"),
+    (r"руководител|project lead|project leader|head of the project|team lead", "руководитель"),
     (r"аспирант|postgraduate|phd student|doctoral", "аспирант"),
     (r"магистрант|master'?s student", "магистрант"),
     (r"студент|student", "студент"),
@@ -68,33 +79,127 @@ ROLE_PATTERNS = [
      "участник"),
 ]
 
-# Слова, которые не являются фамилией, но могут попасть в регулярку
+# ---------------------------------------------------------------------------
+# Регалии и служебные слова. ВЫРЕЗАЮТСЯ из текста команды ДО поиска ФИО.
+#
+# Зачем именно вырезать, а не пропускать при проверке: регулярка «инициалы +
+# слово с заглавной» ловит обрывки званий как фамилии:
+#     «Professor, D.Sc. Feldman N.B.»  →  «D. Sc»      ← мусор
+#     «PhD Gavryushina I.A.»           →  «I.A. Ph»    ← обрывок «PhD»
+#     «PhD student: Kravchenko E.»     →  «E. Student» ← мусор
+#     «Anurova M.N. Master's students» →  «M.N. Master»← мусор
+# Из-за этого английские версии показывали 4 авторов там, где их 2.
+# Вырезание регалий убирает источник ошибки целиком, а не лечит симптом.
+# ---------------------------------------------------------------------------
+DEGREE_WORDS = [
+    # английские
+    r"Doctor of Medical Sciences", r"Doctor of Pharmaceutical Sciences",
+    r"Doctor of Biological Sciences", r"Doctor of Chemical Sciences",
+    r"Doctor of Sciences", r"Candidate of Medical Sciences",
+    r"Candidate of Pharmaceutical Sciences", r"Candidate of Biological Sciences",
+    r"Candidate of Chemical Sciences", r"Candidate of Sciences",
+    r"Doctor", r"Candidate", r"Professor", r"Associate Professor",
+    r"Assistant Professor", r"Assistant", r"Senior Lecturer", r"Lecturer",
+    r"Head of the Department", r"Head of Department", r"Head of the",
+    r"Department of", r"Research staff", r"staff of the department",
+    r"PhD student", r"PhD", r"Postgraduate", r"Doctoral",
+    r"Master's students?", r"Master", r"Students?", r"Resident",
+    r"\bD\.Sc\.?", r"\bPh\.?D\.?", r"\bDr\.", r"\bM\.D\.",
+    r"\bPh\.D\.",
+    # русские
+    r"заведующий кафедрой", r"зав\. кафедрой", r"заведующая кафедрой",
+    r"профессор", r"доцент", r"ассистент", r"старший преподаватель",
+    r"ст\. преп\.", r"преподаватель", r"научный сотрудник",
+    r"кандидат наук", r"доктор наук",
+    r"аспиранты?", r"магистранты?", r"студенты?", r"ординатор",
+    r"д\.ф\.н\.?", r"д\.м\.н\.?", r"д\.б\.н\.?", r"д\.х\.н\.",
+    r"к\.ф\.н\.?", r"к\.м\.н\.?", r"к\.б\.н\.?", r"к\.х\.н\.",
+    r"д\.фарм\.н\.?", r"к\.фарм\.н\.?", r"д\.мед\.н\.?", r"к\.мед\.н\.",
+]
+DEGREE_RE = re.compile("|".join(DEGREE_WORDS), re.IGNORECASE)
+
+# Слова, которые фамилией быть не могут даже после вырезания регалий.
 NAME_STOPWORDS = {
-    "Проект", "Команда", "Описание", "Цель", "Задачи", "Профессор", "Доцент",
-    "Студенты", "Аспирант", "Аспиранты", "Магистранты", "Преподаватель",
+    # русские служебные и названия
+    "Проект", "Команда", "Описание", "Цель", "Задачи", "Результаты", "Публикации",
+    "Кафедра", "Кафедры", "Институт", "Университет", "Коллектив", "Работа",
+    "Исследование", "Разработка", "Создание", "Изучение", "Обучение",
+    # английские служебные и названия
     "Project", "Team", "Students", "Professor", "Department", "Institute",
     "University", "The", "Head", "Associate", "Assistant", "Senior", "Doctor",
-    "Candidate", "Research",
-    # Названия подразделений и почётные имена: в тексте команды встречаются
-    # как «Коллектив кафедры … им. А.П. Арзамасцева», и наивная регулярка
-    # принимает их за ФИО. Человеком это не является — выдумывать нельзя.
-    "Коллектив", "Кафедра", "Кафедры", "Институт", "Университет",
-    "Arzamastsev", "Nelyubin", "Sechenov", "Lomonosov", "Shemyakin",
-    "Ovchinnikov", "Orekhovich", "Kutateladze", "Kozhevnikov",
-    "Research", "Staff", "Department", "Institute", "University",
+    "Candidate", "Research", "Staff", "Laboratory", "Center", "Centre", "Group",
+    "Shemyakin", "Ovchinnikov", "Orekhovich", "Sechenov", "Lomonosov",
+    "Kutateladze", "Kozhevnikov", "Nelyubin", "Arzamastsev", "Vilar",
 }
 
-# Если в тексте команды нет ни одного ФИО, а есть слова этого набора —
-# команда описана коллективно («Коллектив кафедры», «Research staff»),
-# и разбирать её на людей нельзя.
+# Минимальная длина фамилии. Одно- и двухбуквенные обрывки («Sc», «Ph», «Dr»)
+# фамилиями быть не могут — именно так отсекаются хвосты званий.
+MIN_SURNAME_LEN = 3
+
+# Отчество: слово с характерным суффиксом. Нужно, чтобы «Кокорекин Владимир
+# Алексеевич» распознавалось как ФИО целиком, а «Новые перспективные виды» — нет.
+PATRONYMIC_END = re.compile(
+    r"(ич|ична|инична|вна|чна|евич|овна|евна)$", re.IGNORECASE
+)
+
+# Коллективная запись команды вместо списка людей: «Коллектив кафедры …»,
+# «сотрудники кафедры», «research staff of the Department». В этом случае
+# авторов поимённо в источнике НЕТ, выдумывать их нельзя.
 COLLECTIVE_RE = re.compile(
     r"коллектив|сотрудники кафедры|научный коллектив|"
     r"\bresearch staff\b|\bthe team of the department\b|\bstaff of the department\b",
     re.IGNORECASE,
 )
 
-# Отчества для имён, записанных полностью
-PATRONYMIC_END = re.compile(r"(ич|вна|чна|евич|овна|евна|ична|инична)$")
+
+def strip_degrees(text: str) -> str:
+    """Убирает регалии и должности из текста команды, оставляя ФИО и разделители."""
+    cleaned = DEGREE_RE.sub(" ", text)
+    # «(мл.)», «(Jr.)» — не часть ФИО
+    cleaned = re.sub(r"\((?:мл|ст|jr|sr)\.?\)", " ", cleaned, flags=re.IGNORECASE)
+    # После вырезания «PhD»/«Doctor»/«Candidate» остаются висеть предлоги
+    # и одиночные служебные слова: «…, in Pharmaceutical Sciences, …».
+    # Если их не убрать, шаг разбора «Фамилия Имя» соберёт из них
+    # несуществующего человека «Pharmaceutical Sciences».
+    cleaned = re.sub(r"[;:]+", ",", cleaned)
+    cleaned = re.sub(r"[ \t]+", " ", cleaned)
+    return cleaned
+
+
+# Обрывки званий, которые регулярки принимают за фамилию или имя.
+# Пример: из «Doctor of Pharmaceutical Sciences» рождался автор
+# «Pharmaceutical Sciences». Это не человек.
+TITLE_WORD_RE = re.compile(
+    r"^(pharmaceutical|medical|biological|chemical|physical|technical|"
+    r"mathematical|agricultural|veterinary|economical|sciences?|"
+    r"наук|медицинских|фармацевтических|биологических|химических|"
+    r"физических|технических)$",
+    re.IGNORECASE,
+)
+
+
+def looks_like_person_name(*parts: str) -> bool:
+    """Ни одна часть ФИО не должна быть обрывком звания."""
+    for p in parts:
+        if not p:
+            continue
+        if TITLE_WORD_RE.match(p.strip(" .,")):
+            return False
+    return True
+
+
+def looks_like_surname(word: str) -> bool:
+    """Фамилия — слово не короче MIN_SURNAME_LEN, не служебное, с заглавной."""
+    if len(word) < MIN_SURNAME_LEN:
+        return False
+    if word in NAME_STOPWORDS:
+        return False
+    if not word[0].isupper():
+        return False
+    # аббревиатуры из заглавных целиком («PhD», «VILAR») — не фамилия
+    if word.isupper() and len(word) > 2:
+        return False
+    return True
 
 
 def role_for(text_before: str) -> str:
@@ -108,159 +213,207 @@ def role_for(text_before: str) -> str:
     return best
 
 
-def parse_authors(team: str | None, lang: str) -> tuple[list[dict], list[str]]:
-    """Возвращает (авторы, пометки). ФИО не теряются: всё, что не разобралось,
-    остаётся в team_raw_* и фиксируется флагом."""
-    if not team or not team.strip():
-        return [], ["no_authors"]
+def _mk_author(name_ru, name_en, initials, before, role, lang):
+    """Единый конструктор записи автора — чтобы поля не разъезжались."""
+    return {
+        "name_ru": name_ru,
+        "name_en": name_en,
+        "initials": initials,
+        "position_ru": before.strip(" ,;.")[-90:] if lang == "ru" else None,
+        "position_en": before.strip(" ,;.")[-90:] if lang == "en" else None,
+        "role_ru": role,
+        "role_en": None,
+        "photo": None, "profile_url": None, "orcid": None, "scopus_id": None,
+        "researcher_id": None, "elibrary_id": None, "google_scholar": None,
+        "researchgate": None,
+        "is_lead": role == "руководитель",
+        "added_from_review": False,
+    }
 
+
+def parse_authors(
+    team: str | None, lang: str, extra_names: list[str] | None = None
+) -> tuple[list[dict], list[str]]:
+    """Возвращает (авторы, пометки). ФИО не теряются: всё, что не разобралось,
+    остаётся в team_raw_* и фиксируется флагом.
+
+    extra_names — имена, дописанные заказчиком вручную (data/reviews.json).
+    Они добавляются первыми, чтобы не терялись при повторной сборке.
+    """
     flags: list[str] = []
+    found: dict[str, dict] = {}
+
+    # 0) имена, подтверждённые заказчиком
+    for nm in (extra_names or []):
+        nm = nm.strip()
+        if not nm:
+            continue
+        parts = nm.split()
+        ini = ""
+        if len(parts) >= 2:
+            ini = "".join(f"{p[0]}." for p in parts[1:] if p)
+        key = nm
+        rec_ = _mk_author(
+            nm if lang == "ru" else None,
+            None if lang == "ru" else nm,
+            ini or None, "добавлено из ответа заказчика", "не указана", lang,
+        )
+        rec_["added_from_review"] = True
+        found[key] = rec_
+
+    if not team or not team.strip():
+        return list(found.values()), (["no_authors"] if not found else flags)
 
     # Коллективная запись команды вместо списка людей — это не ошибка разбора,
     # а факт: авторов поимённо в источнике нет. Выдумывать их нельзя.
-    if COLLECTIVE_RE.search(team):
-        flags.append("authors_collective_only")
-        return [], flags
+    if COLLECTIVE_RE.search(team) and not found:
+        return [], ["authors_collective_only"]
 
-    found: dict[str, dict] = {}
+    # Регалии вырезаем ДО поиска — иначе они попадают в авторов
+    clean = strip_degrees(team)
 
-    # ФИО полностью: «Кокорекин Владимир Алексеевич»
-    for m in RE_RU_FULLNAME.finditer(team):
+    # 1) ФИО полностью: «Кокорекин Владимир Алексеевич»
+    for m in RE_RU_FULLNAME.finditer(clean):
         surname, name_, patron = m.group(1), m.group(2), m.group(3)
-        if surname in NAME_STOPWORDS or name_ in NAME_STOPWORDS:
+        if not looks_like_surname(surname) or name_ in NAME_STOPWORDS:
             continue
         if not PATRONYMIC_END.search(patron):
             continue
-        before = team[max(0, m.start() - 90):m.start()]
         key = f"{surname} {name_}"
         if key in found:
             continue
-        role = role_for(before)
-        initials = f"{name_[0]}.{patron[0]}."
-        found[key] = {
-            "name_ru": f"{surname} {name_} {patron}",
-            "name_en": None,
-            "initials": initials,
-            "position_ru": before.strip(" ,;.")[-90:] or None,
-            "position_en": None,
-            "role_ru": role,
-            "role_en": None,
-            "photo": None, "profile_url": None, "orcid": None, "scopus_id": None,
-            "researcher_id": None, "elibrary_id": None, "google_scholar": None,
-            "researchgate": None,
-            "is_lead": role == "руководитель",
-        }
-
-    for m in RE_RU_NAME.finditer(team):
-        surname, ini = m.group(1).strip(), re.sub(r"\s+", "", m.group(2))
-        if surname in NAME_STOPWORDS:
-            continue
         before = team[max(0, m.start() - 90):m.start()]
+        found[key] = _mk_author(
+            f"{surname} {name_} {patron}", None,
+            f"{name_[0]}.{patron[0]}.", before, role_for(before), lang,
+        )
+
+    # 2) Фамилия + инициалы (кириллица): «Янкова В.Г.»
+    for m in RE_RU_NAME.finditer(clean):
+        surname, ini = m.group(1).strip(), re.sub(r"\s+", "", m.group(2))
+        if not looks_like_surname(surname):
+            continue
         key = f"{surname} {ini}"
         if key in found:
             continue
-        role = role_for(before)
-        found[key] = {
-            "name_ru": f"{surname} {ini}",
-            "name_en": None,
-            "initials": ini,
-            "position_ru": before.strip(" ,;.")[-90:] or None,
-            "position_en": None,
-            "role_ru": role,
-            "role_en": None,
-            "photo": None, "profile_url": None, "orcid": None, "scopus_id": None,
-            "researcher_id": None, "elibrary_id": None, "google_scholar": None,
-            "researchgate": None,
-            "is_lead": role == "руководитель",
-        }
+        before = team[max(0, m.start() - 90):m.start()]
+        found[key] = _mk_author(
+            f"{surname} {ini}", None, ini, before, role_for(before), lang,
+        )
 
     if lang == "en":
-        # ФИО полностью латиницей — транслит русского полного имени
-        for m in RE_EN_FULLNAME.finditer(team):
-            surname, name_, patron = m.group(1), m.group(2), m.group(3)
-            if surname in NAME_STOPWORDS or name_ in NAME_STOPWORDS:
+        # 3) Инициалы + фамилия: «V.G. Yankova»
+        for m in RE_EN_NAME.finditer(clean):
+            ini, surname = re.sub(r"\s+", "", m.group(1)), m.group(2)
+            if not looks_like_surname(surname):
                 continue
-            if not re.search(r"(ovich|evich|ovna|evna|ich|vna)$", patron, re.IGNORECASE):
+            key = f"{surname} {ini}"
+            if key in found:
+                continue
+            before = team[max(0, m.start() - 90):m.start()]
+            found[key] = _mk_author(
+                None, f"{ini} {surname}", ini, before, role_for(before), lang,
+            )
+        # 4) Фамилия + инициалы: «Feldman N.B.»
+        for m in RE_EN_NAME2.finditer(clean):
+            surname, ini = m.group(1), re.sub(r"\s+", "", m.group(2))
+            if not looks_like_surname(surname):
+                continue
+            key = f"{surname} {ini}"
+            if key in found:
+                continue
+            before = team[max(0, m.start() - 90):m.start()]
+            found[key] = _mk_author(
+                None, f"{surname} {ini}", ini, before, role_for(before), lang,
+            )
+        # 5) ФАМИЛИЯ + Имя (без отчества латиницей): «Kokorekin Vladimir».
+        #
+        # Здесь НЕЛЬЗЯ использовать регулярку на три слова подряд:
+        # в «Associate Professor of the Department Kokorekin Vladimir Alekseevich»
+        # первыми двумя словами окажутся «Department Kokorekin» — и фамилия будет
+        # прочитана неверно. Поэтому идём по словам и берём пару
+        # «Фамилия Имя», только если первое слово похоже на фамилию,
+        # а второе — не служебное и не часть звания.
+        words = re.findall(r"[A-Za-z\-]+", clean)
+        for i in range(len(words) - 1):
+            surname, name_ = words[i], words[i + 1]
+            if not looks_like_surname(surname):
+                continue
+            if not looks_like_person_name(surname, name_):
+                continue
+            if name_ in NAME_STOPWORDS or not name_[0].isupper():
+                continue
+            # --- три защиты от мусорных «людей» ---------------------------------
+            # 1) Одиночная буква — это инициал. Такие уже разобраны шагами 3–4.
+            #    Без проверки «Krasnyuk I.I.» давал лишнего «Krasnyuk I».
+            if len(name_) < 3:
+                continue
+            # 2) Отчество — не имя. «Alekseevich» человеком не является.
+            if re.search(r"(ovich|evich|ovna|evna|ichna|inichna)$", name_, re.IGNORECASE):
+                continue
+            # 3) Внутри «Фамилия Имя Отчество» пара (Имя, Отчество) — не человек,
+            #    а всю тройку уже разобрал шаг 1. Иначе «Kokorekin Vladimir
+            #    Alekseevich» порождал ещё и «Vladimir Alekseevich».
+            nxt = words[i + 2] if i + 2 < len(words) else ""
+            if nxt and re.search(r"(ovich|evich|ovna|evna|ichna|inichna)$", nxt, re.IGNORECASE):
+                continue
+            # отчество следом — берём его же, если оно есть
+            patr = words[i + 2] if i + 2 < len(words) else ""
+            if not re.search(r"(ovich|evich|ovna|evna|ich|vna)$", patr, re.IGNORECASE):
+                patr = ""
+            # защита от «of the Department»: следующее слово не должно
+            # быть предлогом/служебным
+            if surname.lower() in {"of", "the", "and", "sciences", "science"}:
                 continue
             key = f"{surname} {name_}"
             if key in found:
                 continue
-            before = team[max(0, m.start() - 90):m.start()]
-            found[key] = {
-                "name_ru": None,
-                "name_en": f"{surname} {name_} {patron}",
-                "initials": f"{name_[0]}.{patron[0]}.",
-                "position_ru": None,
-                "position_en": before.strip(" ,;.")[-90:] or None,
-                "role_ru": role_for(before),
-                "role_en": None,
-                "photo": None, "profile_url": None, "orcid": None, "scopus_id": None,
-                "researcher_id": None, "elibrary_id": None, "google_scholar": None,
-                "researchgate": None,
-                "is_lead": role_for(before) == "руководитель",
-            }
+            full = f"{surname} {name_}" + (f" {patr}" if patr else "")
+            found[key] = _mk_author(
+                None, full, f"{name_[0]}.", "", "не указана", lang,
+            )
 
-        for m in RE_EN_NAME.finditer(team):
-            ini, surname = re.sub(r"\s+", "", m.group(1)), m.group(2)
-            if surname in NAME_STOPWORDS:
-                continue
-            key = f"{surname} {ini}"
-            if key in found:
-                continue
-            before = team[max(0, m.start() - 90):m.start()]
-            found[key] = {
-                "name_ru": None,
-                "name_en": f"{ini} {surname}",
-                "initials": ini,
-                "position_ru": None,
-                "position_en": before.strip(" ,;.")[-90:] or None,
-                "role_ru": role_for(before),
-                "role_en": None,
-                "photo": None, "profile_url": None, "orcid": None, "scopus_id": None,
-                "researcher_id": None, "elibrary_id": None, "google_scholar": None,
-                "researchgate": None,
-                "is_lead": role_for(before) == "руководитель",
-            }
-        for m in RE_EN_NAME2.finditer(team):
-            surname, ini = m.group(1), re.sub(r"\s+", "", m.group(2))
-            if surname in NAME_STOPWORDS:
-                continue
-            key = f"{surname} {ini}"
-            if key in found:
-                continue
-            before = team[max(0, m.start() - 90):m.start()]
-            found[key] = {
-                "name_ru": None,
-                "name_en": f"{surname} {ini}",
-                "initials": ini,
-                "position_ru": None,
-                "position_en": before.strip(" ,;.")[-90:] or None,
-                "role_ru": role_for(before),
-                "role_en": None,
-                "photo": None, "profile_url": None, "orcid": None, "scopus_id": None,
-                "researcher_id": None, "elibrary_id": None, "google_scholar": None,
-                "researchgate": None,
-                "is_lead": role_for(before) == "руководитель",
-            }
+    # --- Сведение дублей -----------------------------------------------------
+    # Один человек может прийти из разных источников: из ответа заказчика
+    # («Кокорекин Владимир Алексеевич»), полным ФИО в тексте и инициалами.
+    # Ключ сведения — фамилия + первый инициал: «Кокорекин Владимир»,
+    # «Кокорекин В.А.» и «Кокорекин Владимир Алексеевич» это один человек.
+    merged: dict[str, dict] = {}
+    for a in found.values():
+        nm = a["name_ru"] or a["name_en"] or ""
+        parts = nm.replace(".", " ").split()
+        if not parts:
+            continue
+        surname = parts[0]
+        initial = parts[1][0].upper() if len(parts) > 1 and parts[1] else ""
+        key = f"{surname.lower()}|{initial}"
+        if key in merged:
+            # дополняем уже найденную запись недостающими полями
+            cur = merged[key]
+            for field in ("name_ru", "name_en", "initials", "position_ru",
+                          "position_en", "role_en"):
+                if not cur.get(field) and a.get(field):
+                    cur[field] = a[field]
+            # полное ФИО информативнее инициалов — предпочитаем его
+            if a.get("name_ru") and cur.get("name_ru") and len(a["name_ru"]) > len(cur["name_ru"]):
+                cur["name_ru"] = a["name_ru"]
+            if a.get("name_en") and cur.get("name_en") and len(a["name_en"]) > len(cur["name_en"]):
+                cur["name_en"] = a["name_en"]
+            if a.get("added_from_review"):
+                cur["added_from_review"] = True
+            if a.get("is_lead"):
+                cur["is_lead"] = True
+        else:
+            merged[key] = dict(a)
 
-    authors = list(found.values())
+    authors = list(merged.values())
     if not authors:
         flags.append("no_authors")
-
-    # Признак ненадёжного разбора ставим ТОЛЬКО когда структура действительно
-    # нестандартная, иначе флаг срабатывает у всех и перестаёт быть сигналом.
-    # Отсутствие явного руководителя — это НЕ ошибка разбора: в источниках
-    # его чаще всего просто не помечают. Такой проект отмечается отдельным
-    # флагом no_lead_marked, а не «ненадёжным разбором».
-    if authors:
-        if not any(a["is_lead"] for a in authors):
-            flags.append("no_lead_marked")
-        # Единственный автор там, где явно перечислена группа — разбор подозрителен
-        if len(authors) == 1 and re.search(
-            r"студент|student|аспирант|postgraduate|магистрант", team, re.I
-        ):
-            flags.append("author_parsing_uncertain")
+    elif not any(a["is_lead"] for a in authors):
+        flags.append("no_lead_marked")
     return authors, flags
+
+
 
 
 # ---------------------------------------------------------------------------
@@ -359,12 +512,12 @@ def split_sections(md_text: str) -> tuple[str, dict[str, str]]:
         title = lines[0][2:].strip()
         lines = lines[1:]
 
-    sections: dict[str, str] = {}
+    sections: dict[str, list[str]] = {}
     current = "intro"
     buf: list[str] = []
     for line in lines:
         if line.startswith("## "):
-            sections[current] = "\n".join(buf).strip()
+            sections.setdefault(current, []).append("\n".join(buf).strip())
             head = line[3:].strip()
             current = "intro"
             for role, names in SECTION_ALIASES.items():
@@ -374,8 +527,19 @@ def split_sections(md_text: str) -> tuple[str, dict[str, str]]:
             buf = []
         else:
             buf.append(line)
-    sections[current] = "\n".join(buf).strip()
-    return title, sections
+    sections.setdefault(current, []).append("\n".join(buf).strip())
+
+    # ВАЖНО: один и тот же заголовок встречается в файле несколько раз.
+    # Пример: ФП_анг содержит ДВА «## Project Team» — руководитель отдельной
+    # секцией, остальные участники в следующей. Если присваивать по ключу,
+    # вторая секция затирает первую и руководитель исчезает.
+    # Поэтому куски СОЕДИНЯЕМ, а не перезаписываем.
+    joined: dict[str, str] = {}
+    for role, chunks in sections.items():
+        merged = "\n".join(c for c in chunks if c.strip())
+        if merged:
+            joined[role] = merged
+    return title, joined
 
 
 def first_sentences(text: str | None, limit: int = 2, max_len: int = 420) -> str | None:
@@ -411,6 +575,19 @@ def main() -> int:
     spec = importlib.util.spec_from_file_location("extract_md", REPO / "tools" / "extract_md.py")
     ex = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(ex)
+
+    # --- ответы заказчика (data/reviews.json) -----------------------------
+    reviews = apply_reviews_mod.load_reviews()
+    reviews_by_project = apply_reviews_mod.index_by_project(reviews)
+    # имена, дописанные заказчиком вручную: project_key -> [ФИО]
+    extra_names_by_project: dict[str, list[str]] = {}
+    for key, answers in reviews_by_project.items():
+        names: list[str] = []
+        for a in answers:
+            if a.get("action") == "add_author":
+                names.extend(a.get("authors") or [])
+        if names:
+            extra_names_by_project[key] = names
 
     departments_out = []
     counts = {"departments": 0, "projects": 0, "projects_with_both_langs": 0,
@@ -467,7 +644,9 @@ def main() -> int:
                 joint = sections.get("joint")
                 rec[f"collaboration_{lang}"] = " ".join(joint.split()) if joint else None
 
-                authors, aflags = parse_authors(team, lang)
+                authors, aflags = parse_authors(
+                    team, lang, extra_names_by_project.get(f"{dslug}/{slug}")
+                )
                 # объединяем авторов ru и en по порядку, не теряя ничьих данных
                 if lang == "ru":
                     rec["authors"] = authors
@@ -506,6 +685,30 @@ def main() -> int:
                 rec["translation_status"] = "missing"
             elif len(rec["langs_available"]) == 1:
                 rec["translation_status"] = "missing"
+
+            # --- ответы заказчика к этому проекту -------------------------
+            project_key = f"{dslug}/{slug}"
+            answers = reviews_by_project.get(project_key)
+            if answers:
+                results_ru = None
+                md_ru = MD / dslug / f"{slug}.ru.md"
+                if md_ru.exists():
+                    _, sec_ru = split_sections(md_ru.read_text(encoding="utf-8"))
+                    results_ru = sec_ru.get("results") or sec_ru.get("tasks")
+                rec["authors"], rec["publications"], flags = apply_reviews_mod.apply_reviews(
+                    project_key, rec["authors"], rec["publications"], flags,
+                    answers, results_section=results_ru,
+                )
+            rec["review_flags"] = sorted(set(flags))
+
+            # отклик заказчика виден на странице кафедры, а не только в отчёте
+            for a in answers or []:
+                if a.get("action") == "mark_todo":
+                    rec.setdefault("todos", []).append({
+                        "source": a.get("item"),
+                        "text": a.get("answer"),
+                        "doer": "кафедра",
+                    })
 
             if rec["title_ru"] and "\n" in rec["title_ru"]:
                 flags.append("title_multiline")

@@ -331,69 +331,141 @@ def main() -> int:
     # 13. вопросы
     add("## 13. Вопросы заказчику")
     add("")
-    add("Формат ответа: «да» / «нет» / «вот данные». Номера совпадают с блоком "
-        "ответов в конце файла.")
+    add("Привязка вопросов и ответов — **по названию проекта** (кафедра · slug), "
+        "а не по номеру: нумерация пересчитывается при каждой сборке, "
+        "поэтому номер как идентификатор не годится.")
     add("")
+
+    # ответы заказчика нужны уже здесь — чтобы не задавать повторно то,
+    # на что ответ уже получен
+    reviews_now = {}
+    _rv = DATA / "reviews.json"
+    if _rv.exists():
+        reviews_now = json.loads(_rv.read_text(encoding="utf-8"))
+    # Ключи ответов в reviews.json записаны как «afkh/spray-quality-aerosols»
+    # (латиница-слаг), а в флагах проекты обозначены как «АФКХ · spray-quality-aerosols».
+    # Приводим оба вида к одному: «dept-slug/slug».
+    abbr2slug = {d["abbr"]: d["slug"] for d in doc.get("departments", []) if d.get("abbr")}
+
+    def _flag_key(label: str) -> str:
+        """К единому виду «dept-slug/slug». Принимает обе записи:
+        «АФКХ · spray-quality-aerosols» и «АФКХ/spray-quality-aerosols»."""
+        s = label.strip()
+        m = re.match(r"^(\S+)\s*·\s*(\S+)$", s)
+        if m:
+            abbr, slug = m.group(1), m.group(2)
+        elif "/" in s:
+            abbr, slug = s.split("/", 1)
+        else:
+            return s
+        return f"{abbr2slug.get(abbr, abbr)}/{slug}"
+
+    answered_keys = set()
+    for a in (reviews_now.get("answers") or []):
+        proj = a.get("project")
+        if not proj or a.get("action") in (None, "info"):
+            continue
+        answered_keys.add(proj if "/" in proj else _flag_key(proj))
 
     qnum = 0
     q_items: list[tuple[int, str]] = []
+    skipped_answered = 0
+
+    def _add_q(text: str, key: str) -> None:
+        """Добавляет вопрос, если по проекту ещё нет ответа."""
+        nonlocal qnum, skipped_answered
+        if key in answered_keys:
+            skipped_answered += 1
+            return
+        qnum += 1
+        q_items.append((qnum, text))
 
     for x in by_flag["no_authors"]:
-        qnum += 1
-        q_items.append((qnum, f"**{x}** — прислать состав команды (ФИО, должность, роль)?"))
+        _add_q(f"**{x}** — прислать состав команды (ФИО, должность, роль)?", _flag_key(x))
     for x in by_flag["no_publications"]:
-        qnum += 1
-        q_items.append((qnum, f"**{x}** — прислать список публикаций или подтвердить, что их нет?"))
+        _add_q(f"**{x}** — прислать список публикаций или подтвердить, что их нет?", _flag_key(x))
     for x in by_flag["broken_doi_in_source"]:
-        qnum += 1
-        q_items.append((qnum, f"**{x}** — подтвердить правильный DOI для публикации, "
-                              f"разорванной пробелом в источнике?"))
+        _add_q(f"**{x}** — подтвердить правильный DOI для публикации, "
+               f"разорванной пробелом в источнике?", _flag_key(x))
     for x in by_flag["author_parsing_uncertain"]:
-        qnum += 1
-        q_items.append((qnum, f"**{x}** — проверить состав команды вручную: разбор ненадёжен?"))
+        _add_q(f"**{x}** — проверить состав команды вручную: разбор ненадёжен?", _flag_key(x))
+    for x in by_flag["author_count_mismatch"]:
+        _add_q(f"**{x}** — состав команды расходится с указанным вами числом, уточните?", _flag_key(x))
     for abbr, slug, nru, nen in contradictions:
-        qnum += 1
-        q_items.append((qnum, f"**{abbr} · {slug}** — почему в русской версии {nru} "
-                              f"авторов, а в английской {nen}? Кто должен быть в списке?"))
+        _add_q(f"**{abbr} · {slug}** — почему в русской версии {nru} "
+               f"авторов, а в английской {nen}? Кто должен быть в списке?", _flag_key(f"{abbr}/{slug}"))
     for dep, p in projects:
         if "no_lead_marked" not in p["review_flags"]:
             continue
         ru = p["team_raw_ru"] or ""
         if re.search(r"заведующ|руководител|head of|project lead", ru, re.I):
-            qnum += 1
-            q_items.append((qnum, f"**{dep['abbr']} · {p['slug']}** — кто руководитель проекта?"))
+            _add_q(f"**{dep['abbr']} · {p['slug']}** — кто руководитель проекта?",
+                   _flag_key(f"{dep['abbr']}/{p['slug']}"))
 
     if q_items:
         for n, text in q_items:
             add(f"{n}. {text}")
     else:
-        add("Вопросов нет — данные полные.")
+        add("**Открытых вопросов нет** — по всем замечаниям получены ответы.")
     add("")
-    add(f"Всего вопросов: **{len(q_items)}**.")
+    add(f"Всего открытых вопросов: **{len(q_items)}**.")
     add("")
+    if skipped_answered:
+        add(f"Вопросов снято как уже отвеченные: {skipped_answered}. Подробности — в разделе 14.")
+        add("")
 
     # 14. ответы заказчика
+    # ВАЖНО: ответы живут в data/reviews.json (ручной файл), а не в этом
+    # отчёте. Отчёт генерируется заново при каждом запуске, поэтому
+    # вписанные сюда руками ответы исчезали бы. Здесь они только
+    # ПОКАЗЫВАЮТСЯ — правятся в reviews.json.
     add("## 14. Ответы заказчика")
     add("")
-    add("Заполняется прямо здесь, через веб-интерфейс GitHub: нажмите карандаш "
-        "«Edit this file», впишите ответы, внизу страницы «Commit changes».")
+    add("Ответы хранятся в `data/reviews.json` и подставляются при каждой сборке. "
+        "Этот отчёт генерируется, правки в нём не сохраняются.")
     add("")
-    add("| № | Проект | Ответ |")
-    add("|---|---|---|")
-    for n, text in q_items:
-        proj = re.search(r"\*\*(.+?)\*\*", text)
-        add(f"| {n} | {proj.group(1) if proj else '—'} |  |")
-    add("")
-    add("### Общие вопросы")
-    add("")
-    add("| № | Вопрос | Ответ |")
-    add("|---|---|---|")
-    add(f"| О1 | Кафедра Химии: подтверждаете, что файлы будут присланы? |  |")
-    add(f"| О2 | Кафедра ФП: ожидаются ещё 2 проекта — когда будут файлы? |  |")
-    add(f"| О3 | Фотографии авторов будут переданы? |  |")
-    add(f"| О4 | Есть ли страницы сотрудников на сайте университета, "
-        f"на которые можно ссылаться? |  |")
-    add("")
+
+    reviews_data = {}
+    rv_path = DATA / "reviews.json"
+    if rv_path.exists():
+        reviews_data = json.loads(rv_path.read_text(encoding="utf-8"))
+
+    if reviews_data:
+        add(f"Получено: `{reviews_data.get('received_at', '—')}`. "
+            f"Ответов: **{len(reviews_data.get('answers', []))}**.")
+        add("")
+        add("| № | Проект | Ответ | Что сделано |")
+        add("|---|---|---|---|")
+        ACTION_RU = {
+            "add_author": "автор добавлен",
+            "set_lead": "отмечен руководитель",
+            "accepted": "принято без правок",
+            "mark_todo": "вынесено в TODO для кафедры",
+            "recheck_parser": "дано эталонное число авторов, разбор перепроверен",
+            "parse_publications_from_results": "публикации взяты из раздела «результаты»",
+            "info": "принято к сведению",
+        }
+        for a in reviews_data.get("answers", []):
+            n = a.get("item", "—")
+            raw = a.get("answer") or ""
+            # в таблице не место переносам строк и вертикальным чертам
+            ans = raw.replace("|", "/").replace("\n", " ").strip()
+            proj = a.get("project") or "общее"
+            done = ACTION_RU.get(a.get("action"), a.get("action") or "")
+            add(f"| {n} | {proj} | {ans[:300]} | {done} |")
+        add("")
+
+        # отдельно — то, что заказчик просил уточнить у кафедры
+        todos = [a for a in reviews_data.get("answers", []) if a.get("action") == "mark_todo"]
+        if todos:
+            add("### Вынесено в TODO (кафедра разбирается сама)")
+            add("")
+            for a in todos:
+                add(f"- **{a.get('project')}** — {a.get('answer', '')}")
+            add("")
+    else:
+        add("`data/reviews.json` не найден — ответы ещё не получены.")
+        add("")
 
     report = "\n".join(L) + "\n"
     DOCS.mkdir(exist_ok=True)

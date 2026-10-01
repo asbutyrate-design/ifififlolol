@@ -148,8 +148,14 @@ def main() -> int:
     # Флаги, которые build_data.py МОЖЕТ выдать, обязаны быть объявлены в схеме.
     # Так рассинхрон («сборщик придумал новый флаг, схема о нём не знает»)
     # обнаруживается сразу, а не через этап.
-    build_src = (REPO / "tools" / "build_data.py").read_text(encoding="utf-8")
-    emitted = set(re.findall(r'flags\.append\("([a-z_]+)"\)', build_src))
+    # Сканируем ВСЕ модули, которые могут добавить флаг: сборщик данных и
+    # прослойку ответов заказчика. Иначе новый флаг из apply_reviews проскочит.
+    emitted: set[str] = set()
+    for mod_name in ("build_data.py", "apply_reviews.py"):
+        mod_path = REPO / "tools" / mod_name
+        if mod_path.exists():
+            src = mod_path.read_text(encoding="utf-8")
+            emitted |= set(re.findall(r'flags\.append\("([a-z_]+)"\)', src))
     undeclared = sorted(emitted - allowed_flags)
     if undeclared:
         errors.append(
@@ -160,6 +166,23 @@ def main() -> int:
         print(f"сборщик ↔ схема: все {len(emitted)} флагов объявлены")
 
     # --- Итог --------------------------------------------------------------- -------------------------------------------------------------
+    # --- Проверка: все поля проектов объявлены в схеме ------------------
+    declared_props = set(
+        schema["$defs"]["project"]["properties"].keys()
+    )
+    seen_props: set[str] = set()
+    for dep in doc["departments"]:
+        for p in dep["projects"]:
+            seen_props |= set(p.keys())
+    undeclared_props = sorted(seen_props - declared_props)
+    if undeclared_props:
+        errors.append(
+            "в данных есть поля, не объявленные в схеме: "
+            + ", ".join(undeclared_props)
+        )
+    else:
+        print(f"поля проектов: все {len(seen_props)} объявлены в схеме")
+
     for w in warnings:
         print(f"ПРЕДУПРЕЖДЕНИЕ: {w}")
     if errors:

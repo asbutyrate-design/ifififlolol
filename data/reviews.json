@@ -1,0 +1,207 @@
+{
+ "_comment": [
+  "Ответы заказчика на вопросы отчёта о качестве данных (ЭТАП 3).",
+  "Это РУЧНОЙ файл — источник истины для правок данных.",
+  "docs/data_report.md ГЕНЕРИРУЕТСЯ и ответы подставляются в него при каждой сборке,",
+  "поэтому здесь они не теряются. Правьте ответы ТОЛЬКО здесь.",
+  "Ключ item — номер вопроса из отчёта, project — 'dept-slug/slug' либо null для общих."
+ ],
+ "received_at": "2026-10-01",
+ "answers": [
+  {
+   "item": 1,
+   "project": "fe/glycans-plant-raw-materials",
+   "answer": "Да, там проект выполняется К.ф.н., доцент, доцент Боков Д.О.",
+   "action": "add_author",
+   "authors": [
+    "Боков Д.О."
+   ],
+   "note": "в источнике метки команды нет, автор назван в ответе"
+  },
+  {
+   "item": 2,
+   "project": "fh/low-molecular-bioactive-compounds",
+   "answer": "Да, там проект выполняется: к.ф.н., доцент кафедры Кокорекин Владимир Алексеевич, к.ф.н., ст. преп. кафедры Турецкий Евгений Александрович",
+   "action": "add_author",
+   "authors": [
+    "Кокорекин Владимир Алексеевич",
+    "Турецкий Евгений Александрович"
+   ]
+  },
+  {
+   "item": 3,
+   "project": "farmac/cdss-physician-pharmacist",
+   "answer": "Нет, они указали публикации в разделе Основные научные результаты проекта. Но там не только публикации",
+   "action": "parse_publications_from_results"
+  },
+  {
+   "item": 4,
+   "project": "farmac/ai-environmental-programs",
+   "answer": "Нет, они указали публикации в разделе Основные научные результаты проекта. Но там не только публикации",
+   "action": "parse_publications_from_results"
+  },
+  {
+   "item": 5,
+   "project": "afkh/spray-quality-aerosols",
+   "answer": "Давай в TODO занесем, чтобы кафедра сама разобралась с ссылками",
+   "action": "mark_todo"
+  },
+  {
+   "item": 6,
+   "project": "fe/light-microscopy-quality-control",
+   "answer": "Нормально",
+   "action": "accepted"
+  },
+  {
+   "item": 7,
+   "project": "afkh/solid-dispersions-bioavailability",
+   "answer": "В обеих версиях 9 авторов. Перепроверь",
+   "action": "recheck_parser",
+   "expected_authors": 9
+  },
+  {
+   "item": 8,
+   "project": "bt/targeted-delivery-antitumor",
+   "answer": "В обеих версиях два автора: Фельдман и Савина",
+   "action": "recheck_parser",
+   "expected_authors": 2
+  },
+  {
+   "item": 9,
+   "project": "bt/bacteriophages-endolysins",
+   "answer": "В обеих версиях 4 автора, ты за имя принимаешь регалии, должности, степени и тд, наверное. Кстати, во всех проектах регалии надо унифицировать. И имена тоже унифицировать везде. Надо еще подумать о том, чтобы не писать регалии на блоке автора, а показывать их при наведении или клике, там будет типа бокс такой, а внутри бокса уже регалии, должности, степени и тд и кнопка перейти на страницу сотрудника",
+   "action": "recheck_parser",
+   "expected_authors": 4,
+   "design_note": "регалии не на карточке, а в подсказке при наведении/клике + ссылка на страницу сотрудника"
+  },
+  {
+   "item": 10,
+   "project": "bt/bacterial-cellulose",
+   "answer": "Здесь тоже 3 автора в обеих версиях",
+   "action": "recheck_parser",
+   "expected_authors": 3
+  },
+  {
+   "item": 11,
+   "project": "oef/ai-pharmacy-business-processes",
+   "answer": "В обеих версиях 6 авторов",
+   "action": "recheck_parser",
+   "expected_authors": 6
+  },
+  {
+   "item": 12,
+   "project": "oef/pharmaceutical-care-pregnant-arvi",
+   "answer": "В обеих версиях 3 автора",
+   "action": "recheck_parser",
+   "expected_authors": 3
+  },
+  {
+   "item": 13,
+   "project": "farmak/digital-prescribing",
+   "answer": "В обеих 6 авторов",
+   "action": "recheck_parser",
+   "expected_authors": 6
+  },
+  {
+   "item": 14,
+   "project": "farmak/neuroprotection-neuroregeneration",
+   "answer": "В обеих 7 авторов",
+   "action": "recheck_parser",
+   "expected_authors": 7
+  },
+  {
+   "item": 15,
+   "project": "farmac/cdss-physician-pharmacist",
+   "answer": "В обеих 4 автора",
+   "action": "recheck_parser",
+   "expected_authors": 4
+  },
+  {
+   "item": 16,
+   "project": "fe/new-medicinal-plant-raw-materials",
+   "answer": "В обеих 5 авторов",
+   "action": "recheck_parser",
+   "expected_authors": 5
+  },
+  {
+   "item": 17,
+   "project": "fp/qbd-drug-development-strategy",
+   "answer": "Потому что в одной версии ты руководителя отдельно вынес, а в другой в список авторов. Всего 7 человек",
+   "action": "recheck_parser",
+   "expected_authors": 7,
+   "note": "руководителя считать в общем списке"
+  },
+  {
+   "item": 18,
+   "project": "ft/in-situ-delivery-systems",
+   "answer": "В обеих 15",
+   "action": "recheck_parser",
+   "expected_authors": 15
+  },
+  {
+   "item": 19,
+   "project": "fh/low-molecular-bioactive-compounds",
+   "answer": "В обеих 2 автора. Перепроверь. Причем в md есть эти данные",
+   "action": "recheck_parser",
+   "expected_authors": 2
+  },
+  {
+   "item": 20,
+   "project": "fh/bioequivalence-assessment",
+   "answer": "В обеих версиях 4 автора",
+   "action": "recheck_parser",
+   "expected_authors": 4
+  },
+  {
+   "item": 21,
+   "project": "afkh/solid-dispersions-bioavailability",
+   "answer": "TODO",
+   "action": "mark_todo"
+  },
+  {
+   "item": 22,
+   "project": "farmak/drug-induced-hearing-loss",
+   "answer": "TODO",
+   "action": "mark_todo"
+  },
+  {
+   "item": 23,
+   "project": "fe/plants-taxonomy-medicine",
+   "answer": "TODO",
+   "action": "mark_todo"
+  },
+  {
+   "item": 24,
+   "project": "fp/qbd-drug-development-strategy",
+   "answer": "Бахрушина",
+   "action": "set_lead",
+   "lead": "Бахрушина"
+  },
+  {
+   "item": "О1",
+   "project": null,
+   "answer": "Да",
+   "action": "info"
+  },
+  {
+   "item": "О2",
+   "project": null,
+   "answer": "В течение двух дней",
+   "action": "info",
+   "note": "файлы ФП ожидаются ~2026-10-03"
+  },
+  {
+   "item": "О3",
+   "project": null,
+   "answer": "Возможно, еще нет информации. Для некоторых будут браться с сайта университета",
+   "action": "info"
+  },
+  {
+   "item": "О4",
+   "project": null,
+   "answer": "Да. URL типа https://www.sechenov.ru/univers/all/{id}/, где id как будто рандомный",
+   "action": "info",
+   "url_template": "https://www.sechenov.ru/univers/all/{id}/"
+  }
+ ]
+}
