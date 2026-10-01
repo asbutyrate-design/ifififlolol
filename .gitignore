@@ -1,16 +1,34 @@
+# === Служебное окружения ===
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
 .DS_Store
-*.token
-.env
+Thumbs.db
 *.swp
 *.swo
 *~
 .vscode/
 .idea/
-node_modules/
-build/
-dist/
+
+# === Секреты (токен НИКОГДА не попадает в репозиторий) ===
+*.token
+.env
+.env.*
+.secrets/
+
+# === Временные выгрузки ===
+*.log
+tmp/
+temp/
+
+# === Python-обвязка ===
 *.egg-info/
 .pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# ВНИМАНИЕ: каталог /build/ НЕ игнорируется — это артефакт сдачи
+# (сгенерированные страницы). Исключается только его временная часть.
+build/.tmp/
