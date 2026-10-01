@@ -386,18 +386,21 @@
           "items": {
             "type": "string",
             "enum": [
-              "author_parsing_uncertain",
-              "no_authors",
-              "authors_collective_only",
               "author_count_mismatch",
-              "no_publications",
-              "no_lead_marked",
+              "author_parsing_uncertain",
+              "authors_collective_only",
               "broken_doi_in_source",
+              "en_name_not_matched",
+              "en_only_author",
+              "en_team_missing",
+              "external_data_expected",
+              "no_authors",
+              "no_lead_marked",
+              "no_publications",
+              "question_in_source",
               "team_label_missing",
               "title_multiline",
-              "question_in_source",
-              "todo_from_reviewer",
-              "external_data_expected"
+              "todo_from_reviewer"
             ]
           },
           "description": "Машиночитаемые пометки. Из них собирается data_report.md, руками список не дублируется."
@@ -512,7 +515,9 @@
             "аспирант",
             "магистрант",
             "студент",
-            "не указана"
+            "не указана",
+            "ординатор",
+            "соискатель"
           ],
           "description": "Роль в проекте. 'не указана' честнее, чем догадка."
         },

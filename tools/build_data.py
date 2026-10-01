@@ -15,6 +15,7 @@
 
 from __future__ import annotations
 
+import difflib
 import json
 import re
 import sys
@@ -79,6 +80,17 @@ ROLE_PATTERNS = [
      "участник"),
 ]
 
+# Метки ГРУПП, за которыми идёт перечисление людей. Роль в источнике
+# задаётся именно ими, поэтому они имеют приоритет над одиночными словами.
+GROUP_ROLE_PATTERNS = [
+    (r"руководител[ья]\s+проекта\s*:|project\s+lead(?:er)?\s*:|team\s+lead\s*:", "руководитель"),
+    (r"аспиранты?\s*:|аспирантка\s*:|postgraduates?\s*:|phd\s+students?\s*:|doctoral\s+students?\s*:", "аспирант"),
+    (r"магистранты?\s*:|master'?s\s+students?\s*:", "магистрант"),
+    (r"студенты\s*:|студентка\s*:|students?\s*:", "студент"),
+    (r"ординаторы?\s*:|residents?\s*:", "ординатор"),
+    (r"соискатели?\s*:", "соискатель"),
+]
+
 # ---------------------------------------------------------------------------
 # Регалии и служебные слова. ВЫРЕЗАЮТСЯ из текста команды ДО поиска ФИО.
 #
@@ -130,6 +142,19 @@ NAME_STOPWORDS = {
     "Candidate", "Research", "Staff", "Laboratory", "Center", "Centre", "Group",
     "Shemyakin", "Ovchinnikov", "Orekhovich", "Sechenov", "Lomonosov",
     "Kutateladze", "Kozhevnikov", "Nelyubin", "Arzamastsev", "Vilar",
+    # Слова из НАЗВАНИЙ подразделений. В англоязычных источниках должность
+    # переходит в ФИО без разделителя:
+    #   «…of the Department of Nervous Diseases Shindryaeva N.N.»
+    #   «…of the Department of Organization and Economics of Pharmacy Gerasimova D.A.»
+    # Из-за этого «Nervous Diseases» и «Pharmacy Gerasimova» становились
+    # авторами. Настоящий человек в таких строках идёт СРАЗУ ПОСЛЕ названия
+    # и находится отдельно («Shindryaeva N.N.», «Gerasimova D.A.»), так что
+    # запрет этих слов на роль фамилии никого не теряет.
+    "Nervous", "Diseases", "Disease", "Pharmacy", "Pharmacology", "Organization",
+    "Economics", "Economy", "Medical", "Medicine", "Natural", "Pharmaceutical",
+    "Sciences", "Science", "Clinic", "Clinical", "Hospital", "State", "Moscow",
+    "System", "Systems", "Technology", "Chemistry", "Chemical", "Biology",
+    "Biological", "Physical", "First", "Russian", "Novosibirsk",
 }
 
 # Минимальная длина фамилии. Одно- и двухбуквенные обрывки («Sc», «Ph», «Dr»)
@@ -145,6 +170,32 @@ PATRONYMIC_END = re.compile(
 # Коллективная запись команды вместо списка людей: «Коллектив кафедры …»,
 # «сотрудники кафедры», «research staff of the Department». В этом случае
 # авторов поимённо в источнике НЕТ, выдумывать их нельзя.
+# Конец перечисления команды. После этой фразы начинается описание, ГДЕ
+# выполняется проект, а не новые люди. Без обрезки из названий кафедр,
+# институтов и клиник рождаются фантомные «авторы»:
+#     «Nervous Diseases», «First Moscow», «Clinical Hospital», «Pharmacy Gerasimova».
+# Заказчик указал на это прямо (ответ №9).
+TEAM_END_RE = re.compile(
+    r"(Проект\s+выполняется|Работа\s+выполняется|"
+    r"The\s+project\s+is\s+carried\s+out|The\s+work\s+is\s+being\s+carried\s+out|"
+    r"The\s+work\s+is\s+carried\s+out)",
+    re.IGNORECASE,
+)
+
+
+def cut_at_team_end(team: str) -> str:
+    """Обрезает секцию команды там, где начинается описание места работы.
+
+    Если до фразы нет ничего осмысленного — вся «команда» и есть описание,
+    резать нечего: возвращаем исходный текст.
+    """
+    m = TEAM_END_RE.search(team)
+    if not m:
+        return team
+    head = team[:m.start()].rstrip(" ,;.\u2014-")
+    return head if head.strip() else team
+
+
 COLLECTIVE_RE = re.compile(
     r"коллектив|сотрудники кафедры|научный коллектив|"
     r"\bresearch staff\b|\bthe team of the department\b|\bstaff of the department\b",
@@ -152,17 +203,60 @@ COLLECTIVE_RE = re.compile(
 )
 
 
+def normalize_homoglyphs(text: str) -> str:
+    """Заменяет латинские буквы, похожие на кириллические, внутри русских слов.
+
+    Зачем: в источнике встречается «Cтуденты:» с ЛАТИНСКОЙ C. Из-за этого
+    русское правило роли «студент» не срабатывало, и роль у человека
+    оставалась неопределённой. Ошибка была незаметна глазом — буквы
+    выглядят одинаково.
+    """
+    # латинские двойники кириллицы
+    lat2cyr = str.maketrans({
+        "C": "С", "c": "с", "A": "А", "a": "а", "B": "В", "E": "Е", "e": "е",
+        "O": "О", "o": "о", "P": "Р", "p": "р", "H": "Н", "K": "К", "k": "к",
+        "M": "М", "T": "Т", "y": "у", "X": "Х", "x": "х",
+    })
+    out = []
+    for token in re.split(r"(\s+)", text):
+        if not token.strip():
+            out.append(token)
+            continue
+        has_cyr = any("\u0400" <= ch <= "\u04ff" for ch in token)
+        if has_cyr:
+            token = token.translate(lat2cyr)
+        out.append(token)
+    return "".join(out)
+
+
 def strip_degrees(text: str) -> str:
-    """Убирает регалии и должности из текста команды, оставляя ФИО и разделители."""
-    cleaned = DEGREE_RE.sub(" ", text)
+    """Заменяет регалии и должности ПРОБЕЛАМИ, СОХРАНЯЯ ДЛИНУ строки.
+
+    Почему сохраняя длину. Раньше регалии удалялись (``sub(" ", ...)``),
+    строка укорачивалась, но позиции найденных ФИО брались из очищенной
+    строки и применялись к СЫРОЙ при вычислении ``before``. Сдвиг доходил
+    до 26 символов, и роли приписывались не тем людям: профессор получал
+    «роль не указана», магистрант — «участник», студент — «магистрант».
+
+    Подстановка пробелов той же длины убирает источник ошибки целиком:
+    индекс символа в очищенной строке совпадает с индексом в исходной,
+    поэтому ``before`` всегда соответствует тому же человеку.
+    """
+    def blank(mm: "re.Match[str]") -> str:
+        # каждый непробельный символ → пробел, переводы строк сохраняем,
+        # чтобы не ломать структуру и границы строк
+        return "".join("\n" if ch == "\n" else " " for ch in mm.group(0))
+
+    cleaned = DEGREE_RE.sub(blank, text)
     # «(мл.)», «(Jr.)» — не часть ФИО
-    cleaned = re.sub(r"\((?:мл|ст|jr|sr)\.?\)", " ", cleaned, flags=re.IGNORECASE)
-    # После вырезания «PhD»/«Doctor»/«Candidate» остаются висеть предлоги
-    # и одиночные служебные слова: «…, in Pharmaceutical Sciences, …».
-    # Если их не убрать, шаг разбора «Фамилия Имя» соберёт из них
-    # несуществующего человека «Pharmaceutical Sciences».
-    cleaned = re.sub(r"[;:]+", ",", cleaned)
-    cleaned = re.sub(r"[ \t]+", " ", cleaned)
+    cleaned = re.sub(
+        r"\((?:мл|ст|jr|sr)\.?\)",
+        lambda mm: " " * len(mm.group(0)),
+        cleaned, flags=re.IGNORECASE,
+    )
+    # разделители-двоеточия не удаляем, а превращаем в запятые — длина та же
+    cleaned = cleaned.replace(":", ",").replace(";", ",")
+    assert len(cleaned) == len(text), "strip_degrees обязан сохранять длину"
     return cleaned
 
 
@@ -203,14 +297,47 @@ def looks_like_surname(word: str) -> bool:
 
 
 def role_for(text_before: str) -> str:
+    """Роль человека по тексту ПЕРЕД его ФИО.
+
+    Ключевое отличие от первой версии: приоритет у ГРУППОВОЙ метки
+    («Магистранты:», «Студенты:», «Аспиранты:»), а не у ближайшего слова.
+    В источниках роль задаётся именно меткой, которая стоит ПЕРЕД списком:
+
+        «Магистранты: Запевалов А.Т., Низова А.Р. Студенты: Дрозд А.А.»
+
+    Здесь у Запевалова перед именем встречается ещё и «профессор» —
+    регалия ПЕРВОГО человека в строке. Ближайшее слово давало ему
+    «участник», а студент Дрозд получал «магистрант» от метки предыдущей
+    группы. Ошибку заметил заказчик.
+
+    Логика: ищем последнюю групповую метку; если она есть и стоит ближе,
+    чем любое «одиночное» указание роли, — берём её. Иначе — ближайшее
+    одиночное слово.
+    """
     low = text_before.lower()
-    # ищем ближайшее ключевое слово — с конца
-    best, best_pos = "не указана", -1
+    low = normalize_homoglyphs(low)
+
+    # 1) последняя групповая метка (список людей идёт за ней)
+    group_role, group_pos = None, -1
+    for pattern, role in GROUP_ROLE_PATTERNS:
+        for m in re.finditer(pattern, low):
+            if m.start() > group_pos:
+                group_pos, group_role = m.start(), role
+
+    # 2) ближайшее одиночное указание роли
+    single_role, single_pos = "не указана", -1
     for pattern, role in ROLE_PATTERNS:
         for m in re.finditer(pattern, low):
-            if m.start() > best_pos:
-                best_pos, best = m.start(), role
-    return best
+            if m.start() > single_pos:
+                single_pos, single_role = m.start(), role
+
+    # Групповая метка выигрывает всегда, если она вообще есть в тексте:
+    # «доцент Иванов, студенты: Петров» — Петров студент, хотя «доцент»
+    # стоит правее начала. Но если одиночное указание идёт ПОСЛЕ группы,
+    # значит началась новая группа/персональная роль — тогда оно.
+    if group_role and group_pos >= single_pos:
+        return group_role
+    return single_role
 
 
 def _mk_author(name_ru, name_en, initials, before, role, lang):
@@ -231,6 +358,68 @@ def _mk_author(name_ru, name_en, initials, before, role, lang):
     }
 
 
+def _split_name(nm: str) -> tuple[str, str]:
+    """Разбирает запись имени на (фамилия, первый инициал).
+
+    Форматы в данных разные, и «наивный» разбор ломается:
+        «E.A. Smolyarchuk»  → parts[0]='E', parts[1]='A'  → фамилия «E»   ← неверно
+        «Смолярчук Е.А.»    → parts[0]='Смолярчук', 'Е'   → верно
+        «Kokorekin Vladimir Alekseevich» → верно
+    Поэтому: если первая часть — одиночная буква (или «E.A.» после замены
+    точек), значит перед нами инициалы, и фамилия ИДЁТ СЛЕДОМ.
+    """
+    raw = nm.strip()
+    # «E.A. Smolyarchuk» — инициалы впереди.
+    # Инициал бывает ДВУХБУКВЕННЫМ: «Zh.M. Kozlova», «Yu.A. Saksonova»,
+    # «Shch.S. Ivanov». Раньше шаблон требовал ровно одну букву, и такая
+    # фамилия разбиралась как «Zh» с инициалом «M» — человек терялся.
+    m = re.match(r"^((?:[A-Za-zА-Яа-яЁё]{1,2}\s*\.\s*){1,3})(.+)$", raw)
+    if m:
+        ini = re.sub(r"[^A-Za-zА-Яа-яЁё]", "", m.group(1))
+        rest = m.group(2).strip().split()
+        surname = rest[0] if rest else ""
+        return surname, (ini[0] if ini else "")
+    parts = raw.replace(".", " ").split()
+    if not parts:
+        return "", ""
+    # «И.И. Иванов» — первый токен после снятия точек пуст/односимвольный
+    if len(parts) >= 2 and len(parts[0]) == 1 and len(parts[1]) > 1:
+        return parts[1], parts[0].upper()
+    surname = parts[0]
+    initial = parts[1][0].upper() if len(parts) > 1 and parts[1] else ""
+    return surname, initial
+
+
+def _person_key(a: dict) -> str:
+    """Ключ сведения одного человека: «фамилия|инициал».
+
+    Раньше ключ строился как parts[0] от строки с инициалами впереди, из-за чего
+    «E.A. Smolyarchuk» и «E.A. Zavadich» давали ОДИН ключ 'e|A' и склеивались
+    в одного человека — один из двоих терялся.
+    """
+    nm = a.get("name_ru") or a.get("name_en") or ""
+    surname, initial = _split_name(nm)
+    return f"{surname.lower()}|{initial.upper()}"
+
+
+def _script_of(text: str) -> str:
+    """Письменность строки: "cyr", "lat" или "mixed"/"none".
+
+    Нужна, чтобы имена, досланные заказчиком в ответах, попадали ТОЛЬКО
+    в свою языковую версию. Иначе при разборе английского текста русское
+    «Кокорекин Владимир Алексеевич» дописывалось как name_en и человек
+    задваивался: один раз латиницей из источника, второй — кириллицей
+    из ответа.
+    """
+    cyr = sum(1 for ch in text if "\u0400" <= ch <= "\u04ff")
+    lat = sum(1 for ch in text if ("a" <= ch <= "z") or ("A" <= ch <= "Z"))
+    if cyr and not lat:
+        return "cyr"
+    if lat and not cyr:
+        return "lat"
+    return "mixed" if (cyr or lat) else "none"
+
+
 def parse_authors(
     team: str | None, lang: str, extra_names: list[str] | None = None
 ) -> tuple[list[dict], list[str]]:
@@ -244,9 +433,13 @@ def parse_authors(
     found: dict[str, dict] = {}
 
     # 0) имена, подтверждённые заказчиком
+    want = "cyr" if lang == "ru" else "lat"
     for nm in (extra_names or []):
         nm = nm.strip()
         if not nm:
+            continue
+        # имя идёт ТОЛЬКО в свою языковую версию — иначе дубли
+        if _script_of(nm) not in (want, "mixed"):
             continue
         parts = nm.split()
         ini = ""
@@ -269,7 +462,17 @@ def parse_authors(
     if COLLECTIVE_RE.search(team) and not found:
         return [], ["authors_collective_only"]
 
-    # Регалии вырезаем ДО поиска — иначе они попадают в авторов
+    # Гомоглифы: «Cтуденты» с латинской C и подобное. Правим ДО разбора.
+    team = normalize_homoglyphs(team)
+
+    # Описание места работы («The project is carried out at the Department…»)
+    # отрезаем ДО разбора людей — иначе названия кафедр и клиник становятся
+    # «авторами». После обрезки индексы в team и clean совпадают.
+    team = cut_at_team_end(team)
+    # Регалии гасим ДО поиска, чтобы они не попадали в авторов.
+    # strip_degrees СОХРАНЯЕТ ДЛИНУ (см. его докстроку), поэтому индексы
+    # в clean и в team совпадают. ФИО ищем в clean, а роль читаем из team —
+    # там групповые метки («Магистранты:», «Студенты:») не затёрты.
     clean = strip_degrees(team)
 
     # 1) ФИО полностью: «Кокорекин Владимир Алексеевич»
@@ -326,6 +529,37 @@ def parse_authors(
             found[key] = _mk_author(
                 None, f"{surname} {ini}", ini, before, role_for(before), lang,
             )
+        # 4б) ПОЛНОЕ ИМЯ латиницей: «Kokorekin Vladimir Alekseevich».
+        #
+        # Идём СКОЛЬЗЯЩИМ ОКНОМ по словам, а не регуляркой на три слова подряд.
+        # Регулярка не подходит: в «…of the Department Kokorekin Vladimir
+        # Alekseevich» она жадным совпадением захватывает
+        # «Department Kokorekin Vladimir» как ФИО, отбрасывает его (Department —
+        # служебное слово) и до настоящей тройки уже не доходит, потому что
+        # совпадения не перекрываются. Окно такой ошибки не делает.
+        words = re.findall(r"[A-Za-z\-]+", clean)
+        for k in range(len(words) - 2):
+            surname, name_, patr = words[k], words[k + 1], words[k + 2]
+            if not looks_like_surname(surname):
+                continue
+            if name_ in NAME_STOPWORDS or not looks_like_person_name(surname, name_):
+                continue
+            # третье слово обязано быть отчеством, иначе это не ФИО
+            if not re.search(r"(ovich|evich|ovna|evna|ichna|inichna)$", patr, re.IGNORECASE):
+                continue
+            # предыдущее слово не должно быть отчеством: иначе мы поймали
+            # хвост чужого ФИО («…Alekseevich, Turetsky Evgeny»)
+            prev = words[k - 1] if k > 0 else ""
+            if prev and re.search(r"(ovich|evich|ovna|evna|ichna|inichna)$", prev, re.IGNORECASE):
+                continue
+            key = f"{surname} {name_}"
+            if key in found:
+                continue
+            found[key] = _mk_author(
+                None, f"{surname} {name_} {patr}",
+                f"{name_[0]}.{patr[0]}.", "", "не указана", lang,
+            )
+
         # 5) ФАМИЛИЯ + Имя (без отчества латиницей): «Kokorekin Vladimir».
         #
         # Здесь НЕЛЬЗЯ использовать регулярку на три слова подряд:
@@ -365,6 +599,22 @@ def parse_authors(
             # быть предлогом/служебным
             if surname.lower() in {"of", "the", "and", "sciences", "science"}:
                 continue
+            # 4) Предыдущее слово — отчество? Тогда пара («отчество», «фамилия»)
+            #    не человек. Без этой проверки «Alekseevich Turetsky» из
+            #    «Kokorekin Vladimir Alekseevich, Turetsky Evgeny» рождало
+            #    фантомного человека с фамилией Alekseevich.
+            prev = words[i - 1] if i > 0 else ""
+            if prev and re.search(r"(ovich|evich|ovna|evna|ichna|inichna)$", prev, re.IGNORECASE):
+                continue
+            # Пара обязана быть соседней В ОРИГИНАЛЕ, а не только в очищенном
+            # тексте: strip_degrees выбрасывает звания («PhD», «Professor»),
+            # и слова, между которыми в источнике стояло «. PhD, Professor »,
+            # становятся «соседями». Так рождался фантомный автор
+            # «Saksonova Anurova» — два человека, склеенные в одного.
+            if not re.search(
+                rf"\b{re.escape(surname)}\s+{re.escape(name_)}\b", team
+            ):
+                continue
             key = f"{surname} {name_}"
             if key in found:
                 continue
@@ -380,13 +630,7 @@ def parse_authors(
     # «Кокорекин В.А.» и «Кокорекин Владимир Алексеевич» это один человек.
     merged: dict[str, dict] = {}
     for a in found.values():
-        nm = a["name_ru"] or a["name_en"] or ""
-        parts = nm.replace(".", " ").split()
-        if not parts:
-            continue
-        surname = parts[0]
-        initial = parts[1][0].upper() if len(parts) > 1 and parts[1] else ""
-        key = f"{surname.lower()}|{initial}"
+        key = _person_key(a)
         if key in merged:
             # дополняем уже найденную запись недостающими полями
             cur = merged[key]
@@ -427,6 +671,139 @@ RE_YEAR = re.compile(r"\b(19|20)\d{2}\b")
 RE_URL = re.compile(r"https?://\S+")
 # Признак разорванного в источнике DOI: после него идёт ещё номер через пробел
 RE_DOI_SPLIT = re.compile(r"\b10\.\d{4,9}/[^\s,;]*\s+\d+-\d+-\d+")
+
+
+# ---------------------------------------------------------------------------
+# Сопоставление людей между языковыми версиями
+#
+# Раньше ru и en склеивались ПО НОМЕРУ В СПИСКЕ:
+#     rec["authors"][i]["name_en"] = authors[i]["name_en"]
+# Если английский список короче русского хотя бы на человека, все следующие
+# получают ЧУЖУЮ фамилию. Это уже случилось в farmak/digital-prescribing:
+# Завадич Е.А. получила фамилию Тращенковой.
+#
+# Теперь сопоставление идёт ПО ЧЕЛОВЕКУ: фамилия переводится в латиницу и
+# сравнивается с английской фамилией. Инициалы служат усилителем (совпали —
+# плюс к счёту) и тормозом (разошлись — сильный минус). Несопоставленный
+# англичанин ДОБАВЛЯЕТСЯ в список, а не выбрасывается; русский без пары
+# остаётся с name_en = None и получает флаг.
+# ---------------------------------------------------------------------------
+
+_TRANSLIT = {
+    "а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e", "ё": "e",
+    "ж": "zh", "з": "z", "и": "i", "й": "y", "к": "k", "л": "l", "м": "m",
+    "н": "n", "о": "o", "п": "p", "р": "r", "с": "s", "т": "t", "у": "u",
+    "ф": "f", "х": "kh", "ц": "ts", "ч": "ch", "ш": "sh", "щ": "shch",
+    "ъ": "", "ы": "y", "ь": "", "э": "e", "ю": "yu", "я": "ya",
+}
+
+
+def _translit(s: str) -> str:
+    """Русская фамилия в латиницу — чтобы сравнивать с английским написанием."""
+    out = []
+    for ch in s.lower():
+        out.append(_TRANSLIT.get(ch, ch))
+    return "".join(out)
+
+
+def _surname_latin(a: dict) -> str:
+    """Латинское написание фамилии автора, чем бы оно ни было записано."""
+    for nm in (a.get("name_ru"), a.get("name_en")):
+        if not nm:
+            continue
+        surname, _ = _split_name(nm)
+        if not surname:
+            continue
+        if re.search(r"[а-яё]", surname.lower()):
+            return _translit(surname)
+        return surname.lower()
+    return ""
+
+
+def _initial(a: dict) -> str:
+    """Первый инициал в ЛАТИНИЦЕ.
+
+    Русская «Е» и латинская «E» — разные символы: если их не привести к
+    одной азбуке, инициалы «не совпадают», и верная пара отвергается.
+    """
+    for nm in (a.get("name_ru"), a.get("name_en")):
+        if nm:
+            _s, ini = _split_name(nm)
+            if ini:
+                # ТОЛЬКО первая буква. Раньше возвращался весь транслит:
+                # «Я» → «YA» против латинского «Y» — инициалы «не совпадали»,
+                # пара Грибова/gribova отвергалась, человек задваивался.
+                # Транслитерируем один символ и берём его первый знак:
+                # «Я» → «Ya» → «Y», «Y» → «Y». Совпадает.
+                return _translit(ini[0]).upper()[:1]
+    return ""
+
+
+def merge_authors_by_person(
+    ru_authors: list[dict], en_authors: list[dict]
+) -> tuple[list[dict], list[str]]:
+    """Сливает два списка авторов одного проекта по ЛЮДЯМ, а не по позициям.
+
+    Возвращает (объединённый список, флаги).
+    """
+    flags: list[str] = []
+    if not ru_authors:
+        return list(en_authors), flags
+    if not en_authors:
+        flags.append("en_team_missing")
+        return list(ru_authors), flags
+
+    pairs: list[tuple[float, int, int]] = []
+    for i, ru in enumerate(ru_authors):
+        ru_s = _surname_latin(ru)
+        ru_i = _initial(ru)
+        for j, en in enumerate(en_authors):
+            en_s = _surname_latin(en)
+            en_i = _initial(en)
+            if not ru_s or not en_s:
+                continue
+            score = difflib.SequenceMatcher(None, ru_s, en_s).ratio()
+            # инициал — сильный признак в обе стороны
+            if ru_i and en_i:
+                score += 0.35 if ru_i == en_i else -0.45
+            pairs.append((score, i, j))
+
+    pairs.sort(reverse=True)
+    assigned_ru: dict[int, int] = {}
+    used_en: set[int] = set()
+    for score, i, j in pairs:
+        if i in assigned_ru or j in used_en:
+            continue
+        if score < 0.62:          # ниже порога — считаем, что это разные люди
+            continue
+        assigned_ru[i] = j
+        used_en.add(j)
+
+    merged: list[dict] = []
+    for i, ru in enumerate(ru_authors):
+        rec = dict(ru)
+        if i in assigned_ru:
+            en = en_authors[assigned_ru[i]]
+            rec["name_en"] = en.get("name_en")
+            rec["position_en"] = en.get("position_en")
+            rec["role_en"] = en.get("role_en")
+            if not rec.get("initials"):
+                rec["initials"] = en.get("initials")
+        else:
+            # русская запись без пары: латинского имени нет — не выдумываем
+            if rec.get("name_en") is None:
+                flags.append("en_name_not_matched")
+        merged.append(rec)
+
+    # англичане, которым не нашлось пары, добавляются, а не теряются
+    for j, en in enumerate(en_authors):
+        if j not in used_en:
+            extra = dict(en)
+            extra["added_from_review"] = extra.get("added_from_review", False)
+            merged.append(extra)
+            flags.append("en_only_author")
+
+    return merged, flags
 
 
 def parse_publications(section: str | None) -> tuple[list[dict], list[str]]:
@@ -647,22 +1024,21 @@ def main() -> int:
                 authors, aflags = parse_authors(
                     team, lang, extra_names_by_project.get(f"{dslug}/{slug}")
                 )
-                # объединяем авторов ru и en по порядку, не теряя ничьих данных
+                # Объединяем авторов ru и en ПО ЛЮДЯМ, а не по номеру в списке.
+                # Старое слияние по индексу ломается, как только списки
+                # разной длины: фамилии сдвигаются на человека.
                 if lang == "ru":
                     rec["authors"] = authors
                 else:
                     if not rec["authors"]:
                         rec["authors"] = authors
                     else:
-                        # дополняем: если у ru-автора нет латинского имени, подставим
-                        for i, a in enumerate(authors):
-                            if i < len(rec["authors"]):
-                                if not rec["authors"][i]["name_en"]:
-                                    rec["authors"][i]["name_en"] = a["name_en"]
-                                    rec["authors"][i]["position_en"] = a["position_en"]
-                                    rec["authors"][i]["role_en"] = a["role_en"]
-                            else:
-                                rec["authors"].append(a)
+                        rec["authors"], mflags = merge_authors_by_person(
+                            rec["authors"], authors
+                        )
+                        for f in mflags:
+                            if f not in flags:
+                                flags.append(f)
                 for f in aflags:
                     if f not in flags:
                         flags.append(f)

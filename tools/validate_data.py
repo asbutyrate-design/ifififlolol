@@ -20,6 +20,8 @@
 
 from __future__ import annotations
 
+import difflib
+import importlib.util
 import json
 import re
 import sys
@@ -164,6 +166,44 @@ def main() -> int:
         )
     else:
         print(f"сборщик ↔ схема: все {len(emitted)} флагов объявлены")
+
+    # --- Регрессия: слияние авторов ru↔en --------------------------------
+    # Проверяем, что у каждого автора русская и латинская записи — ОДИН человек.
+    # Именно здесь был дефект: слияние по номеру в списке сдвигало фамилии
+    # (Завадич Е.А. получала фамилию Тращенковой). Молчаливый сдвиг страшнее
+    # падения, поэтому проверка обязательная и постоянная.
+    spec_bd = importlib.util.spec_from_file_location(
+        "build_data_for_validation", REPO / "tools" / "build_data.py"
+    )
+    bd_mod = importlib.util.module_from_spec(spec_bd)
+    spec_bd.loader.exec_module(bd_mod)
+
+    mismatched = []
+    for dep in doc["departments"]:
+        for p in dep["projects"]:
+            for a in p["authors"]:
+                ru_nm, en_nm = a.get("name_ru"), a.get("name_en")
+                if not (ru_nm and en_nm):
+                    continue
+                ru_lat = bd_mod._surname_latin({"name_ru": ru_nm, "name_en": None})
+                en_lat = bd_mod._surname_latin({"name_ru": None, "name_en": en_nm})
+                ratio = difflib.SequenceMatcher(None, ru_lat, en_lat).ratio()
+                if ratio < 0.7:
+                    mismatched.append(
+                        f"{dep['slug']}/{p['slug']}: {ru_nm} ↔ {en_nm} "
+                        f"(фамилии совпадают лишь на {ratio:.0%})"
+                    )
+    if mismatched:
+        errors.append(
+            f"автор склеен с чужим человеком ({len(mismatched)}):\n      "
+            + "\n      ".join(mismatched[:10])
+        )
+    else:
+        paired = sum(
+            1 for d in doc["departments"] for p in d["projects"]
+            for a in p["authors"] if a.get("name_ru") and a.get("name_en")
+        )
+        print(f"авторы ru↔en: {paired} пар проверено, чужих совпадений нет")
 
     # --- Итог --------------------------------------------------------------- -------------------------------------------------------------
     # --- Проверка: все поля проектов объявлены в схеме ------------------
