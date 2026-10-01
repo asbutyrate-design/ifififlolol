@@ -1,0 +1,142 @@
+/**
+ * ДИЗАЙН-ТОКЕНЫ СЕЧЕНОВСКОГО УНИВЕРСИТЕТА
+ * Источник: https://design.sechenov.ru
+ * 
+ * Все токены — CSS-переменные с префиксом --sech-
+ * Используются в компонентах без !important
+ * 
+ * ЭТАП 6 (дизайн-система): переменные взяты из дизайн-системы,
+ * пока что приведены типовые значения с комментариями
+ */
+
+:root {
+  /* === ЦВЕТА === */
+  
+  /* Основные бренд-цвета */
+  --sech-color-primary: #1f4788;           /* Синий: заголовки, активные элементы */
+  --sech-color-primary-light: #2d5aa3;    /* Синий светлый: hover-состояния */
+  --sech-color-primary-dark: #1a3a5c;     /* Синий тёмный: pressed-состояния */
+  
+  --sech-color-secondary: #0066cc;        /* Дополнительный синий */
+  --sech-color-accent: #ff6b35;           /* Оранжевый: акценты, CTA */
+  
+  /* Нейтральная палитра */
+  --sech-color-text: #333333;             /* Основной текст */
+  --sech-color-text-light: #666666;       /* Вторичный текст */
+  --sech-color-text-lighter: #999999;     /* Третичный текст */
+  --sech-color-text-white: #ffffff;       /* Текст на тёмном фоне */
+  
+  /* Фоны */
+  --sech-color-bg: #f9f9f9;               /* Светлый фон, аккордеоны, карточки */
+  --sech-color-bg-light: #f0f0f0;         /* Ещё светлее */
+  --sech-color-bg-dark: #e8e8e8;          /* Для контраста */
+  
+  /* Состояния */
+  --sech-color-success: #2ecc71;          /* Успех, завершено */
+  --sech-color-warning: #f39c12;          /* Внимание */
+  --sech-color-error: #e74c3c;            /* Ошибка */
+  --sech-color-info: #3498db;             /* Информация */
+  
+  /* Границы */
+  --sech-color-border: #ddd;              /* Обычная граница */
+  --sech-color-border-light: #f0f0f0;     /* Лёгкая граница */
+  
+  /* === ТИПОГРАФИКА === */
+  
+  /* Семейства шрифтов */
+  --sech-font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", 
+                    "Oxygen", "Ubuntu", "Cantarell", sans-serif;
+  --sech-font-serif: "Georgia", "Times New Roman", serif;
+  --sech-font-mono: "SF Mono", "Monaco", "Inconsolata", monospace;
+  
+  /* Шкала размеров (на базе 16px) */
+  --sech-font-size-xs: 12px;              /* 0.75rem */
+  --sech-font-size-sm: 14px;              /* 0.875rem */
+  --sech-font-size-base: 16px;            /* 1rem */
+  --sech-font-size-lg: 18px;              /* 1.125rem */
+  --sech-font-size-xl: 20px;              /* 1.25rem */
+  --sech-font-size-2xl: 24px;             /* 1.5rem */
+  --sech-font-size-3xl: 28px;             /* 1.75rem */
+  --sech-font-size-4xl: 32px;             /* 2rem */
+  
+  /* Веса */
+  --sech-font-weight-light: 300;
+  --sech-font-weight-normal: 400;
+  --sech-font-weight-medium: 500;
+  --sech-font-weight-semibold: 600;
+  --sech-font-weight-bold: 700;
+  
+  /* Высота строки */
+  --sech-line-height-tight: 1.2;
+  --sech-line-height-normal: 1.6;
+  --sech-line-height-relaxed: 1.8;
+  
+  /* Letter spacing */
+  --sech-letter-spacing-tight: -0.5px;
+  --sech-letter-spacing-normal: 0;
+  --sech-letter-spacing-wide: 0.5px;
+  
+  /* === ИНТЕРВАЛЫ (MARGIN / PADDING) === */
+  
+  /* Шкала на базе 4px */
+  --sech-space-xs: 4px;
+  --sech-space-sm: 8px;
+  --sech-space-md: 12px;
+  --sech-space-lg: 16px;
+  --sech-space-xl: 20px;
+  --sech-space-2xl: 24px;
+  --sech-space-3xl: 32px;
+  --sech-space-4xl: 40px;
+  --sech-space-5xl: 48px;
+  
+  /* === СКРУГЛЕНИЯ (BORDER-RADIUS) === */
+  
+  --sech-radius-none: 0;
+  --sech-radius-sm: 2px;
+  --sech-radius-base: 4px;
+  --sech-radius-md: 6px;
+  --sech-radius-lg: 8px;
+  --sech-radius-xl: 12px;
+  --sech-radius-circle: 50%;
+  
+  /* === ТЕНИ === */
+  
+  --sech-shadow-none: none;
+  --sech-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --sech-shadow-base: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --sech-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --sech-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+  --sech-shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
+  
+  /* === ПЕРЕХОДЫ === */
+  
+  --sech-transition-fast: 0.15s ease-in-out;
+  --sech-transition-base: 0.2s ease-in-out;
+  --sech-transition-slow: 0.3s ease-in-out;
+  
+  /* === Z-INDEX === */
+  
+  --sech-z-base: 0;
+  --sech-z-dropdown: 1000;
+  --sech-z-modal: 2000;
+  --sech-z-tooltip: 3000;
+}
+
+/* === РЕСПОНСИВНЫЕ ТОЧКИ РАЗРЫВА === */
+/* sm: 640px, md: 768px, lg: 1024px, xl: 1280px */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --sech-transition-fast: 0s;
+    --sech-transition-base: 0s;
+    --sech-transition-slow: 0s;
+  }
+}
+
+/* === ПЕЧАТЬ === */
+@media print {
+  :root {
+    --sech-color-text: #000;
+    --sech-color-bg: #fff;
+  }
+}
