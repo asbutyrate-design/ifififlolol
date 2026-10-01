@@ -101,7 +101,10 @@ def main() -> int:
                         errors.append(f"{dslug}/{slug}: нет url_{lang} при наличии языка")
                     if not has_src:
                         errors.append(f"{dslug}/{slug}: нет source_file_{lang} при наличии языка")
-                    expected = base + scheme.format(lang=lang, dept=dslug, slug=slug)
+                    expected = base + scheme.format(
+                        lang=lang, dept=dslug, slug=slug,
+                        suffix=doc["meta"].get("lang_suffix", {}).get(lang, lang),
+                    )
                     if p[f"url_{lang}"] != expected:
                         errors.append(
                             f"{dslug}/{slug}: url_{lang} не совпадает с шаблоном\n"
@@ -114,8 +117,9 @@ def main() -> int:
 
             # парность адресов: отличаются только сегментом языка
             if len(langs) == 2:
-                ru = p["url_ru"].replace("/ru/", "/{lang}/")
-                en = p["url_en"].replace("/en/", "/{lang}/")
+                suff = doc["meta"].get("lang_suffix", {"ru": "ru", "en": "en"})
+                ru = p["url_ru"].replace(f'_{suff["ru"]}', "_{suffix}")
+                en = p["url_en"].replace(f'_{suff["en"]}', "_{suffix}")
                 if ru != en:
                     errors.append(f"{dslug}/{slug}: адреса ru/en расходятся не только языком")
 

@@ -1208,6 +1208,7 @@ def main() -> int:
     file2dept = depts_cfg["file2dept"]
     base_url = depts_cfg["base_url"].rstrip("/")
     url_scheme = depts_cfg["url_scheme"]
+    lang_suffix = depts_cfg.get("lang_suffix", {"ru": "ru", "en": "en"})
 
     # обратная карта: dept -> lang -> имя файла
     dept_files: dict[str, dict[str, str]] = {}
@@ -1319,9 +1320,15 @@ def main() -> int:
                     if f not in flags:
                         flags.append(f)
 
-            # URL — по шаблону из departments.json
+            # URL — по шаблону из departments.json.
+            # Схема /{slug}_{suffix}: {suffix} = rus|eng, а не ru|en.
+            # Дефис вместо слэша и старый порядок сайта (/about_rus) — так
+            # новая страница выглядит родной, и QR выходит пятой версии.
             for lang in rec["langs_available"]:
-                path = url_scheme.format(lang=lang, dept=dslug, slug=slug)
+                path = url_scheme.format(
+                    slug=slug, dept=dslug, lang=lang,
+                    suffix=lang_suffix.get(lang, lang),
+                )
                 rec[f"url_{lang}"] = base_url + path
 
             if not rec["langs_available"]:
@@ -1399,6 +1406,7 @@ def main() -> int:
             "source_commit": None,
             "base_url": base_url,
             "url_scheme": url_scheme,
+            "lang_suffix": lang_suffix,
             "counts": counts,
         },
         "departments": departments_out,

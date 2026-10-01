@@ -217,6 +217,48 @@
     "Долгов Д.С.": "Dolgov D.S."
    },
    "note": "Bello Taye записан латиницей в обоих блоках источника — кириллического написания нет, поэтому name_ru пуст. Это не потеря человека."
+  },
+  {
+   "item": "Р1",
+   "project": null,
+   "answer": "Подтверждаю продолжение существующего порядка сайта",
+   "action": "decision",
+   "subject": "url_scheme",
+   "chosen": "/{slug}_{rus|eng}",
+   "value": {
+    "url_scheme": "/{slug}_{suffix}",
+    "lang_suffix": {
+     "ru": "rus",
+     "en": "eng"
+    }
+   },
+   "note": "Совпадает с действующим порядком сайта (/about_rus, /program_eng). Все 66 QR выходят пятой версии."
+  },
+  {
+   "item": "Р2",
+   "project": null,
+   "answer": "Оставляем",
+   "action": "decision",
+   "subject": "domain",
+   "chosen": "https://innovativedrugsconference.sechenov.ru",
+   "note": "Отдельный домен не делаем. Протокол — https: редирект включается, в QR идёт https без лишнего хопа."
+  },
+  {
+   "item": "Р3",
+   "project": null,
+   "answer": "QR будет в презентации на большом экране, а не напечатан",
+   "action": "decision",
+   "subject": "qr_medium",
+   "chosen": "screen",
+   "note": "Печать отпадает: минимальный модуль 0,30 мм не применяется. Для экрана размер не критичен — код показывается крупно, сканируется быстро. Устойчивость M достаточна."
+  },
+  {
+   "item": "Р4",
+   "project": null,
+   "answer": "Если это не сломает сайт, то включить",
+   "action": "info",
+   "subject": "http_to_https_redirect",
+   "note": "Чужая зона (Tilda). Риск проверен: все 12 парных адресов сайта отдаются и по http, и по https — редирект их не сломает."
   }
  ]
 }

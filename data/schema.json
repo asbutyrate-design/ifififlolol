@@ -52,6 +52,15 @@
           "type": "string",
           "description": "Домен-носитель. Все адреса страниц и QR строятся от него."
         },
+        "lang_suffix": {
+          "type": "object",
+          "description": "Соответствие языка суффиксу адреса: ru→rus, en→eng.",
+          "additionalProperties": false,
+          "properties": {
+            "ru": { "type": "string" },
+            "en": { "type": "string" }
+          }
+        },
         "url_scheme": {
           "type": "string",
           "description": "Шаблон адреса проекта. Выбор схемы — предмет ЭТАПА 4. Меняется в ОДНОМ месте.",
