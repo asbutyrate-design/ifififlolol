@@ -50,6 +50,7 @@ FLAG_HUMAN = {
 
 def main() -> int:
     bd = _load(REPO / "tools" / "build_data.py", "bd")
+    apply_reviews_mod = _load(REPO / "tools" / "apply_reviews.py", "apply_reviews_mod")
     doc = json.loads((DATA / "projects.json").read_text(encoding="utf-8"))
 
     projects = [
@@ -463,6 +464,31 @@ def main() -> int:
             for a in todos:
                 add(f"- **{a.get('project')}** — {a.get('answer', '')}")
             add("")
+        # замечания по оформлению — это требования к страницам,
+        # а не к данным: выводим отдельно, чтобы учли на ЭТАПЕ 5–6.
+        notes = apply_reviews_mod.design_notes(reviews_data)
+        if notes:
+            add("### Замечания по оформлению — учесть при вёрстке страниц")
+            add("")
+            for x in notes:
+                add(f"- {x}")
+            add("")
+
+        # общие ответы, влияющие на сборку (шаблон URL страницы сотрудника, ответ О4)
+        infos = [a for a in reviews_data.get("answers", [])
+                 if a.get("action") == "info" and (a.get("url_template") or a.get("note"))]
+        if infos:
+            add("### Сведения для сборки")
+            add("")
+            for a in infos:
+                line = f"- **{a.get('item')}** — {a.get('answer', '')}"
+                if a.get("url_template"):
+                    line += f" · шаблон: `{a['url_template']}`"
+                if a.get("note"):
+                    line += f" · {a['note']}"
+                add(line)
+            add("")
+
     else:
         add("`data/reviews.json` не найден — ответы ещё не получены.")
         add("")

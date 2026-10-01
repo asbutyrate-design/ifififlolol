@@ -575,7 +575,12 @@ def parse_authors(
             key = f"{surname} {name_}"
             if key in found:
                 continue
-            before = clean[max(0, m.start() - 90):m.start()]
+            # ВАЖНО: роль берём из СЫРОГО текста (team), а не из clean.
+            # strip_degrees превращает «аспирант:» в «аспирант,», из-за чего
+            # групповые метки перестают опознаваться и человек получает
+            # роль «не указана». Индексы совпадают: strip_degrees сохраняет
+            # длину строки (это проверяется assert'ом внутри неё).
+            before = team[max(0, m.start() - 90):m.start()]
             found[key] = _mk_author(
                 f"{surname} {name_}", None, f"{name_[0]}.",
                 before, role_for(before), lang,
@@ -848,7 +853,12 @@ def _translit(s: str) -> str:
 
 
 def _surname_latin(a: dict) -> str:
-    """Латинское написание фамилии автора, чем бы оно ни было записано."""
+    """Латинское написание фамилии автора, чем бы оно ни было записано.
+
+    Оставлено для обратной совместимости: берёт ПЕРВОЕ слово. Для записей
+    вида «Diana Bayramkulova» (Имя Фамилия) это неверно — используйте
+    _surname_candidates().
+    """
     for nm in (a.get("name_ru"), a.get("name_en")):
         if not nm:
             continue
@@ -859,6 +869,49 @@ def _surname_latin(a: dict) -> str:
             return _translit(surname)
         return surname.lower()
     return ""
+
+
+def _surname_candidates(a: dict) -> list[str]:
+    """ВСЕ возможные латинские написания фамилии автора.
+
+    Порядок слов в источниках разный и не подчиняется одному правилу:
+        «Байрамкулова Диана»      — фамилия первая
+        «Diana Bayramkulova»      — фамилия последняя
+        «Pham Phuong Nam»         — фамилия первая, имён два
+        «Kokorekin Vladimir …»    — фамилия первая
+        «V.G. Yankova»            — инициалы, затем фамилия
+        «Feldman N.B.»            — фамилия, затем инициалы
+    Поэтому кандидатом считается КАЖДОЕ содержательное слово, а пара
+    ru↔en выбирается по наибольшему совпадению. Ошибка «взяли первое
+    слово» приводила к тому, что один человек попадал в список дважды:
+    отдельно кириллицей и отдельно латиницей.
+    """
+    out: list[str] = []
+    for key in ("name_ru", "name_en"):
+        nm = a.get(key)
+        if not nm:
+            continue
+        for tok in re.findall(r"[A-Za-zА-Яа-яЁё\-]{2,}", nm):
+            lat = _translit(tok) if re.search(r"[а-яё]", tok.lower()) else tok.lower()
+            if lat and lat not in out:
+                out.append(lat)
+    return out
+
+
+def _initials_latin(a: dict) -> set[str]:
+    """Множество первых букв всех слов имени в латинице.
+
+    Множество, а не одна буква: нам важно не «угадать инициал», а увидеть,
+    что он ВООБЩЕ присутствует. Для «Diana Bayramkulova» это {D, B}.
+    """
+    out: set[str] = set()
+    for key in ("name_ru", "name_en"):
+        nm = a.get(key)
+        if not nm:
+            continue
+        for tok in re.findall(r"[A-Za-zА-Яа-яЁё]+", nm):
+            out.add(_translit(tok[0]).upper()[:1])
+    return out
 
 
 def _initial(a: dict) -> str:
@@ -896,18 +949,28 @@ def merge_authors_by_person(
 
     pairs: list[tuple[float, int, int]] = []
     for i, ru in enumerate(ru_authors):
-        ru_s = _surname_latin(ru)
-        ru_i = _initial(ru)
+        ru_cands = _surname_candidates(ru)
+        ru_ini = _initials_latin(ru)
+        if not ru_cands:
+            continue
         for j, en in enumerate(en_authors):
-            en_s = _surname_latin(en)
-            en_i = _initial(en)
-            if not ru_s or not en_s:
+            en_cands = _surname_candidates(en)
+            en_ini = _initials_latin(en)
+            if not en_cands:
                 continue
-            score = difflib.SequenceMatcher(None, ru_s, en_s).ratio()
-            # инициал — сильный признак в обе стороны
-            if ru_i and en_i:
-                score += 0.35 if ru_i == en_i else -0.45
-            pairs.append((score, i, j))
+            # Сравниваем КАЖДОЕ слово с КАЖДЫМ и берём лучшее совпадение:
+            # так находится пара «Байрамкулова» ↔ «Bayramkulova», хотя в
+            # латинской записи фамилия стоит второй.
+            best = 0.0
+            for rs in ru_cands:
+                for es in en_cands:
+                    best = max(best, difflib.SequenceMatcher(None, rs, es).ratio())
+            # Общий инициал — сильный признак. Отсутствие общего инициала
+            # ослабляет пару, но не отменяет: в источниках инициалы бывают
+            # только в одной из версий.
+            if ru_ini and en_ini:
+                best += 0.35 if (ru_ini & en_ini) else -0.45
+            pairs.append((best, i, j))
 
     pairs.sort(reverse=True)
     assigned_ru: dict[int, int] = {}
