@@ -1,7 +1,7 @@
 {
  "meta": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-10-01T19:01:05Z",
+  "generated_at": "2026-10-01T19:09:31Z",
   "source_commit": null,
   "base_url": "http://innovativedrugsconference.sechenov.ru",
   "url_scheme": "/{lang}/{dept}/{slug}/",
@@ -3731,10 +3731,10 @@
       },
       {
        "name_ru": "Фам Фыонг",
-       "name_en": null,
+       "name_en": "Pham Phuong Nam",
        "initials": "Ф.",
        "position_ru": "д.фарм.н., доцент Бобкова Н.В., аспирант:",
-       "position_en": null,
+       "position_en": "Pharm. Sci.,                     Bobkova N.V",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -3750,10 +3750,10 @@
       },
       {
        "name_ru": "Байрамкулова Диана",
-       "name_en": null,
+       "name_en": "Diana Bayramkulova",
        "initials": "Д.",
        "position_ru": "д.фарм.н., доцент Бобкова Н.В., аспирант: Фам Фыонг Нам, студенты:",
-       "position_en": null,
+       "position_en": "Sci.,                     Bobkova N.V.,                     , Pham Phuong Nam",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -3769,68 +3769,11 @@
       },
       {
        "name_ru": "Гадецкая Дарья",
-       "name_en": null,
+       "name_en": "Darya Gadetskaya",
        "initials": "Д.",
        "position_ru": "д.фарм.н., доцент Бобкова Н.В., аспирант: Фам Фыонг Нам, студенты: Байрамкулова Диана",
-       "position_en": null,
-       "role_ru": "студент",
-       "role_en": null,
-       "photo": null,
-       "profile_url": null,
-       "orcid": null,
-       "scopus_id": null,
-       "researcher_id": null,
-       "elibrary_id": null,
-       "google_scholar": null,
-       "researchgate": null,
-       "is_lead": false,
-       "added_from_review": false
-      },
-      {
-       "name_ru": null,
-       "name_en": "Pham Phuong Nam",
-       "initials": "P.",
-       "position_ru": null,
-       "position_en": "Pharm. Sci.,                     Bobkova N.V",
-       "role_ru": "не указана",
-       "role_en": null,
-       "photo": null,
-       "profile_url": null,
-       "orcid": null,
-       "scopus_id": null,
-       "researcher_id": null,
-       "elibrary_id": null,
-       "google_scholar": null,
-       "researchgate": null,
-       "is_lead": false,
-       "added_from_review": false
-      },
-      {
-       "name_ru": null,
-       "name_en": "Diana Bayramkulova",
-       "initials": "B.",
-       "position_ru": null,
-       "position_en": "Sci.,                     Bobkova N.V.,                     , Pham Phuong Nam",
-       "role_ru": "не указана",
-       "role_en": null,
-       "photo": null,
-       "profile_url": null,
-       "orcid": null,
-       "scopus_id": null,
-       "researcher_id": null,
-       "elibrary_id": null,
-       "google_scholar": null,
-       "researchgate": null,
-       "is_lead": false,
-       "added_from_review": false
-      },
-      {
-       "name_ru": null,
-       "name_en": "Darya Gadetskaya",
-       "initials": "G.",
-       "position_ru": null,
        "position_en": "Bobkova N.V.,                     , Pham Phuong Nam,         , Diana Bayramkulova",
-       "role_ru": "не указана",
+       "role_ru": "студент",
        "role_en": null,
        "photo": null,
        "profile_url": null,
@@ -3900,10 +3843,7 @@
      "source_file_en": "ФЕ_анг.txt",
      "source_block_ru": 5,
      "source_block_en": 5,
-     "review_flags": [
-      "en_name_not_matched",
-      "en_only_author"
-     ]
+     "review_flags": []
     }
    ]
   },
@@ -5610,9 +5550,7 @@
      "source_file_en": "ФХ_анг.txt",
      "source_block_ru": 5,
      "source_block_en": 5,
-     "review_flags": [
-      "no_lead_marked"
-     ]
+     "review_flags": []
     },
     {
      "slug": "bioequivalence-assessment",

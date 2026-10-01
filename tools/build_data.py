@@ -898,6 +898,27 @@ def _surname_candidates(a: dict) -> list[str]:
     return out
 
 
+def _has_initials(a: dict) -> bool:
+    """Есть ли в записи имени НАСТОЯЩИЕ инициалы (однобуквенные токены).
+
+    Нужно разделить два случая:
+        «Бобкова Н.В.»         — инициалы есть, сравнивать их осмысленно;
+        «Diana Bayramkulova»   — инициалов нет, а первые буквы слов
+                                 сравнивать нельзя: «Байрамкулова Диана»
+                                 даёт {B, D}, «Diana Bayramkulova» — {D, B},
+                                 пересечение есть, но это совпадение ни о чём
+                                 не говорит, а ложный штраф мешает слиянию.
+    """
+    for key in ("name_ru", "name_en"):
+        nm = a.get(key)
+        if not nm:
+            continue
+        toks = re.findall(r"[A-Za-zА-Яа-яЁё]+", nm)
+        if any(len(t) == 1 for t in toks):
+            return True
+    return False
+
+
 def _initials_latin(a: dict) -> set[str]:
     """Множество первых букв всех слов имени в латинице.
 
@@ -968,7 +989,9 @@ def merge_authors_by_person(
             # Общий инициал — сильный признак. Отсутствие общего инициала
             # ослабляет пару, но не отменяет: в источниках инициалы бывают
             # только в одной из версий.
-            if ru_ini and en_ini:
+            # Инициалы сравниваем, только если они реально есть хотя бы
+            # в одной записи: иначе «общая буква» — случайность.
+            if (ru_ini and en_ini) and (_has_initials(ru) or _has_initials(en)):
                 best += 0.35 if (ru_ini & en_ini) else -0.45
             pairs.append((best, i, j))
 

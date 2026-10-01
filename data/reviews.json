@@ -202,6 +202,21 @@
    "answer": "Да. URL типа https://www.sechenov.ru/univers/all/{id}/, где id как будто рандомный",
    "action": "info",
    "url_template": "https://www.sechenov.ru/univers/all/{id}/"
+  },
+  {
+   "item": "ФХ-immunotropic",
+   "project": "fh/immunotropic-drug-products",
+   "answer": "В обеих версиях 6 авторов. Соответствие подтверждено: Смирнов—Smirnov, Туренко—Turenko, Багаев—Bagaev, Bello Taye—Bello Taye, Спиридонов—Spiridonov, Долгов—Dolgov.",
+   "action": "accepted",
+   "reference": {
+    "Смирнов В.В.": "Smirnov V.V.",
+    "Туренко В.Н.": "Turenko V.N.",
+    "Багаев Д.Э.": "Bagaev D.E.",
+    "Bello Taye": "Bello Taye",
+    "Спиридонов А.В.": "Spiridonov A.V.",
+    "Долгов Д.С.": "Dolgov D.S."
+   },
+   "note": "Bello Taye записан латиницей в обоих блоках источника — кириллического написания нет, поэтому name_ru пуст. Это не потеря человека."
   }
  ]
 }

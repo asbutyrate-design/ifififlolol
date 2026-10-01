@@ -178,32 +178,51 @@ def main() -> int:
     bd_mod = importlib.util.module_from_spec(spec_bd)
     spec_bd.loader.exec_module(bd_mod)
 
-    mismatched = []
+    # Пары могут писаться латиницей по-разному: «Фам Фыонг» → «Pham Phuong»
+    # даёт всего 67% по буквам. Поэтому абсолютный порог ненадёжен и даёт
+    # ложные тревоги на ВЕРНЫХ парах. Проверяем иначе — по существу ошибки:
+    # убеждаемся, что для каждого автора именно его партнёр является лучшим
+    # совпадением в проекте. Если да — склейка осмысленна. Если лучшим
+    # оказался ЧУЖОЙ человек, значит записи перепутаны — вот это ошибка.
+    def best_match_score(ru_nm: str, en_nm: str) -> float:
+        ru_c = bd_mod._surname_candidates({"name_ru": ru_nm, "name_en": None})
+        en_c = bd_mod._surname_candidates({"name_ru": None, "name_en": en_nm})
+        return max(
+            (difflib.SequenceMatcher(None, a, b).ratio() for a in ru_c for b in en_c),
+            default=0.0,
+        )
+
+    mismatched: list[str] = []
+    checked_pairs = 0
     for dep in doc["departments"]:
         for p in dep["projects"]:
-            for a in p["authors"]:
-                ru_nm, en_nm = a.get("name_ru"), a.get("name_en")
-                if not (ru_nm and en_nm):
-                    continue
-                ru_lat = bd_mod._surname_latin({"name_ru": ru_nm, "name_en": None})
-                en_lat = bd_mod._surname_latin({"name_ru": None, "name_en": en_nm})
-                ratio = difflib.SequenceMatcher(None, ru_lat, en_lat).ratio()
-                if ratio < 0.7:
+            paired = [a for a in p["authors"] if a.get("name_ru") and a.get("name_en")]
+            if not paired:
+                continue
+            en_names = [a["name_en"] for a in p["authors"] if a.get("name_en")]
+            for a in paired:
+                checked_pairs += 1
+                own = best_match_score(a["name_ru"], a["name_en"])
+                # лучший вариант среди всех: не мог ли этот русский автор
+                # «подойти» кому-то другому сильнее?
+                stolen_by = [
+                    en for en in en_names
+                    if en != a["name_en"] and best_match_score(a["name_ru"], en) > own + 0.02
+                ]
+                if stolen_by:
                     mismatched.append(
-                        f"{dep['slug']}/{p['slug']}: {ru_nm} ↔ {en_nm} "
-                        f"(фамилии совпадают лишь на {ratio:.0%})"
+                        f"{dep['slug']}/{p['slug']}: {a['name_ru']} ↔ {a['name_en']} "
+                        f"({own:.0%}), но сильнее подходит {stolen_by[0]!r} "
+                        f"({best_match_score(a['name_ru'], stolen_by[0]):.0%})"
                     )
+
     if mismatched:
         errors.append(
             f"автор склеен с чужим человеком ({len(mismatched)}):\n      "
             + "\n      ".join(mismatched[:10])
         )
     else:
-        paired = sum(
-            1 for d in doc["departments"] for p in d["projects"]
-            for a in p["authors"] if a.get("name_ru") and a.get("name_en")
-        )
-        print(f"авторы ru↔en: {paired} пар проверено, чужих совпадений нет")
+        print(f"авторы ru↔en: {checked_pairs} пар проверено, чужих совпадений нет")
 
     # --- Итог --------------------------------------------------------------- -------------------------------------------------------------
     # --- Проверка: все поля проектов объявлены в схеме ------------------
