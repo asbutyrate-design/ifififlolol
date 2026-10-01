@@ -84,9 +84,12 @@ ROLE_PATTERNS = [
 # задаётся именно ими, поэтому они имеют приоритет над одиночными словами.
 GROUP_ROLE_PATTERNS = [
     (r"руководител[ья]\s+проекта\s*:|project\s+lead(?:er)?\s*:|team\s+lead\s*:", "руководитель"),
-    (r"аспиранты?\s*:|аспирантка\s*:|postgraduates?\s*:|phd\s+students?\s*:|doctoral\s+students?\s*:", "аспирант"),
+    (r"аспиранты\s*:|аспирантка\s*:|аспирант\s*:",
+     "аспирант"),
+    (r"postgraduates?\s*:|postgraduate\s+students?\s*:|phd\s+students?\s*:|"
+     r"doctoral\s+students?\s*:", "аспирант"),
     (r"магистранты?\s*:|master'?s\s+students?\s*:", "магистрант"),
-    (r"студенты\s*:|студентка\s*:|students?\s*:", "студент"),
+    (r"\bстуденты\s*:|\bстудентка\s*:|\bstudents\s*:|\bstudent\s*:", "студент"),
     (r"ординаторы?\s*:|residents?\s*:", "ординатор"),
     (r"соискатели?\s*:", "соискатель"),
 ]
@@ -155,6 +158,12 @@ NAME_STOPWORDS = {
     "Sciences", "Science", "Clinic", "Clinical", "Hospital", "State", "Moscow",
     "System", "Systems", "Technology", "Chemistry", "Chemical", "Biology",
     "Biological", "Physical", "First", "Russian", "Novosibirsk",
+    # Обрывки СОКРАЩЁННЫХ степеней. В источнике пишут «Dr. Pharm. Sci.»,
+    # после чего остаётся пара «Pharm Sci», похожая на «Фамилия Имя».
+    # Полные формы («Pharmaceutical Sciences») отсекаются TITLE_WORD_RE,
+    # а сокращения — нет, поэтому перечисляем их явно.
+    "Pharm", "Sci", "Dr", "Cand", "Assoc", "Prof", "Med", "Biol", "Chem",
+    "Phys", "Tech", "Acad", "Univ", "Res",
 }
 
 # Минимальная длина фамилии. Одно- и двухбуквенные обрывки («Sc», «Ph», «Dr»)
@@ -317,12 +326,27 @@ def role_for(text_before: str) -> str:
     low = text_before.lower()
     low = normalize_homoglyphs(low)
 
-    # 1) последняя групповая метка (список людей идёт за ней)
-    group_role, group_pos = None, -1
+    # 1) Групповые метки. Собираем ВСЕ совпадения, затем выбрасываем те,
+    #    что целиком лежат внутри более длинного: в «postgraduate student:»
+    #    метка «student:» — часть «postgraduate student:», и без чистки
+    #    аспирант получал роль «студент». Из оставшихся берём ПОСЛЕДНЮЮ:
+    #    роль задаёт ближайшая к человеку группа.
+    found_groups: list[tuple[int, int, str]] = []
     for pattern, role in GROUP_ROLE_PATTERNS:
         for m in re.finditer(pattern, low):
-            if m.start() > group_pos:
-                group_pos, group_role = m.start(), role
+            found_groups.append((m.start(), m.end(), role))
+    # выбрасываем вложенные
+    outer = [
+        g for g in found_groups
+        if not any(
+            o is not g and o[0] <= g[0] and g[1] <= o[1] and (o[0], o[1]) != (g[0], g[1])
+            for o in found_groups
+        )
+    ]
+    group_pos, group_role, group_end = -1, None, -1
+    for s, e, role in outer:
+        if s > group_pos:
+            group_pos, group_role, group_end = s, role, e
 
     # 2) ближайшее одиночное указание роли
     single_role, single_pos = "не указана", -1
@@ -335,7 +359,11 @@ def role_for(text_before: str) -> str:
     # «доцент Иванов, студенты: Петров» — Петров студент, хотя «доцент»
     # стоит правее начала. Но если одиночное указание идёт ПОСЛЕ группы,
     # значит началась новая группа/персональная роль — тогда оно.
-    if group_role and group_pos >= single_pos:
+    # Групповая метка выигрывает, если одиночное указание лежит ВНУТРИ неё
+    # («student» внутри «Master's students:») — иначе одиночное слово
+    # перебивало собственную группу, и магистрант становился студентом.
+    if group_role and (group_pos >= single_pos or
+                       (group_pos <= single_pos < group_end)):
         return group_role
     return single_role
 
@@ -418,6 +446,18 @@ def _script_of(text: str) -> str:
     if lat and not cyr:
         return "lat"
     return "mixed" if (cyr or lat) else "none"
+
+
+
+def _find_pos(text: str, *words: str) -> int:
+    """Позиция начала ФИО в тексте. -1, если не найдено.
+
+    Ищем слова ПОСЛЕДОВАТЕЛЬНО: «Pham Phuong Nam» должно находиться как
+    единая фраза, а не как позиция слова «Pham» в постороннем месте.
+    """
+    pat = r"\b" + r"\s+".join(re.escape(w) for w in words if w) + r"\b"
+    m = re.search(pat, text)
+    return m.start() if m else -1
 
 
 def parse_authors(
@@ -505,8 +545,9 @@ def parse_authors(
         )
 
     # Латинские написания ищем в блоках ЛЮБОГО языка: в русском тексте тоже
-    # бывают сотрудники, записанные латиницей («Bello Taye»).
-    if True:
+    # бывают сотрудники, записанные латиницей («Bello Taye»), поэтому условие
+    # не «lang == "en"», а проверка обоих языков.
+    if lang in ("ru", "en"):
         # 3) Инициалы + фамилия: «V.G. Yankova»
         for m in RE_EN_NAME.finditer(clean):
             ini, surname = re.sub(r"\s+", "", m.group(1)), m.group(2)
@@ -652,12 +693,18 @@ def parse_authors(
             if longer:
                 key2 = f"{surname} {name_} {nxt2}"
                 if key2 not in found:
+                    pos2 = _find_pos(clean, surname, name_, nxt2)
+                    before2 = clean[max(0, pos2 - 90):pos2] if pos2 >= 0 else ""
                     found[key2] = _mk_author(
-                        None, full_candidate, f"{name_[0]}.", "", "не указана", lang,
+                        None, full_candidate, f"{name_[0]}.", before2,
+                        role_for(before2) if pos2 >= 0 else "не указана", lang,
                     )
                 continue
+            pos_ = _find_pos(clean, surname, name_)
+            before_ = clean[max(0, pos_ - 90):pos_] if pos_ >= 0 else ""
             found[key] = _mk_author(
-                None, full, f"{name_[0]}.", "", "не указана", lang,
+                None, full, f"{name_[0]}.", before_,
+                role_for(before_) if pos_ >= 0 else "не указана", lang,
             )
 
     # --- Сведение дублей -----------------------------------------------------
@@ -687,11 +734,35 @@ def parse_authors(
         else:
             merged[key] = dict(a)
 
-    authors = list(merged.values())
+    # --- Убираем разорванные ФИО -------------------------------------------
+    # Иногда одно имя распадается на две записи: «Pham Phuong Nam» и «Phuong Nam».
+    # Ключ сведения их не ловит (фамилии разные: Pham и Phuong). Признак
+    # осколка: ВСЕ слова одной записи входят в другую запись. Такую запись
+    # удаляем — иначе на странице появится человек, которого нет.
+    vals = list(merged.values())
+    keep: list[dict] = []
+    for i, a in enumerate(vals):
+        ta = set((a.get("name_en") or a.get("name_ru") or "").replace(".", " ").split())
+        if not ta:
+            continue
+        fragment = False
+        for j, b in enumerate(vals):
+            if i == j:
+                continue
+            tb = set((b.get("name_en") or b.get("name_ru") or "").replace(".", " ").split())
+            if len(ta) < len(tb) and ta < tb:
+                fragment = True
+                break
+        if not fragment:
+            keep.append(a)
+
+    authors = keep
     if not authors:
         flags.append("no_authors")
     elif not any(a["is_lead"] for a in authors):
         flags.append("no_lead_marked")
+    authors = _drop_name_fragments(authors, lang)
+
     return authors, flags
 
 
@@ -841,6 +912,46 @@ def merge_authors_by_person(
             flags.append("en_only_author")
 
     return merged, flags
+
+
+def _drop_name_fragments(authors: list[dict], lang: str) -> list[dict]:
+    """Убирает «авторов», которые на самом деле — часть другого ФИО.
+
+    Разные шаги разбора смотрят на текст независимо, и одно длинное имя
+    попадает в результат дважды: целиком («Pham Phuong Nam») и осколком
+    («Phuong Nam»). Проверять каждый шаг по отдельности ненадёжно —
+    шагов пять, и они добавлялись в разное время. Поэтому чистим результат
+    один раз, в конце: если ВСЕ слова короткой записи содержатся в более
+    длинной записи того же проекта, короткая — осколок.
+
+    Отбрасываем только при полном вхождении: «Иванов И.И.» и «Иванов П.С.» —
+    разные люди, общее слово «Иванов» их не склеивает.
+    """
+    def words_of(a: dict) -> set[str]:
+        nm = a.get("name_en") or a.get("name_ru") or ""
+        # инициалы вроде «N.N.» в слова не берём — это не отличительный признак
+        return {
+            w for w in re.findall(r"[A-Za-zА-Яа-яЁё][A-Za-zА-Яа-яЁё\-]{1,}", nm)
+        }
+
+    key_field = "name_en" if lang == "en" else "name_ru"
+    kept: list[dict] = []
+    for a in authors:
+        aw = words_of(a)
+        if not aw:
+            kept.append(a)
+            continue
+        fragment = False
+        for b in authors:
+            if a is b:
+                continue
+            bw = words_of(b)
+            if len(bw) > len(aw) and aw <= bw:
+                fragment = True
+                break
+        if not fragment:
+            kept.append(a)
+    return kept
 
 
 def parse_publications(section: str | None) -> tuple[list[dict], list[str]]:
