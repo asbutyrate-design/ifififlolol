@@ -33,10 +33,16 @@ MD = REPO / "content-md"
 #   3) если структура нестандартная — помечаем author_parsing_uncertain.
 # ---------------------------------------------------------------------------
 
-# Фамилия + инициалы: «Янкова В.Г.», «Фельдман Н.Б.», «Краснюк И.И. (мл.)»
+# Фамилия + инициалы: «Янкова В.Г.», «Фельдман Н.Б.»
 RE_RU_NAME = re.compile(
     r"\b([А-ЯЁ][а-яё]+(?:-[А-ЯЁ][а-яё]+)?)\s+"
     r"([А-ЯЁ]\.\s*[А-ЯЁ]?\.?)"
+)
+# ФИО полностью: «Кокорекин Владимир Алексеевич», «Турецкий Евгений Александрович»
+RE_RU_FULLNAME = re.compile(
+    r"\b([А-ЯЁ][а-яё]+(?:-[А-ЯЁ][а-яё]+)?)\s+"
+    r"([А-ЯЁ][а-яё]+(?:-[А-ЯЁ][а-яё]+)?)\s+"
+    r"([А-ЯЁ][а-яё]+(?:ич|вна|чна|евич|овна|евна|ична|инична))\b"
 )
 # Инициалы + фамилия (латиница): «V.G. Yankova», «E.A. Smolyarchuk»
 RE_EN_NAME = re.compile(
@@ -45,6 +51,10 @@ RE_EN_NAME = re.compile(
 # Фамилия + инициалы (латиница): «Feldman N.B.», «Zhukova A.A.»
 RE_EN_NAME2 = re.compile(
     r"\b([A-Z][a-z]+)\s+((?:[A-Z]\.\s*){1,2})"
+)
+# ФИО полностью латиницей: «Kokorekin Vladimir Alekseevich»
+RE_EN_FULLNAME = re.compile(
+    r"\b([A-Z][a-z]+(?:-[A-Z][a-z]+)?)\s+([A-Z][a-z]+)\s+([A-Z][a-z]+)\b"
 )
 
 ROLE_PATTERNS = [
@@ -65,7 +75,26 @@ NAME_STOPWORDS = {
     "Project", "Team", "Students", "Professor", "Department", "Institute",
     "University", "The", "Head", "Associate", "Assistant", "Senior", "Doctor",
     "Candidate", "Research",
+    # Названия подразделений и почётные имена: в тексте команды встречаются
+    # как «Коллектив кафедры … им. А.П. Арзамасцева», и наивная регулярка
+    # принимает их за ФИО. Человеком это не является — выдумывать нельзя.
+    "Коллектив", "Кафедра", "Кафедры", "Институт", "Университет",
+    "Arzamastsev", "Nelyubin", "Sechenov", "Lomonosov", "Shemyakin",
+    "Ovchinnikov", "Orekhovich", "Kutateladze", "Kozhevnikov",
+    "Research", "Staff", "Department", "Institute", "University",
 }
+
+# Если в тексте команды нет ни одного ФИО, а есть слова этого набора —
+# команда описана коллективно («Коллектив кафедры», «Research staff»),
+# и разбирать её на людей нельзя.
+COLLECTIVE_RE = re.compile(
+    r"коллектив|сотрудники кафедры|научный коллектив|"
+    r"\bresearch staff\b|\bthe team of the department\b|\bstaff of the department\b",
+    re.IGNORECASE,
+)
+
+# Отчества для имён, записанных полностью
+PATRONYMIC_END = re.compile(r"(ич|вна|чна|евич|овна|евна|ична|инична)$")
 
 
 def role_for(text_before: str) -> str:
@@ -86,7 +115,41 @@ def parse_authors(team: str | None, lang: str) -> tuple[list[dict], list[str]]:
         return [], ["no_authors"]
 
     flags: list[str] = []
+
+    # Коллективная запись команды вместо списка людей — это не ошибка разбора,
+    # а факт: авторов поимённо в источнике нет. Выдумывать их нельзя.
+    if COLLECTIVE_RE.search(team):
+        flags.append("authors_collective_only")
+        return [], flags
+
     found: dict[str, dict] = {}
+
+    # ФИО полностью: «Кокорекин Владимир Алексеевич»
+    for m in RE_RU_FULLNAME.finditer(team):
+        surname, name_, patron = m.group(1), m.group(2), m.group(3)
+        if surname in NAME_STOPWORDS or name_ in NAME_STOPWORDS:
+            continue
+        if not PATRONYMIC_END.search(patron):
+            continue
+        before = team[max(0, m.start() - 90):m.start()]
+        key = f"{surname} {name_}"
+        if key in found:
+            continue
+        role = role_for(before)
+        initials = f"{name_[0]}.{patron[0]}."
+        found[key] = {
+            "name_ru": f"{surname} {name_} {patron}",
+            "name_en": None,
+            "initials": initials,
+            "position_ru": before.strip(" ,;.")[-90:] or None,
+            "position_en": None,
+            "role_ru": role,
+            "role_en": None,
+            "photo": None, "profile_url": None, "orcid": None, "scopus_id": None,
+            "researcher_id": None, "elibrary_id": None, "google_scholar": None,
+            "researchgate": None,
+            "is_lead": role == "руководитель",
+        }
 
     for m in RE_RU_NAME.finditer(team):
         surname, ini = m.group(1).strip(), re.sub(r"\s+", "", m.group(2))
@@ -112,6 +175,31 @@ def parse_authors(team: str | None, lang: str) -> tuple[list[dict], list[str]]:
         }
 
     if lang == "en":
+        # ФИО полностью латиницей — транслит русского полного имени
+        for m in RE_EN_FULLNAME.finditer(team):
+            surname, name_, patron = m.group(1), m.group(2), m.group(3)
+            if surname in NAME_STOPWORDS or name_ in NAME_STOPWORDS:
+                continue
+            if not re.search(r"(ovich|evich|ovna|evna|ich|vna)$", patron, re.IGNORECASE):
+                continue
+            key = f"{surname} {name_}"
+            if key in found:
+                continue
+            before = team[max(0, m.start() - 90):m.start()]
+            found[key] = {
+                "name_ru": None,
+                "name_en": f"{surname} {name_} {patron}",
+                "initials": f"{name_[0]}.{patron[0]}.",
+                "position_ru": None,
+                "position_en": before.strip(" ,;.")[-90:] or None,
+                "role_ru": role_for(before),
+                "role_en": None,
+                "photo": None, "profile_url": None, "orcid": None, "scopus_id": None,
+                "researcher_id": None, "elibrary_id": None, "google_scholar": None,
+                "researchgate": None,
+                "is_lead": role_for(before) == "руководитель",
+            }
+
         for m in RE_EN_NAME.finditer(team):
             ini, surname = re.sub(r"\s+", "", m.group(1)), m.group(2)
             if surname in NAME_STOPWORDS:
@@ -471,7 +559,19 @@ def main() -> int:
     }
 
     path = DATA / "projects.json"
-    path.write_text(json.dumps(out, ensure_ascii=False, indent=1), encoding="utf-8")
+    new_text = json.dumps(out, ensure_ascii=False, indent=1)
+
+    # Идемпотентность: если изменилась ТОЛЬКО метка времени сборки, файл не
+    # перезаписываем. Иначе каждый прогон даёт бессмысленный дифф в git и
+    # история засоряется — а по ней должно быть видно, что реально менялось.
+    if path.exists():
+        old = json.loads(path.read_text(encoding="utf-8"))
+        old["meta"]["generated_at"] = out["meta"]["generated_at"]
+        if json.dumps(old, ensure_ascii=False, indent=1) == new_text:
+            print(f"Данные не изменились — файл не перезаписан")
+            return 0
+
+    path.write_text(new_text, encoding="utf-8")
 
     print(f"Записано: {path.relative_to(REPO)}")
     print(f"  кафедр с проектами: {counts['departments']}")

@@ -1,7 +1,7 @@
 {
  "meta": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-10-01T15:22:01Z",
+  "generated_at": "2026-10-01T15:48:57Z",
   "source_commit": null,
   "base_url": "http://innovativedrugsconference.sechenov.ru",
   "url_scheme": "/{lang}/{dept}/{slug}/",
@@ -1786,27 +1786,9 @@
      "authors": [
       {
        "name_ru": "Захарова О.В.",
-       "name_en": "A.P. Nelyubin",
+       "name_en": "Zakharova O.V.",
        "initials": "О.В.",
        "position_ru": "к.фарм.н., доцент",
-       "position_en": "project is carried out at the Department of Organization and Economics of Pharmacy of the",
-       "role_ru": "участник",
-       "role_en": null,
-       "photo": null,
-       "profile_url": null,
-       "orcid": null,
-       "scopus_id": null,
-       "researcher_id": null,
-       "elibrary_id": null,
-       "google_scholar": null,
-       "researchgate": null,
-       "is_lead": false
-      },
-      {
-       "name_ru": "Васькова Л.Б.",
-       "name_en": "Zakharova O.V.",
-       "initials": "Л.Б.",
-       "position_ru": "к.фарм.н., доцент Захарова О.В., к.фарм.н., доцент",
        "position_en": "PhD, Associate Professor",
        "role_ru": "участник",
        "role_en": null,
@@ -1821,12 +1803,12 @@
        "is_lead": false
       },
       {
-       "name_ru": "Поздняков Г.А.",
+       "name_ru": "Васькова Л.Б.",
        "name_en": "Vaskova L.B.",
-       "initials": "Г.А.",
-       "position_ru": "к.фарм.н., доцент Захарова О.В., к.фарм.н., доцент Васькова Л.Б.; аспирант",
+       "initials": "Л.Б.",
+       "position_ru": "к.фарм.н., доцент Захарова О.В., к.фарм.н., доцент",
        "position_en": "PhD, Associate Professor Zakharova O.V., PhD, Associate Professor",
-       "role_ru": "аспирант",
+       "role_ru": "участник",
        "role_en": null,
        "photo": null,
        "profile_url": null,
@@ -1839,12 +1821,12 @@
        "is_lead": false
       },
       {
-       "name_ru": null,
+       "name_ru": "Поздняков Г.А.",
        "name_en": "Pozdnyakov G.A.",
-       "initials": "G.A.",
-       "position_ru": null,
+       "initials": "Г.А.",
+       "position_ru": "к.фарм.н., доцент Захарова О.В., к.фарм.н., доцент Васькова Л.Б.; аспирант",
        "position_en": "D, Associate Professor Zakharova O.V., PhD, Associate Professor Vaskova L.B.; PhD student",
-       "role_ru": "студент",
+       "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
        "profile_url": null,
@@ -4974,44 +4956,7 @@
      "status": null,
      "years": null,
      "funding": null,
-     "authors": [
-      {
-       "name_ru": null,
-       "name_en": "A.P. Arzamastsev",
-       "initials": "A.P.",
-       "position_ru": null,
-       "position_en": "esearch staff of the Department of Pharmaceutical and Toxicological Chemistry named after",
-       "role_ru": "не указана",
-       "role_en": null,
-       "photo": null,
-       "profile_url": null,
-       "orcid": null,
-       "scopus_id": null,
-       "researcher_id": null,
-       "elibrary_id": null,
-       "google_scholar": null,
-       "researchgate": null,
-       "is_lead": false
-      },
-      {
-       "name_ru": null,
-       "name_en": "A.P. Nelyubin",
-       "initials": "A.P.",
-       "position_ru": null,
-       "position_en": "d Toxicological Chemistry named after A.P. Arzamastsev, Institute of Pharmacy named after",
-       "role_ru": "не указана",
-       "role_en": null,
-       "photo": null,
-       "profile_url": null,
-       "orcid": null,
-       "scopus_id": null,
-       "researcher_id": null,
-       "elibrary_id": null,
-       "google_scholar": null,
-       "researchgate": null,
-       "is_lead": false
-      }
-     ],
+     "authors": [],
      "publications": [
       {
        "raw": "Shulga N.A., Gegechkori V.I., Gorpinchenko N.V., Smirnov V.V., Dementyev S.P., Ramenskaya G.V. Development of Ketoprofen Impurity A (1-(3-Benzoylphenyl)ethanone) as a Certified Reference Material for Pharmaceutical Quality Control // Pharmaceuticals. — 2025. — Vol. 18, № 1. — P. 59. https://doi.org/10.3390/ph18010059",
@@ -5061,8 +5006,7 @@
      "source_block_ru": 3,
      "source_block_en": 3,
      "review_flags": [
-      "no_authors",
-      "no_lead_marked"
+      "authors_collective_only"
      ]
     },
     {
@@ -5089,7 +5033,44 @@
      "status": null,
      "years": null,
      "funding": null,
-     "authors": [],
+     "authors": [
+      {
+       "name_ru": "Кокорекин Владимир Алексеевич",
+       "name_en": null,
+       "initials": "В.А.",
+       "position_ru": "к.ф.н., доцент кафедры",
+       "position_en": null,
+       "role_ru": "участник",
+       "role_en": null,
+       "photo": null,
+       "profile_url": null,
+       "orcid": null,
+       "scopus_id": null,
+       "researcher_id": null,
+       "elibrary_id": null,
+       "google_scholar": null,
+       "researchgate": null,
+       "is_lead": false
+      },
+      {
+       "name_ru": "Турецкий Евгений Александрович",
+       "name_en": null,
+       "initials": "Е.А.",
+       "position_ru": "к.ф.н., доцент кафедры Кокорекин Владимир Алексеевич, к.ф.н., ст. преп. кафедры",
+       "position_en": null,
+       "role_ru": "участник",
+       "role_en": null,
+       "photo": null,
+       "profile_url": null,
+       "orcid": null,
+       "scopus_id": null,
+       "researcher_id": null,
+       "elibrary_id": null,
+       "google_scholar": null,
+       "researchgate": null,
+       "is_lead": false
+      }
+     ],
      "publications": [
       {
        "raw": "Kokorekin V. A. и др. A New Method for the Synthesis of 3-Thiocyanatopyrazolo[1,5-a]pyrimidines // Molecules. Basel, Switzerland, 2020. Т. 25, № 18. С. 4169.",
@@ -5171,7 +5152,8 @@
      "source_block_ru": 4,
      "source_block_en": 4,
      "review_flags": [
-      "no_authors"
+      "no_authors",
+      "no_lead_marked"
      ]
     },
     {
