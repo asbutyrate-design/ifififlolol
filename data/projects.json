@@ -63,8 +63,8 @@
        "name_ru": "Янкова В.Г.",
        "name_en": "V.G. Yankova",
        "initials": "В.Г.",
-       "position_ru": "доцент, к.ф.н",
-       "position_en": "associate professor, саndidаtе of pharmaceutical sciences",
+       "position_ru": "",
+       "position_en": "associate , саndidаtе of pharmaceutical sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -76,14 +76,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Грибанова С.В.",
        "name_en": "S.V. Gribanova",
        "initials": "С.В.",
-       "position_ru": "доцент, к.ф.н. Янкова В.Г., доцент, к.х.н",
-       "position_en": "pharmaceutical sciences V.G. Yankova; associate professor, candidate of chemical sciences",
+       "position_ru": ", Янкова В.Г.",
+       "position_en": "pharmaceutical sciences V.G. Yankova; associate , candidate of chemical sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -95,14 +99,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Григорьева В.Ю.",
        "name_en": "V.Yu. Grigorieva",
        "initials": "В.Ю.",
-       "position_ru": "доцент, к.ф.н. Янкова В.Г., доцент, к.х.н. Грибанова С.В., доцент, к.ф.н",
-       "position_en": "emical sciences S.V. Gribanova; associate professor, candidate of pharmaceutical sciences",
+       "position_ru": ", Янкова В.Г., Грибанова С.В.",
+       "position_en": "emical sciences S.V. Gribanova; associate , candidate of pharmaceutical sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -114,14 +122,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Удянская И.Л.",
        "name_en": "I.L. Udyanskaya",
        "initials": "И.Л.",
-       "position_ru": "нкова В.Г., доцент, к.х.н. Грибанова С.В., доцент, к.ф.н. Григорьева В.Ю., доцент, к.ф.н",
-       "position_en": "ical sciences V.Yu. Grigorieva; associate professor, candidate of pharmaceutical sciences",
+       "position_ru": "нкова В.Г., Грибанова С.В., Григорьева В.Ю.",
+       "position_en": "ical sciences V.Yu. Grigorieva; associate , candidate of pharmaceutical sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -133,14 +145,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Пасивкина Д.",
        "name_en": "D. Pasivkina",
        "initials": "Д.",
-       "position_ru": "Грибанова С.В., доцент, к.ф.н. Григорьева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты:",
-       "position_en": "eva; associate professor, candidate of pharmaceutical sciences I.L. Udyanskaya; students:",
+       "position_ru": "Грибанова С.В., Григорьева В.Ю., Удянская И.Л., студенты:",
+       "position_en": "eva; associate , candidate of pharmaceutical sciences I.L. Udyanskaya; students:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -152,14 +168,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Обручкова И.",
        "name_en": "I. Obruchkova",
        "initials": "И.",
-       "position_ru": "В., доцент, к.ф.н. Григорьева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д",
-       "position_en": "professor, candidate of pharmaceutical sciences I.L. Udyanskaya; students: D. Pasivkina",
+       "position_ru": "В., Григорьева В.Ю., Удянская И.Л., студенты: Пасивкина Д",
+       "position_en": ", candidate of pharmaceutical sciences I.L. Udyanskaya; students: D. Pasivkina",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -171,13 +191,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Луткова М.",
        "name_en": "M. Lutkova",
        "initials": "М.",
-       "position_ru": "ф.н. Григорьева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д., Обручкова И",
+       "position_ru": "ф.н. Григорьева В.Ю., Удянская И.Л., студенты: Пасивкина Д., Обручкова И",
        "position_en": "didate of pharmaceutical sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova",
        "role_ru": "студент",
        "role_en": null,
@@ -190,13 +214,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Конон С.",
        "name_en": "S. Konon",
        "initials": "С.",
-       "position_ru": "ева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д., Обручкова И., Луткова М",
+       "position_ru": "ева В.Ю., Удянская И.Л., студенты: Пасивкина Д., Обручкова И., Луткова М",
        "position_en": "armaceutical sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova, M. Lutkova",
        "role_ru": "студент",
        "role_en": null,
@@ -209,13 +237,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Макаренко М.",
        "name_en": "M. Makarenko",
        "initials": "М.",
-       "position_ru": "доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д., Обручкова И., Луткова М., Конон С",
+       "position_ru": ", Удянская И.Л., студенты: Пасивкина Д., Обручкова И., Луткова М., Конон С",
        "position_en": "al sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova, M. Lutkova, S. Konon",
        "role_ru": "студент",
        "role_en": null,
@@ -228,7 +260,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -329,8 +365,8 @@
        "name_ru": "Краснюк И.И.",
        "name_en": "Krasnyuk I.I.",
        "initials": "И.И.",
-       "position_ru": "заведующий кафедрой, д.ф.н., профессор",
-       "position_en": "head of the department, PhD, professor",
+       "position_ru": "заведующий кафедрой, д.ф.н.",
+       "position_en": "head of the department",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -342,14 +378,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Грих В.В.",
        "name_en": "Grik V.V.",
        "initials": "В.В.",
-       "position_ru": "заведующий кафедрой, д.ф.н., профессор Краснюк И.И. (мл.); к.ф.н., доцент",
-       "position_en": "professor Krasnyuk I.I. (Jr.); candidate of pharmaceutical sciences, associate professor",
+       "position_ru": "заведующий кафедрой, д.ф.н., Краснюк И.И. (мл.); к.ф.н.",
+       "position_en": "Krasnyuk I.I. (Jr.); candidate of pharmaceutical sciences, associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -361,14 +401,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Григорьева В.Ю.",
        "name_en": "Grigorieva V.Yu.",
        "initials": "В.Ю.",
-       "position_ru": "кафедрой, д.ф.н., профессор Краснюк И.И. (мл.); к.ф.н., доцент Грих В.В.; к.ф.н., доцент",
-       "position_en": "associate professor Grik V.V.; candidate of pharmaceutical sciences, associate professor",
+       "position_ru": "кафедрой, д.ф.н., Краснюк И.И. (мл.); к.ф.н., Грих В.В.; к.ф.н.",
+       "position_en": "associate Grik V.V.; candidate of pharmaceutical sciences, associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -380,14 +424,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Слонская Т.К.",
        "name_en": "Slonskaya T.K.",
        "initials": "Т.К.",
-       "position_ru": "снюк И.И. (мл.); к.ф.н., доцент Грих В.В.; к.ф.н., доцент Григорьева В.Ю.; к.ф.н., доцент",
-       "position_en": "ate professor Grigorieva V.Yu.; candidate of pharmaceutical sciences, associate professor",
+       "position_ru": "снюк И.И. (мл.); к.ф.н., Грих В.В.; к.ф.н., Григорьева В.Ю.; к.ф.н.",
+       "position_en": "ate Grigorieva V.Yu.; candidate of pharmaceutical sciences, associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -399,14 +447,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Евграфов А.А.",
        "name_en": "Evgrafov A.A.",
        "initials": "А.А.",
-       "position_ru": "т Грих В.В.; к.ф.н., доцент Григорьева В.Ю.; к.ф.н., доцент Слонская Т.К.; к.ф.н., доцент",
-       "position_en": "ciate professor Slonskaya T.K.; candidate of pharmaceutical sciences, associate professor",
+       "position_ru": "т Грих В.В.; к.ф.н., Григорьева В.Ю.; к.ф.н., Слонская Т.К.; к.ф.н.",
+       "position_en": "ciate Slonskaya T.K.; candidate of pharmaceutical sciences, associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -418,14 +470,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Станцов М.И.",
        "name_en": "Stantsov M.I.",
        "initials": "М.И.",
-       "position_ru": "нт Григорьева В.Ю.; к.ф.н., доцент Слонская Т.К.; к.ф.н., доцент Евграфов А.А.; ассистент",
-       "position_en": "T.K.; candidate of pharmaceutical sciences, associate professor Evgrafov A.A.; assistant",
+       "position_ru": "нт Григорьева В.Ю.; к.ф.н., Слонская Т.К.; к.ф.н., Евграфов А.А.;",
+       "position_en": "T.K.; candidate of pharmaceutical sciences, associate Evgrafov A.A.;",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -437,14 +493,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Терских К.А.",
        "name_en": "Terskikh K.A.",
        "initials": "К.А.",
-       "position_ru": "доцент Слонская Т.К.; к.ф.н., доцент Евграфов А.А.; ассистент Станцов М.И.; аспиранты:",
-       "position_en": "ences, associate professor Evgrafov A.A.; assistant Stantsov M.I.; postgraduate students:",
+       "position_ru": "Слонская Т.К.; к.ф.н., Евграфов А.А.; Станцов М.И.; аспиранты:",
+       "position_en": "ences, associate Evgrafov A.A.; Stantsov M.I.; postgraduate students:",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -456,14 +516,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Шифрин М.А.",
        "name_en": "Shifrin M.A.",
        "initials": "М.А.",
-       "position_ru": "ская Т.К.; к.ф.н., доцент Евграфов А.А.; ассистент Станцов М.И.; аспиранты: Терских К.А",
-       "position_en": "e professor Evgrafov A.A.; assistant Stantsov M.I.; postgraduate students: Terskikh K.A",
+       "position_ru": "ская Т.К.; к.ф.н., Евграфов А.А.; Станцов М.И.; аспиранты: Терских К.А",
+       "position_en": "e Evgrafov A.A.; Stantsov M.I.; postgraduate students: Terskikh K.A",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -475,14 +539,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Бубнова М.А.",
        "name_en": "Bubnova M.A.",
        "initials": "М.А.",
-       "position_ru": "ф.н., доцент Евграфов А.А.; ассистент Станцов М.И.; аспиранты: Терских К.А., Шифрин М.А",
-       "position_en": "grafov A.A.; assistant Stantsov M.I.; postgraduate students: Terskikh K.A., Shifrin M.A",
+       "position_ru": "ф.н., Евграфов А.А.; Станцов М.И.; аспиранты: Терских К.А., Шифрин М.А",
+       "position_en": "grafov A.A.; Stantsov M.I.; postgraduate students: Terskikh K.A., Shifrin M.A",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -494,7 +562,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Assistant"
       }
      ],
      "publications": [
@@ -554,8 +626,8 @@
        "name_ru": "Жукова А.А.",
        "name_en": "Zhukova A.A.",
        "initials": "А.А.",
-       "position_ru": "к.х.н., доцент",
-       "position_en": "Associate professor, candidate of chemical sciences",
+       "position_ru": "к.х.н.",
+       "position_en": "Associate , candidate of chemical sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -567,14 +639,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Малышева Е.",
        "name_en": "Malysheva E.",
        "initials": "Е.",
-       "position_ru": "к.х.н., доцент Жукова А.А., студенты:",
-       "position_en": "Associate professor, candidate of chemical sciences Zhukova A.A., students:",
+       "position_ru": "к.х.н., Жукова А.А., студенты:",
+       "position_en": "Associate , candidate of chemical sciences Zhukova A.A., students:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -586,14 +662,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Глухова Е.",
        "name_en": "Glukhova E.",
        "initials": "Е.",
-       "position_ru": "к.х.н., доцент Жукова А.А., студенты: Малышева Е",
-       "position_en": "Associate professor, candidate of chemical sciences Zhukova A.A., students: Malysheva E",
+       "position_ru": "к.х.н., Жукова А.А., студенты: Малышева Е",
+       "position_en": "Associate , candidate of chemical sciences Zhukova A.A., students: Malysheva E",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -605,13 +685,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Маркелова А.",
        "name_en": "Markelova A.",
        "initials": "А.",
-       "position_ru": "к.х.н., доцент Жукова А.А., студенты: Малышева Е., Глухова Е",
+       "position_ru": "к.х.н., Жукова А.А., студенты: Малышева Е., Глухова Е",
        "position_en": "fessor, candidate of chemical sciences Zhukova A.A., students: Malysheva E., Glukhova E",
        "role_ru": "студент",
        "role_en": null,
@@ -624,13 +708,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Беседина А.",
        "name_en": "Besedina A.",
        "initials": "А.",
-       "position_ru": "к.х.н., доцент Жукова А.А., студенты: Малышева Е., Глухова Е., Маркелова А",
+       "position_ru": "к.х.н., Жукова А.А., студенты: Малышева Е., Глухова Е., Маркелова А",
        "position_en": "ate of chemical sciences Zhukova A.A., students: Malysheva E., Glukhova E., Markelova A",
        "role_ru": "студент",
        "role_en": null,
@@ -643,7 +731,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -711,8 +803,8 @@
        "name_ru": "Фельдман Н.Б.",
        "name_en": "Feldman N.B.",
        "initials": "Н.Б.",
-       "position_ru": "Д.б.н., профессор",
-       "position_en": "Professor, D.Sc",
+       "position_ru": "Д.б.н.",
+       "position_en": ", D.Sc",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -724,14 +816,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Савина В.А.",
        "name_en": "Savina V.A.",
        "initials": "В.А.",
-       "position_ru": "Д.б.н., профессор Фельдман Н.Б. Аспирант:",
-       "position_en": "Professor, D.Sc. Feldman N.B. PhD student:",
+       "position_ru": "Д.б.н., Фельдман Н.Б. Аспирант:",
+       "position_en": ", D.Sc. Feldman N.B. student:",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -743,7 +839,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -859,8 +959,8 @@
        "name_ru": "Хабибуллина Н.Ф.",
        "name_en": "Khabibullina N.F.",
        "initials": "Н.Ф.",
-       "position_ru": "К.б.н",
-       "position_en": "PhD",
+       "position_ru": "",
+       "position_en": "",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -872,14 +972,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       },
       {
        "name_ru": "Дзагаштова Д.",
        "name_en": "Dzagashtova D.",
        "initials": "Д.",
-       "position_ru": "К.б.н. Хабибуллина Н.Ф. Студенты:",
-       "position_en": "PhD Khabibullina N.F. Students:",
+       "position_ru": "Хабибуллина Н.Ф. Студенты:",
+       "position_en": "Khabibullina N.F. Students:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -891,14 +995,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       },
       {
        "name_ru": "Однолько П.",
        "name_en": "Odnolko P.",
        "initials": "П.",
-       "position_ru": "К.б.н. Хабибуллина Н.Ф. Студенты: Дзагаштова Д",
-       "position_en": "PhD Khabibullina N.F. Students: Dzagashtova D",
+       "position_ru": "Хабибуллина Н.Ф. Студенты: Дзагаштова Д",
+       "position_en": "Khabibullina N.F. Students: Dzagashtova D",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -910,14 +1018,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       },
       {
        "name_ru": "Олейник Н.",
        "name_en": "Oleinik N.",
        "initials": "Н.",
-       "position_ru": "К.б.н. Хабибуллина Н.Ф. Студенты: Дзагаштова Д., Однолько П",
-       "position_en": "PhD Khabibullina N.F. Students: Dzagashtova D., Odnolko P",
+       "position_ru": "Хабибуллина Н.Ф. Студенты: Дзагаштова Д., Однолько П",
+       "position_en": "Khabibullina N.F. Students: Dzagashtova D., Odnolko P",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -929,14 +1041,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       },
       {
        "name_ru": "Паламарчук Д.",
        "name_en": "Palamarchuk D.",
        "initials": "Д.",
-       "position_ru": "К.б.н. Хабибуллина Н.Ф. Студенты: Дзагаштова Д., Однолько П., Олейник Н",
-       "position_en": "PhD Khabibullina N.F. Students: Dzagashtova D., Odnolko P., Oleinik N",
+       "position_ru": "Хабибуллина Н.Ф. Студенты: Дзагаштова Д., Однолько П., Олейник Н",
+       "position_en": "Khabibullina N.F. Students: Dzagashtova D., Odnolko P., Oleinik N",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -948,7 +1064,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -1072,8 +1192,8 @@
        "name_ru": "Анурова М.Н.",
        "name_en": "Anurova M.N.",
        "initials": "М.Н.",
-       "position_ru": "Д.ф.н., профессор",
-       "position_en": "Professor, D.Sc",
+       "position_ru": "Д.ф.н.",
+       "position_en": ", D.Sc",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1085,14 +1205,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Запевалов А.Т.",
        "name_en": "Zapevalov A.T.",
        "initials": "А.Т.",
-       "position_ru": "Д.ф.н., профессор Анурова М.Н. Магистранты:",
-       "position_en": "Professor, D.Sc. Anurova M.N. Master's students:",
+       "position_ru": "Д.ф.н., Анурова М.Н. Магистранты:",
+       "position_en": ", D.Sc. Anurova M.N. Master's students:",
        "role_ru": "магистрант",
        "role_en": null,
        "photo": null,
@@ -1104,14 +1228,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Низова А.Р.",
        "name_en": "Nizova A.R.",
        "initials": "А.Р.",
-       "position_ru": "Д.ф.н., профессор Анурова М.Н. Магистранты: Запевалов А.Т",
-       "position_en": "Professor, D.Sc. Anurova M.N. Master's students: Zapevalov A.T",
+       "position_ru": "Д.ф.н., Анурова М.Н. Магистранты: Запевалов А.Т",
+       "position_en": ", D.Sc. Anurova M.N. Master's students: Zapevalov A.T",
        "role_ru": "магистрант",
        "role_en": null,
        "photo": null,
@@ -1123,14 +1251,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Дрозд А.А.",
        "name_en": "Drozd A.A.",
        "initials": "А.А.",
-       "position_ru": "Д.ф.н., профессор Анурова М.Н. Магистранты: Запевалов А.Т., Низова А.Р. Студенты:",
-       "position_en": "Professor, D.Sc. Anurova M.N. Master's students: Zapevalov A.T., Nizova A.R. Students:",
+       "position_ru": "Д.ф.н., Анурова М.Н. Магистранты: Запевалов А.Т., Низова А.Р. Студенты:",
+       "position_en": ", D.Sc. Anurova M.N. Master's students: Zapevalov A.T., Nizova A.R. Students:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -1142,7 +1274,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -1266,8 +1402,8 @@
        "name_ru": "Гаврюшина И.А.",
        "name_en": "Gavryushina I.A.",
        "initials": "И.А.",
-       "position_ru": "К.б.н",
-       "position_en": "PhD",
+       "position_ru": "",
+       "position_en": "",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1279,14 +1415,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       },
       {
        "name_ru": "Кравченко Е.",
        "name_en": "Kravchenko E.",
        "initials": "Е.",
-       "position_ru": "К.б.н. Гаврюшина И.А. Аспирант:",
-       "position_en": "PhD Gavryushina I.A. PhD student:",
+       "position_ru": "Гаврюшина И.А. Аспирант:",
+       "position_en": "Gavryushina I.A. student:",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -1298,14 +1438,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       },
       {
        "name_ru": "Балаян М.",
        "name_en": "Balayan M.",
        "initials": "М.",
-       "position_ru": "К.б.н. Гаврюшина И.А. Аспирант: Кравченко Е. Студент:",
-       "position_en": "PhD Gavryushina I.A. PhD student: Kravchenko E. Student:",
+       "position_ru": "Гаврюшина И.А. Аспирант: Кравченко Е. Студент:",
+       "position_en": "Gavryushina I.A. student: Kravchenko E. Student:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -1317,7 +1461,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -1433,8 +1581,8 @@
        "name_ru": "Глембоцкая Г.Т.",
        "name_en": "Glembotskaya G.T.",
        "initials": "Г.Т.",
-       "position_ru": "профессор кафедры, д.ф.н., профессор\n",
-       "position_en": "Professor of the Department, Doctor of Pharmaceutical Sciences, Professor",
+       "position_ru": "кафедры, д.ф.н.",
+       "position_en": "of the Department",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1446,14 +1594,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Кристелева Д.А.",
        "name_en": "Kristeleva D.A.",
        "initials": "Д.А.",
-       "position_ru": "профессор кафедры, д.ф.н., профессор\nГлембоцкая Г.Т.; ассистент, аспирант",
-       "position_en": "t, Doctor of Pharmaceutical Sciences, Professor Glembotskaya G.T.; Assistant, PhD student",
+       "position_ru": "кафедры, д.ф.н., Глембоцкая Г.Т.; , аспирант",
+       "position_en": "t, Glembotskaya G.T.; , student",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -1465,14 +1617,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Шиндряева Н.Н.",
        "name_en": "Shindryaeva N.N.",
        "initials": "Н.Н.",
-       "position_ru": "кая Г.Т.; ассистент, аспирант Кристелева Д.А.; д.м.н.,\nпрофессор кафедры нервных болезней",
-       "position_en": "steleva D.A.; Doctor of Medical Sciences, Professor of the Department of Nervous Diseases",
+       "position_ru": "кая Г.Т.; , аспирант Кристелева Д.А.; д.м.н., кафедры нервных болезней",
+       "position_en": "steleva D.A.; , of the Department of Nervous Diseases",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1484,7 +1640,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -1552,8 +1712,8 @@
        "name_ru": "Захарова О.В.",
        "name_en": "Zakharova O.V.",
        "initials": "О.В.",
-       "position_ru": "к.ф.н",
-       "position_en": "PhD Associate Professor",
+       "position_ru": "",
+       "position_en": "Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1565,14 +1725,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Грибова Я.В.",
        "name_en": "Gribova Ya.V.",
        "initials": "Я.В.",
-       "position_ru": "к.ф.н., Захарова О.В., к.ф.н",
-       "position_en": "PhD Associate Professor Zakharova O.V., PhD Associate Professor",
+       "position_ru": "к.ф.н., Захарова О.В.",
+       "position_en": "Associate Zakharova O.V., Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1584,14 +1748,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Клюева Ю.А.",
        "name_en": "Klyueva Yu.A.",
        "initials": "Ю.А.",
-       "position_ru": "к.ф.н., Захарова О.В., к.ф.н. Грибова Я.В",
-       "position_en": "ssociate Professor Zakharova O.V., PhD Associate Professor Gribova Ya.V., Senior lecturer",
+       "position_ru": "к.ф.н., Захарова О.В., Грибова Я.В",
+       "position_en": "ssociate Zakharova O.V., Associate Gribova Ya.V., Senior lecturer",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1603,14 +1771,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Закатова К.А.",
        "name_en": "Zakatova K.A.",
        "initials": "К.А.",
-       "position_ru": "к.ф.н., Захарова О.В., к.ф.н. Грибова Я.В., Клюева Ю.А., студенты:",
-       "position_en": "ova O.V., PhD Associate Professor Gribova Ya.V., Senior lecturer Klyueva Yu.A., students:",
+       "position_ru": "к.ф.н., Захарова О.В., Грибова Я.В., Клюева Ю.А., студенты:",
+       "position_en": "ova O.V., Associate Gribova Ya.V., Senior lecturer Klyueva Yu.A., students:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -1622,14 +1794,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Акимова С.С",
        "name_en": "Akimova S.S.",
        "initials": "С.С",
-       "position_ru": "к.ф.н., Захарова О.В., к.ф.н. Грибова Я.В., Клюева Ю.А., студенты: Закатова К.А",
-       "position_en": "ssociate Professor Gribova Ya.V., Senior lecturer Klyueva Yu.A., students: Zakatova K.A",
+       "position_ru": "к.ф.н., Захарова О.В., Грибова Я.В., Клюева Ю.А., студенты: Закатова К.А",
+       "position_en": "ssociate Gribova Ya.V., Senior lecturer Klyueva Yu.A., students: Zakatova K.A",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -1641,13 +1817,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Захарченко П.А.",
        "name_en": "Zakharchenko P.A.",
        "initials": "П.А.",
-       "position_ru": "Захарова О.В., к.ф.н. Грибова Я.В., Клюева Ю.А., студенты: Закатова К.А., Акимова С.С",
+       "position_ru": "Захарова О.В., Грибова Я.В., Клюева Ю.А., студенты: Закатова К.А., Акимова С.С",
        "position_en": "ssor Gribova Ya.V., Senior lecturer Klyueva Yu.A., students: Zakatova K.A., Akimova S.S",
        "role_ru": "студент",
        "role_en": null,
@@ -1660,7 +1840,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -1728,8 +1912,8 @@
        "name_ru": "Захарова О.В.",
        "name_en": "Zakharova O.V.",
        "initials": "О.В.",
-       "position_ru": "к.фарм.н., доцент",
-       "position_en": "PhD, Associate Professor",
+       "position_ru": "к.фарм.н.",
+       "position_en": ", Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1741,14 +1925,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Васькова Л.Б.",
        "name_en": "Vaskova L.B.",
        "initials": "Л.Б.",
-       "position_ru": "к.фарм.н., доцент Захарова О.В., к.фарм.н., доцент",
-       "position_en": "PhD, Associate Professor Zakharova O.V., PhD, Associate Professor",
+       "position_ru": "к.фарм.н., Захарова О.В., к.фарм.н.",
+       "position_en": ", Associate Zakharova O.V., Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1760,14 +1948,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Поздняков Г.А.",
        "name_en": "Pozdnyakov G.A.",
        "initials": "Г.А.",
-       "position_ru": "к.фарм.н., доцент Захарова О.В., к.фарм.н., доцент Васькова Л.Б.; аспирант",
-       "position_en": "D, Associate Professor Zakharova O.V., PhD, Associate Professor Vaskova L.B.; PhD student",
+       "position_ru": "к.фарм.н., Захарова О.В., к.фарм.н., Васькова Л.Б.; аспирант",
+       "position_en": "D, Associate Zakharova O.V., Associate Vaskova L.B.; student",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -1779,7 +1971,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -1831,8 +2027,8 @@
        "name_ru": "Герасимова Д.А.",
        "name_en": "Gerasimova D.A.",
        "initials": "Д.А.",
-       "position_ru": "к.ф.н., доцент кафедры организации и экономики фармации",
-       "position_en": "PhD, Associate Professor of the Department of Organization and Economics of Pharmacy",
+       "position_ru": "к.ф.н., кафедры организации и экономики фармации",
+       "position_en": ", Associate of the Department of Organization and Economics of Pharmacy",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1844,13 +2040,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Колесова А.И.",
        "name_en": "Kolesova A.I.",
        "initials": "А.И.",
-       "position_ru": "к.ф.н., доцент кафедры организации и экономики фармации Герасимова Д.А., студенты:",
+       "position_ru": "к.ф.н., кафедры организации и экономики фармации Герасимова Д.А., студенты:",
        "position_en": "or of the Department of Organization and Economics of Pharmacy Gerasimova D.A., students:",
        "role_ru": "студент",
        "role_en": null,
@@ -1863,13 +2063,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Лисенков А.Д.",
        "name_en": "Lisenkov A.D.",
        "initials": "А.Д.",
-       "position_ru": "доцент кафедры организации и экономики фармации Герасимова Д.А., студенты: Колесова А.И",
+       "position_ru": "кафедры организации и экономики фармации Герасимова Д.А., студенты: Колесова А.И",
        "position_en": "tment of Organization and Economics of Pharmacy Gerasimova D.A., students: Kolesova A.I",
        "role_ru": "студент",
        "role_en": null,
@@ -1882,7 +2086,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Чинарева В.А.",
@@ -1901,7 +2109,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -1953,8 +2165,8 @@
        "name_ru": "Грибова Я.В.",
        "name_en": "Gribova Ya.V.",
        "initials": "Я.В.",
-       "position_ru": "к.фарм.н., доцент",
-       "position_en": "PhD, Associate Professor",
+       "position_ru": "к.фарм.н.",
+       "position_en": ", Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1966,14 +2178,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Андрунь А.С.",
        "name_en": "Andrun A.S.",
        "initials": "А.С.",
-       "position_ru": "к.фарм.н., доцент Грибова Я.В., преподаватель",
-       "position_en": "PhD, Associate Professor Gribova Ya.V., Lecturer",
+       "position_ru": "к.фарм.н., Грибова Я.В., преподаватель",
+       "position_en": ", Associate Gribova Ya.V., Lecturer",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -1985,14 +2201,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Першина А.Р.",
        "name_en": "Pershina A.R.",
        "initials": "А.Р.",
-       "position_ru": "к.фарм.н., доцент Грибова Я.В., преподаватель Андрунь А.С., студенты:",
-       "position_en": "PhD, Associate Professor Gribova Ya.V., Lecturer Andrun A.S., student:",
+       "position_ru": "к.фарм.н., Грибова Я.В., преподаватель Андрунь А.С., студенты:",
+       "position_en": ", Associate Gribova Ya.V., Lecturer Andrun A.S., student:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2004,7 +2224,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -2080,7 +2304,7 @@
        "name_ru": "Апполонова С.А.",
        "name_en": null,
        "initials": "С.А.",
-       "position_ru": "к.х.н",
+       "position_ru": "",
        "position_en": "к.х.н",
        "role_ru": "участник",
        "role_en": null,
@@ -2093,13 +2317,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.х.н.",
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Резванов П.А.",
        "name_en": null,
        "initials": "П.А.",
-       "position_ru": "к.х.н. Апполонова С.А., аспиранты",
+       "position_ru": "Апполонова С.А., аспиранты",
        "position_en": "к.х.н. Апполонова С.А., аспиранты",
        "role_ru": "аспирант",
        "role_en": null,
@@ -2112,13 +2340,17 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.х.н.",
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Болдин А.А.",
        "name_en": null,
        "initials": "А.А.",
-       "position_ru": "к.х.н. Апполонова С.А., аспиранты Резванов П.А",
+       "position_ru": "Апполонова С.А., аспиранты Резванов П.А",
        "position_en": "к.х.н. Апполонова С.А., аспиранты Резванов П.А",
        "role_ru": "аспирант",
        "role_en": null,
@@ -2131,7 +2363,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.х.н.",
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -2207,8 +2443,8 @@
        "name_ru": "Смолярчук Е.А.",
        "name_en": "E.A. Smolyarchuk",
        "initials": "Е.А.",
-       "position_ru": "зав. кафедрой фармакологии, к.м.н., доцент",
-       "position_en": "ead of the Department of Pharmacology, Candidate of Medical Sciences, Associate Professor",
+       "position_ru": "зав. кафедрой фармакологии, к.м.н.",
+       "position_en": "ead of the Department of Pharmacology, Candidate of Medical Sciences, Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2220,14 +2456,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Самородов А.В.",
        "name_en": "A.V. Samorodov",
        "initials": "А.В.",
-       "position_ru": "зав. кафедрой фармакологии, к.м.н., доцент Смолярчук Е.А., профессор, д.м.н",
-       "position_en": "cal Sciences, Associate Professor E.A. Smolyarchuk; Professor, Doctor of Medical Sciences",
+       "position_ru": "зав. кафедрой фармакологии, к.м.н., Смолярчук Е.А., д.м.н",
+       "position_en": "cal Sciences, Associate E.A. Smolyarchuk;",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2239,14 +2479,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Сологова С.С.",
        "name_en": "S.S. Sologova",
        "initials": "С.С.",
-       "position_ru": "акологии, к.м.н., доцент Смолярчук Е.А., профессор, д.м.н. Самородов А.В., доцент, к.б.н",
-       "position_en": "of Medical Sciences A.V. Samorodov; Associate Professor, Candidate of Biological Sciences",
+       "position_ru": "акологии, к.м.н., Смолярчук Е.А., д.м.н. Самородов А.В.",
+       "position_en": "of Medical Sciences A.V. Samorodov; Associate , Candidate of Biological Sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2258,14 +2502,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Завадич Е.А.",
        "name_en": "E.A. Zavadich",
        "initials": "Е.А.",
-       "position_ru": "чук Е.А., профессор, д.м.н. Самородов А.В., доцент, к.б.н. Сологова С.С., доцент, к.м.н",
-       "position_en": "of Biological Sciences S.S. Sologova; Associate Professor, Candidate of Medical Sciences",
+       "position_ru": "чук Е.А., д.м.н. Самородов А.В., Сологова С.С., к.м.н",
+       "position_en": "of Biological Sciences S.S. Sologova; Associate , Candidate of Medical Sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2277,14 +2525,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Тращенкова Д.А.",
        "name_en": "D.A. Trashchenkova",
        "initials": "Д.А.",
-       "position_ru": "н. Самородов А.В., доцент, к.б.н. Сологова С.С., доцент, к.м.н., Завадич Е.А., ассистент",
-       "position_en": "S. Sologova; Associate Professor, Candidate of Medical Sciences E.A. Zavadich; Assistant",
+       "position_ru": "н. Самородов А.В., Сологова С.С., к.м.н., Завадич Е.А.",
+       "position_en": "S. Sologova; Associate , Candidate of Medical Sciences E.A. Zavadich;",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2296,14 +2548,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Поликарпов Е.В.",
        "name_en": "E.V. Polikarpov",
        "initials": "Е.В.",
-       "position_ru": "к.б.н. Сологова С.С., доцент, к.м.н., Завадич Е.А., ассистент Тращенкова Д.А., ассистент",
-       "position_en": "sor, Candidate of Medical Sciences E.A. Zavadich; Assistant D.A. Trashchenkova; Assistant",
+       "position_ru": "Сологова С.С., к.м.н., Завадич Е.А., Тращенкова Д.А.",
+       "position_en": "sor, Candidate of Medical Sciences E.A. Zavadich; D.A. Trashchenkova;",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2315,7 +2571,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Assistant"
       }
      ],
      "publications": [
@@ -2375,8 +2635,8 @@
        "name_ru": "Завадич К.А.",
        "name_en": "Zavadich K.A.",
        "initials": "К.А.",
-       "position_ru": "к.м.н., доцент",
-       "position_en": "Associate professor, PhD",
+       "position_ru": "к.м.н.",
+       "position_en": "Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2388,14 +2648,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Корнопольцева Л.В.",
        "name_en": "Kornopoltseva L.V.",
        "initials": "Л.В.",
-       "position_ru": "к.м.н., доцент Завадич К.А., аспирант",
-       "position_en": "Associate professor, PhD Zavadich K.A., PhD student",
+       "position_ru": "к.м.н., Завадич К.А., аспирант",
+       "position_en": "Associate , Zavadich K.A., student",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -2407,7 +2671,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -2459,8 +2727,8 @@
        "name_ru": "Бакаева З.В.",
        "name_en": "Bakaeva Z.V.",
        "initials": "З.В.",
-       "position_ru": "руководитель проекта – доцент, к.б.н",
-       "position_en": "Associate Professor, Ph.D",
+       "position_ru": "руководитель проекта –",
+       "position_en": "Associate , Ph.D",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2472,14 +2740,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Поликарпов Е.В.",
        "name_en": "Polikarpov E.V.",
        "initials": "Е.В.",
-       "position_ru": "руководитель проекта – доцент, к.б.н. Бакаева З.В., ассистент",
-       "position_en": "Associate Professor, Ph.D Bakaeva Z.V., Assistant professor",
+       "position_ru": "руководитель проекта – , Бакаева З.В.",
+       "position_en": "Associate , Ph.D Bakaeva Z.V.",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2491,14 +2763,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Орлов А.С.",
        "name_en": "Orlov A.S.",
        "initials": "А.С.",
-       "position_ru": "руководитель проекта – доцент, к.б.н. Бакаева З.В., ассистент Поликарпов Е.В., студент",
-       "position_en": "Associate Professor, Ph.D Bakaeva Z.V., Assistant professor Polikarpov E.V., student",
+       "position_ru": "руководитель проекта – , Бакаева З.В., Поликарпов Е.В., студент",
+       "position_en": "Associate , Ph.D Bakaeva Z.V., Polikarpov E.V., student",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2510,7 +2786,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -2586,8 +2866,8 @@
        "name_ru": "Бакаева З.В.",
        "name_en": "Bakaeva Z.V.",
        "initials": "З.В.",
-       "position_ru": "доцент, к.б.н",
-       "position_en": "Associate Professor, Ph.D",
+       "position_ru": "",
+       "position_en": "Associate , Ph.D",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2599,14 +2879,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Згодова А.Е.",
        "name_en": "Zgodova A.E.",
        "initials": "А.Е.",
-       "position_ru": "доцент, к.б.н. Бакаева З.В., аспиранты",
-       "position_en": "Associate Professor, Ph.D. Bakaeva Z.V., PhD students",
+       "position_ru": ", Бакаева З.В., аспиранты",
+       "position_en": "Associate , Ph.D. Bakaeva Z.V., students",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -2618,14 +2902,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Чернова С.С.",
        "name_en": "Chernova S.S.",
        "initials": "С.С.",
-       "position_ru": "доцент, к.б.н. Бакаева З.В., аспиранты Згодова А.Е",
-       "position_en": "Associate Professor, Ph.D. Bakaeva Z.V., PhD students Zgodova A.E",
+       "position_ru": ", Бакаева З.В., аспиранты Згодова А.Е",
+       "position_en": "Associate , Ph.D. Bakaeva Z.V., students Zgodova A.E",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -2637,14 +2925,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Лизунова Н.В.",
        "name_en": "Lizunova N.V.",
        "initials": "Н.В.",
-       "position_ru": "доцент, к.б.н. Бакаева З.В., аспиранты Згодова А.Е., Чернова С.С., студенты",
-       "position_en": "sociate Professor, Ph.D. Bakaeva Z.V., PhD students Zgodova A.E., Chernova S.S., students",
+       "position_ru": ", Бакаева З.В., аспиранты Згодова А.Е., Чернова С.С., студенты",
+       "position_en": "sociate , Ph.D. Bakaeva Z.V., students Zgodova A.E., Chernova S.S., students",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2656,14 +2948,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Кислухина Е.Н.",
        "name_en": "Kislukhina E.N.",
        "initials": "Е.Н.",
-       "position_ru": "оцент, к.б.н. Бакаева З.В., аспиранты Згодова А.Е., Чернова С.С., студенты Лизунова Н.В",
-       "position_en": "or, Ph.D. Bakaeva Z.V., PhD students Zgodova A.E., Chernova S.S., students Lizunova N.V",
+       "position_ru": "оцент, Бакаева З.В., аспиранты Згодова А.Е., Чернова С.С., студенты Лизунова Н.В",
+       "position_en": "or, Ph.D. Bakaeva Z.V., students Zgodova A.E., Chernova S.S., students Lizunova N.V",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2675,14 +2971,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.б.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       },
       {
        "name_ru": "Бояркин Д.П.",
        "name_en": "Boyarkin D.P.",
        "initials": "Д.П.",
        "position_ru": "каева З.В., аспиранты Згодова А.Е., Чернова С.С., студенты Лизунова Н.В., Кислухина Е.Н",
-       "position_en": "Z.V., PhD students Zgodova A.E., Chernova S.S., students Lizunova N.V., Kislukhina E.N",
+       "position_en": "Z.V., students Zgodova A.E., Chernova S.S., students Lizunova N.V., Kislukhina E.N",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2694,7 +2994,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       },
       {
        "name_ru": "Алексеев В.И.",
@@ -2713,7 +3017,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -2834,14 +3142,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Лагода А.А.",
        "name_en": "Lagoda A.A.",
        "initials": "А.А.",
-       "position_ru": "старший преподаватель Савинова О.В.,\nстуденты:",
-       "position_en": "Senior Lecturer Savinova O.V.,\nstudents:",
+       "position_ru": "старший преподаватель Савинова О.В., студенты:",
+       "position_en": "Senior Lecturer Savinova O.V., students:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2853,14 +3165,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Боль Д.Я.",
        "name_en": "Bol D.Ya.",
        "initials": "Д.Я.",
-       "position_ru": "старший преподаватель Савинова О.В.,\nстуденты: Лагода А.А",
-       "position_en": "Senior Lecturer Savinova O.V.,\nstudents: Lagoda A.A",
+       "position_ru": "старший преподаватель Савинова О.В., студенты: Лагода А.А",
+       "position_en": "Senior Lecturer Savinova O.V., students: Lagoda A.A",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2872,14 +3188,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Букиа А.Г.",
        "name_en": "Bukia A.G.",
        "initials": "А.Г.",
-       "position_ru": "старший преподаватель Савинова О.В.,\nстуденты: Лагода А.А., Боль Д.Я",
-       "position_en": "Senior Lecturer Savinova O.V.,\nstudents: Lagoda A.A., Bol D.Ya",
+       "position_ru": "старший преподаватель Савинова О.В., студенты: Лагода А.А., Боль Д.Я",
+       "position_en": "Senior Lecturer Savinova O.V., students: Lagoda A.A., Bol D.Ya",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2891,7 +3211,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -2943,8 +3267,8 @@
        "name_ru": "Бабаскин Д.В.",
        "name_en": "Babaskin D.V.",
        "initials": "Д.В.",
-       "position_ru": "д.м.н., профессор",
-       "position_en": "Doctor of Medical Sciences, Professor",
+       "position_ru": "д.м.н.",
+       "position_en": "",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -2956,14 +3280,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Воронин А.Н.",
        "name_en": "Voronin A.N.",
        "initials": "А.Н.",
-       "position_ru": "д.м.н., профессор Бабаскин Д.В.,\nстуденты:",
-       "position_en": "Doctor of Medical Sciences, Professor Babaskin D.V., students:",
+       "position_ru": "д.м.н., Бабаскин Д.В., студенты:",
+       "position_en": ", Babaskin D.V., students:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2975,14 +3303,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Ильичева Е.Э.",
        "name_en": "Ilycheva E.E.",
        "initials": "Е.Э.",
-       "position_ru": "д.м.н., профессор Бабаскин Д.В.,\nстуденты: Воронин А.Н",
-       "position_en": "Doctor of Medical Sciences, Professor Babaskin D.V., students: Voronin A.N",
+       "position_ru": "д.м.н., Бабаскин Д.В., студенты: Воронин А.Н",
+       "position_en": ", Babaskin D.V., students: Voronin A.N",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -2994,7 +3326,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -3155,7 +3491,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Мельник А.А.",
@@ -3174,7 +3514,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Тинкт А.В.",
@@ -3193,7 +3537,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -3285,8 +3633,8 @@
        "name_ru": "Ковалева Т.Ю.",
        "name_en": "Kovaleva T.Yu.",
        "initials": "Т.Ю.",
-       "position_ru": "к.фарм.н. доцент",
-       "position_en": "Ph.D. Associate Professor",
+       "position_ru": "к.фарм.н.",
+       "position_en": "Ph.D. Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -3298,14 +3646,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Доровских Е.А.",
        "name_en": "Dorovskikh E.A.",
        "initials": "Е.А.",
-       "position_ru": "к.фарм.н. доцент Ковалева Т.Ю., к.фарм.н. старший преподаватель",
-       "position_en": "Ph.D. Associate Professor Kovaleva T.Yu., Ph.D. senior teacher",
+       "position_ru": "к.фарм.н. Ковалева Т.Ю., к.фарм.н. старший преподаватель",
+       "position_en": "Ph.D. Associate Kovaleva T.Yu., Ph.D. senior teacher",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -3317,14 +3669,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Павленко А.А.",
        "name_en": "Pavlenko A.A.",
        "initials": "А.А.",
-       "position_ru": "к.фарм.н. доцент Ковалева Т.Ю., к.фарм.н. старший преподаватель Доровских Е.А., аспирант",
-       "position_en": "ssociate Professor Kovaleva T.Yu., Ph.D. senior teacher Dorovskikh E.A., graduate student",
+       "position_ru": "к.фарм.н. Ковалева Т.Ю., к.фарм.н. старший преподаватель Доровских Е.А., аспирант",
+       "position_en": "ssociate Kovaleva T.Yu., Ph.D. senior teacher Dorovskikh E.A., graduate student",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -3336,7 +3692,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Тарасова А.В.",
@@ -3355,7 +3715,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Мельник А.А.",
@@ -3374,7 +3738,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -3466,8 +3834,8 @@
        "name_ru": "Гравель И.В.",
        "name_en": "I.V. Gravel",
        "initials": "И.В.",
-       "position_ru": "д.фарм.н., профессор",
-       "position_en": "Dr. of Pharmaceutical Sciences, Professor",
+       "position_ru": "д.фарм.н.",
+       "position_en": "Dr. of Pharmaceutical Sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -3479,14 +3847,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Лёвушкин Д.В.",
        "name_en": "D.V. Levushkin",
        "initials": "Д.В.",
-       "position_ru": "д.фарм.н., профессор Гравель И.В., аспиранты:",
-       "position_en": "Dr. of Pharmaceutical Sciences, Professor I.V. Gravel; postgraduate students:",
+       "position_ru": "д.фарм.н., Гравель И.В., аспиранты:",
+       "position_en": "Dr. of Pharmaceutical Sciences, I.V. Gravel; postgraduate students:",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -3498,14 +3870,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Шестопалова В.Н.",
        "name_en": "V.N. Shestopalova",
        "initials": "В.Н.",
-       "position_ru": "д.фарм.н., профессор Гравель И.В., аспиранты: Лёвушкин Д.В",
-       "position_en": "of Pharmaceutical Sciences, Professor I.V. Gravel; postgraduate students: D.V. Levushkin",
+       "position_ru": "д.фарм.н., Гравель И.В., аспиранты: Лёвушкин Д.В",
+       "position_en": "of Pharmaceutical Sciences, I.V. Gravel; postgraduate students: D.V. Levushkin",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -3517,14 +3893,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Лаврова О.С.",
        "name_en": "O.S. Lavrova",
        "initials": "О.С.",
-       "position_ru": "д.фарм.н., профессор Гравель И.В., аспиранты: Лёвушкин Д.В., Шестопалова В.Н",
-       "position_en": "ciences, Professor I.V. Gravel; postgraduate students: D.V. Levushkin, V.N. Shestopalova",
+       "position_ru": "д.фарм.н., Гравель И.В., аспиранты: Лёвушкин Д.В., Шестопалова В.Н",
+       "position_en": "ciences, I.V. Gravel; postgraduate students: D.V. Levushkin, V.N. Shestopalova",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -3536,7 +3916,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -3665,7 +4049,9 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": true
+       "added_from_review": true,
+       "degree_ru": null,
+       "academic_title_ru": null
       }
      ],
      "publications": [
@@ -3718,8 +4104,8 @@
        "name_ru": "Бобкова Н.В.",
        "name_en": "Bobkova N.V.",
        "initials": "Н.В.",
-       "position_ru": "д.фарм.н., доцент",
-       "position_en": "Dr. Pharm. Sci., Associate Professor",
+       "position_ru": "д.фарм.н.",
+       "position_en": "Dr. Pharm. Sci., Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -3731,14 +4117,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Фам Фыонг",
        "name_en": "Pham Phuong Nam",
        "initials": "Ф.",
-       "position_ru": "д.фарм.н., доцент Бобкова Н.В., аспирант:",
-       "position_en": "Pharm. Sci.,                     Bobkova N.V",
+       "position_ru": "д.фарм.н., Бобкова Н.В., аспирант:",
+       "position_en": "Pharm. Sci., Bobkova N.V",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -3750,14 +4140,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Байрамкулова Диана",
        "name_en": "Diana Bayramkulova",
        "initials": "Д.",
-       "position_ru": "д.фарм.н., доцент Бобкова Н.В., аспирант: Фам Фыонг Нам, студенты:",
-       "position_en": "Sci.,                     Bobkova N.V.,                     , Pham Phuong Nam",
+       "position_ru": "д.фарм.н., Бобкова Н.В., аспирант: Фам Фыонг Нам, студенты:",
+       "position_en": "Sci., Bobkova N.V., Pham Phuong Nam",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -3769,14 +4163,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Гадецкая Дарья",
        "name_en": "Darya Gadetskaya",
        "initials": "Д.",
-       "position_ru": "д.фарм.н., доцент Бобкова Н.В., аспирант: Фам Фыонг Нам, студенты: Байрамкулова Диана",
-       "position_en": "Bobkova N.V.,                     , Pham Phuong Nam,         , Diana Bayramkulova",
+       "position_ru": "д.фарм.н., Бобкова Н.В., аспирант: Фам Фыонг Нам, студенты: Байрамкулова Диана",
+       "position_en": "Bobkova N.V., Pham Phuong Nam, Diana Bayramkulova",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -3788,7 +4186,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -3894,7 +4296,7 @@
        "name_ru": "Бахрушина Е.О.",
        "name_en": "E.O. Bakhrushina",
        "initials": "Е.О.",
-       "position_ru": "Руководитель проекта: д.ф.н., профессор",
+       "position_ru": "Руководитель проекта: д.ф.н.",
        "position_en": "Project Lead:",
        "role_ru": "руководитель",
        "role_en": null,
@@ -3907,14 +4309,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": true,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Шумкова М.М.",
        "name_en": "M.M. Shumkova",
        "initials": "М.М.",
-       "position_ru": "Руководитель проекта: д.ф.н., профессор Бахрушина Е.О.\nСостав команды: к.ф.н",
-       "position_en": "Project Lead: E.O. Bakhrushina, Doctor of Pharmaceutical Sciences, Professor\n",
+       "position_ru": "Руководитель проекта: д.ф.н., Бахрушина Е.О. Состав команды:",
+       "position_en": "Project Lead: E.O. Bakhrushina",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -3926,14 +4332,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Михел И.Б.",
        "name_en": "I.B. Mikhel",
        "initials": "И.Б.",
-       "position_ru": "ководитель проекта: д.ф.н., профессор Бахрушина Е.О.\nСостав команды: к.ф.н. Шумкова М.М",
-       "position_en": "ctor of Pharmaceutical Sciences, Professor\nM.M. Shumkova, PhD in Pharmaceutical Sciences",
+       "position_ru": "ководитель проекта: д.ф.н., Бахрушина Е.О. Состав команды: Шумкова М.М",
+       "position_en": "ctor of Pharmaceutical Sciences, M.M. Shumkova, in Pharmaceutical Sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -3945,14 +4355,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Пыжов В.С.",
        "name_en": "V.S. Pyzhov",
        "initials": "В.С.",
-       "position_ru": "роекта: д.ф.н., профессор Бахрушина Е.О.\nСостав команды: к.ф.н. Шумкова М.М., Михел И.Б",
-       "position_en": "aceutical Sciences, Professor\nM.M. Shumkova, PhD in Pharmaceutical Sciences; I.B. Mikhel",
+       "position_ru": "роекта: д.ф.н., Бахрушина Е.О. Состав команды: Шумкова М.М., Михел И.Б",
+       "position_en": "aceutical Sciences, M.M. Shumkova, in Pharmaceutical Sciences; I.B. Mikhel",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -3964,14 +4378,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Сахарова П.С.",
        "name_en": "P.S. Sakharova",
        "initials": "П.С.",
-       "position_ru": "н., профессор Бахрушина Е.О.\nСостав команды: к.ф.н. Шумкова М.М., Михел И.Б., Пыжов В.С",
-       "position_en": "ences, Professor\nM.M. Shumkova, PhD in Pharmaceutical Sciences; I.B. Mikhel; V.S. Pyzhov",
+       "position_ru": "н., Бахрушина Е.О. Состав команды: Шумкова М.М., Михел И.Б., Пыжов В.С",
+       "position_en": "ences, M.M. Shumkova, in Pharmaceutical Sciences; I.B. Mikhel; V.S. Pyzhov",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -3983,14 +4401,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Кашеварова Е.В.",
        "name_en": "E.V. Kashevarova",
        "initials": "Е.В.",
-       "position_ru": "О.\nСостав команды: к.ф.н. Шумкова М.М., Михел И.Б., Пыжов В.С., Сахарова П.С., ординатор",
-       "position_en": "\nM.M. Shumkova, PhD in Pharmaceutical Sciences; I.B. Mikhel; V.S. Pyzhov; P.S. Sakharova",
+       "position_ru": "О. Состав команды: Шумкова М.М., Михел И.Б., Пыжов В.С., Сахарова П.С., ординатор",
+       "position_en": "M.M. Shumkova, in Pharmaceutical Sciences; I.B. Mikhel; V.S. Pyzhov; P.S. Sakharova",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4002,7 +4424,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": "к.ф.н.",
+       "academic_title_ru": null,
+       "degree_en": "PhD",
+       "academic_title_en": null
       },
       {
        "name_ru": "Ананян А.А.",
@@ -4021,7 +4447,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -4127,8 +4557,8 @@
        "name_ru": "Бахрушина Е.О.",
        "name_en": "E.O. Bakhrushina",
        "initials": "Е.О.",
-       "position_ru": "д.ф.н., профессор",
-       "position_en": "PhD (Doctor of Pharmaceutical Sciences), Professor",
+       "position_ru": "д.ф.н.",
+       "position_en": "( )",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4140,14 +4570,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Михел И.Б.",
        "name_en": "I.B. Mikhel",
        "initials": "И.Б.",
-       "position_ru": "д.ф.н., профессор Бахрушина Е.О., ст. преподаватель",
-       "position_en": "PhD (Doctor of Pharmaceutical Sciences), Professor E.O. Bakhrushina; Senior Lecturer",
+       "position_ru": "д.ф.н., Бахрушина Е.О., ст. преподаватель",
+       "position_en": "( ), E.O. Bakhrushina; Senior Lecturer",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4159,14 +4593,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Пыжов В.С.",
        "name_en": "V.S. Pyzhov",
        "initials": "В.С.",
-       "position_ru": "д.ф.н., профессор Бахрушина Е.О., ст. преподаватель Михел И.Б., ассистент",
-       "position_en": "rmaceutical Sciences), Professor E.O. Bakhrushina; Senior Lecturer I.B. Mikhel; Assistant",
+       "position_ru": "д.ф.н., Бахрушина Е.О., ст. преподаватель Михел И.Б.",
+       "position_en": "rmaceutical Sciences), E.O. Bakhrushina; Senior Lecturer I.B. Mikhel;",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4178,14 +4616,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Помыткина М.В.",
        "name_en": "M.V. Pomytkina",
        "initials": "М.В.",
-       "position_ru": "профессор Бахрушина Е.О., ст. преподаватель Михел И.Б., ассистент Пыжов В.С., ассистент",
-       "position_en": "Professor E.O. Bakhrushina; Senior Lecturer I.B. Mikhel; Assistant V.S. Pyzhov; Assistant",
+       "position_ru": "Бахрушина Е.О., ст. преподаватель Михел И.Б., Пыжов В.С.",
+       "position_en": "E.O. Bakhrushina; Senior Lecturer I.B. Mikhel; V.S. Pyzhov;",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4197,14 +4639,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Белявский Н.О.",
        "name_en": "N.O. Belyavsky",
        "initials": "Н.О.",
-       "position_ru": "ст. преподаватель Михел И.Б., ассистент Пыжов В.С., ассистент Помыткина М.В. аспиранты:",
-       "position_en": "urer I.B. Mikhel; Assistant V.S. Pyzhov; Assistant M.V. Pomytkina; postgraduate students:",
+       "position_ru": "ст. преподаватель Михел И.Б., Пыжов В.С., Помыткина М.В. аспиранты:",
+       "position_en": "urer I.B. Mikhel; V.S. Pyzhov; M.V. Pomytkina; postgraduate students:",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -4216,14 +4662,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "ассистент",
+       "degree_en": null,
+       "academic_title_en": "Assistant"
       },
       {
        "name_ru": "Сахарова П.С.",
        "name_en": "P.S. Sakharova",
        "initials": "П.С.",
-       "position_ru": "ель Михел И.Б., ассистент Пыжов В.С., ассистент Помыткина М.В. аспиранты: Белявский Н.О",
-       "position_en": "Assistant V.S. Pyzhov; Assistant M.V. Pomytkina; postgraduate students: N.O. Belyavsky",
+       "position_ru": "ель Михел И.Б., Пыжов В.С., Помыткина М.В. аспиранты: Белявский Н.О",
+       "position_en": "V.S. Pyzhov; M.V. Pomytkina; postgraduate students: N.O. Belyavsky",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -4235,14 +4685,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "ассистент",
+       "degree_en": null,
+       "academic_title_en": "Assistant"
       },
       {
        "name_ru": "Карташова А.К.",
        "name_en": "A.K. Kartashova",
        "initials": "А.К.",
-       "position_ru": "ассистент Пыжов В.С., ассистент Помыткина М.В. аспиранты: Белявский Н.О., Сахарова П.С",
-       "position_en": "Pyzhov; Assistant M.V. Pomytkina; postgraduate students: N.O. Belyavsky, P.S. Sakharova",
+       "position_ru": "Пыжов В.С., Помыткина М.В. аспиранты: Белявский Н.О., Сахарова П.С",
+       "position_en": "Pyzhov; M.V. Pomytkina; postgraduate students: N.O. Belyavsky, P.S. Sakharova",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -4254,7 +4708,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "ассистент",
+       "degree_en": null,
+       "academic_title_en": "Assistant"
       },
       {
        "name_ru": "Кашеварова Е.В.",
@@ -4273,7 +4731,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Авдонина Я.А.",
@@ -4292,7 +4754,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Грибанов Г.А.",
@@ -4311,7 +4777,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Леонова К.С.",
@@ -4330,7 +4800,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Панова Е.С.",
@@ -4349,7 +4823,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Касатикова А.А.",
@@ -4368,7 +4846,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Конон С.Б.",
@@ -4387,7 +4869,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Голубь А.Н.",
@@ -4406,7 +4892,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -4562,8 +5052,8 @@
        "name_ru": "Бахрушина Е.О.",
        "name_en": "E.O. Bakhrushina",
        "initials": "Е.О.",
-       "position_ru": "д.ф.н., профессор",
-       "position_en": "PhD (Doctor of Pharmaceutical Sciences), Professor",
+       "position_ru": "д.ф.н.",
+       "position_en": "( )",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4575,14 +5065,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Косенкова С.И.",
        "name_en": "S.I. Kosenkova",
        "initials": "С.И.",
-       "position_ru": "д.ф.н., профессор Бахрушина Е.О., к.ф.н., доцент",
-       "position_en": "ofessor E.O. Bakhrushina; PhD (Candidate of Pharmaceutical Sciences), Associate Professor",
+       "position_ru": "д.ф.н., Бахрушина Е.О., к.ф.н.",
+       "position_en": "ofessor E.O. Bakhrushina; (Candidate of Pharmaceutical Sciences), Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4594,14 +5088,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Саксонова Ю.А.",
        "name_en": "Yu.A. Saksonova",
        "initials": "Ю.А.",
-       "position_ru": "д.ф.н., профессор Бахрушина Е.О., к.ф.н., доцент Косенкова С.И. студенты:",
-       "position_en": "PhD (Candidate of Pharmaceutical Sciences), Associate Professor S.I. Kosenkova; student:",
+       "position_ru": "д.ф.н., Бахрушина Е.О., к.ф.н., Косенкова С.И. студенты:",
+       "position_en": "(Candidate of Pharmaceutical Sciences), Associate S.I. Kosenkova; student:",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -4613,14 +5111,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Анурова М.Н.",
        "name_en": "Anurova M.N.",
        "initials": "М.Н.",
-       "position_ru": "сор Бахрушина Е.О., к.ф.н., доцент Косенкова С.И. студенты: Саксонова Ю.А.\nPhD, профессор",
-       "position_en": "l Sciences), Associate Professor S.I. Kosenkova; student: Yu.A. Saksonova.\nPhD, Professor",
+       "position_ru": "сор Бахрушина Е.О., к.ф.н., Косенкова С.И. студенты: Саксонова Ю.А. PhD",
+       "position_en": "l Sciences), Associate S.I. Kosenkova; student: Yu.A. Saksonova.",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4632,14 +5134,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Король В.А.",
        "name_en": "Korol V.A.",
        "initials": "В.А.",
-       "position_ru": "доцент Косенкова С.И. студенты: Саксонова Ю.А.\nPhD, профессор Анурова М.Н., PhD, доцент",
-       "position_en": "osenkova; student: Yu.A. Saksonova.\nPhD, Professor Anurova M.N., PhD, Associate Professor",
+       "position_ru": "Косенкова С.И. студенты: Саксонова Ю.А. PhD, Анурова М.Н., PhD",
+       "position_en": "osenkova; student: Yu.A. Saksonova. , Anurova M.N., Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4651,14 +5157,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Петруленко К.Е.",
        "name_en": "Petrulenko K.",
        "initials": "К.Е.",
-       "position_ru": "туденты: Саксонова Ю.А.\nPhD, профессор Анурова М.Н., PhD, доцент Король В.А., РhD-студент",
-       "position_en": "Saksonova.\nPhD, Professor Anurova M.N., PhD, Associate Professor Korol V.A., PhD student",
+       "position_ru": "туденты: Саксонова Ю.А. PhD, Анурова М.Н., PhD, Король В.А., РhD-студент",
+       "position_en": "Saksonova. , Anurova M.N., Associate Korol V.A., student",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -4670,14 +5180,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Кульмин А.Р.",
        "name_en": "Kulmin A.R.",
        "initials": "А.Р.",
-       "position_ru": "D, профессор Анурова М.Н., PhD, доцент Король В.А., РhD-студент Петруленко К.Е., аспирант",
-       "position_en": "a M.N., PhD, Associate Professor Korol V.A., PhD student Petrulenko K.E, graduate student",
+       "position_ru": "D, Анурова М.Н., PhD, Король В.А., РhD-студент Петруленко К.Е., аспирант",
+       "position_en": "a M.N., Associate Korol V.A., student Petrulenko K.E, graduate student",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -4689,14 +5203,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Иванова А.Н.",
        "name_en": "Ivanova A.N.",
        "initials": "А.Н.",
-       "position_ru": "PhD, доцент Король В.А., РhD-студент Петруленко К.Е., аспирант Кульмин А.Р., ординатор",
-       "position_en": "Professor Korol V.A., PhD student Petrulenko K.E, graduate student Kulmin A.R., resident",
+       "position_ru": "PhD, Король В.А., РhD-студент Петруленко К.Е., аспирант Кульмин А.Р., ординатор",
+       "position_en": "Korol V.A., student Petrulenko K.E, graduate student Kulmin A.R., resident",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -4708,14 +5226,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Краснюк И.И.",
        "name_en": "I.I. Krasnyuk",
        "initials": "И.И.",
-       "position_ru": "РhD-студент Петруленко К.Е., аспирант Кульмин А.Р., ординатор Иванова А.Н.\nPhD, профессор",
-       "position_en": "tudent Petrulenko K.E, graduate student Kulmin A.R., resident Ivanova A.N.\nPhD, Professor",
+       "position_ru": "РhD-студент Петруленко К.Е., аспирант Кульмин А.Р., ординатор Иванова А.Н. PhD",
+       "position_en": "tudent Petrulenko K.E, graduate student Kulmin A.R., resident Ivanova A.N.",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4727,14 +5249,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Козлова Ж.М.",
        "name_en": "Zh.M. Kozlova",
        "initials": "Ж.М.",
-       "position_ru": "аспирант Кульмин А.Р., ординатор Иванова А.Н.\nPhD, профессор Краснюк И.И.; PhD, доцент",
-       "position_en": "ulmin A.R., resident Ivanova A.N.\nPhD, Professor I. I. Krasnyuk; PhD, Associate Professor",
+       "position_ru": "аспирант Кульмин А.Р., ординатор Иванова А.Н. PhD, Краснюк И.И.; PhD",
+       "position_en": "ulmin A.R., resident Ivanova A.N. , I. I. Krasnyuk; , Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4746,14 +5272,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Щеглов С.Д.",
        "name_en": "S.D. Shcheglov",
        "initials": "С.Д.",
-       "position_ru": "ординатор Иванова А.Н.\nPhD, профессор Краснюк И.И.; PhD, доцент Козлова Ж.М.; аспирант",
-       "position_en": "Professor I. I. Krasnyuk; PhD, Associate Professor Zh. M. Kozlova; postgraduate student",
+       "position_ru": "ординатор Иванова А.Н. PhD, Краснюк И.И.; PhD, Козлова Ж.М.; аспирант",
+       "position_en": "I. I. Krasnyuk; , Associate Zh. M. Kozlova; postgraduate student",
        "role_ru": "аспирант",
        "role_en": null,
        "photo": null,
@@ -4765,14 +5295,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Бандин Р.А.",
        "name_en": "R.A. Bandin",
        "initials": "Р.А.",
-       "position_ru": "А.Н.\nPhD, профессор Краснюк И.И.; PhD, доцент Козлова Ж.М.; аспирант Щеглов С.Д.; студент",
-       "position_en": "k; PhD, Associate Professor Zh. M. Kozlova; postgraduate student S. D. Shcheglov; student",
+       "position_ru": "А.Н. PhD, Краснюк И.И.; PhD, Козлова Ж.М.; аспирант Щеглов С.Д.; студент",
+       "position_en": "k; , Associate Zh. M. Kozlova; postgraduate student S. D. Shcheglov; student",
        "role_ru": "студент",
        "role_en": null,
        "photo": null,
@@ -4784,7 +5318,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "PhD",
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -4900,8 +5438,8 @@
        "name_ru": "Раменская Г.В.",
        "name_en": "Ramenskaya G.V.",
        "initials": "Г.В.",
-       "position_ru": "(по авторам опубликованных работ): д.фарм.н., профессор",
-       "position_en": "(based on authors of published works): Doctor of Pharmaceutical Sciences, Professor",
+       "position_ru": "(по авторам опубликованных работ): д.фарм.н.",
+       "position_en": "(based on authors of published works):",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4913,14 +5451,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Белова М.В.",
        "name_en": "Belova M.V.",
        "initials": "М.В.",
-       "position_ru": "(по авторам опубликованных работ): д.фарм.н., профессор Раменская Г.В.; д.б.н., профессор",
-       "position_en": "rmaceutical Sciences, Professor Ramenskaya G.V.; Doctor of Biological Sciences, Professor",
+       "position_ru": "(по авторам опубликованных работ): д.фарм.н., Раменская Г.В.; д.б.н.",
+       "position_en": "rmaceutical Sciences, Ramenskaya G.V.;",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4932,14 +5474,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Петухов А.Е.",
        "name_en": "Petukhov A.E.",
        "initials": "А.Е.",
-       "position_ru": "т): д.фарм.н., профессор Раменская Г.В.; д.б.н., профессор Белова М.В.; к.фарм.н., доцент",
-       "position_en": "ciences, Professor Belova M.V.; Candidate of Pharmaceutical Sciences, Associate Professor",
+       "position_ru": "т): д.фарм.н., Раменская Г.В.; д.б.н., Белова М.В.; к.фарм.н.",
+       "position_en": "ciences, Belova M.V.; Candidate of Pharmaceutical Sciences, Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -4951,7 +5497,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
@@ -5072,7 +5622,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Смирнов В.В.",
@@ -5091,7 +5645,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       },
       {
        "name_ru": "Мельников Е.С.",
@@ -5110,7 +5668,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -5292,7 +5854,9 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": true
+       "added_from_review": true,
+       "degree_ru": null,
+       "academic_title_ru": null
       },
       {
        "name_ru": "Турецкий Евгений Александрович",
@@ -5311,7 +5875,9 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": true
+       "added_from_review": true,
+       "degree_ru": null,
+       "academic_title_ru": null
       }
      ],
      "publications": [
@@ -5427,8 +5993,8 @@
        "name_ru": "Смирнов В.В.",
        "name_en": "Smirnov V.V.",
        "initials": "В.В.",
-       "position_ru": "д.ф.н., профессор",
-       "position_en": "Doctor of Pharmaceutical Sciences, Professor",
+       "position_ru": "д.ф.н.",
+       "position_en": "",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -5440,14 +6006,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Туренко В.Н.",
        "name_en": "Turenko V.N.",
        "initials": "В.Н.",
-       "position_ru": "д.ф.н., профессор Смирнов В.В",
-       "position_en": "Doctor of Pharmaceutical Sciences, Professor Smirnov V.V",
+       "position_ru": "д.ф.н., Смирнов В.В",
+       "position_en": ", Smirnov V.V",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -5459,14 +6029,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Багаев Д.Э.",
        "name_en": "Bagaev D.E.",
        "initials": "Д.Э.",
-       "position_ru": "д.ф.н., профессор Смирнов В.В., Туренко В.Н",
-       "position_en": "Doctor of Pharmaceutical Sciences, Professor Smirnov V.V.; Turenko V.N",
+       "position_ru": "д.ф.н., Смирнов В.В., Туренко В.Н",
+       "position_en": ", Smirnov V.V.; Turenko V.N",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -5478,14 +6052,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Спиридонов А.В.",
        "name_en": "Spiridonov A.V.",
        "initials": "А.В.",
-       "position_ru": "д.ф.н., профессор Смирнов В.В., Туренко В.Н., Багаев Д.Э., Bello Taye",
-       "position_en": "f Pharmaceutical Sciences, Professor Smirnov V.V.; Turenko V.N.; Bagaev D.E.; Bello Taye",
+       "position_ru": "д.ф.н., Смирнов В.В., Туренко В.Н., Багаев Д.Э., Bello Taye",
+       "position_en": "f Pharmaceutical Sciences, Smirnov V.V.; Turenko V.N.; Bagaev D.E.; Bello Taye",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -5497,14 +6075,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Долгов Д.С.",
        "name_en": "Dolgov D.S.",
        "initials": "Д.С.",
-       "position_ru": "д.ф.н., профессор Смирнов В.В., Туренко В.Н., Багаев Д.Э., Bello Taye, Спиридонов А.В",
-       "position_en": "Sciences, Professor Smirnov V.V.; Turenko V.N.; Bagaev D.E.; Bello Taye; Spiridonov A.V",
+       "position_ru": "д.ф.н., Смирнов В.В., Туренко В.Н., Багаев Д.Э., Bello Taye, Спиридонов А.В",
+       "position_en": "Sciences, Smirnov V.V.; Turenko V.N.; Bagaev D.E.; Bello Taye; Spiridonov A.V",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -5516,7 +6098,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": null,
@@ -5535,7 +6121,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": null,
+       "degree_en": null,
+       "academic_title_en": null
       }
      ],
      "publications": [
@@ -5585,8 +6175,8 @@
        "name_ru": "Раменская Г.В.",
        "name_en": "Ramenskaya G.V.",
        "initials": "Г.В.",
-       "position_ru": "д.фарм.н., профессор",
-       "position_en": "Doctor of Pharmaceutical Sciences, Professor",
+       "position_ru": "д.фарм.н.",
+       "position_en": "",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -5598,14 +6188,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": "Doctor of Sciences",
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Медведев Ю.В.",
        "name_en": "Medvedev Yu.V.",
        "initials": "Ю.В.",
-       "position_ru": "д.фарм.н., профессор Раменская Г.В.; к.фарм.н., доцент",
-       "position_en": "ces, Professor Ramenskaya G.V.; Candidate of Pharmaceutical Sciences, Associate Professor",
+       "position_ru": "д.фарм.н., Раменская Г.В.; к.фарм.н.",
+       "position_en": "ces, Ramenskaya G.V.; Candidate of Pharmaceutical Sciences, Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -5617,14 +6211,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Мельников Е.С.",
        "name_en": "Melnikov E.S.",
        "initials": "Е.С.",
-       "position_ru": "д.фарм.н., профессор Раменская Г.В.; к.фарм.н., доцент Медведев Ю.В.; к.фарм.н., доцент",
-       "position_en": "ciate Professor Medvedev Yu.V.; Candidate of Pharmaceutical Sciences, Associate Professor",
+       "position_ru": "д.фарм.н., Раменская Г.В.; к.фарм.н., Медведев Ю.В.; к.фарм.н.",
+       "position_en": "ciate Medvedev Yu.V.; Candidate of Pharmaceutical Sciences, Associate",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -5636,14 +6234,18 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "профессор",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       },
       {
        "name_ru": "Фишер Е.Н.",
        "name_en": "Fisher E.N.",
        "initials": "Е.Н.",
-       "position_ru": "енская Г.В.; к.фарм.н., доцент Медведев Ю.В.; к.фарм.н., доцент Мельников Е.С.; к.фарм.н",
-       "position_en": "eutical Sciences, Associate Professor Melnikov E.S.; Candidate of Pharmaceutical Sciences",
+       "position_ru": "енская Г.В.; к.фарм.н., Медведев Ю.В.; к.фарм.н., Мельников Е.С.; к.фарм.н",
+       "position_en": "eutical Sciences, Associate Melnikov E.S.; Candidate of Pharmaceutical Sciences",
        "role_ru": "участник",
        "role_en": null,
        "photo": null,
@@ -5655,7 +6257,11 @@
        "google_scholar": null,
        "researchgate": null,
        "is_lead": false,
-       "added_from_review": false
+       "added_from_review": false,
+       "degree_ru": null,
+       "academic_title_ru": "доцент",
+       "degree_en": null,
+       "academic_title_en": "Professor"
       }
      ],
      "publications": [
