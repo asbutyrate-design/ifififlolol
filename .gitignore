@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+*.token
+.env
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+node_modules/
+build/
+dist/
+*.egg-info/
+.pytest_cache/
