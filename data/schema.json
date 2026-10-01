@@ -1,707 +1,761 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://innovativedrugsconference.sechenov.ru/schema/projects.json",
-  "title": "Научные проекты кафедр Сеченовского Университета",
-  "description": "Единая схема для всех проектов. Один проект = одна запись, независимо от числа языковых версий. Языки описываются парой полей *_ru / *_en, но НЕ порождают вторую запись: связь ru↔en держится на общем slug.",
-  "type": "object",
-  "required": [
-    "meta",
-    "departments"
-  ],
-  "additionalProperties": false,
-  "properties": {
-    "meta": {
-      "$ref": "#/$defs/meta"
-    },
-    "departments": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "$ref": "#/$defs/department"
-      }
-    }
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "$id": "https://innovativedrugsconference.sechenov.ru/schema/projects.json",
+ "title": "Научные проекты кафедр Сеченовского Университета",
+ "description": "Единая схема для всех проектов. Один проект = одна запись, независимо от числа языковых версий. Языки описываются парой полей *_ru / *_en, но НЕ порождают вторую запись: связь ru↔en держится на общем slug.",
+ "type": "object",
+ "required": [
+  "meta",
+  "departments"
+ ],
+ "additionalProperties": false,
+ "properties": {
+  "meta": {
+   "$ref": "#/$defs/meta"
   },
-  "$defs": {
-    "meta": {
-      "type": "object",
-      "description": "Служебные сведения о сборке.",
-      "required": [
-        "schema_version",
-        "generated_at",
-        "base_url",
-        "url_scheme"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "schema_version": {
-          "type": "string",
-          "description": "Версия схемы, напр. 1.0.0"
-        },
-        "generated_at": {
-          "type": "string",
-          "description": "Дата-время сборки, ISO 8601"
-        },
-        "source_commit": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Коммит исходников в /source"
-        },
-        "base_url": {
-          "type": "string",
-          "description": "Домен-носитель. Все адреса страниц и QR строятся от него."
-        },
-        "lang_suffix": {
-          "type": "object",
-          "description": "Соответствие языка суффиксу адреса: ru→rus, en→eng.",
-          "additionalProperties": false,
-          "properties": {
-            "ru": { "type": "string" },
-            "en": { "type": "string" }
-          }
-        },
-        "url_scheme": {
-          "type": "string",
-          "description": "Шаблон адреса проекта. Выбор схемы — предмет ЭТАПА 4. Меняется в ОДНОМ месте.",
-          "examples": [
-            "/{lang}/{dept}/{slug}/",
-            "/{lang}/p/{slug}/"
-          ]
-        },
-        "counts": {
-          "type": "object",
-          "description": "Сводные числа сборки. Считаются скриптом, руками не правятся.",
-          "additionalProperties": false,
-          "properties": {
-            "departments": {
-              "type": "integer",
-              "minimum": 0
-            },
-            "projects": {
-              "type": "integer",
-              "minimum": 0
-            },
-            "projects_with_both_langs": {
-              "type": "integer",
-              "minimum": 0
-            },
-            "projects_ru_only": {
-              "type": "integer",
-              "minimum": 0
-            },
-            "projects_en_only": {
-              "type": "integer",
-              "minimum": 0
-            },
-            "pages": {
-              "type": "integer",
-              "minimum": 0
-            },
-            "qr_codes": {
-              "type": "integer",
-              "minimum": 0
-            }
-          }
-        }
-      }
-    },
-    "department": {
-      "type": "object",
-      "required": [
-        "slug",
-        "name_ru",
-        "name_en",
-        "status",
-        "projects"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "slug": {
-          "type": "string",
-          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
-          "description": "Латиница, строчные, дефисы. Присваивается один раз и не меняется."
-        },
-        "name_ru": {
-          "type": "string",
-          "description": "Название кафедры по-русски"
-        },
-        "name_en": {
-          "type": "string",
-          "description": "Название кафедры по-английски"
-        },
-        "abbr": {
-          "type": "string",
-          "description": "Сокращение из исходных файлов: АФКХ, БТ, ОЭФ…"
-        },
-        "faculty_ru": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "faculty_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "page_url": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Адрес страницы кафедры. NULL, если страницы нет — не выдумываем."
-        },
-        "status": {
-          "type": "string",
-          "enum": [
-            "ready",
-            "pending"
-          ],
-          "description": "ready — файлы есть и разобраны; pending — кафедра заявлена, но файлы ещё не приходили."
-        },
-        "source_files": {
-          "type": "object",
-          "description": "Какие файлы /source дали материал. Имена сохраняются как есть, включая опечатки.",
-          "additionalProperties": false,
-          "properties": {
-            "ru": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "en": {
-              "type": [
-                "string",
-                "null"
-              ]
-            }
-          }
-        },
-        "projects": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/project"
-          }
-        }
-      }
-    },
-    "project": {
-      "type": "object",
-      "required": [
-        "slug",
-        "title_ru",
-        "title_en",
-        "langs_available",
-        "review_flags"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "slug": {
-          "type": "string",
-          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
-          "description": "Один на оба языка. Основа адресов и QR. Не меняется никогда: переименование проекта = редирект, а не правка slug."
-        },
-        "title_ru": {
-          "type": "string",
-          "minLength": 1
-        },
-        "title_en": {
-          "type": "string",
-          "minLength": 1
-        },
-        "annotation_ru": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "1–3 предложения для карточки в каталоге. Берётся из цели проекта, не сочиняется."
-        },
-        "annotation_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "description_ru": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Полный текст проекта в Markdown. Научный текст не переписывается."
-        },
-        "description_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "keywords_ru": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          },
-          "description": "Пустой массив = ключевые слова в источнике не указаны. Не выдумываем."
-        },
-        "keywords_en": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "team_raw_ru": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Состав команды ДОСЛОВНО, как в источнике. Страховка: структурированный authors[] всегда можно сверить с этим текстом."
-        },
-        "team_raw_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "collaboration_ru": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "С кем выполняется совместно — дословно."
-        },
-        "collaboration_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "langs_available": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "ru",
-              "en"
-            ]
-          },
-          "minItems": 1,
-          "description": "Какие языковые версии реально существуют. Определяет, сколько страниц и QR будет у проекта."
-        },
-        "translation_status": {
-          "type": "string",
-          "enum": [
-            "ok",
-            "machine",
-            "missing"
-          ],
-          "description": "ok — перевод выверенный; machine — машинный (страница обязана это показывать); missing — версии нет."
-        },
-        "url_ru": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Полный адрес русской страницы. NULL, если русской версии нет. Строится из meta.base_url и meta.url_scheme."
-        },
-        "url_en": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Полный адрес английской страницы. NULL, если английской версии нет."
-        },
-        "status": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "enum": [
-            "active",
-            "completed",
-            null
-          ],
-          "description": "Заказчик подтвердил, что этого поля нет. Оставлено для совместимости, всегда null."
-        },
-        "years": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Годы выполнения. Заказчик подтвердил, что в источниках их нет. Всегда null."
-        },
-        "funding": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Грант / программа. Заполняется, только если прямо указано в источнике."
-        },
-        "authors": {
-          "type": "array",
-          "description": "Разобранный список авторов. Там, где разбор ненадёжен, стоит review_flag; дословный текст — в team_raw_*.",
-          "items": {
-            "$ref": "#/$defs/author"
-          }
-        },
-        "publications": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/publication"
-          }
-        },
-        "images": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/image"
-          }
-        },
-        "links": {
-          "type": "array",
-          "items": {
-            "$ref": "#/$defs/link"
-          }
-        },
-        "source_file_ru": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "source_file_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "source_block_ru": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "minimum": 1,
-          "description": "Номер блока в файле, с 1"
-        },
-        "source_block_en": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "minimum": 1
-        },
-        "review_flags": {
-          "type": "array",
-          "items": {
-            "type": "string",
-            "enum": [
-              "author_count_mismatch",
-              "author_parsing_uncertain",
-              "authors_collective_only",
-              "broken_doi_in_source",
-              "en_name_not_matched",
-              "en_only_author",
-              "en_team_missing",
-              "external_data_expected",
-              "no_authors",
-              "no_lead_marked",
-              "no_publications",
-              "question_in_source",
-              "team_label_missing",
-              "title_multiline",
-              "todo_from_reviewer"
-            ]
-          },
-          "description": "Машиночитаемые пометки. Из них собирается data_report.md, руками список не дублируется."
-        },
-        "todos": {
-          "type": "array",
-          "description": "Задачи, вынесенные заказчиком в TODO (из data/reviews.json). Показываются как «ожидает уточнения от кафедры».",
-          "items": {
-            "type": "object",
-            "required": [
-              "text",
-              "doer"
-            ],
-            "additionalProperties": false,
-            "properties": {
-              "source": {
-                "type": [
-                  "integer",
-                  "string",
-                  "null"
-                ],
-                "description": "Номер вопроса в отчёте"
-              },
-              "text": {
-                "type": "string",
-                "description": "Суть задачи — как сформулировал заказчик"
-              },
-              "doer": {
-                "type": "string",
-                "enum": [
-                  "кафедра",
-                  "заказчик",
-                  "исполнитель"
-                ],
-                "description": "Кто должен закрыть задачу"
-              }
-            }
-          }
-        }
-      }
-    },
-    "author": {
-      "type": "object",
-      "required": [
-        "role_ru",
-        "is_lead"
-      ],
-      "additionalProperties": false,
-      "description": "Автор проекта. Хотя бы одно из name_ru / name_en обязано быть заполнено: в английских файлах ФИО бывает только латиницей, в русских — только кириллицей.",
-      "anyOf": [
-        {
-          "required": [
-            "name_ru"
-          ],
-          "properties": {
-            "name_ru": {
-              "type": "string"
-            }
-          }
-        },
-        {
-          "required": [
-            "name_en"
-          ],
-          "properties": {
-            "name_en": {
-              "type": "string"
-            }
-          }
-        }
-      ],
-      "properties": {
-        "name_ru": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "ФИО кириллицей, как в источнике. null, если в источнике только латиница."
-        },
-        "name_en": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "ФИО латиницей. null, если латинского написания в источнике нет."
-        },
-        "initials": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Инициалы: И.И., A.A."
-        },
-        "position_ru": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Должность и степень — как записано в источнике"
-        },
-        "position_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "role_ru": {
-          "type": "string",
-          "enum": [
-            "руководитель",
-            "участник",
-            "аспирант",
-            "магистрант",
-            "студент",
-            "не указана",
-            "ординатор",
-            "соискатель"
-          ],
-          "description": "Роль в проекте. 'не указана' честнее, чем догадка."
-        },
-        "role_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "photo": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Путь в /assets/avatars/… Только файлы от заказчика"
-        },
-        "profile_url": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "orcid": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "scopus_id": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "researcher_id": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "elibrary_id": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "google_scholar": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "researchgate": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "is_lead": {
-          "type": "boolean",
-          "description": "Руководитель проекта"
-        },
-        "added_from_review": {
-          "type": "boolean",
-          "description": "Автор дописан по уточнению из data/reviews.json, а не найден в тексте источника. На странице показывается честно: человек подтверждён заказчиком."
-        }
-      }
-    },
-    "publication": {
-      "type": "object",
-      "required": [
-        "raw"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "raw": {
-          "type": "string",
-          "description": "Строка публикации дословно. Первично именно она."
-        },
-        "title": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "year": {
-          "type": [
-            "integer",
-            "null"
-          ],
-          "minimum": 1900,
-          "maximum": 2100
-        },
-        "journal": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "doi": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Только DOI, без префикса https://doi.org/"
-        },
-        "url": {
-          "type": [
-            "string",
-            "null"
-          ],
-          "description": "Кликабельный адрес, собранный из DOI или указанный явно"
-        }
-      }
-    },
-    "image": {
-      "type": "object",
-      "required": [
-        "src"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "src": {
-          "type": "string",
-          "description": "Относительный путь внутри репозитория: assets/…"
-        },
-        "alt_ru": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "alt_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "caption_ru": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "caption_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        }
-      }
-    },
-    "link": {
-      "type": "object",
-      "required": [
-        "url"
-      ],
-      "additionalProperties": false,
-      "properties": {
-        "url": {
-          "type": "string"
-        },
-        "label_ru": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "label_en": {
-          "type": [
-            "string",
-            "null"
-          ]
-        }
-      }
-    }
+  "departments": {
+   "type": "array",
+   "minItems": 1,
+   "items": {
+    "$ref": "#/$defs/department"
+   }
   }
+ },
+ "$defs": {
+  "meta": {
+   "type": "object",
+   "description": "Служебные сведения о сборке.",
+   "required": [
+    "schema_version",
+    "generated_at",
+    "base_url",
+    "url_scheme"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "schema_version": {
+     "type": "string",
+     "description": "Версия схемы, напр. 1.0.0"
+    },
+    "generated_at": {
+     "type": "string",
+     "description": "Дата-время сборки, ISO 8601"
+    },
+    "source_commit": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Коммит исходников в /source"
+    },
+    "base_url": {
+     "type": "string",
+     "description": "Домен-носитель. Все адреса страниц и QR строятся от него."
+    },
+    "lang_suffix": {
+     "type": "object",
+     "description": "Соответствие языка суффиксу адреса: ru→rus, en→eng.",
+     "additionalProperties": false,
+     "properties": {
+      "ru": {
+       "type": "string"
+      },
+      "en": {
+       "type": "string"
+      }
+     }
+    },
+    "url_scheme": {
+     "type": "string",
+     "description": "Шаблон адреса проекта. Выбор схемы — предмет ЭТАПА 4. Меняется в ОДНОМ месте.",
+     "examples": [
+      "/{lang}/{dept}/{slug}/",
+      "/{lang}/p/{slug}/"
+     ]
+    },
+    "counts": {
+     "type": "object",
+     "description": "Сводные числа сборки. Считаются скриптом, руками не правятся.",
+     "additionalProperties": false,
+     "properties": {
+      "departments": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "projects": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "projects_with_both_langs": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "projects_ru_only": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "projects_en_only": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "pages": {
+       "type": "integer",
+       "minimum": 0
+      },
+      "qr_codes": {
+       "type": "integer",
+       "minimum": 0
+      }
+     }
+    }
+   }
+  },
+  "department": {
+   "type": "object",
+   "required": [
+    "slug",
+    "name_ru",
+    "name_en",
+    "status",
+    "projects"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "slug": {
+     "type": "string",
+     "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+     "description": "Латиница, строчные, дефисы. Присваивается один раз и не меняется."
+    },
+    "name_ru": {
+     "type": "string",
+     "description": "Название кафедры по-русски"
+    },
+    "name_en": {
+     "type": "string",
+     "description": "Название кафедры по-английски"
+    },
+    "abbr": {
+     "type": "string",
+     "description": "Сокращение из исходных файлов: АФКХ, БТ, ОЭФ…"
+    },
+    "faculty_ru": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "faculty_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "page_url": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Адрес страницы кафедры. NULL, если страницы нет — не выдумываем."
+    },
+    "status": {
+     "type": "string",
+     "enum": [
+      "ready",
+      "pending"
+     ],
+     "description": "ready — файлы есть и разобраны; pending — кафедра заявлена, но файлы ещё не приходили."
+    },
+    "source_files": {
+     "type": "object",
+     "description": "Какие файлы /source дали материал. Имена сохраняются как есть, включая опечатки.",
+     "additionalProperties": false,
+     "properties": {
+      "ru": {
+       "type": [
+        "string",
+        "null"
+       ]
+      },
+      "en": {
+       "type": [
+        "string",
+        "null"
+       ]
+      }
+     }
+    },
+    "projects": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/project"
+     }
+    }
+   }
+  },
+  "project": {
+   "type": "object",
+   "required": [
+    "slug",
+    "title_ru",
+    "title_en",
+    "langs_available",
+    "review_flags"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "slug": {
+     "type": "string",
+     "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+     "description": "Один на оба языка. Основа адресов и QR. Не меняется никогда: переименование проекта = редирект, а не правка slug."
+    },
+    "title_ru": {
+     "type": "string",
+     "minLength": 1
+    },
+    "title_en": {
+     "type": "string",
+     "minLength": 1
+    },
+    "annotation_ru": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "1–3 предложения для карточки в каталоге. Берётся из цели проекта, не сочиняется."
+    },
+    "annotation_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "description_ru": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Полный текст проекта в Markdown. Научный текст не переписывается."
+    },
+    "description_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "keywords_ru": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     },
+     "description": "Пустой массив = ключевые слова в источнике не указаны. Не выдумываем."
+    },
+    "keywords_en": {
+     "type": "array",
+     "items": {
+      "type": "string"
+     }
+    },
+    "team_raw_ru": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Состав команды ДОСЛОВНО, как в источнике. Страховка: структурированный authors[] всегда можно сверить с этим текстом."
+    },
+    "team_raw_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "collaboration_ru": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "С кем выполняется совместно — дословно."
+    },
+    "collaboration_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "langs_available": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "enum": [
+       "ru",
+       "en"
+      ]
+     },
+     "minItems": 1,
+     "description": "Какие языковые версии реально существуют. Определяет, сколько страниц и QR будет у проекта."
+    },
+    "translation_status": {
+     "type": "string",
+     "enum": [
+      "ok",
+      "machine",
+      "missing"
+     ],
+     "description": "ok — перевод выверенный; machine — машинный (страница обязана это показывать); missing — версии нет."
+    },
+    "url_ru": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Полный адрес русской страницы. NULL, если русской версии нет. Строится из meta.base_url и meta.url_scheme."
+    },
+    "url_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Полный адрес английской страницы. NULL, если английской версии нет."
+    },
+    "status": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "enum": [
+      "active",
+      "completed",
+      null
+     ],
+     "description": "Заказчик подтвердил, что этого поля нет. Оставлено для совместимости, всегда null."
+    },
+    "years": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Годы выполнения. Заказчик подтвердил, что в источниках их нет. Всегда null."
+    },
+    "funding": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Грант / программа. Заполняется, только если прямо указано в источнике."
+    },
+    "authors": {
+     "type": "array",
+     "description": "Разобранный список авторов. Там, где разбор ненадёжен, стоит review_flag; дословный текст — в team_raw_*.",
+     "items": {
+      "$ref": "#/$defs/author"
+     }
+    },
+    "publications": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/publication"
+     }
+    },
+    "images": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/image"
+     }
+    },
+    "links": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/link"
+     }
+    },
+    "source_file_ru": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "source_file_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "source_block_ru": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "minimum": 1,
+     "description": "Номер блока в файле, с 1"
+    },
+    "source_block_en": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "minimum": 1
+    },
+    "review_flags": {
+     "type": "array",
+     "items": {
+      "type": "string",
+      "enum": [
+       "author_count_mismatch",
+       "author_parsing_uncertain",
+       "authors_collective_only",
+       "broken_doi_in_source",
+       "en_name_not_matched",
+       "en_only_author",
+       "en_team_missing",
+       "external_data_expected",
+       "no_authors",
+       "no_lead_marked",
+       "no_publications",
+       "question_in_source",
+       "team_label_missing",
+       "title_multiline",
+       "todo_from_reviewer"
+      ]
+     },
+     "description": "Машиночитаемые пометки. Из них собирается data_report.md, руками список не дублируется."
+    },
+    "todos": {
+     "type": "array",
+     "description": "Задачи, вынесенные заказчиком в TODO (из data/reviews.json). Показываются как «ожидает уточнения от кафедры».",
+     "items": {
+      "type": "object",
+      "required": [
+       "text",
+       "doer"
+      ],
+      "additionalProperties": false,
+      "properties": {
+       "source": {
+        "type": [
+         "integer",
+         "string",
+         "null"
+        ],
+        "description": "Номер вопроса в отчёте"
+       },
+       "text": {
+        "type": "string",
+        "description": "Суть задачи — как сформулировал заказчик"
+       },
+       "doer": {
+        "type": "string",
+        "enum": [
+         "кафедра",
+         "заказчик",
+         "исполнитель"
+        ],
+        "description": "Кто должен закрыть задачу"
+       }
+      }
+     }
+    }
+   }
+  },
+  "author": {
+   "type": "object",
+   "required": [
+    "role_ru",
+    "is_lead"
+   ],
+   "additionalProperties": false,
+   "description": "Автор проекта. Хотя бы одно из name_ru / name_en обязано быть заполнено: в английских файлах ФИО бывает только латиницей, в русских — только кириллицей.",
+   "anyOf": [
+    {
+     "required": [
+      "name_ru"
+     ],
+     "properties": {
+      "name_ru": {
+       "type": "string"
+      }
+     }
+    },
+    {
+     "required": [
+      "name_en"
+     ],
+     "properties": {
+      "name_en": {
+       "type": "string"
+      }
+     }
+    }
+   ],
+   "properties": {
+    "name_ru": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "ФИО кириллицей, как в источнике. null, если в источнике только латиница."
+    },
+    "name_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "ФИО латиницей. null, если латинского написания в источнике нет."
+    },
+    "initials": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Инициалы: И.И., A.A."
+    },
+    "position_ru": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Должность и степень — как записано в источнике"
+    },
+    "position_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "role_ru": {
+     "type": "string",
+     "enum": [
+      "руководитель",
+      "участник",
+      "аспирант",
+      "магистрант",
+      "студент",
+      "не указана",
+      "ординатор",
+      "соискатель"
+     ],
+     "description": "Роль в проекте. 'не указана' честнее, чем догадка."
+    },
+    "role_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "photo": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Путь в /assets/avatars/… Только файлы от заказчика"
+    },
+    "profile_url": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "orcid": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "scopus_id": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "researcher_id": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "elibrary_id": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "google_scholar": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "researchgate": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "is_lead": {
+     "type": "boolean",
+     "description": "Руководитель проекта"
+    },
+    "added_from_review": {
+     "type": "boolean",
+     "description": "Автор дописан по уточнению из data/reviews.json, а не найден в тексте источника. На странице показывается честно: человек подтверждён заказчиком."
+    },
+    "degree_ru": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Учёная степень на русском: д.ф.н., к.х.н., и т.д.",
+     "examples": [
+      "д.ф.н.",
+      "к.ф.н.",
+      "д.х.н.",
+      "к.х.н."
+     ]
+    },
+    "degree_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Academic degree in English",
+     "examples": [
+      "PhD",
+      "Doctor of Sciences",
+      "Candidate of Sciences"
+     ]
+    },
+    "academic_title_ru": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Учёное звание на русском: профессор, доцент, член-корреспондент РАН",
+     "examples": [
+      "профессор",
+      "доцент",
+      "ассистент",
+      "член-корреспондент РАН"
+     ]
+    },
+    "academic_title_en": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Academic title in English",
+     "examples": [
+      "Professor",
+      "Associate Professor",
+      "Corresponding Member of RAS"
+     ]
+    }
+   }
+  },
+  "publication": {
+   "type": "object",
+   "required": [
+    "raw"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "raw": {
+     "type": "string",
+     "description": "Строка публикации дословно. Первично именно она."
+    },
+    "title": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "year": {
+     "type": [
+      "integer",
+      "null"
+     ],
+     "minimum": 1900,
+     "maximum": 2100
+    },
+    "journal": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "doi": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Только DOI, без префикса https://doi.org/"
+    },
+    "url": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "Кликабельный адрес, собранный из DOI или указанный явно"
+    }
+   }
+  },
+  "image": {
+   "type": "object",
+   "required": [
+    "src"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "src": {
+     "type": "string",
+     "description": "Относительный путь внутри репозитория: assets/…"
+    },
+    "alt_ru": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "alt_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "caption_ru": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "caption_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   }
+  },
+  "link": {
+   "type": "object",
+   "required": [
+    "url"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "url": {
+     "type": "string"
+    },
+    "label_ru": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "label_en": {
+     "type": [
+      "string",
+      "null"
+     ]
+    }
+   }
+  }
+ }
 }
