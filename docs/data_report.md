@@ -180,37 +180,37 @@
 
 | № | Проект | Ответ |
 |---|---|---|
-| 1 | ФЕ · glycans-plant-raw-materials |  |
-| 2 | ФХ · low-molecular-bioactive-compounds |  |
-| 3 | ФАРМАЦ · cdss-physician-pharmacist |  |
-| 4 | ФАРМАЦ · ai-environmental-programs |  |
-| 5 | АФКХ · spray-quality-aerosols |  |
-| 6 | ФЕ · light-microscopy-quality-control |  |
-| 7 | АФКХ · solid-dispersions-bioavailability |  |
-| 8 | БТ · targeted-delivery-antitumor |  |
-| 9 | БТ · bacteriophages-endolysins |  |
-| 10 | БТ · bacterial-cellulose |  |
-| 11 | ОЭФ · ai-pharmacy-business-processes |  |
-| 12 | ОЭФ · pharmaceutical-care-pregnant-arvi |  |
-| 13 | ФАРМАК · digital-prescribing |  |
-| 14 | ФАРМАК · neuroprotection-neuroregeneration |  |
-| 15 | ФАРМАЦ · cdss-physician-pharmacist |  |
-| 16 | ФЕ · new-medicinal-plant-raw-materials |  |
-| 17 | ФП · qbd-drug-development-strategy |  |
-| 18 | ФТ · in-situ-delivery-systems |  |
-| 19 | ФХ · low-molecular-bioactive-compounds |  |
-| 20 | ФХ · bioequivalence-assessment |  |
-| 21 | АФКХ · solid-dispersions-bioavailability |  |
-| 22 | ФАРМАК · drug-induced-hearing-loss |  |
-| 23 | ФЕ · plants-taxonomy-medicine |  |
-| 24 | ФП · qbd-drug-development-strategy |  |
+| 1 | ФЕ · glycans-plant-raw-materials | Да, там проект выполняется К.ф.н., доцент, доцент Боков Д.О. |
+| 2 | ФХ · low-molecular-bioactive-compounds | Да, там проект выполняется: к.ф.н., доцент кафедры Кокорекин Владимир Алексеевич, к.ф.н., ст. преп. кафедры Турецкий Евгений Александрович |
+| 3 | ФАРМАЦ · cdss-physician-pharmacist | Нет, они указали публикации в разделе Основные научные результаты проекта. Но там не только публикации |
+| 4 | ФАРМАЦ · ai-environmental-programs | Нет, они указали публикации в разделе Основные научные результаты проекта. Но там не только публикации |
+| 5 | АФКХ · spray-quality-aerosols | Давай в TODO занесем, чтобы кафедра сама разобралась с ссылками |
+| 6 | ФЕ · light-microscopy-quality-control | Нормально |
+| 7 | АФКХ · solid-dispersions-bioavailability | В обеих версиях 9 авторов. Перепроверь |
+| 8 | БТ · targeted-delivery-antitumor | В обеих версиях два автора: Фельдман и Савина |
+| 9 | БТ · bacteriophages-endolysins | В обеих версиях 4 автора, ты за имя принимаешь регалии, должности, степени и тд, наверное. Кстати, во всех проектах регалии надо унифицировать. И имена тоже унифицировать везде. Надо еще подумать о том, чтобы не писать регалии на блоке автора, а показывать их при наведении или клике, там будет типа бокс такой, а внутри бокса уже регалии, должности, степени и тд и кнопка перейти на страницу сотрудника |
+| 10 | БТ · bacterial-cellulose | Здесь тоже 3 автора в обеих версиях |
+| 11 | ОЭФ · ai-pharmacy-business-processes | В обеих версиях 6 авторов |
+| 12 | ОЭФ · pharmaceutical-care-pregnant-arvi | В обеих версиях 3 автора |
+| 13 | ФАРМАК · digital-prescribing | В обеих 6 авторов |
+| 14 | ФАРМАК · neuroprotection-neuroregeneration | В обеих 7 авторов |
+| 15 | ФАРМАЦ · cdss-physician-pharmacist | В обеих 4 автора |
+| 16 | ФЕ · new-medicinal-plant-raw-materials | В обеих 5 авторов |
+| 17 | ФП · qbd-drug-development-strategy | Потому что в одной версии ты руководителя отдельно вынес, а в другой в список авторов. Всего 7 человек |
+| 18 | ФТ · in-situ-delivery-systems | В обеих 15 |
+| 19 | ФХ · low-molecular-bioactive-compounds | В обеих 2 автора. Перепроверь. Причем в md есть эти данные |
+| 20 | ФХ · bioequivalence-assessment | В обеих версиях 4 автора |
+| 21 | АФКХ · solid-dispersions-bioavailability | TODO |
+| 22 | ФАРМАК · drug-induced-hearing-loss | TODO |
+| 23 | ФЕ · plants-taxonomy-medicine | TODO |
+| 24 | ФП · qbd-drug-development-strategy | Бахрушина |
 
 ### Общие вопросы
 
 | № | Вопрос | Ответ |
 |---|---|---|
-| О1 | Кафедра Химии: подтверждаете, что файлы будут присланы? |  |
-| О2 | Кафедра ФП: ожидаются ещё 2 проекта — когда будут файлы? |  |
-| О3 | Фотографии авторов будут переданы? |  |
-| О4 | Есть ли страницы сотрудников на сайте университета, на которые можно ссылаться? |  |
+| О1 | Кафедра Химии: подтверждаете, что файлы будут присланы? | Да |
+| О2 | Кафедра ФП: ожидаются ещё 2 проекта — когда будут файлы? | В течение двух дней |
+| О3 | Фотографии авторов будут переданы? | Возможно, еще нет информации. Для некоторых будут браться с сайта университета |
+| О4 | Есть ли страницы сотрудников на сайте университета, на которые можно ссылаться? | Да. URL типа https://www.sechenov.ru/univers/all/{id}/, где id как будто рандомный |
 
