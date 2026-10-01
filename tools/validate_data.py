@@ -228,6 +228,84 @@ def main() -> int:
     else:
         print(f"авторы ru↔en: {checked_pairs} пар проверено, чужих совпадений нет")
 
+    # --- Решения ЭТАПА 4: домен, протокол, суффикс, коллизии ----------------
+    # Эти проверки закрепляют решения заказчика от 2026-10-01, чтобы схема
+    # не «сползла» обратно при будущих правках.
+    if not base.startswith("https://"):
+        errors.append(
+            f"base_url без https: {base}; редирект включён, в QR должен идти https"
+        )
+    if "{slug}" not in scheme or "{suffix}" not in scheme:
+        errors.append(
+            f"url_scheme не соответствует решению заказчика: {scheme}. "
+            f"Ожидается '/{{slug}}_{{suffix}}'"
+        )
+    suff = doc["meta"].get("lang_suffix") or {}
+    if suff.get("ru") != "rus" or suff.get("en") != "eng":
+        errors.append(f"lang_suffix должен быть rus/eng, а не {suff}")
+
+    # коллизии с уже существующими страницами сайта — иначе 404 или перезапись
+    existing_path = DATA / "existing-pages.json"
+    if existing_path.exists():
+        taken = {
+            e.strip("/")
+            for e in json.loads(existing_path.read_text(encoding="utf-8"))["pages"]
+        }
+        clashes = [
+            path
+            for dep in doc["departments"]
+            for p in dep["projects"]
+            for lang in ("ru", "en")
+            if p.get(f"url_{lang}")
+            for path in [p[f"url_{lang}"].split("://", 1)[1].split("/", 1)[-1].strip("/")]
+            if path in taken
+        ]
+        if clashes:
+            errors.append(
+                "адреса заняты существующими страницами сайта: " + ", ".join(clashes)
+            )
+        else:
+            print(f"коллизии с сайтом: {len(taken)} существующих страниц проверено, свободно")
+
+    # длина адреса и версия QR: следим, чтобы код не перескочил на v6
+    def qr_version(data: str, ecc_caps: dict[int, int]) -> int:
+        n = len(data.encode())
+        for ver_, cap in ecc_caps.items():
+            if n <= cap:
+                return ver_
+        return 41
+
+    # ёмкость одного сегмента при ECC M, байты
+    CAP_M = {1:14,2:26,3:42,4:62,5:84,6:106,7:122,8:152,9:180,10:213,11:251,
+             12:287,13:331,14:362,15:412,16:450,17:504,18:560,19:624,20:666,
+             21:711,22:779,23:857,24:911,25:997,26:1059,27:1125,28:1190,
+             29:1264,30:1370,31:1452,32:1538,33:1628,34:1722,35:1809,36:1911,
+             37:1989,38:2099,39:2213,40:2331}
+    versions = [
+        qr_version(p[f"url_{lang}"], CAP_M)
+        for dep in doc["departments"]
+        for p in dep["projects"]
+        for lang in ("ru", "en")
+        if p.get(f"url_{lang}")
+    ]
+    if versions:
+        worst = max(versions)
+        if worst > 5:
+            errors.append(
+                f"адрес перерос пятую версию QR (максимум v{worst}): "
+                f"код станет плотнее, а на экране мельче. Сократите slug."
+            )
+        else:
+            longest = max(
+                (p[f"url_{lang}"] for dep in doc["departments"] for p in dep["projects"]
+                 for lang in ("ru", "en") if p.get(f"url_{lang}")),
+                key=len,
+            )
+            print(
+                f"QR: все {len(versions)} адресов пятой версии "
+                f"(самый длинный {len(longest)} симв., запас {106 - len(longest)} до v6)"
+            )
+
     # --- Итог --------------------------------------------------------------- -------------------------------------------------------------
     # --- Проверка: все поля проектов объявлены в схеме ------------------
     declared_props = set(

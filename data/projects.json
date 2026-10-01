@@ -1,10 +1,10 @@
 {
  "meta": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-10-01T19:18:31Z",
+  "generated_at": "2026-10-01T19:20:09Z",
   "source_commit": null,
   "base_url": "https://innovativedrugsconference.sechenov.ru",
-  "url_scheme": "/{lang}/{dept}/{slug}/",
+  "url_scheme": "/{slug}_{suffix}",
   "lang_suffix": {
    "ru": "rus",
    "en": "eng"
