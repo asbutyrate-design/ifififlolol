@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """
-ЭТАП 11.3: Нормализация инициалов и степеней авторов.
+ЭТАП 11.3: Нормализация инициалов и степеней авторов (исправленная версия).
 
-Правила:
-1. Инициалы: А.А. → А. А. (пробел после каждой точки)
-2. Степени: к.ф.н. → к. фарм. н. (правильное название + пробелы)
-3. Применяется к name_ru, degree_ru, initials
+Задачи:
+1. Инициалы: А.А. → А. А. (добавить пробел после каждой точки)
+2. Степени: к.ф.н. → к. фарм. н., к.б.н. → к. б. н., к.х.н. → к. х. н.
+3. Исходные team_raw_ru / team_raw_en остаются неизменными
 """
 
 import json
@@ -13,133 +13,116 @@ import re
 from pathlib import Path
 
 # Маппинг неправильных степеней на правильные
-DEGREE_CORRECTIONS = {
-    # Физические науки (НЕПРАВИЛЬНО для нас)
-    r'\bк\.?\s*?ф\.?\s*?н\.?': 'к. фарм. н.',      # к.ф.н. → к. фарм. н.
-    r'\bд\.?\s*?ф\.?\s*?н\.?': 'д. фарм. н.',      # д.ф.н. → д. фарм. н.
+DEGREE_FIXES = [
+    # Кандидат фармацевтических наук
+    (r"к\.ф\.н\.", "к. фарм. н."),
+    (r"к\.ф\.н", "к. фарм. н."),
+    (r"к\. ф\. н\.", "к. фарм. н."),
     
-    # Химические (правильные, но нужны пробелы)
-    r'\bк\.?\s*?х\.?\s*?н\.?': 'к. х. н.',
-    r'\bд\.?\s*?х\.?\s*?н\.?': 'д. х. н.',
+    # Кандидат биологических наук
+    (r"к\.б\.н\.", "к. б. н."),
+    (r"к\.б\.н", "к. б. н."),
     
-    # Биологические (правильные, но нужны пробелы)
-    r'\bк\.?\s*?б\.?\s*?н\.?': 'к. б. н.',
-    r'\bд\.?\s*?б\.?\s*?н\.?': 'д. б. н.',
-}
+    # Кандидат химических наук
+    (r"к\.х\.н\.", "к. х. н."),
+    (r"к\.х\.н", "к. х. н."),
+    
+    # Доктор фармацевтических наук
+    (r"д\.ф\.н\.", "д. фарм. н."),
+    (r"д\.ф\.н", "д. фарм. н."),
+    
+    # Доктор биологических наук
+    (r"д\.б\.н\.", "д. б. н."),
+    (r"д\.б\.н", "д. б. н."),
+    
+    # Доктор химических наук
+    (r"д\.х\.н\.", "д. х. н."),
+    (r"д\.х\.н", "д. х. н."),
+]
 
 def normalize_initials(text):
     """Нормализует инициалы: А.А. → А. А."""
     if not text:
         return text
     
-    # Паттерн: буква, точка, буква, точка (опционально ещё буквы)
-    # А.А. → А. А.
-    # А.Б. → А. Б.
-    # И.О. → И. О.
+    # Русские инициалы: А.А. → А. А.
+    text = re.sub(r"([А-ЯЁ])\.([А-ЯЁ])\.", r"\1. \2.", text)
     
-    def replace_initials(match):
-        initials = match.group(0)
-        # Добавляем пробел после каждой точки, кроме последней
-        result = re.sub(r'([A-ЯЁ])\.(?=[A-ЯЁ]\.)', r'\1. ', initials, flags=re.IGNORECASE)
-        return result
+    # Английские инициалы: A.A. → A. A.
+    text = re.sub(r"([A-Z])\.([A-Z])\.", r"\1. \2.", text)
     
-    # Ищем паттерны вида Х.Х. или Х.Х.Х.
-    text = re.sub(r'[A-ЯЁ]\.[A-ЯЁ]\.(?:[A-ЯЁ]\.)?', replace_initials, text, flags=re.IGNORECASE)
+    # Фамилия И.О. → Фамилия И. О.
+    text = re.sub(r"([А-ЯЁ]+)\s+([А-ЯЁ])\.([А-ЯЁ])\.", r"\1 \2. \3.", text)
     
     return text
 
 def normalize_degrees(text):
-    """Нормализует степени: к.ф.н. → к. фарм. н., к.б.н. → к. б. н."""
+    """Нормализует степени: к.ф.н. → к. фарм. н."""
     if not text:
         return text
     
-    result = text
-    for pattern, replacement in DEGREE_CORRECTIONS.items():
-        result = re.sub(pattern, replacement, result, flags=re.IGNORECASE)
+    for pattern, replacement in DEGREE_FIXES:
+        text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
     
-    return result
-
-def normalize_author(author):
-    """Нормализует все поля автора."""
+    # Очищаем дублирующиеся пробелы
+    text = re.sub(r'\s+', ' ', text).strip()
     
-    # Нормализуем initials
-    if author.get('initials'):
-        author['initials'] = normalize_initials(author['initials'])
-    
-    # Нормализуем name_ru (может содержать инициалы)
-    if author.get('name_ru'):
-        author['name_ru'] = normalize_initials(author['name_ru'])
-    
-    # Нормализуем name_en (может содержать инициалы латиницей, но пробелы)
-    if author.get('name_en'):
-        # Латинские инициалы: J.K. → J. K.
-        author['name_en'] = re.sub(
-            r'([A-Z])\.(?=[A-Z]\.)',
-            r'\1. ',
-            author['name_en']
-        )
-    
-    # Нормализуем degree_ru
-    if author.get('degree_ru'):
-        author['degree_ru'] = normalize_degrees(author['degree_ru'])
-    
-    # Нормализуем degree_en (может быть, но обычно PhD или Doctor of Sciences)
-    # Пока не трогаем, так как формат английских степеней другой
-    
-    # Нормализуем academic_title_ru (обычно не содержит аббревиатур, но на всякий)
-    if author.get('academic_title_ru'):
-        author['academic_title_ru'] = normalize_initials(author['academic_title_ru'])
-    
-    # Нормализуем position_ru
-    if author.get('position_ru'):
-        author['position_ru'] = normalize_degrees(author['position_ru'])
-        author['position_ru'] = normalize_initials(author['position_ru'])
-    
-    return author
+    return text
 
 def main():
     repo = Path(__file__).resolve().parent.parent
     projects_file = repo / "data" / "projects.json"
     
-    print(f"Читаю {projects_file}...")
-    with open(projects_file, "r", encoding="utf-8") as f:
+    print("Читаю data/projects.json...")
+    with open(projects_file, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
-    changes = {
+    print("Нормализую авторов...")
+    
+    stats = {
         "initials_fixed": 0,
-        "degrees_corrected": 0,
-        "name_ru_fixed": 0,
+        "degrees_fixed": 0,
+        "names_fixed": 0,
     }
     
-    print("Нормализую авторов...")
     for dept in data.get("departments", []):
-        for project in dept.get("projects", []):
-            for author in project.get("authors", []):
-                old_initials = author.get('initials')
-                old_degree = author.get('degree_ru')
-                old_name_ru = author.get('name_ru')
+        for proj in dept.get("projects", []):
+            for author in proj.get("authors", []):
+                # Нормализуем name_ru
+                if author.get("name_ru"):
+                    before = author["name_ru"]
+                    author["name_ru"] = normalize_initials(author["name_ru"])
+                    if before != author["name_ru"]:
+                        stats["initials_fixed"] += 1
                 
-                # Нормализуем
-                author = normalize_author(author)
+                # Нормализуем name_en
+                if author.get("name_en"):
+                    before = author["name_en"]
+                    author["name_en"] = normalize_initials(author["name_en"])
+                    if before != author["name_en"]:
+                        stats["initials_fixed"] += 1
                 
-                # Считаем изменения
-                if old_initials and old_initials != author.get('initials'):
-                    changes["initials_fixed"] += 1
-                if old_degree and old_degree != author.get('degree_ru'):
-                    changes["degrees_corrected"] += 1
-                if old_name_ru and old_name_ru != author.get('name_ru'):
-                    changes["name_ru_fixed"] += 1
+                # Нормализуем degree_ru
+                if author.get("degree_ru"):
+                    before = author["degree_ru"]
+                    author["degree_ru"] = normalize_degrees(author["degree_ru"])
+                    if before != author["degree_ru"]:
+                        stats["degrees_fixed"] += 1
+                
+                # Нормализуем degree_en
+                if author.get("degree_en"):
+                    before = author["degree_en"]
+                    author["degree_en"] = normalize_degrees(author["degree_en"])
+                    if before != author["degree_en"]:
+                        stats["degrees_fixed"] += 1
     
-    print(f"Сохраняю обновлённый {projects_file}...")
-    with open(projects_file, "w", encoding="utf-8") as f:
+    print(f"Сохраняю обновлённый data/projects.json...")
+    with open(projects_file, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
     
-    print("✓ Нормализация завершена!")
-    print()
-    print("Изменения:")
-    print(f"  • Инициалов исправлено: {changes['initials_fixed']}")
-    print(f"  • Степеней исправлено: {changes['degrees_corrected']}")
-    print(f"  • Имён (name_ru) исправлено: {changes['name_ru_fixed']}")
+    print(f"\n✓ Нормализация завершена!")
+    print(f"  • Инициалов исправлено: {stats['initials_fixed']}")
+    print(f"  • Степеней исправлено: {stats['degrees_fixed']}")
 
 if __name__ == "__main__":
     main()
