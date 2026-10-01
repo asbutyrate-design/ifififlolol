@@ -1,0 +1,109 @@
+The name of the scientific project: 
+"Taxonomy and resources of plants promising for use in medicine"
+ 
+Project team: Head of the Department of Pharmaceutical Natural Sciences, Dr. Pharm. Sci. Luferov A.N., postgraduate student Melnik A.A., student Tinkt A.V. 
+Project description: 
+Project objective: Study and analysis of the taxonomic composition, distribution and productivity of plants, increasing the efficiency of using their resources for practical pharmacy. 
+Key tasks: 
+- Study of seed plant biodiversity to identify taxonomically significant features; 
+- Determination of the species composition and systematic position of seed plants; compilation of keys for their identification; 
+- Study of geographical features of species; compilation of point maps of their ranges; 
+- Conducting an assessment of promising areas of use of seed plants in medical practice. 
+The main scientific publications on the project: 
+1) Luferov A.N., Bokov D.O., Yakubov V.V., Samylina I.A., Gildeeva G.N., Smolyarchuk E.A., Nicheporchuk P.A., Antsуshkina A.M., Rodin M.N., Bondar A.A., Durnova N.A., Konovalchik D.A., Prostodusheva T.V. Far Eastern Species of the Genus Atragene L. (Ranunculaceae) ‒ valuable Medicinal Plants. Research Journal of Pharmacy and Technology. 2026. Vol. 19 (7). P. 3227-3232. https://doi.org/10.52711/0974-360X.2026.00459 
+2) Chepinoga V.V., Barkalov V.Yu., Ebel A.L., Knyazev M.S., Baikov K.S., Bobrov A.A., Chkalov A.V., Doronkin V.M., Efimov P.G., Friesen N.V., German D.A., Gontcharov A.A., Grabovskaya-Borodina A.E., Gureyeva I.I., Ivanenko Yu.A., Kechaykin A.A., Korobkov A.A., Korolyuk E.A., Kosachev P.A., Kupriyanov A.N., Luferov A.N. et al. Checklist of vascular plants of Asian Russia. Botanica Pacifica: a Journal of Plant Science and Conservation. 2024. Т. 13. № S3. P. 3-310. https://doi.org/10.17581/bp.2024.13s01 
+3) Luferov A.N. On the importance of plant taxonomy and chorology for pharmacognosy. In the collection: Integration links of pharmaceutical ecology - 2023. Collection of materials of the First International Conference. Moscow, 2024. pp. 51-53. (In Russ.).  
+4) Friesen N., Grützmacher L., Hurka H., Luferov A.N., Skaptsov M., Smirnov S.V., Shmakov A.I., Vesselova P., Dorofeyev V., Turdumatova N., Lazkov G. Allium pallasii and A. caricifolium-surprisingly diverse old steppe species, showing a clear geographical barrier in the area of lake Zaysan. Plants. 2022. Т. 11. № 11. P. 1465. https://doi.org/10.3390/plants11111465 
+5) Verkhozina A.V., Anisimov A.V., Beshko N.Yu., Biryukov R.Yu., Bondareva V.V., Chernykh D.V., Dorofeev N.V., Dorofeyev V.I., Ebel A.L., Efremov A.N., Erst A.S., Esanov H.K., Esina I.G., Fateryga A.V., Fateryga V.V., Fomenko V.A., Gamova N.S., Gaziev A.D., Glazunov V.A., Grabovskaya-Borodina A.E. et al. Findings to the flora of Russia and adjacent countries: new national and regional vascular plant records, 4. 
+Botanica Pacifica: a Journal of Plant Science and Conservation. 2022. Т. 11. № 1. P. 129-157.
+https://doi.org/10.17581/bp.2022.11116 
+
+
+NAME OF THE SCIENTIFIC PROJECT: “New types of medicinal plant raw materials: from handling to regulatory documentation”
+Project leader: Doctor of Pharmaceutical Sciences, Professor Sergunova E.V.
+Project team: Ph.D. Associate Professor Kovaleva T.Yu., Ph.D. senior teacher Dorovskikh E.A., graduate student Pavlenko A.A., graduate student Tarasova A.V., graduate student Melnik A.A.
+Project Goal
+To identify and scientifically substantiate promising types of medicinal plant raw materials for further use in pharmaceutical practice — including standardization, development of regulatory documentation, and creation of new medicinal plant based drugs.
+
+Project Tasks
+1.	Conduct a screening of botanical taxa based on ethnobotanical data, traditional medical systems, and modern publications to select species with potentially high biological activity and a sufficient geographical distribution.
+2.	Collect and document raw material samples in accordance with herbarium and traceability protocols: record the collection site and time, phenophase, and environmental conditions, while ensuring the retention of duplicate samples for analytical and control studies.
+3.	Perform botanical identification using morphological, microscopic, and molecular-genetic methods to rule out species misidentification and potential instances of adulteration or substitution.
+4.	Analyze the chemical composition of the selected samples using chromatography, spectroscopy, and other appropriate analytical approaches to isolate key groups of biologically active substances (BAS) and quantify their content.
+5.	Evaluate pharmacological activity (in vitro and, where facilities permit, in vivo) using relevant models—such as antioxidant, antimicrobial, nootropic, or anti-inflammatory activity—depending on the raw material's profile.
+6.	Develop and validate quality control methods for specific types of medicinal plant raw materials, establishing parameters for authenticity, quality standards, and the quantification of active constituents.
+7.	Compile a database of the studied species, integrating botanical, chemical, pharmacological, and technological information, including recommendations for harvesting, drying, storage, and potential applications.
+8.	Prepare draft regulatory documents (e.g., draft pharmacopoeial monographs) and methodological guidelines to facilitate further research and the practical implementation of the findings.
+
+Project Description
+The Department of Pharmaceutical Natural Sciences is implementing this project as an interdisciplinary initiative at the intersection of pharmacognosy, botany, pharmaceutical chemistry, and pharmacology. It is grounded in a systems approach to identifying and studying new sources of medicinal plant raw materials, spanning the entire process from the field stage (collection and identification) to laboratory analysis (chemical analysis and activity testing) and regulatory work (development of quality control methods).
+A distinctive feature of the project is its focus on the practical applicability of the results: each species is evaluated not only for biological activity but also in terms of resource availability (distribution and cultivation potential), processing feasibility, and safety. This approach enables the selection of plants that are not merely "active" but hold genuine promise for the pharmaceutical industry.
+The project findings will be used for scientific publications and the department's educational materials, as well as to support research grant applications and collaborations with industry partners in the development of herbal medicines and dietary supplements.
+
+Main scientific publications:
+•	Pavlenko A.A., Dorovskikh E.A., Tarasova M.I., Ivanova A.V., Sergunova E.V., Kovaleva T.Yu.. Pharmacognostic Study of Coriander Herb (Coriandrum sativum L.). Research Journal Pharmacy and Technology. 2026;19(6):2835-2. doi: 10.52711/0974-360X.2026.00405
+•	Kovaleva T. Yu., Trashchenkova D.A., Samylina I.A., Shilova I.V., Dorovskikh E.A., Pavlenko A.A., Rendyuk T.D., Strelyaeva A.V., Konovalchik D.A., Bokov D.O.. Biologically active substances in blueberry shoots (Vaccinium myrtillus L.) of Russian origin. Research Journal of Pharmacy and Technology. 2023; 16(11):5426-1. doi: 10.52711/0974-360X.2023.00879
+•	Kovaleva T.Yu., Bokov D.O., Sergunova E.V., Bobkova N.V., Kovalev I.S., Chernova S.V., Nesterova N.V., Pavlenko A.A., Dorovskikh E.A., Bessonov V.V., Luferov A.N.. Influence of Conservation Methods on the sour cherry (Cerasus vulgaris Mill.) fruits quality. Research Journal of Pharmacy and Technology. 2024; 17(6):2443-1. doi: 10.52711/0974-360X.2024.00382
+•	Dorovskikh E. A., Kovaleva T. Yu., Trashchenkova D. A., Lavrentieva A. A., Bokov D. O., Kozin S. V., Nedorubov A. A.. Research on Phenol compounds and impact of Nootropic mixture herbal product on duration of action of Ethanol anesthesia. Research Journal of Pharmacy and Technology.2024; 17(4):1647-2. doi: 10.52711/0974-360X.2024.00260
+•	Kostikova E.N., Aksinenko N.K., Biryukov T.N., Poluyanov A.M., Dorovskikh E.A., Strelyaeva A.V., Antsyshkina A.M., Bondar A.A., Kovaleva T.Yu., Konovalchik D.A., Gildeeva G.N., Smolyarchuk E.A., Sergeyev O.V.. Pharmacognostic and Phytochemical Study of Leaves and Dry extract of Padus serotina (Ehrh.) Borkh. seu Prunus serotina Ehrh.Research Journal of Pharmacy and Technology. 2026;19(4):1520-6. doi: 10.52711/0974-360X.2026.00218 (Q3)
+•	Kovaleva T. Yu., Trashchenkova D.A., Samylina I.A., Shilova I.V., Dorovskikh E.A., Pavlenko A.A., Rendyuk T.D., Strelyaeva A.V., Konovalchik D.A., Bokov D.O.. Biologically active substances in blueberry shoots (Vaccinium myrtillus L.) of Russian origin. Research Journal of Pharmacy and Technology. 2023; 16(11):5426-1. doi: 10.52711/0974-360X.2023.00879
+
+ 
+
+Research Project Title: “Creation of a Database of Ionomic Profiles of Medicinal Plant Raw Materials and Preparations Based on Them”
+
+Project Team: Dr. of Pharmaceutical Sciences, Professor I.V. Gravel; postgraduate students: D.V. Levushkin, V.N. Shestopalova, O.S. Lavrova.
+The project is carried out jointly with the Center for Bioelementology and Human Ecology of the Federal State Autonomous Educational Institution of Higher Education “I.M. Sechenov First Moscow State Medical University” of the Ministry of Health of Russia (Sechenov University) and LLC “Analytical and Research Instruments”.
+Project Description:
+Project Aim: Study of the elemental profiles of herbal medicinal preparations and raw materials as potential sources of macro- and microelements for humans.
+Key Objectives:
+•	Study of the composition of essential, conditionally essential, and toxic elements in medicinal plant raw materials and herbal medicinal preparations  of various types.
+•	Development and validation of alternative methods for pharmacopoeial elemental analysis, including sample preparation and instrumental determination.
+•	Assessment of the bioavailability of elements from HMPs by in vitro and in vivo methods.
+•	Comparative safety assessment of the use of MPRM and HMPs based on the content of toxic elements.
+•	Development of recommendations for the use of the elemental complex in HMPs in the prevention and treatment of dyselementoses.
+Main Scientific Publications on the Project:
+1)	I.V. Gravel, D.V. Levushkin, I.I. Lapin, D.M. Lyapunovsky, A.V. Skalny. In vitro study of bioaccessibility of trace elements in herbal preparations: Preliminary report. Journal of Trace Elements in Medicine and Biology, Volume 95, 2026, 127894, ISSN 0946-672X.
+2)	I.V. Gravel, D.V. Levushkin, A.A. Skibina, O.B. Mikheev. Content of macroelements in Pectoral Species No. 4. Traditional Medicine. 2021; 3(66):19–26.
+3)	I.V. Gravel, D.V. Levushkin. Content of minor elements in Pectoral Species No. 4. Drug Development and Registration. 2023;12(2):113–123.
+4)	I.V. Gravel, E.I. Rak, E.N. Popova, D.V. Levushkin. Content of manganese, zinc, and copper in Pectoral Species No. 4 and its infusions. Trace Elements in Medicine. 2023;24(3):57–64.
+5)	I.V. Gravel, D.V. Levushkin. Pectoral Species No. 4: content of molybdenum, tungsten, lithium, vanadium, titanium, and zirconium. Pharmacy. 2025;74(4):23–30.
+6)	V.N. Shestopalova, D.V. Levushkin, I.V. Gravel. Study of Pb, Cd, and Cu content in Acorus calamus rhizomes by stripping voltammetry. Book of Abstracts of the XIV International Youth Scientific Medical Forum “White Flowers”. 2026; 79-81.
+7)	I.V. Gravel, D.V. Levushkin, Yu.E. Generalova, V.V. Kosenko, I.I. Terninko. Microelement profiles of pectoral species. Regulatory Research and Medicine Evaluation. 2026;15(2);36-45.
+8)	A.A. Pavlenko, D.V. Levushkin, A.V. Shkarbun, T.Yu. Kovaleva, I.V. Gravel. Content of cadmium, lead, and copper in fruits and herb of coriander (Coriandrum sativum L.). Bulletin of the Perm State Pharmaceutical Academy. Collection of Materials “Kromer Readings”. 2026;157-158.
+9)	I.V. Gravel, D.V. Levushkin. Ultramicroelements in Pectoral Species No. 4 and its Dosage Form. In FESTEM 2025 International Symposium on Trace Elements and Minerals: Program & Book of Abstracts. Timisoara, Romania, April 21–25. 2025;78-79.
+
+Scientific Project Title: "Glycans of Medicinal Plant Raw Materials"
+Ph.D. in Pharmaceutical Sciences, Associate Professor D.O. Bokov
+The project is carried out at the Department of Pharmaceutical Natural Sciences, Institute of Pharmacy named after A.P. Nelyubin, Sechenov University.
+Project Description:
+Project Goal: Development, optimization, and validation of modern methods for the qualitative and quantitative analysis of glycans in medicinal plant raw materials, herbal medicinal products, and herbal mixtures to improve the accuracy, selectivity, and reproducibility of pharmaceutical analysis.
+Key Objectives:
+‒	Development of a method for the quantitative determination of plant glycans by spectrophotometry using the anthrone reagent.
+‒	Investigation of the polysaccharide complex (in particular, the qualitative and quantitative evaluation of inulin) by high-performance liquid chromatography (HPLC) using appropriate detectors.
+‒	Detailed profiling of simple carbohydrates (mono- and oligosaccharides) using capillary electrophoresis, which ensures high separation efficiency of complex matrix components.
+‒	Metrological evaluation and validation of the developed methods (assessment of linearity, accuracy, and intralaboratory precision) for subsequent implementation into current regulatory documentation.
+Main scientific publications on the project:
+Bokov D.O., Rodin M.N., Samylina I.A. Development and validation of a spectrophotometric procedure for determining polysaccharides in kelp thalli. Pharmacy. 2026. Т. 75. № 2. С. 16-22. https://doi.org/10.29296/25419218-2026-02-03
+Bokov D.O. Instrumental methods for the determination of polysaccharides in medicinal plant raw materials: a modern view. In the collection: Perspectives for the implementation of innovative technologies in medicine and pharmacy. Collection of materials of the XII All-Russian scientific and practical conference with international participation. Orekhovo-Zuyevo - Elektrogorsk - Moscow. 2025. С. 44-46.
+Chevidaev V.V., Bokov D.O., Samylina I.A. The use of the anthrone method in the quantitative determination of carbohydrates in medicinal plant raw materials and herbal medicinal products. In the collection: Innovative medicines: from molecule to patient. Collection of materials of the First conference. Moscow. 2025. С. 179-181.
+Rodin M.N., Bokov D.O., Kakhramanova S.D., Samylina I.A. Development and validation of a procedure for the quantitative determination of polysaccharides in linden flowers. Pharmacy. 2024. Т. 73. № 7. С. 5-13. https://doi.org/10.29296/25419218-2024-07-01
+
+Scientific Project Title: "Use of light microscopy in the quality control of medicinal plant raw materials and medicinal plant preparations"  
+Project team: Dr. Pharm. Sci., Associate Professor Bobkova N.V., postgraduate student: Pham Phuong Nam, students: Diana Bayramkulova, Darya Gadetskaya.
+Project description: 
+The goal of the project is to study the capabilities of various types of light microscopy (bright field, luminescent, polarizing, etc.) in the identification and quality control of medicinal plant raw materials and medicinal plant preparations (MPPs). 
+Key tasks:
+• Studying the influence of technological characteristics on the microscopic analysis of medicinal plant raw materials of various morphological groups. 
+• Development of sample preparation methods for microscopic analysis of MPPs and solid dosage forms based on medicinal plant raw materials. 
+• Study of anatomical and diagnostic features of related species of medicinal plants. 
+• Use of luminescent and polarizing microscopy in the analysis of medicinal plant raw materials and medicinal products. Development of sample preparation methods. 
+• Study of the possibility of using microchemical and histochemical reactions in the analysis of medicinal plant raw materials and MPPs.
+
+Main Scientific Publications on the Project:
+1)	Chubakova S.C., Farmanova N.T., Bobkova N.V., Mamatov T.A. Study of anatomy-diagnostic features of leaves of Cynara scolymus L. grown under the conditions of the Kyrgyz Republic. Drug development & registration. 2025;14(2):185-192. (In Russ.) https://doi.org/10.33380/2305-2066-2025-14-2-1954 
+2)	Gravel I.V., Bobkova N.V., Grebennikova D.A. Microdiagnostic characteristics of powdered Curcuma longa rhizome. Herbarium. 2025;2(4):24-32. (In Russ.) https://doi.org/10.33380/3034-3925-2025-2-4-45 
+3)	Pharmacognosy. Atlas. Volume 3. Medicinal plant raw materials, herbal mixtures. Plant powders. Medicinal products based on crushed plant raw materials: a textbook / I. A. Samylina, N. V. Bobkova, O. G. Potanina. — 2nd ed., revised. — Moscow: GEOTAR Media, 2024. — 480 p.
+4)	Ilina M.B., Sergunova E.V., Bobkova N.V. Comparative Study of Anatomical and Diagnostic Features of the Leaves of the European Dewberry (Rubus caesius L.), Allegheny Blackberry (R. allegheniensis Porter) and European Blackberry (R. nessensis Hall). Drug development & registration. 2023;12(3):111-117. (In Russ.) https://doi.org/10.33380/2305-2066-2023-12-3-111-117 
+5)	Prozhogina Y.E., Javakhyan M.A., Bobkova N.V. Macro- and microscopic analysis of the herbal sedative composition. Farmatsiya, 2022; 71 (5): 18-24 https://doi.org/10.29296/25419218-2022-05-03
+6)	Bakova E.Yu., Melikov F.M., Konovalov D.A., Bobkova N.V. The anatomical and morphological characteristics of the leaves of common myrtle (Myrtus communis) growing under the conditions of the Southern Coast of the Crimea. Farmatsiya, 2021; 70 (2): 29-35 https://doi.org/10.29296/25419218-2021-02-05 

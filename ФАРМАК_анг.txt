@@ -1,0 +1,94 @@
+Название научного проекта: «Development of digital platforms for drug research and development»
+Project team: к.х.н. Апполонова С.А., аспиранты Резванов П.А., Болдин А.А.
+Project description:
+Objective: Development of digital platforms for: preclinical trial management, organotoxicity prediction, drug bioequivalence studies, and pharmacotherapy monitoring.
+
+
+
+Key points:
+-Metabolomic study of drug-induced organotoxicity using zebrafish as a model organism;
+-Investigation of changes in the plasma metabolomic profile of patients;
+-Creation of databases for assessing drug-induced organotoxicity using metabolomic biomarkers;
+-Development of web applications for pharmacokinetic analysis in preclinical drug studies;
+
+Key publications on the project: 
+
+1. Moskaleva N.E., Rezvanov P.M., Samoylov V.M., Varzieva V.G., Baskhanova S.N., Tarasov V.V., Smolyarchuk E.A., Kudlay D.A., Appolonova S.A. Metabolomics in drugs research on zebrafish-based cardiotoxicity models: endothelial and mitochondrial dysfunction, oxidative stress. Pharmacy & Pharmacology. 2025;13(2):70-83. https://doi.org/10.19163/2307-9266-2025-13-2-70-83
+2. Rezvanov P.M., Moskaleva N.E., Shestakova K.M., Tarasov V.V., Smolyarchuk E.A., Kudlay D.A., Apollonova S.A. PreKinetix: web application for pharmacokinetic analysis in preclinical drug research. Pharmacy & Pharmacology. 2025;13(4):246-259. https://doi.org/10.19163/2307-9266-2025-13-4-246-259
+3. Moskaleva NE, Rezvanov PM, Samoilov VM, Varzieva VG, Baskhanova SN, Appolonova SA. Study of metabolomic markers of β-blocker neurotoxicity using zebrafish as a model organism. Bulletin of Experimental Biology and Medicine. 2025;180(9):308–311. doi:10.47056/0365-9615-2025-180-9-308-311.
+4. Varzieva VG, Boldin AA, Shestakova KM, Baskhanova SN, Samoylov VM, Ilgisonis IS, Kirichenko YY, Karimov RR, Smolyarchuk EA, Kudlay DA, Tarasov VV, Belenkov YN, Appolonova SA. Changes in the metabolomic profile of blood plasma in patients with lymphoma during polychemotherapy. Terapevticheskii Arkhiv. 2025;97(11):908–919. doi:10.26442/00403660.2025.11.203491.
+
+The name of the project: «Digital Prescribing»
+
+Project team: Head of the Department of Pharmacology, Candidate of Medical Sciences, Associate Professor E.A. Smolyarchuk; Professor, Doctor of Medical Sciences A.V. Samorodov; Associate Professor, Candidate of Biological Sciences S.S. Sologova; Associate Professor, Candidate of Medical Sciences E.A. Zavadich; Assistant D.A. Trashchenkova; Assistant E.V. Polikarpov
+
+Project description:
+Objective: Development and evolution of the unified "Digital Formulation" digital platform, integrating training, simulation exercises, professional information sources, and skill mastery assessment into a single licensed product..
+
+Key points:
+- Personalization of training;
+- Personalization of pharmacotherapy;
+- Integration into the digital healthcare environment;
+- Creation of a digital platform combining training, simulation exercises, professional information sources, and skills mastery assessment into a single licensed product;
+- Development and implementation of a supplementary professional education program;
+
+Key research publications on the project:
+1. Tatzhikova, K. A., Poddubnaya, K. M., Vishnyakova, E. V., et al. Students’ Assessment of the Possibility of Implementing Innovative Teaching Methods Using Information and Communication Technologies at the Department of Pharmacology of Sechenov University. Pedagogical Informatics. 2023;4:440–458. ISSN 2070-9013.
+
+2. Smolyarchuk EA, Sologova SS, Trashchenkova DA, et al. Automated educational platform “Digital Prescription Writing”, version 1.0 [computer program]. Moscow: I.M. Sechenov First Moscow State Medical University of the Ministry of Health of the Russian Federation (Sechenov University); 2025. Certificate of State Registration of a Computer Program No. RU 2025610006; application No. 2024688797. Registered 2024 Nov 27; published 2025 Jan 9.
+
+The name of the research project: «Conducting preclinical and clinical studies of an innovative composition/product based on plant-derived raw materials»
+
+Project team: Associate professor, PhD Zavadich K.A., PhD student Kornopoltseva L.V.
+
+Project description:
+Objective: Development of new medicinal products derived from medicinal plant materials that exhibit anti-inflammatory, cardioprotective, and antioxidant effects.
+The work is being carried out in collaboration with VILAR (All-Russian Scientific Research Institute of Medicinal and Aromatic Plants).
+Key points:
+
+-Development of an innovative formulation for a new medicinal product based on medicinal plant raw materials;
+-Preclinical studies of the innovative plant-based formulation;
+-Clinical trials of the innovative plant-based formulation;
+-Development of a new dosage form;
+-Preparation of an application for the registration of intellectual property rights (IPR);
+
+Key research publications on the project:
+1. Zavadich K. A., Smolyarchuk E. A., Kudashkina N. V., Sologova S. S., Sysuev B. B., Stepanova O. I., Averyanov  S. V., Kornopoltseva L. V., Shchekin V. S., Samorodov A. V., Yusupova A. A., Shubina A. I. Medicinal herbal mixture for the treatment of oral diseases. Drug development & registration. 2025;14(2):37–44. (In Russ.) https://doi.org/10.33380/2305-2066-2025-14-2-1861
+
+The name of the research project: «Development of protective strategies for drug-induced hearing loss»
+Project team: Associate Professor, Ph.D Bakaeva Z.V., Assistant professor Polikarpov E.V., student Orlov A.S.
+Project description: 
+Objective: Investigation of the mechanisms of ototoxicity and identification of the otoprotective properties of natural compounds, with the aim of developing new strategies for the prevention and treatment of drug-induced sensorineural hearing loss. 
+
+The work is being conducted in collaboration with the Laboratory of Neurobiology and Fundamental Principles of Brain Development at the National Medical Research Center for Children's Health (Ministry of Health of Russia), the Institute of General Pathology and Pathophysiology, and the Institute of Gene Biology of the Russian Academy of Sciences (IGB RAS).
+
+Key points:
+
+-Investigation of the molecular mechanisms of hair cell damage induced by ototoxic drugs;
+-Development of new approaches to the pharmacological screening of potentially ototoxic agents;
+-Identification and evaluation of the otoprotective effects of natural and synthetic compounds with antioxidant activity;
+
+Key research publications on the project:
+
+1.	Polikarpov, E. V., Kozin, S. V., Smolyarchuk, E., Savostyanov, K., Mirontsev, A. V., Sologova, S., Chasovnikova, V. V., Eremeeva, K. V., Fisenko, A., Kudlay, D., & Bakaeva, Z. (2026). Cochlear isolation in neonatal mice for in vitro and ex vivo models: an anatomical landmark-based protocol. Frontiers in pharmacology, 17, 1727526. https://doi.org/10.3389/fphar.2026.1727526
+2.	Polikarpov, E. V., Smolyarchuk, E. A., Fisenko, A. P., & Bakaeva, Z. V. (2026). The Use of Primary Spiral Ganglion Cells in Studying Glutamate Receptor Function and Excitotoxicity in the Cochlea. Cells, 15(9), 777. https://doi.org/10.3390/cells15090777
+3.	Polikarpov E.V., Smolyarchuk E.A., Grigorevskikh E.M., Yaroshenko E.Yu., Pavlova S.I., Kudlay D.A., Savostyanov K.V., Bakaeva Z.V. Development of a method for in vitro cultivation of Corti's organ explants using polyethyleneimine. Pharmacy & Pharmacology. 2026;14(4):326-337. (In Russ.) https://doi.org/10.19163/2307-9266-2026-14-4-326-337
+
+The name of the research project: “Study of the mechanisms of neuroprotection and neuroregeneration”
+Project team: Associate Professor, Ph.D. Bakaeva Z.V., PhD students Zgodova A.E., Chernova S.S., students Lizunova N.V., Kislukhina E.N., Boyarkin D.P., Alekseev V.I.
+Project description: 
+Objective: Investigation of the molecular and cellular mechanisms underlying the neuroprotective and neuroregenerative effects of biologically active compounds following nervous tissue injury, aimed at identifying promising pharmacological approaches for the treatment of cerebral ischemia and neurotrauma.
+The project is being conducted jointly with the Laboratory of Neurobiology and Fundamental Principles of Brain Development at the National Medical Research Center for Children's Health (Ministry of Health of Russia), Lomonosov Moscow State University, the Institute of General Pathology and Pathophysiology, and the Institute of Gene Biology of the Russian Academy of Sciences.
+Key points:                                                                                        
+– Investigation of the neuroprotective activity of neuropeptides, neurolipins, and flavonoids in in vitro models of glutamate excitotoxicity, hypoxia, and neuronal injury;
+– Study of the neuroregenerative potential of the test compounds in primary neuroglial cultures using a mechanical injury model (scratch assay);
+– Investigation of the molecular and cellular mechanisms of neuroprotection, including alterations in calcium homeostasis, mitochondrial functional status, and intracellular signaling pathways;
+– In vivo evaluation of the neuroprotective and neuroregenerative potential of promising compounds by using experimental models of ischemic brain injury, employing histology, immunohistochemistry, and wide-field optical neuroimaging.
+
+Key research publications on the project:
+1. Alekseev, V. I., Kislukhina, E. N., Lizunova, N. V., Surin, A. M., Lipina, T. V., Savostyanov, K.V., & Bakaeva, Z. V. (2026). Parameters of delayed neuroinflammation following focal ischemic stroke in the mouse cerebral cortex depend on lesion size at the beginning of the subacute stage. Biochemistry (Moscow), 91(4), 588–600.
+2. Shedenkova, M., Gurianova, A., Krasilnikova, I., Sudina, A., Karpulevich, E., Maksimov, Y.,Samburova, M., Guguchkin, E., Nefedova, Z., Babenko, V., Frolov, D., Savostyanov, K., Fatkhudinov, T., Goldshtein, D., Bakaeva, Z., & Salikhova, D. (2025). Extracellular Vesicles from iPSC-Derived Glial Progenitor Cells Prevent Glutamate-Induced Excitotoxicity by Stabilising Calcium Oscillations and Mitochondrial Depolarisation. Cells, 14(23), 1915. https://doi.org/10.3390/cells14231915
+3. Bakaeva Z., Goncharov M., Frolov F., Krasilnikova I., Sorokina E., Zgodova A., Smolyarchuk E., Zavadskiy S., Andreeva L., Myasoedov N., Fisenko A., Savostyanov K. Regulatory Peptide Pro-Gly-Pro Accelerates Neuroregeneration of Primary Neuroglial Culture after Mechanical Injury in Scratch Test. International Journal of Molecular Sciences. 2024;25:10886. DOI: 10.3390/ijms252010886.
+4. Salikhova DI, Shedenkova MO, Sudina AK, Belousova EV, Krasilnikova IA, Nekrasova AA, Nefedova ZA, Frolov DA, Fatkhudinov TK, Makarov AV, Surin AM, Savostyanov KV, Goldshtein DV and Bakaeva ZV (2024) Neuroprotective and anti-inflammatory properties of proteins secreted by glial progenitor cells derived from human iPSCs. Front. Cell. Neurosci. 18:1449063. doi: 10.3389/fncel.2024.1449063
+5. Bakaeva Z., Goncharov M., Krasilnikova I., Zgodova A., Frolov D., Grebenik E., Timashev P., Pinelis V., Surin A. Acute and Delayed Effects of Mechanical Injury on Calcium Homeostasis and Mitochondrial Potential of Primary Neuroglial Cell Culture: Potential Causal Contributions to Post-Traumatic Syndrome. International Journal of Molecular Sciences. 2022;23:3858. DOI: 10.3390/ijms23073858.
+6. Zgodova A., Pavlova S., Nekrasova A., Boyarkin D., Pinelis V., Surin A., Bakaeva Z. Isoliquiritigenin Protects Neuronal Cells against Glutamate Excitotoxicity. Membranes. 2022;12:1052. DOI: 10.3390/membranes12111052.

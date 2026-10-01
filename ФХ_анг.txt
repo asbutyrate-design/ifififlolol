@@ -1,0 +1,174 @@
+Text 1
+Scientific Research Area: "Scientific and Methodological Foundations of Hygienic and Ecological Monitoring of Active Pharmaceutical Substances and the Safe Management of Unusable Medicinal Products"
+Ramenskaya G.V., Gorpinchenko N.V., Rodionova G.M.
+Description of the Research Area
+This research area integrates chemical-analytical support for hygienic and ecological monitoring of active pharmaceutical substances (APS), including highly potent compounds, at pharmaceutical manufacturing facilities, with a comprehensive substantiation of approaches to the collection and disposal of unusable medicinal products from the population.
+The research program links APS control in workplace air to the analysis of the environmental consequences of pharmaceutical substances entering soil and water. Occupational exposure control and the management of products that have become unfit for use are considered in conjunction: from the development of quantitative determination methods for APS and monitoring programs to the substantiation of organizational solutions for the collection and disposal of expired and unclaimed medicines.
+The chemical-analytical and ecotoxicological components are supplemented by the study of legal, behavioral, and climatic aspects. This approach is aimed at establishing a unified scientific and practical foundation for the prevention of pharmaceutical pollution, the improvement of environmental protection solutions, and the responsible management of medicinal products.
+Aim of the Research Area
+To develop the scientific and methodological foundations for comprehensive hygienic and ecological monitoring of APS and to substantiate approaches to the safe collection and disposal of unusable medicinal products by integrating chemical-analytical data with an assessment of environmental, legal, behavioral, and climatic aspects.
+Scientific Concept
+Integration of quantitative APS control in the occupational environment and systematic analysis of unusable medicinal product management into a single research program. The scientific and methodological significance of this approach lies in the coordinated consideration of sources of pharmaceutical pollution, ecotoxicity data, organizational conditions for pollution prevention, and the potential climatic effects of various product management scenarios.
+Key Objectives and Research Modules
+1. Hygienic and ecological monitoring of APS in production. Systematization of the list of APS manufactured by domestic pharmaceutical enterprises, including highly potent compounds. Development of methods for their quantitative determination in workplace air, general requirements for samples for the hygienic and ecological monitoring system, and programs for controlling air contamination at enterprises. Establishment of a chemical-analytical basis for assessing occupational contamination by pharmaceutical substances.
+2. Ecotoxicological substantiation of the safe management of medicinal products. Systematization and critical analysis of published data on the entry of pharmaceutical substances into soil and water through improper disposal, the ecotoxicity of major drug classes, and the long-term consequences for ecosystems and public health. Synthesis of scientific arguments substantiating the environmental and social significance of organized collection of unusable medicinal products.
+3. Regulatory, legal, and organizational conditions for collection and disposal. Analysis of the federal and regional regulatory framework in the area of medical and pharmaceutical waste management, identification of legal gaps and barriers to the participation of pharmacy organizations. Preparation of proposals for improving regulation and organizational approaches to the collection of unusable medicinal products from the population.
+4. Behavioral factors and public motivation. Review of consumer behavior studies concerning the management of expired and unclaimed medicinal products. Identification, based on published research data, of barriers and factors that incentivize participation in organized collection; formulation of recommendations for a sustainable model of responsible behavior and informational-educational support for regional programs.
+5. International practices and stakeholder interaction models. Comparative analysis of foreign and Russian experience in the collection and disposal of medicinal products. Assessment of the applicability of successful models taking into account the legal, economic, and infrastructural characteristics of Russia; substantiation of potential forms of interaction among pharmacy organizations, government, manufacturers, and the population.
+Methodological Basis and Research Organization
+The occupational exposure module involves the development of APS quantitative determination methods, sample requirements, and hygienic monitoring programs. The module on the collection and disposal of unusable medicinal products is conducted as an analytical study: systematic search and selection of scientific publications, regulatory documents, industry reviews, and data from specialized organizations; comparative analysis, synthesis of information, and preparation of conclusions and recommendations.
+Experimental studies, surveys, interviews, and field work on the collection and disposal topic are not included in the basic analytical phase and, if necessary, are structured as independent studies.
+Expected Outcomes and Practical Significance
+It is planned to develop complementary scientific and methodological resources for pharmaceutical enterprises and pharmacy organizations: methods for the quantitative determination of APS in workplace air, general sample requirements, hygienic monitoring programs, and a structured analytical report on the environmental, legal, behavioral, organizational, and climatic aspects of the collection and disposal of unusable medicinal products.
+The results are intended to substantiate monitoring programs and organized collection schemes, to prepare proposals for improving the regulatory framework, to facilitate engagement with public authorities, and to develop informational and educational materials. The evidence base generated may serve as a scientific and practical foundation for future grant applications and project documentation.
+Scientific Background and Key Publications
+The scientific background includes publications on the organization of hygienic monitoring of workplace air at pharmaceutical enterprises and the quantitative determination of individual APS.
+1. Pozharnov I.A., Simakov A.S., Shatilina A.A. [et al.] Organization of hygienic monitoring of workplace air contamination by particulate matter at pharmaceutical enterprises // Drug Development and Registration. — 2022. — Vol. 11, No. 1. — P. 165–173.
+2. Pozharnov I.A., Simakov A.S., Shulga N.A. [et al.] Hygienic monitoring of workplace air contamination by ticagrelor particulate matter at a pharmaceutical enterprise // Drug Development and Registration. — 2022. — Vol. 11, No. 2. — P. 153–158.
+3. Pozharnov I.A., Chugaev D.V., Shulga N.A. [et al.] Quantitative determination of osimertinib in workplace air at a pharmaceutical enterprise // Natural and Technical Sciences. — 2022. — No. 8 (171). — P. 73–85.
+4. Pozharnov I.A., Ramenskaya G.V., Epshtein N.B. Industrial hygiene monitoring of the drug ticagrelor at a pharmaceutical factory // Technogenic Systems and Environmental Risk: Abstracts of the III International (XVI Regional) Scientific Conference. — 2020. — P. 223–224.
+
+Text 2
+Scientific Project Title: "Development and Validation of Methods for Chemical-Toxicological and Forensic Chemical Analysis of Narcotic, Psychotropic, and Other Toxicologically Significant Substances"
+Division: Department of Pharmaceutical and Toxicological Chemistry named after A.P. Arzamastsev, Institute of Pharmacy named after A.P. Nelyubin, Sechenov University.
+Project Team (based on authors of published works): Doctor of Pharmaceutical Sciences, Professor Ramenskaya G.V.; Doctor of Biological Sciences, Professor Belova M.V.; Candidate of Pharmaceutical Sciences, Associate Professor Petukhov A.E.
+Project Description:
+This research area integrates studies of narcotic and other psychoactive substances, laboratory diagnostics of acute drug poisonings, and the improvement of chemical-toxicological and forensic chemical analysis. Clinical-toxicological studies are represented, in particular, by collaborative research with the N.V. Sklifosovsky Research Institute of Emergency Medicine [1–4, 6, 7].
+Project Aim: Scientific and methodological substantiation, development, and validation of methods for the detection, identification, and quantitative determination of toxicologically significant substances in biological specimens for the purpose of establishing the cause of acute poisonings, correlating laboratory results with clinical manifestations, and improving the scientific rigor of chemical-toxicological and forensic chemical investigations.
+Key Objectives:
+• Investigation of the structure of acute poisonings with narcotic substances, including methadone, and their combinations with other psychoactive substances; analytical confirmation of the composition of detected combined intoxications [2].
+• Development of preliminary screening and confirmatory analysis algorithms using thin-layer chromatography (TLC), gas chromatography–mass spectrometry (GC-MS), and high-performance liquid chromatography–tandem mass spectrometry (HPLC-MS/MS) [1, 3, 4].
+• Development of approaches to the chemical-toxicological diagnosis of acute poisonings with psychopharmacological agents: clozapine, olanzapine, quetiapine, risperidone, doxylamine, zaleplon, and phenazepam; differentiation of substances presenting with a similar clinical picture [3, 4].
+• Development and validation of methods for the determination of toxicants in blood plasma and urine, optimization of sample preparation, and assessment of method suitability for the analysis of clinical specimens; investigation of toxicant concentration dynamics and elimination [6].
+• Investigation of the relationship between toxicant concentrations and poisoning severity and toxic effects; correlation of instrumental analysis results with clinical data, including in cases of poisoning with Veratrum alkaloids [6, 7].
+• Scientific and methodological substantiation of the analysis of natural toxicants — Veratrum alkaloids, muscimol, and ibotenic acid from Amanita mushrooms; assessment of the capabilities and limitations of analytical methods for the diagnosis of poisonings and forensic chemical investigation [5, 8].
+Key Scientific Publications on the Project:
+1. Rodionova G.M., Belova M.V., Ramenskaya G.V., Petukhov A.E. Screening methods in chemical-toxicological and forensic chemical analysis // Forensic Medical Examination. — 2018. — Vol. 61, No. 3. — P. 31–34.
+DOI: 10.17116/sudmed201861331-34.
+2. Solonin S.A., Belova M.V., Bazhenov A.I., Tyurin I.A., Potskhveriya M.M., Godkov M.A. Acute methadone poisonings in emergency hospital patients // HIV Infection and Immunosuppression. — 2020. — Vol. 12, No. 2. — P. 69–78.
+DOI: 10.22328/2077-9828-2020-12-2-69-78.
+3. Belova M.V., Klyuev E.A., Melnikov E.S., Poryadina M.N. Chemical-toxicological diagnosis of acute poisonings with clozapine, olanzapine, quetiapine, and risperidone // The Sklifosovsky Journal of Emergency Medical Care. — 2020. — Vol. 9, No. 2. — P. 188–194.
+DOI: 10.23934/2223-9022-2020-9-2-188-194.
+4. Belova M.V., Drozdovskaya D.V., Klyuev E.A., Melnikov E.S. Chemical-toxicological diagnosis of acute poisonings with doxylamine, zaleplon, and phenazepam // The Sklifosovsky Journal of Emergency Medical Care. — 2023. — Vol. 12, No. 2. — P. 217–223.
+DOI: 10.23934/2223-9022-2023-12-2-217-223.
+5. Melnik E.V., Belova M.V., Tyurin I.A., Ramenskaya G.V. Chemical-toxicological diagnosis of Veratrum poisonings // Forensic Medical Examination. — 2020. — Vol. 63, No. 4. — P. 34–38.
+DOI: 10.17116/sudmed20206304134.
+6. Melnik E.V., Belova M.V., Potskhveriya M.M., Simonova A.Yu., Tyurin I.A., Ramenskaya G.V. Veratrum Alkaloid Determination in Four Cases of Veratrum Aqua Poisonings // Journal of Analytical Toxicology. — 2022. — Vol. 46, No. 1. — P. e42–e47.
+DOI: 10.1093/jat/bkab019.
+7. Taldaev A., Terekhov R.P., Melnik E.V., Belova M.V., Kozin S.V., Nedorubov A.A., Pomerantseva T.Ya., Ramenskaya G.V. Insights into the Cardiotoxic Effects of Veratrum Lobelianum Alkaloids: Pilot Study // Toxins. — 2022. — Vol. 14, No. 7. — Article 490.
+DOI: 10.3390/toxins14070490.
+8. Zelenshchikova V.A., Belova M.V., Melnik E.V. Toxicologically significant properties of Amanita mushrooms and chemical-toxicological analysis in cases of poisoning: a scientific review // Forensic Medicine. — 2025. — Vol. 11, No. 1. — P. 63–75.
+DOI: 10.17816/fm16219.
+
+Text 3
+Scientific Project Title: "Metabolism and Pharmacokinetics of Medicinal Substances as the Scientific Basis of Personalized Medicine and Personalized Pharmacy"
+Project Team (based on authors of published works): Ramenskaya G.V.; Smirnov V.V.; Melnikov E.S.;
+Project Description:
+This research area integrates studies of drug biotransformation, bioanalytical support for pharmacokinetics, and the investigation of individual variability in drug response. The scientific background includes the determination of drugs and metabolites, phenotyping of cytochrome P450 enzymes, correlation of metabolic and genetic characteristics, and analysis of peptide and recombinant drug products. Personalized pharmacy is considered as an applied development of these studies: the substantiation of individualized drug provision and pharmaceutical care for the patient.
+Project Aim: Development of comprehensive bioanalytical and pharmacokinetic approaches to the individualization of drug therapy, based on the study of drug metabolism, genetically determined variability, and drug exposure; establishment of a scientific and methodological foundation for personalized medicine and personalized pharmacy.
+Key Objectives:
+1. Investigation of drug metabolism and markers of cytochrome P450 enzyme activity: determination of parent compounds and metabolites, assessment of metabolic ratios and phenotyping capabilities, including with respect to CYP2D6 and CYP2C19 activity.
+2. Development and validation of methods for the determination of pharmaceutical substances, their metabolites, and biomarkers in blood plasma, blood serum, and urine using HPLC, HPLC-MS/MS, and enzyme-linked immunosorbent assay (ELISA); optimization of sample preparation, sensitivity, selectivity, and analyte stability.
+3. Investigation of pharmacokinetic profiles and dose-exposure relationships, calculation of absorption and elimination parameters, analysis of interindividual differences; bioanalytical support for studies of small-molecule and peptide drug products.
+4. Scientific substantiation of personalized medicine: joint interpretation of genotyping, metabolic phenotyping, and pharmacokinetic data for the development of approaches to individualized drug selection and dosing regimen, with assessment of the limitations of the markers employed.
+5. Development of analytical support for therapeutic drug monitoring (TDM), including antibiotics and recombinant proteins; investigation of the potential application of concentration data for therapy individualization and subsequent clinical validation of the proposed algorithms.
+6. Development of personalized pharmacy approaches (prospective objective): substantiation of dosage form and dose selection, assessment of interaction risk, and pharmaceutical care based on the metabolic profile and monitoring results; development of guidelines for interaction among the physician, pharmacist, and laboratory.
+Key Scientific Publications on the Project:
+2. Abdrashitov R.Kh., Gildeeva G.N., Ramenskaya G.V., Smirnov V.V. Prospects for a Procedure for Assessing CYP2D6 Activity Using Pinoline // Pharmacy. — 2015. — Vol. 64, No. 5. — P. 41–44.
+Publication page on the journal website.
+3. Denisenko N.P., Sychev D.A., Sizova Zh.M., Smirnov V.V., Ryzhikova K.A., Sozaeva Zh.A., Grishina E.A. Urine Metabolic Ratio of Omeprazole in Relation to CYP2C19 Polymorphisms in Russian Peptic Ulcer Patients // Pharmacogenomics and Personalized Medicine. — 2017. — Vol. 10. — P. 253–259.
+DOI: 10.2147/PGPM.S141935.
+4. Fisher E.N., Melnikov E.S., Gegeckori V. et al. Development and Validation of an LC-MS/MS Method for Simultaneous Determination of Short Peptide-Based Drugs in Human Blood Plasma // Molecules. — 2022. — Vol. 27, No. 22. — Article 7831.
+DOI: 10.3390/molecules27227831.
+5. Kolganova M.A., Melnik E.V., Fisher E.N. et al. Development and Validation of RPH-104 Quantification Method in Blood Serum as a Tool for Personalization of Pharmacotherapy // Pharmaceutical Chemistry Journal. — 2023. — Vol. 56, No. 12. — P. 1677–1681.
+DOI: 10.1007/s11094-023-02843-y.
+6. Savchenko A.Yu., Menshikova L.A., Ramenskaya G.V., Smolyarchuk E.A. Pharmacokinetic study of the innovative antituberculosis drug thiozonide in blood plasma // Pharmaceutical Chemistry Journal. — 2015. — Vol. 49, No. 3. — P. 3–6.
+DOI: 10.30906/0023-1134-2015-49-3-3-6.
+7. Turenko V.N., Ramenskaya G.V., Karimova Z.K. et al. Development of Approaches for Evaluating the Pharmacokinetics of Meropenem during Endolymphatic Antibiotic Treatment in Critically Ill Patients // The BRICS Health Journal. — 2025. — Vol. 2, No. 2. — P. 24–35.
+DOI: 10.47093/3034-4700.2025.2.2.24-35.
+
+Text 4
+Scientific Project Title: "Quality Control of Medicinal Products"
+Project Team: Research staff of the Department of Pharmaceutical and Toxicological Chemistry named after A.P. Arzamastsev, Institute of Pharmacy named after A.P. Nelyubin, Sechenov University
+Project Description:
+Project Aim: Development, validation, and implementation of a comprehensive set of analytical methods for the quality control of medicinal products, ensuring objective assessment of the authenticity, purity, and quantitative content of pharmaceutical substances and finished dosage forms in accordance with the requirements of the State Pharmacopoeia of the Russian Federation (SP RF), the Eurasian Economic Union (EAEU), and ICH.
+Key Objectives:
+• Analysis and harmonization of quality control approaches for medicinal products with the requirements of the SP RF, EAEU, and ICH;
+• Development and optimization of identification and quantitative determination methods using HPLC, GC, UV spectrophotometry, titrimetry, mass spectrometry, and chromatography-mass spectrometry;
+• Validation of methods against the following parameters: specificity, linearity, accuracy, precision, range of application, limit of detection and limit of quantification, and robustness;
+• Control of related impurities, residual solvents, microbiological purity, dissolution, and dose uniformity;
+• Study of medicinal product stability and establishment of shelf life;
+• Development of rapid and screening methods for the detection of substandard, falsified, and counterfeit medicinal products;
+• Preparation of draft pharmacopoeial monographs, regulatory documentation, and methods for testing laboratories;
+• Piloting and implementation of the developed methods in quality control practice.
+Key Scientific Publications on the Project:
+• Shulga N.A., Gegechkori V.I., Gorpinchenko N.V., Smirnov V.V., Dementyev S.P., Ramenskaya G.V. Development of Ketoprofen Impurity A (1-(3-Benzoylphenyl)ethanone) as a Certified Reference Material for Pharmaceutical Quality Control // Pharmaceuticals. — 2025. — Vol. 18, No. 1. — P. 59. https://doi.org/10.3390/ph18010059
+• Gegechkori V.I., Shatilina A.A., Shchepochkina O.Yu., Panchenko O.V., Kuzina V.N. Application of proteomic analysis for identification of the pharmaceutical substance pancreatin in developing a reference standard // Pharmacy. — 2023. — Vol. 72, No. 7. — P. 23–29. https://doi.org/10.29296/25419218-2023-07-03
+• Gegechkori V.I., Shatilina A.A., Shchepochkina O.Yu., Ramenskaya G.V. Proposal of the method for quantitative determination of proteolytic activity of a pancreatin reference standard // Issues of Biological, Medical and Pharmaceutical Chemistry. — 2023. — No. 12. https://doi.org/10.29296/25877313-2023-12-03
+• Gegechkori V.I., Sukhanova A.M., Belyavsky N.O., Ramenskaya G.V. Implementation of modern quality management system requirements in the production management of reference standards for pharmaceuticals and medicine // Pharmacoeconomics. Modern Pharmacoeconomics and Pharmacoepidemiology. — 2025. — Vol. 18, No. 3. — P. 330–339. https://doi.org/10.17749/2070-4909/farmakoekonomika.2025.311
+• Shulga N.A., Merkushova A.G., Gegechkori V.I., Chugaev D.V., Ramenskaya G.V. Modern methods for controlling and regulating impurities in pharmaceuticals // Pharmacy. — 2024. — Vol. 73, No. 6. — P. 16–25. https://doi.org/10.29296/25419218-2024-06-03
+
+Text 5
+Scientific Project Title: "Synthesis and Investigation of the Physicochemical Properties of Low-Molecular-Weight Biologically Active Compounds"
+Project Team: Candidate of Pharmaceutical Sciences, Associate Professor of the Department Kokorekin Vladimir Alekseevich; Candidate of Pharmaceutical Sciences, Senior Lecturer of the Department Turetsky Evgeny Aleksandrovich
+Project Description:
+Project Aim: Investigation of the prospects for the medical application of low-molecular-weight compounds obtained by methods of electro- and photocatalytic C–H bond functionalization, as well as modification of carbon nanostructures.
+Project Objectives:
+Synthesis of libraries of halo-, azo-, thiocyanato-, and thio-derivatives;
+Preparation of novel compounds based on chemically modified fullerenes;
+Purification of the obtained compounds;
+Characterization of the obtained compounds by mass spectrometry, IR spectroscopy, and NMR spectroscopy;
+Characterization of the biological properties of the obtained compounds by quantitative structure-activity relationship (QSAR) methods and biological activity screening assays.
+Key Scientific Publications:
+1. Kokorekin V.A. et al. A New Method for the Synthesis of 3-Thiocyanatopyrazolo[1,5-a]pyrimidines // Molecules. Basel, Switzerland, 2020. Vol. 25, No. 18. P. 4169.
+2. Shershakova N. et al. Aqueous Dispersion of Unmodified Fullerene C60: Stimulation of Hair Growth and Study of a New Molecular Target for Interaction // Int J Mol Sci. 2025. Vol. 26, No. 17. P. 8517.
+3. Bensaada H., Turetskiy E.A., Kiryowa I. Carbon nanotubes as gene delivery vectors: navigating endosomal escape and intracellular fate // Drug Dev Ind Pharm. 2026. Vol. 52, No. 9. P. 1639–1664.
+4. Vl B. et al. Electrochemical Synthesis of 3-(Sulfonyl)quinol-4-ones from o-Alkynyl-N-(formyl)anilides and Sulfinates // Organic Letters. Org Lett, 2025. Vol. 27, No. 1.
+5. Moiseeva N.V. et al. Electrochemically driven Michael reaction: synthesis of hydroquinone thioethers // Org Biomol Chem. 2025. Vol. 23, No. 5. P. 1089–1093.
+6. Lyalin B.V. et al. Electrooxidation Is a Promising Approach to Functionalization of Pyrazole-Type Compounds // Molecules. Basel, Switzerland, 2021. Vol. 26, No. 16. P. 4749.
+7. Shatilov A.A. et al. Synthesis and Biological Properties of Polyphenol-Containing Linear and Dendrimeric Cationic Peptides // Biochemistry (Mosc). 2024. Vol. 89, No. 1. P. 173–183.
+8. Panferova L.I. et al. Using the Thiyl Radical for Aliphatic Hydrogen-Atom Transfer: Thiolation of Unactivated C–H Bonds // Angew Chem Int Ed Engl. International ed. in English, 2021. Vol. 60, No. 6. P. 2849–2854.
+9. Shershakova N.N. et al. Wound healing activity of aqueous dispersion of fullerene C60 produced by "green technology" // Nanomedicine. 2023. Vol. 47. P. 102619.
+
+Text 6
+Scientific Project Title: "Pharmaceutical Development of High-Technology Immunotropic Drug Products"
+Project Team: Doctor of Pharmaceutical Sciences, Professor Smirnov V.V.; Turenko V.N.; Bagaev D.E.; Bello Taye; Spiridonov A.V.; Dolgov D.S.
+Project Description:
+Project Aim: To conduct the pharmaceutical development of drug products based on small interfering RNA (siRNA) and recombinant allergens (allergy vaccines) for the treatment of immune system diseases.
+Key Objectives:
+— Development of purification and characterization protocols for synthetic siRNA intermediates — the sense and antisense oligonucleotide strands;
+— Development of approaches to the standardization and quality control of siRNA-based candidate drug products, taking into account the characteristics of the delivery systems employed, the chemical modifications of the oligonucleotide sequences, and the dosage form;
+— Investigation and optimization of the pharmacokinetic profile of siRNA-based candidate drug products;
+— Preparation of synthetic linear peptides reproducing IgE epitopes of allergens, and assessment of their immunogenicity;
+— Selection of a carrier protein and production of recombinant allergy vaccines;
+— Optimization of quality control methods and development of specifications for the recombinant allergy vaccines produced.
+Key Scientific Publications on the Project:
+M.R. Khaitov, M.G. Byazrova, E.V. Smolnikov, V.N. Turenko, et al., "Pre-Seasonal Treatment With Recombinant Carrier-Based Birch Vaccine Improves Birch Pollen Allergy," Allergy (2026): 1–20, https://doi.org/10.1111/all.70504.
+Bello, T.; Turenko, V.; Goryachev, A.; Remezova, I.; Dolgov, D.; Pasikhov, G.; Dementev, S.; Gegechkori, V.; Poskedova, Y.; Smirnov, T.; et al. Approaches to the Development and Quality Control of Vaccine for Allergen-Specific Immunotherapy of Ragweed Pollen Allergy. Sci. Pharm. 2026, 94, 84. https://doi.org/10.3390/scipharm94040084
+Approaches to the standardization and quality control of the active pharmaceutical substance of a synthetic small interfering ribonucleic acid (siRNA) drug product for the treatment of COVID-19 / V.N. Turenko, V.V. Smirnov, D.E. Bagaev, M.A. Evseev, A.A. Vlasov, M.V. Khodzava, M.R. Khaitov // Pharmaceutical Chemistry Journal. — 2026. — Vol. 60. — No. 3. — P. 57–64.
+Approaches to the standardization and quality control of a cationic dendrimeric peptide — an excipient comprising part of a synthetic small interfering ribonucleic acid (siRNA) drug product for the treatment of COVID-19 / V.N. Turenko, V.V. Smirnov, D.E. Bagaev, M.A. Evseev, A.A. Vlasov, M.V. Khodzava, M.R. Khaitov // Pharmaceutical Chemistry Journal. — 2026. — Vol. 60. — No. 5. — P. 39–46.
+siRNA Therapeutics in Lymphoma: Gene Targets, Delivery Strategies, and Synergy with Chemotherapy / O. Ikebunwa, V. Turenko, I. Uchendu [et al.] // Current Pharmaceutical Biotechnology. — 2026. — Vol. 27. — No. 8. — P. 944–962. — doi: 10.2174/0113892010363276250405191808
+Khaitov M., Shilovskiy I., Valenta R., Weber M., Korneev A., Tulaeva I., Gattinger P., van Hage M., Hofer G., Konradsen J.R., Keller W., Akinfenwa O., Poroshina A., Ilina N., Fedenko E., Elisyutina O., Litovkina A., Smolnikov E., Nikonova A., Rybalkin S., Aldobaev V., Smirnov V., Shershakova N., Petukhova O., Kudlay D., Shatilov A., Timofeeva A., Campana R., Udin S., Skvortsova V. Recombinant PreS-fusion protein vaccine for birch pollen and apple allergy. Allergy. 2024 Apr;79(4):1001–1017. doi: 10.1111/all.15919. Epub 2023 Oct 19. PMID: 37855043.
+Khaitov M., Nikonova A., Shilovskiy I., Kozhikhova K., Kofiadi I., Vishnyakova L., Nikolskii A., Gattinger P., Kovchina V., Barvinskaia E., Yumashev K., Smirnov V., Maerle A., Kozlov I., Shatilov A., Timofeeva A., Andreev S., Koloskova O., Kuznetsova N., Vasina D., Nikiforova M., Rybalkin S., Sergeev I., Trofimov D., Martynov A., Berzin I., Gushchin V., Kovalchuk A., Borisevich S., Valenta R., Khaitov R., Skvortsova V. Silencing of SARS-CoV-2 with modified siRNA-peptide dendrimer formulation. Allergy. 2021 Sep;76(9):2840–2854. doi: 10.1111/all.14850. Epub 2021 May 10. PMID: 33837568; PMCID: PMC8251148.
+Shilovskiy I.P., Sundukova M.S., Korneev A.V., Nikolskii A.A., Barvinskaya E.D., Kovchina V.I., Vishniakova L.I., Turenko V.N., Yumashev K.V., Kaganova M.M., Brylina V.E., Sergeev I., Maerle A., Kudlay D.A., Petukhova O., Khaitov M.R. The mixture of siRNAs targeted to IL-4 and IL-13 genes effectively reduces the airway hyperreactivity and allergic inflammation in a mouse model of asthma. International Immunopharmacology. Volume 103, 2022, 108432, ISSN 1567-5769. https://doi.org/10.1016/j.intimp.2021.108432.
+
+Text 7
+Scientific Project Title: "Development, Validation, and Implementation of Modern Methods for the Assessment of Bioequivalence of Generic Medicinal Products"
+Project Team: Doctor of Pharmaceutical Sciences, Professor Ramenskaya G.V.; Candidate of Pharmaceutical Sciences, Associate Professor Medvedev Yu.V.; Candidate of Pharmaceutical Sciences, Associate Professor Melnikov E.S.; Candidate of Pharmaceutical Sciences Fisher E.N.
+Project Description:
+Project Aim: Scientific and methodological substantiation, development, and practical implementation of comprehensive approaches aimed at confirming the bioequivalence of generic medicinal products, optimizing their registration and review procedures in accordance with the current regulatory requirements of the Russian Federation and the Eurasian Economic Union (EAEU).
+Key Objectives:
+Investigation and scientific-methodological substantiation of the replacement of in vivo bioequivalence studies with alternative in vitro approaches for establishing the interchangeability of generic medicinal products.
+Design and conduct of comparative bioavailability studies, and data analysis for confirming the bioequivalence of various dosage forms.
+Development and validation of methods for the quantitative determination of active substances and their metabolites in biological matrices using highly sensitive and specific chromatographic methods (HPLC-UV, HPLC-MS/MS) in the context of pharmacokinetic studies.
+Development and validation of comparative dissolution kinetics test (CDKT) methods for the expert assessment of medicinal product quality and as a replacement for bioequivalence studies (biowaiver procedure).
+Development and validation of in vitro release testing (IVRT) and in vitro permeation testing (IVPT) methods for the purposes of standardization and assessment of the equivalence of topical and semi-solid medicinal products.
+Harmonization of methodological approaches to quality control and equivalence assessment of medicinal products; improvement of the regulatory framework of the Russian Federation and the EAEU.
+Key Scientific Publications on the Project:
+1. Volkova E.A., Medvedev Yu.V., Fisher E.N., Shokhin I.E. Biowaiver as a type of bioequivalence study. Bulletin of the Scientific Centre for Expert Evaluation of Medicinal Products. Regulatory Research and Medicine Evaluation. 2024;14(1):42–52. https://doi.org/10.30895/1991-2919-2023-537
+2. Shokhin I.E., Ramenskaya G.V., Vasilenko G.F., Malashenko E.A. Assessment of the feasibility of replacing in vivo bioequivalence studies with comparative in vitro dissolution kinetics (biowaiver procedure) in determining the interchangeability of generic medicinal products // Pharmaceutical Chemistry Journal. — 2011. — Vol. 45, No. 2. — P. 46–48. DOI: https://doi.org/10.30906/0023-1134-2011-45-2-46-48
+3. Development of approaches for evaluating the pharmacokinetics of meropenem during endolymphatic antibiotic treatment in critically ill patients / V.N. Turenko, G.V. Ramenskaya, Z.K. Karimova [et al.] // The BRICS Health Journal. — 2025. — Vol. 2, No. 2. — P. 24–35. — DOI 10.47093/3034-4700.2025.2.2.24-35. — EDN MYNWGL.
+4. Development and Validation of RPH-104 Quantification Method in Blood Serum as a Tool for Personalization of Pharmacotherapy / M.A. Kolganova, E.V. Melnik, E.N. Fisher [et al.] // Pharmaceutical Chemistry Journal. — 2023. — Vol. 56, No. 12. — P. 1677–1681. — DOI 10.1007/s11094-023-02843-y.
+5. Assessment of the pharmacokinetics of thiozonide upon its repeated administration to patients diagnosed with pulmonary tuberculosis with multiple or extensive drug resistance of Mycobacterium tuberculosis / A.Yu. Savchenko, V.G. Kukes, M.S. Burenkov, G.V. Ramenskaya // Pharmacokinetics and Pharmacodynamics. — 2023. — No. 4. — P. 48–54. — DOI 10.37489/2587-7836-2023-4-48-54.
+6. Development and Validation of an LC-MS/MS Method for Simultaneous Determination of Short Peptide-Based Drugs in Human Blood Plasma / E.N. Fisher, E.S. Melnikov, V. Gegeckori [et al.] // Molecules. — 2022. — Vol. 27, No. 22. — P. 7831. — DOI 10.3390/molecules27227831.
+7. Planning and evaluation of bioequivalence studies of drug products with nonlinear pharmacokinetics / N.E. Uvarova, N.N. Eremenko, G.V. Ramenskaya, D.V. Goryachev // Pharmaceutical Chemistry Journal. — 2021. — Vol. 55, No. 1. — P. 3–7. — DOI 10.30906/0023-1134-2021-55-1-3-7.

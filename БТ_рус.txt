@@ -1,0 +1,132 @@
+Название научного проекта:
+Направленная доставка противоопухолевых и диагностических агентов на основе конъюгатов с белками-лигандами, наночастицами и природными соединениями
+Команда проекта:
+Д.б.н., профессор Фельдман Н.Б. Аспирант: Савина В.А.
+Проект выполняется совместно с:
+Институт биоорганической химии им. академиков М.М. Шемякина и Ю.А. Овчинникова РАН, НИИ биомедицинской химии им. В.Н. Ореховича, Сеченовский Университет, МГУ имени М.В. Ломоносова.
+
+ 
+
+Описание проекта:
+Проект объединяет фундаментальные и прикладные исследования в области направленной доставки биологически активных соединений. Изучаются конъюгаты противоопухолевых препаратов (доксорубицин, эсперамицин А1), фотосенсибилизаторов (фталоцианины, хлорины) и наночастиц (наночастицы агарициновой кислоты) с белками-лигандами — альфа-фетопротеином и эпидермальным фактором роста. Исследуются цитотоксическая и противоопухолевая активность полученных конъюгатов, их накопление и внутриклеточное распределение в чувствительных и резистентных опухолевых клетках. Отдельное направление посвящено изучению редокс-сигнализации, структурной организации бактериальной целлюлозы и биологической активности наночастиц агарициновой кислоты.
+Цель проекта:
+Разработка и изучение систем направленной доставки противоопухолевых и диагностических агентов на основе конъюгатов с белками-лигандами, наночастицами и природными соединениями для повышения эффективности терапии и преодоления лекарственной резистентности опухолевых клеток.
+Ключевые задачи:
+̵	Синтез и характеризация конъюгатов доксорубицина с эпидермальным фактором роста и его рецептор-связывающим фрагментом.
+̵	Изучение цитотоксической активности, накопления и внутриклеточного распределения антрациклиновых антибиотиков и их конъюгатов в чувствительных и резистентных клетках MCF-7.
+̵	Исследование противоопухолевой активности конъюгатов альфа-фетопротеина с доксорубицином и эсперамицином А1 in vitro и in vivo.
+̵	Изучение цитотоксического действия конъюгатов альфа-фетопротеина и эпидермального фактора роста с фотосенсибилизаторами.
+̵	Оценка биологической активности наночастиц агарициновой кислоты против клеток гепатомы человека HepG2.
+̵	Изучение редокс-сигнализации и адаптивных редокс-переключателей через окислительные и нитрозативные модификации белков.
+̵	Исследование структурной организации бактериальной целлюлозы.
+
+Список публикаций:
+1.	Gudkova OI, Demchenko AG, Shvets AV, Kuryakov VN, Sedyakina NE, Lyundup AV, Feldman NB, Gromovykh TI, Lutsenko SV. Biological Activity of Agaricinic Acid Nanoparticles against Human Hepatoma HepG2 Cells. Bull Exp Biol Med. 2020 Aug;169(4):508-511. doi: 10.1007/s10517-020-04919-1.
+2.	Lutsenko SV, Feldman NB, Severin SE. Cytotoxic and antitumor activities of doxorubicin conjugates with the epidermal growth factor and its receptor-binding fragment. J Drug Target. 2002 Nov;10(7):567-71. doi: 10.1080/1061186021000038058.
+3.	Lutsenko SV, Feldman NB, Gumanov SG, Rodina AV, Severin SE. Cytotoxic activity, accumulation, and intracellular distribution of anthracycline antibiotics and their conjugates with the epidermal growth factor in sensitive and resistant MCF-7 cells. Biochemistry (Mosc). 2000 Nov;65(11):1299-304.
+4.	Lutsenko SV, Feldman NB, Finakova GV, Gukasova NV, Petukhov SP, Posypanova GA, Skryabin KG, Severin SE. Antitumor activity of alpha fetoprotein and epidermal growth factor conjugates in vitro and in vivo. Tumour Biol. 2000 Nov-Dec;21(6):367-74. doi: 10.1159/000030142.
+5.	Feldman NB, Kiselev SM, Gukasova NV, Posypanova GA, Lutsenko SV, Severin SE. Antitumor activity of alpha-fetoprotein conjugate with doxorubicin in vitro and in vivo. Biochemistry (Mosc). 2000 Aug;65(8):967-71.
+6.	Savitsky AA, Gukasova NV, Gumanov SG, Feldman NB, Luk'yanets EA, Mironov AF, Yakubovskaya RI, Lutsenko SV, Severin SE. Cytotoxic action of conjugates of alpha-fetoprotein and epidermal growth factor with photoheme, chlorines, and phthalocyanines. Biochemistry (Mosc). 2000 Jun;65(6):732-6.
+7.	Severin SE, Posypanova GA, Sotnichenko AI, Moskaleva EIu, Fel'dman NB, Grigor'ev MI, Severin ES, Petrov RV. [Antitumor activity of a covalent conjugate of the endiene antibiotic esperamicin A1 with human alpha-fetoprotein]. Dokl Akad Nauk. 1999 Jun;366(4):561-4.
+8.	Lutsenko SV, Feldman NB, Finakova GV, Posypanova GA, Severin SE, Skryabin KG, Kirpichnikov MP, Lukyanets EA, Vorozhtsov GN. Targeting phthalocyanines to tumor cells using epidermal growth factor conjugates. Tumour Biol. 1999 Jul-Aug;20(4):218-24. doi: 10.1159/000030066.
+9.	Sotnichenko AI, Severin SE, Posypanova GA, Feldman NB, Grigor'ev MI, Severin ES, Petrov RV. Water-soluble 2,3,7,8-tetrachlorodibenzo-p-dioxin complex with human alpha-fetoprotein: properties, toxicity in vivo and antitumor activity in vitro. FEBS Lett. 1999 Apr 30;450(1-2):49-51. doi: 10.1016/s0014-5793(99)00440-8.
+
+
+Название научного проекта:
+Бесклеточные системы трансляции для биоинженерии и синтетической биологии.
+Команда проекта:
+К.б.н. Хабибуллина Н.Ф. Студенты: Дзагаштова Д., Однолько П., Олейник Н., Паламарчук Д.
+Проект выполняется совместно с:
+МГУ имени М.В. Ломоносова, Институт биоорганической химии им. академиков М.М. Шемякина и Ю.А. Овчинникова РАН, НИИ СБМ Роспотребнадзора.
+ 
+Описание проекта:
+Проект направлен на биоинженерные разработки и оптимизацию бесклеточных систем экспрессии для производства белковых продуктов. Методами генной инженерии, биоинженерии и синтетической биологии исследуются возможности бесклеточных систем трансляции в биотехнологии и производстве небелковых продуктов. 
+Цель проекта:
+Биоинженерная разработка и оптимизация бесклеточных систем экспрессии для эффективного производства белковых продуктов и небелковых соединений.
+Ключевые задачи:
+1.	Разработка и оптимизация бесклеточных систем экспрессии для производства целевых белковых продуктов.
+2.	Применение методов генной инженерии для совершенствования компонентов бесклеточных систем трансляции.
+3.	Исследование возможностей бесклеточных систем трансляции в биотехнологии.
+4.	Изучение потенциала бесклеточных систем для производства небелковых продуктов.
+5.	Интеграция подходов синтетической биологии для расширения функциональности бесклеточных систем экспрессии.
+Список публикаций:
+1.	Khabibullina NF, Tereshchenkov AG, Komarova ES, Syroegin EA, Shiriaev DI, Paleskava A, Kartsev VG, Bogdanov AA, Konevega AL, Dontsova OA, Sergiev PV, Osterman IA, Polikanov YS. Structure of Dirithromycin Bound to the Bacterial Ribosome Suggests New Ways for Rational Improvement of Macrolides. Antimicrob Agents Chemother. 2019 May 24;63(6):e02266-18. doi: 10.1128/AAC.02266-18.
+2.	Travin DY, Watson ZL, Metelev M, Ward FR, Osterman IA, Khven IM, Khabibullina NF, Serebryakova M, Mergaert P, Polikanov YS, Cate JHD, Severinov K. Structure of ribosome-bound azole-modified peptide phazolicin rationalizes its species-specific mode of bacterial translation inhibition. Nat Commun. 2019 Oct 8;10(1):4563. doi: 10.1038/s41467-019-12589-5.
+3.	Metelev M, Osterman IA, Ghilarov D, Khabibullina NF, Yakimov A, Shabalin K, Utkina I, Travin DY, Komarova ES, Serebryakova M, Artamonova T, Khodorkovskii M, Konevega AL, Sergiev PV, Severinov K, Polikanov YS. Klebsazolicin inhibits 70S ribosome by obstructing the peptide exit tunnel. Nat Chem Biol. 2017 Oct;13(10):1129-1136. doi: 10.1038/nchembio.2462.
+4.	Osterman IA, Khabibullina NF, Komarova ES, Kasatsky P, Kartsev VG, Bogdanov AA, Dontsova OA, Konevega AL, Sergiev PV, Polikanov YS. Madumycin II inhibits peptide bond formation by forcing the peptidyl transferase center into an inactive state. Nucleic Acids Res. 2017 Jul 7;45(12):7507-7514. doi: 10.1093/nar/gkx413.
+5.	Melnikov SV, Khabibullina NF, Mairhofer E, Vargas-Rodriguez O, Reynolds NM, Micura R, Söll D, Polikanov YS. Mechanistic insights into the slow peptide bond formation with D-amino acids in the ribosomal active site. Nucleic Acids Res. 2019 Feb 28;47(4):2089-2100. doi: 10.1093/nar/gky1211.
+6.	Almutairi MM, Svetlov MS, Hansen DA, Khabibullina NF, Klepacki D, Kang HY, Sherman DH, Vázquez-Laslop N, Polikanov YS, Mankin AS. Co-produced natural ketolides methymycin and pikromycin inhibit bacterial growth by preventing synthesis of a limited number of proteins. Nucleic Acids Res. 2017 Sep 19;45(16):9573-9582. doi: 10.1093/nar/gkx673.
+7.	Khabibullina NF, Liukmanova EN, Kopeina GS, Shenkarev ZO, Arsen'ev AS, Dolgikh DA, Kirpichnikov MP. [The development and optimization of coupled cell-free expression system for production of the transmembrane domain of the receptor tyrosine kinase ErbB3]. Bioorg Khim. 2010 Sep-Oct;36(5):654-60. Russian. doi: 10.1134/s1068162010050080.
+8.	Lyukmanova EN, Shenkarev ZO, Khabibullina NF, Kulbatskiy DS, Shulepko MA, Petrovskaya LE, Arseniev AS, Dolgikh DA, Kirpichnikov MP. N-terminal fusion tags for effective production of g-protein-coupled receptors in bacterial cell-free systems. Acta Naturae. 2012 Oct;4(4):58-64.
+9.	Lyukmanova EN, Shenkarev ZO, Khabibullina NF, Kopeina GS, Shulepko MA, Paramonov AS, Mineev KS, Tikhonov RV, Shingarova LN, Petrovskaya LE, Dolgikh DA, Arseniev AS, Kirpichnikov MP. Lipid-protein nanodiscs for cell-free production of integral membrane proteins in a soluble and folded state: comparison with detergent micelles, bicelles and liposomes. Biochim Biophys Acta. 2012 Mar;1818(3):349-58. doi: 10.1016/j.bbamem.2011.10.020.
+10.	Mineev KS, Khabibullina NF, Lyukmanova EN, Dolgikh DA, Kirpichnikov MP, Arseniev AS. Spatial structure and dimer--monomer equilibrium of the ErbB3 transmembrane domain in DPC micelles. Biochim Biophys Acta. 2011 Aug;1808(8):2081-8. doi: 10.1016/j.bbamem.2011.04.017.
+
+
+Название научного проекта:
+Разработка и изучение бактериофагов, эндолизинов и лекарственных форм для терапии инфекций и регенерации тканей.
+Команда проекта:
+Д.ф.н., профессор Анурова М.Н. Магистранты: Запевалов А.Т., Низова А.Р. Cтуденты: Дрозд А.А.
+Проект выполняется совместно с:
+Российский национальный исследовательский медицинский университет им. Н.И. Пирогова, НИИ вакцин и сывороток им. И.И. Мечникова, Первый МГУ имени И.М. Сеченова, НИЦ эпидемиологии и микробиологии им. Н.Ф. Гамалеи.
+ 
+Описание проекта:
+Проект объединяет фундаментальные и прикладные исследования в области фаговой терапии, разработки рекомбинантных эндолизинов и создания новых лекарственных форм для лечения инфекционных заболеваний и стимуляции регенерации тканей. Изучаются литические бактериофаги (Cutibacterium acnes, Salmonella), их геномная характеристика и терапевтический потенциал. Разрабатываются эндолизин-содержащие гели для лечения анаэробных инфекций, исследуется их фармакокинетика и безопасность. Отдельное направление посвящено разработке и изучению новых лекарственных форм: стоматологических плёнок с кеторолаком, глазных гелей с интерфероном, суппозиториев с бактериофагами, назальных форм налоксона, а также изучению ранозаживляющей активности дигидрокверцетина.
+Цель проекта:
+Разработка и всестороннее изучение бактериофагов, рекомбинантных эндолизинов и инновационных лекарственных форм для терапии антибиотикорезистентных инфекций, а также для применения в стоматологии, офтальмологии и регенеративной медицине.
+Ключевые задачи:
+̵	Выделение и геномная характеристика литических бактериофагов Cutibacterium acnes и Salmonella.
+̵	Изучение терапевтического потенциала бактериофагов для лечения антибиотикорезистентных кишечных инфекций.
+̵	Разработка и изучение фармакокинетики и безопасности эндолизин-содержащего геля для местного применения.
+̵	Оценка эффективности эндолизин-содержащего антибактериального геля для лечения анаэробной инфекции, вызванной Fusobacterium necrophorum.
+̵	Определение спектра бактерицидной активности рекомбинантных эндолизинов бактериофагов ECD7, Am24, Ap22, Si3 и St11.
+̵	Анализ фармакокинетики суппозиторных форм бактериофагов.
+
+Список публикаций:
+1.	Vorobeva AA, Vorobev AM, Evseev PV, Mekhtiev ER, Chaplin AV, Pasivkina MA, Zubkova ES, Bochkareva SS, Yaitsky MA, Nikitin NA, Demina NB, Korol VA, Aleshkin AV, Blintsov AN, Anurova MN. Isolation and Genomic Characterization of Two Lytic Cutibacterium acnes Phages Defines Two Novel Pahexavirus Species. Viruses. 2026 Feb 6;18(2):214. doi: 10.3390/v18020214.
+2.	Pasivkina MA, Anurova MN, Kiseleva IA, Andreeva AA, Vorobev AM, Mizaeva TE, Mekhtiev ER, Zubkova ES, Alieva KM, Kuzmin AR, Karaulov AV, Aleshkin AV. Isolation and Characterization of Salmonella Bacteriophages as Potential Agents for Phage Therapy of Antibiotic-Resistant Intestinal Infections. Bull Exp Biol Med. 2024 Aug;177(4):465-469. doi: 10.1007/s10517-024-06209-6.
+3.	Antonova NP, Vasina DV, Grigoriev IV, Usachev EV, Aleshkin AV, Vorobev AM, Laishevtsev AI, Kapustin AV, Savinov VA, Anurova MN, Zackharova AA, Remizov TA, Makarov VV, Yudin SM, Gushchin VA. Pharmacokinetics and Preclinical Safety Studies of Modified Endolysin-based Gel for Topical Application. J Pharm Sci. 2024 Aug;113(8):2093-2100. doi: 10.1016/j.xphs.2024.04.028.
+4.	Vasina DV, Antonova NP, Vorobev AM, Laishevtsev AI, Kapustin AV, Zulkarneev ER, Bochkareva SS, Kiseleva IA, Anurova MN, Aleshkin AV, Tkachuk AP, Gushchin VA. Efficacy of the Endolysin-Based Antibacterial Gel for Treatment of Anaerobic Infection Caused by Fusobacterium necrophorum. Antibiotics (Basel). 2021 Oct 16;10(10):1260. doi: 10.3390/antibiotics10101260.
+5.	Vorob'ev AM, Anurova MN, Aleshkin AV, Gushchin VA, Vasina DV, Antonova NP, Kiseleva IA, Rubalskii EO, Zul'karneev ER, Laishevtsev AI, Mekhtiev ER, Kaminskii VV, Bakhrushina EO, Bochkareva SS, Karaulov AV. Determination of Bactericidal Activity Spectrum of Recombinant Endolysins of ECD7, Am24, Ap22, Si3, and St11 Bacteriophages. Bull Exp Biol Med. 2021 Mar;170(5):636-639. doi: 10.1007/s10517-021-05122-6.
+6.	Terekhov RP, Selivanova IA, Anurova MN, Zhevlakova AK, Nikitin ID, Cong Z, Ma S, Yang F, Dong Z, Liao Y. Comparative Study of Wound-Healing Activity of Dihydroquercetin Pseudopolymorphic Modifications. Bull Exp Biol Med. 2021 Feb;170(4):444-447. doi: 10.1007/s10517-021-05083-w.
+7.	Bakhrushina EO, Demina NB, Kashperko AS, Vakina MG, Anurova MN, Zhilyakova ET, Krasnyuk II. Development of Composition and Technologies of Dental Film with Ketorolac Trometamine. Drug Res (Stuttg). 2021 Feb;71(2):104-107. doi: 10.1055/a-1302-7701.
+8.	Bochkareva SS, Karaulov AV, Aleshkin AV, Novikova LI, Kiseleva IA, Rubal'skii EO, Mekhtiev ER, Styshnev AO, Zul'karneev ER, Anurova MN, Bakhrushina EO, Letarov AV. Analysis of the Pharmacokinetics of Suppository Forms of Bacteriophages. Bull Exp Biol Med. 2020 Apr;168(6):748-752. doi: 10.1007/s10517-020-04794-w.
+9.	Anurova MN, Bakhrushina EO, Lapik IV, Kashperko AS, Krasnyuk II. New Combined Eye Gel with Alpha-2-Beta Interferon. Bull Exp Biol Med. 2020 Jan;168(3):349-351. doi: 10.1007/s10517-020-04706-y.
+10.	Bariev EA, Krasnyuk II, Anurova MN, Bakhrushina EO, Smirnov VV, Bardakov AI, Demina NB, Krasnyuk II Jr. Study of the Acute Toxicity of a New Dosage Form of Naloxone Hydrochloride for Intranasal Administration. Drug Res (Stuttg). 2020 Jan;70(1):23-25. doi: 10.1055/a-0899-4948.
+
+Название научного проекта:
+Бактериальная целлюлоза: структура, биомедицинские материалы и биотехнологические платформы на её основе.
+
+Команда проекта:
+К.б.н. Гаврюшина И.А. Аспирант: Кравченко Е. Студент: Балаян М.
+
+Цель проекта:
+Комплексное изучение структуры и свойств бактериальной целлюлозы и создание на её основе биомедицинских материалов и биотехнологических платформ для иммобилизации клеток и получения биологически активных соединений.
+
+Проект выполняется совместно с:
+МГУ имени М.В. Ломоносова, Сеченовский Университет, НИЦ «Курчатовский институт».
+
+   
+
+Описание проекта:
+Проект объединяет фундаментальные и прикладные исследования бактериальной целлюлозы (БЦ), синтезируемой Gluconacetobacter hansenii. Изучаются структурная организация БЦ, происхождение анизотропии и слоистых структур, разрабатываются методы очистки мембран БЦ с использованием сверхкритических сред. На основе БЦ создаются биоматериалы для медицины с оценкой их цитотоксичности для эукариотических клеток, а также матрицы для иммобилизации клеток Escherichia coli, мицелия Fomitopsis officinalis и культуры Laetiporus sulphureus. Исследуются антимикробные свойства получаемых экстрактов и разрабатывается биотехнология их получения.
+
+Цель проекта:
+Комплексное изучение структуры и свойств бактериальной целлюлозы и создание на её основе биомедицинских материалов и биотехнологических платформ для иммобилизации клеток и получения биологически активных соединений.
+
+Ключевые задачи:
+̵	Изучение структурной организации БЦ, происхождения анизотропии и слоистых структур.
+̵	Разработка новых подходов к очистке мембран БЦ, включая сверхкритические среды.
+̵	Создание биоматериалов на основе БЦ для медицинского применения и оценка их цитотоксичности.
+̵	Разработка матриц из БЦ для иммобилизации клеток Escherichia coli.
+̵	Получение иммобилизованного мицелия Fomitopsis officinalis — продуцента агарициновой кислоты.
+̵	Разработка биотехнологии получения иммобилизованной культуры Laetiporus sulphureus на БЦ и изучение антимикробных свойств её экстрактов.
+
+Список публикаций:
+1.	Structural organization of bacterial cellulose: The origin of anisotropy and layered structures; Tatiana I Gromovykh, Marina A Pigaleva, Marat O Gallyamov, Ilya P Ivanenko, Kseniya E Ozerova, Elena P Kharitonova, Marjan Bahman, Nataliya B Feldman, Sergey V Lutsenko, Olga I Kiselyova, Carbohydr Polym, 2020 Jun 1:237:116140, doi: 10.1016/j.carbpol.2020.116140.
+2.	Антимикробные свойства водорастворимых полисахаридов и спиртовых экстрактов мицелия LAETIPORUS SULPHUREUS (BULL.) MURRILL и разработка биотехнологии его получения в иммобилизованной культуре на бактериальной целлюлозе, Гаврюшина И.А., Громовых Т.И., Фельдман Н.Б., Луценко С.В., Пономаренко В.И., Кисиль О.В., Садыкова В.С., Антибиотики и химиотерапия, 2020, том 65, № 1-2, с. 10-14, DOI: 10.37489/0235-2990-2020-65-1-2-10-14.
+3.	Бактериальная целлюлоза, синтезируемая GLUCONACETOBACTER HANSENII, для использования в медицине, Громовых Т.И., Садыкова В.С., Луценко С.В., Дмитренок А.С., Фельдман Н.Б., Данильчук Т.Н., Каширин В.В., Прикладная биохимия и микробиология, 2017, том 53, № 1, с. 69-75, doi.org/10.7868/S0555109917010093.
+4.	Development of bacterial cellulose biomaterial: preparation and establishment of cytotoxicity for eukaryotic cells, Gromovykh T.I., Demchenko A.G., Cheremnykh E.G., Feldman N.B., Lyundup A.V., Balyasin M.V., Kiselyova O.I., Gromovykh P.S., Lutsenko S.V., International Journal of Nanotechnology, 2019, том 16, № 1/2/3, с. 87-99.
+5.	Elaboration of a bacterial cellulose matrix for the immobilization of Escherichia coli cells, Gromovykh T.I., Feldman N.B., Tikhonova O.A., Lutsenko S.V., Timashev P.S., Bardakova K.N., Churbanov S.N., Kiselyova O.I., Kraeva М.N., Grinevich А.S., International Journal of Nanotechnology, 2018, том 15, № 4/5, с. 288-300.
+6.	Obtaining immobilized mycelium of basidiomycete fomitopsis officinalis (Vill.:Fr.) bond. et Sing., producer of Agaricic Acid, Громовых Т.И., Гаврюшина И.А., Садыкова В.С., Фельдман Н.Б., Дмитренок А.С., Айрапетова А.Y., Луценко С. В., Антибиотики и химиотерапия, Т. 63, вып. 9-10, С. 3-9, 2018.
+7.	A new approach to purification of bacterial cellulose membranes: What happens to bacteria in supercritical media? Pigaleva M. A., Bulat M. V., Gromovy'kh T. I., Gavryushina I. A., Lutsenko S. V., Gallyamov M. O., Novikov I. V., Buyanovskaya A. G., Kiselyova O. I. The Journal of Supercritical Fluids, Vol.147, P. 59-69, 2019, DOI:10.1016/j.supflu.2019.02.009.
+

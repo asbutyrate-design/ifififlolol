@@ -1,0 +1,86 @@
+ Research Project Title: “‘PARKINSON_NET_INFO’ Chatbot - a Digital Information Support System for Stakeholders in Parkinson's Disease Therapy”
+Project Team: Professor of the Department, Doctor of Pharmaceutical Sciences, Professor Glembotskaya G.T.; Assistant, PhD student Kristeleva D.A.; Doctor of Medical Sciences, Professor of the Department of Nervous Diseases Shindryaeva N.N.
+Project Description:
+Project Aim: to develop the digital chatbot “PARKINSON_NET_INFO” providing information support to physicians, pharmacy professionals and patients with Parkinson's disease and aimed at improving the quality of pharmacotherapy and medicines supply using modern digital technologies.
+Key Objectives:
+- to develop a framework for digital information support for physicians, pharmacy professionals and patients with Parkinson's disease;
+- to ensure that patients receive timely information on pharmacotherapy and medicines supply;
+- to develop tools for collecting and assessing data on changes in patients' condition over time;
+- to support the identification of patients at risk of cognitive impairment to enable timely referral and follow-up;
+- to provide information support to physicians in pharmacotherapy assessment and medication selection;
+- to enable improvement of the recording and monitoring of antiparkinsonian medication dispensing and the analysis of medicines supply;
+- to develop approaches to integrating the “PARKINSON_NET_INFO” chatbot into the digital healthcare infrastructure, including the electronic medical record, the patient portal and telemedicine services;
+- to identify prospects for implementation and commercialization of the solution in healthcare organizations and digital healthcare environments.
+Key Publications:
+1.	KRISTELEVA D.A., GLEMBOTSKAYA G.T., SHINDRYAEVA N.N. Pharmacotherapy in Parkinson's disease. Current Problems of Health Care and Medical Statistics. 2025. No. 5. pp. 31-42. (In Russ.)
+2.	KRISTELEVA D.A., GLEMBOTSKAYA G.T., SHINDRYAEVA N.N. A comprehensive approach to assessing pharmacotherapy for Parkinson's disease in the context of import substitution. Farmatsiya (Pharmacy). 2026. No. 2. pp. 60-67. (In Russ.)
+3.	KRISTELEVA D.A., GLEMBOTSKAYA G.T., SHINDRYAEVA N.N. Medical and social profile of the consumer of antiparkinsonian medications in the context of import substitution. Current Problems of Health Care and Medical Statistics. 2026. No. 2. pp. 39-51. (In Russ.)
+
+Research Project Title: “Calculator for Forecasting Costs and Consumption Volume of Antiepileptic Therapy”
+Project Team: PhD, Associate Professor Zakharova O.V., PhD, Associate Professor Vaskova L.B.; PhD student Pozdnyakov G.A.
+The project is carried out at the Department of Organization and Economics of Pharmacy of the A.P. Nelyubin Institute of Pharmacy, Sechenov First Moscow State Medical University (Sechenov University), in collaboration with the Kozhevnikov Clinic of Nervous System Diseases of University Clinical Hospital No. 3, Sechenov University.
+Project Description:
+Project Aim: development of an automated management decision support tool for planning the medicines supply for patients with epilepsy that forecasts costs and consumption volume of antiepileptic medicines at the healthcare organization level, taking into account the clinical and demographic characteristics of the patient cohort.
+Key Objectives:
+- development of a multivariable regression model of pharmacotherapy costs based on clinical and demographic predictors of patients with epilepsy.
+- implementation of the calculation of pack requirements and costs using the ATC/DDD methodology of the World Health Organization;
+- development of a mechanism for automatic re-estimation of the regression model as new data accumulate at the inpatient stage of care;
+- assessment of forecast accuracy using the coefficient of determination (R²), mean absolute percentage error (MAPE) and confidence intervals;
+- procurement volume planning for antiepileptic medicines. 
+Key Publications: 
+Vaskova L.B., Pozdnyakov G.A., Garankina R.Y. Analysing the volume of drug consumption in inpatient treatment of epilepsy // Medical & pharmaceutical journal «Pulse». – 2024. – Vol. 26, № 12. – P. 66–75. – DOI: 10.26787/nydha-2686-6838-2024-26-12-66-75
+Vaskova L.B., Pozdnyakov G.A., Garankina R.Y. Cost analysis of epilepsy pharmacotherapy at the inpatient stage of care // Practice Oriented Science: UAE – RUSSIA – INDIA : Proceedings of the International Conference, May 8, 2024, UAE. – UAE, 2024. – P. 105–112. – DOI: 10.34660/INF.2024.93.72.066
+Implementation of Project Results in Practice:
+The calculator has been implemented at the Moscow City Clinical Hospital named after V.M. Buyanov of the Moscow Healthcare Department (implementation certificate dated 15 April 2026).
+
+Research Project Title: “Improving Access to Biologic Therapy through Digital Solutions”
+Project Team: PhD, Associate Professor of the Department of Organization and Economics of Pharmacy Gerasimova D.A., students: Kolesova A.I., Lisenkov A.D., Chinareva V.A.
+The project is carried out jointly with the V.A. Nasonova Research Institute of Rheumatology.
+Project Description:
+Project Aim: to improve the accessibility of biologic therapy for patients with chronic diseases by optimizing the dosing and allocation of biologics.
+Key Objectives:
+- to conduct a clinical and economic analysis of biologics for the treatment of systemic autoimmune rheumatic and oncological diseases;
+- to develop an algorithm for individualized dose selection of biologics depending on the patient's body weight/body surface area;
+- to propose a quantitative model for calculating the total number of packs of biologics for procurement by a healthcare organization;
+- to develop a dose optimization program using machine learning algorithms and digital platforms.
+
+Key Publications: 
+●	Kolesova A. I., Gerasimova D. A., Gerasimova E. V., Zakharova O. V., Popkova T. V. Biologics for the treatment of systemic lupus erythematosus: balance between clinical efficacy and economic affordability // Pharmacoeconomics: Theory and Practice. - 2025. - Vol. 13, No. 4. pp. 10-18. (In Russ.) DOI: https://doi.org/10.30809/phe.4.2025.2
+●	Gerasimova D.A., Gontarenko V.A., Gerasimova E.V., Zakharova O.V., Lobuteva L.A., Popkova T.V., Lila A.M. Pharmacoeconomic analysis of rituximab and belimumab therapy in patients with systemic lupus erythematosus. Modern Rheumatology Journal. 2024;18(5):31-37. (In Russ.) DOI: https://doi.org/10.14412/1996-7012-2024-5-31-37
+●	Elena Gerasimova, Daria Gerasimova, Anastasia Kolesova, Oksana Zaharova, Tatiana Popkova. Efficacy of anifrolumab and belimumab therapy in patients with systemic lupus erythematosus: a comparative study// International Journal of Rheumatic Diseases: 2026, Volume 29, Issue S1 DOI: https://doi.org/10.1111/1756-185x.70440
+●	Kolesova A.I., Gerasimova D.A., Gerasimova E.V., Popkova T.V. Clinical and economic analysis of biologic therapy for systemic lupus erythematosus // Book of Abstracts of the 25th Anniversary National Congress with International Participation “Rheumatology Days in St. Petersburg – 2025”: / Edited by Academician of the Russian Academy of Sciences Mazurov V.I., Professor Trofimov E.A. St. Petersburg: 2025. – 318 p. (In Russ.)
+●	Gerasimova D.A., Zakharova O.V., Gerasimova E.V., Popkova T.V. Assessment of direct medical costs of hospitalization in patients with systemic autoimmune rheumatic diseases // 9th Russian Congress on Osteoporosis, Osteoarthritis and Other Metabolic Bone Diseases with International Participation, 5-7 September 2024, St. Petersburg. Book of Abstracts. Osteoporosis and Bone Diseases. 2024. – Vol. 27. - No. 1S (2024). – p. 52. (In Russ.) https://doi.org/10.14341/osteo2024271S.
+
+
+
+Research Project Title: “‘Information Exchange in the Provision of Pharmaceutical Care to Pregnant Women with ARVI’ Ecosystem”
+Project Team: PhD, Associate Professor Gribova Ya.V., Lecturer Andrun A.S., student: Pershina A.R.
+Project Description:
+Project Aim: to develop the PC software “PharmHelpMamaARVI” based on an optimal algorithm for pharmaceutical counseling of pregnant women with acute respiratory viral infections (ARVI), which will increase the confidence of pharmacists and the quality of the pharmaceutical care provided through modern digital technologies.
+Key Objectives:
+•	based on a literature review, to analyze the current state and the regulatory framework of the organization of pharmaceutical care for pregnant women with ARVI at the outpatient stage in the Russian Federation and worldwide;
+•	to conduct a comprehensive analysis of the assortment of medicines for the provision of outpatient care to pregnant women with ARVI;
+•	to study the factors shaping the medical and demographic profile of a pregnant woman with ARVI and to determine her consumer behavior;
+•	to identify the specific features of pharmaceutical counseling of pregnant women with ARVI based on a sociological survey of participants in pharmaceutical care (obstetrician-gynecologist – pharmacist – pregnant woman);
+•	to develop an algorithm for pharmaceutical counseling of pregnant women with ARVI and a technical specification for the computer program “PharmHelpMamaARVI” in order to automate pharmaceutical counseling;
+•	to develop guidelines for pharmaceutical counseling of pregnant women with ARVI. 
+   Key Publications: 
+RELEVANCE OF DEVELOPING AN ALGORITHM FOR PHARMACEUTICAL COUNSELING OF PREGNANT WOMEN WITH ARVI A. S. ANDRUN, YA. V. GRIBOVA. MODERN PHARMACY: INTEGRATION OF SCIENCE, EDUCATION AND MEDICINE Collection of Scientific Papers of the National Scientific and Practical Conference with International Participation dedicated to the 25th anniversary of the Faculty of Pharmacy. Makhachkala, 2024.  pp. 13-18. (In Russ.)
+ALGORITHM OF PHARMACEUTICAL COUNSELING FOR PREGNANT WOMEN WITH ACUTE RESPIRATORY VIRAL INFECTIONS: EXPLORING THE RELEVANCE OF DEVELOPMENT O. V. ZAKHAROVA, YA. V. GRIBOVA, A. S. ANDRUN.  MEDICAL & PHARMACEUTICAL JOURNAL “PULSE”. 2025. Vol. 27 No. 7. pp. 128-138. (In Russ.)
+ DOI: 10.26787/nydha-2686-6838-2025-27-7-128-138
+PHARMACEUTICAL COUNSELING OF PREGNANT WOMEN WITH ARVI: RELEVANCE OF DEVELOPING AN ALGORITHM A. S. ANDRUN, YA. V. GRIBOVA. PHARMACY: EXPERIENCE AND DEVELOPMENT PROSPECTS Collection of Articles of the National Scientific and Practical Conference. Krasnoyarsk: Krasnoyarsk State Medical University, 2025. pp. 214-223. (In Russ.)
+RELEVANCE OF DEVELOPING AN ALGORITHM OF THE PHARMACEUTICAL COUNSELING PROCESS FOR PREGNANT WOMEN WITH ARVI. A. S. ANDRUN, YA. V. GRIBOVA. WHITE FLOWERS Book of Abstracts of the 12th International Youth Scientific Medical Forum dedicated to the 80th anniversary of Victory in the Great Patriotic War. Kazan: Kazan State Medical University, 2025. pp. 1439-1440. (In Russ.)
+
+Research Project Title: “Development and Implementation of an Algorithm for Applying Artificial Intelligence in Business Process Management of a Pharmacy”
+  Project Team: PhD Associate Professor Zakharova O.V., PhD Associate Professor Gribova Ya.V., Senior lecturer Klyueva Yu.A., students: Zakatova K.A., Akimova S.S., Zakharchenko P.A.
+The project is carried out jointly with high-tech companies implementing projects in business development and optimization. 
+Project Description:
+Project Aim: To develop a methodological framework for business process reengineering in a pharmacy with the integration of artificial intelligence technologies
+Key Objectives:
+•	To develop and substantiate an algorithm for applying artificial intelligence in business process management of a pharmacy.
+•	To develop a model of business process reengineering in a pharmacy with the integration of artificial intelligence technologies.
+•	To assess the economic efficiency of business processes implemented using digital technologies in a pharmacy.
+Key Publications: 
+•	Klyueva Yu.A., Gribova Ya.V., Zakharova O.V., Serbis E.S., Zakatova K.A. Comparative analysis of software products supporting the “inventory movement tracking” business process in pharmacies // Modern Organization of Drug Supply Vol. 12  No. 3  2025 pp. 31-39 (In Russ.)
+•	Presentation at the Scientific and Practical Conference “Artificial Intelligence in the Modern World: Engineering, Medicine, Pharmacy, Education”, Vitebsk State Medical University, 2024 (report “Prospects for the Use of Artificial Intelligence in Business Process Management of a Pharmacy”).
+•	Presentation at the 1st International Conference INNOVATIVE DRUGS: FROM MOLECULE TO THE PATIENT, Sechenov First Moscow State Medical University, 2024 (report “Optimizing Business Process Management in a Pharmacy Using Artificial Intelligence”).
