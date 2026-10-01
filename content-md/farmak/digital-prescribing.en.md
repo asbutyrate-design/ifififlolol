@@ -1,10 +1,14 @@
 # Digital Prescribing
 
-Project team: Head of the Department of Pharmacology, Candidate of Medical Sciences, Associate Professor E.A. Smolyarchuk; Professor, Doctor of Medical Sciences A.V. Samorodov; Associate Professor, Candidate of Biological Sciences S.S. Sologova; Associate Professor, Candidate of Medical Sciences E.A. Zavadich; Assistant D.A. Trashchenkova; Assistant E.V. Polikarpov
+## Project team
+
+Head of the Department of Pharmacology, Candidate of Medical Sciences, Associate Professor E.A. Smolyarchuk; Professor, Doctor of Medical Sciences A.V. Samorodov; Associate Professor, Candidate of Biological Sciences S.S. Sologova; Associate Professor, Candidate of Medical Sciences E.A. Zavadich; Assistant D.A. Trashchenkova; Assistant E.V. Polikarpov
 
 ## Project description
 
-Objective: Development and evolution of the unified "Digital Formulation" digital platform, integrating training, simulation exercises, professional information sources, and skill mastery assessment into a single licensed product..
+## Objective
+
+Development and evolution of the unified "Digital Formulation" digital platform, integrating training, simulation exercises, professional information sources, and skill mastery assessment into a single licensed product..
 
 ## Key points
 

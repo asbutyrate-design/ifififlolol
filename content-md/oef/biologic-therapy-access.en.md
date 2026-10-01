@@ -1,11 +1,18 @@
 # Improving Access to Biologic Therapy through Digital Solutions
 
-Project Team: PhD, Associate Professor of the Department of Organization and Economics of Pharmacy Gerasimova D.A., students: Kolesova A.I., Lisenkov A.D., Chinareva V.A.
-The project is carried out jointly with the V.A. Nasonova Research Institute of Rheumatology.
+## Project Team
+
+PhD, Associate Professor of the Department of Organization and Economics of Pharmacy Gerasimova D.A., students: Kolesova A.I., Lisenkov A.D., Chinareva V.A.
+
+## The project is carried out jointly with
+
+the V.A. Nasonova Research Institute of Rheumatology.
 
 ## Project Description
 
-Project Aim: to improve the accessibility of biologic therapy for patients with chronic diseases by optimizing the dosing and allocation of biologics.
+## Project Aim
+
+to improve the accessibility of biologic therapy for patients with chronic diseases by optimizing the dosing and allocation of biologics.
 
 ## Key Objectives
 

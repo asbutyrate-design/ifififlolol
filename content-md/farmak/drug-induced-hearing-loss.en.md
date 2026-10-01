@@ -1,10 +1,14 @@
 # Development of protective strategies for drug-induced hearing loss
 
-Project team: Associate Professor, Ph.D Bakaeva Z.V., Assistant professor Polikarpov E.V., student Orlov A.S.
+## Project team
+
+Associate Professor, Ph.D Bakaeva Z.V., Assistant professor Polikarpov E.V., student Orlov A.S.
 
 ## Project description
 
-Objective: Investigation of the mechanisms of ototoxicity and identification of the otoprotective properties of natural compounds, with the aim of developing new strategies for the prevention and treatment of drug-induced sensorineural hearing loss.
+## Objective
+
+Investigation of the mechanisms of ototoxicity and identification of the otoprotective properties of natural compounds, with the aim of developing new strategies for the prevention and treatment of drug-induced sensorineural hearing loss.
 
 The work is being conducted in collaboration with the Laboratory of Neurobiology and Fundamental Principles of Brain Development at the National Medical Research Center for Children's Health (Ministry of Health of Russia), the Institute of General Pathology and Pathophysiology, and the Institute of Gene Biology of the Russian Academy of Sciences (IGB RAS).
 

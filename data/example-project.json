@@ -1,0 +1,295 @@
+{
+ "_comment": [
+  "ПРИМЕР ПОЛНОСТЬЮ ЗАПОЛНЕННОГО ОБЪЕКТА ПРОЕКТА.",
+  "Значения взяты из реального источника (АФКХ, качество распыления аэрозолей).",
+  "Поля, которых в источнике нет, оставлены null — это НЕ означает ошибку.",
+  "Поля photo / orcid / scopus_id / profile_url заполняются только после того,",
+  "как заказчик передаст фото и ссылки на профили. Выдумывать их нельзя."
+ ],
+ "project": {
+  "slug": "spray-quality-aerosols",
+  "title_ru": "Качество распыления фармацевтических аэрозолей и спреев",
+  "title_en": "The quality of spraying pharmaceutical aerosols and sprays",
+  "annotation_ru": "на основе сравнительного анализа ключевых показателей распыления спрейно-аэрозольных форм назальных препаратов и средств для лечения боли в горле выбрать с точки зрения доставки лекарственного вещества на слизистую оболочку горла наиболее эффективный препарат.",
+  "annotation_en": null,
+  "description_ru": "# Качество распыления фармацевтических аэрозолей и спреев\n\n## Команда проекта\n\nдоцент, к.ф.н. Янкова В.Г., доцент, к.х.н. Грибанова С.В., доцент, к.ф.н. Григорьева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д., Обручкова И., Луткова М., Конон С., Макаренко М.\n\n## Проект выполняется совместно с\n\nИнститут теплофизики им. С.С. Кутателадзе СО РАН (Новосибирск)\n\n## Цель проекта\n\nна основе сравнительного анализа ключевых показателей распыления спрейно-аэрозольных форм назальных препаратов и средств для лечения боли в горле выбрать с точки зрения доставки лекарственного вещества на слизистую оболочку горла наиболее эффективный препарат.\n\n## Ключевые задачи\n\n1. изучение качества распыления спрейно-аэрозольных форм по следующим показателям: воспроизводимость и однородность массы дозы, площадь орошаемой поверхности на плоскостной имитационной модели, площадь орошаемой поверхности\nна силиконовой модели носа\n2. изучение динамических характеристик распыления и дисперсного состава распыла назальных препаратов и средств для лечения боли в горле методом теневой фотографии\n\n## Основные научные публикации по проекту\n\n1. Грибанова С.В., Янкова В.Г., Удянская И.Л., Григорьева В.Ю., Слонская Т.К., Жукова А.А., Парфенов И.Д. Сравнение распылительной способности спреев для горла, содержащих гексэтидин. Инфекционные болезни. 2021; 19(1): 144–148. DOI: 10.20953/1729-9225- 2021-1-144-148\n2. Oleg A. Gobyzov, Mikhail N. Ryabov, Viktoriya G. Yankova, Svetlana V. Gribanov, Tatiana K. Slonskaya, Irina L. Udyanskaya, Anna A. Zhukova, Viktoriya Yu. Grigoryeva Comparative analysis of the dispersion quality of oxymetazoline nasal sprays Journal of Advanced Pharmaceutical Technology & Research , Volume 17, Issue 1( January March 2022), р.30-37\n3. Грибанова С.В., Янкова В.Г., Гобызов О.А., Рябов М.Н., Карпова А.С., Кедик С.А., Удянская И.Л., Григорьева В.Ю., Краснюк (мл.) И.И., Слонская Т.К., Жукова А.А. Изучение и анализ параметров распыления назальных спреев на основе фрамицетина. Вопросы практической педиатрии. 2022; 17(2): 99–106. DOI: 10.20953/1817-7646-2022-2-99-106\n4. Краснюк И.И. (мл), Слонская Т.К., Жукова А.А., Симонян Л.А. Комплексный анализ параметров распыления назальных спреев, содержащих антибиотики, противовоспалительный и сосудосуживающий компоненты. 2023; 18(3): 75–82. DOI: 10.20953/1817-7646-2023-3-75-82\n5. Янкова В.Г., Гобызов О.А., Рябов М.Н., Удянская И.Л., Григорьева В.Ю., Жукова А.А., Слонская Т.К., Плахотная О.Н., Станцов М.И., Карташов В.С., Якубович Л.М., Грибанова С.В. Оценка качества распыления комбинированного препарата для лечения инфекционно-воспалительных заболеваний горла методом теневой фотографии. Вопросы практической педиатрии. 2024; 19(3): 58–64. DOI: 10.20953/1817-7646-2024-3-58-64\n6. Янкова В.Г., Гобызов О.А., Рябов М.Н., Григорьева В.Ю., Удянская И.Л., Жукова А.А., Слонская Т.К., Плахотная О.Н., Эпштейн Н.Б., Помазкина М.П., Грибанова С.В. Качество распыления дозированных спреев: cравнительное исследование бензидаминсодержащих препаратов. Вопросы практической педиатрии. 2025; 20(5): 39–48. DOI: 10.20953/1817-7646-2025-5-39-48",
+  "description_en": "# The quality of spraying pharmaceutical aerosols and sprays\n\n## Project team\n\nassociate professor, сandidate of pharmaceutical sciences V.G. Yankova; associate professor, candidate of chemical sciences S.V. Gribanova; associate professor, candidate of pharmaceutical sciences V.Yu. Grigorieva; associate professor, candidate of pharmaceutical sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova, M. Lutkova, S. Konon, M. Makarenko.\n\n## The project is carried out jointly with\n\nthe S.S. Kutateladze Institute of Thermophysics of the Siberian Branch of the Russian Academy of Sciences (Novosibirsk).\n\n## Project description\n\nBased on a comparative analysis of the key parameters of spray and aerosol formulations of nasal medications and remedies for treating sore throat, select the most effective drug in terms of delivering the medicinal substance to the mucous membrane of the throat.\n\n## Key tasks\n\n1. Study of the spraying quality of spray and aerosol formulations based on the following indicators: reproducibility and uniformity of the dose mass, the area of the irrigated surface on a planar simulation model, the area of the irrigated surface on a silicone nasal model.\n2. Study of the dynamic characteristics of spraying and the particle size distribution of nasal medications and throat pain treatments using shadow photography.\n\n## Main scientific publications related to the project\n\n1. Yankova V.G., Gribanova S.V., Grigoryeva V.Yu., Udyanskaya I.L., Slonskaya T.K., Zhukova A.A., Plakhotnaya O.N., Krasnyuk I.I. (Jr.), Chernikova K.S., Dosaeva E.S. Quality of spraying of combination medicines produced by different manufacturers used for the treatment of upper respiratory tract infections. Vopr. prakt. pediatr. (Clinical Practice in Pediatrics). 2021; 16(1): 112–117. (In Russian). DOI: 10.20953/1817-7646-2021-1-112-117\n2. Gribanova S.V., Yankova V.G., Udyanskaya I.L., Grigoryeva V.Yu., Slonskaya T.K., Zhukova A.A., Parfenov I.D. Comparison of spray capacities of throat sprays containing hexethidine. Infekc. bolezni (Infectious diseases). 2021; 19(1): 144–148. (In Russian). DOI: 10.20953/1729-9225-2021-1-144-148\n3.Oleg A. Gobyzov, Mikhail N. Ryabov, Viktoriya G. Yankova, Svetlana V. Gribanov, Tatiana K. Slonskaya, Irina L. Udyanskaya, Anna A. Zhukova, Viktoriya Yu. Grigoryeva Comparative analysis of the dispersion quality of oxymetazoline nasal sprays Journal of Advanced Pharmaceutical Technology & Research , Volume 17, Issue 1( January March 2022), р.30-37\n4. S.V.Gribanova, V.G.Yankova , O.A.Gobyzov , M.N.Ryabov , A.S.Karpova, S.A.Kedik, I.L.Udyanskaya , V.Yu.Grigorieva, I.I.Krasnyuk (Jr) , T.K.Slonskaya, A.A.Zhukova Assessment of spraying characteristics of two nasal sprays containing framycetin Clinical Practice in Pediatrics 2022; 17(2): 99–106. DOI: 10.20953/1817-7646-2022-2-99-106\n5. S.V.Gribanova, V.G.Yankova, O.A.Gobyzov, M.N.Ryabov, A.S.Karpova, S.A.Kedik, I.L.Udyanskaya,V.Yu.Grigorieva , I.I.Krasnyuk (Jr), T.K.Slonskaya, A.A.Zhukova, L.A.Simonyan Comprehensive analysis of the spray parameters of nasal sprays containing antibiotics, anti-inflammatory and vasoconstrictive components Clinical Practice in Pediatrics, 2023, volume 18, No 3, p. 75–82 DOI: 10.20953/1817-7646-2023-3-75-82\n6. Yankova V.G., Gobyzov O.A., Ryabov M.N., Udyanskaya I.L., Grigorieva V.Yu., Zhukova A.A., Slonskaya T.K., Plakhotnaya O.N., Stantsov M.I., Kartashov V.S., Yakubovich L.M., Gribanova S.V. Evaluation of nebulization quality of a combination drug for the treatment of infectious and inflammatory diseases of the throat by the shadow photography method. Vopr. prakt. pediatr. (Clinical Practice in Pediatrics). 2024; 19(3): 58–64. (In Russian). DOI: 10.20953/1817-7646-2024-3-58-64\n7. Yankova V.G., Gobyzov O.A., Ryabov M.N., Grigorieva V.Yu., Udyanskaya I.L., Zhukova A.A., Slonskaya T.K., Plakhotnaya O.N., Epshtein N.B., Pomazkina M.P., Gribanova S.V. Spray quality of metered sprays: a comparative study of benzidamine-containing preparations. Vopr. prakt. pediatr. (Clinical Practice in Pediatrics). 2025; 20(5): 39–48. (In Russian). DOI: 10.20953/1817-7646-2025-5-39-48",
+  "keywords_ru": [
+   "аэрозоли",
+   "спреи",
+   "распыление",
+   "назальные препараты"
+  ],
+  "keywords_en": [
+   "aerosols",
+   "sprays",
+   "spraying quality",
+   "nasal medications"
+  ],
+  "team_raw_ru": "доцент, к.ф.н. Янкова В.Г., доцент, к.х.н. Грибанова С.В., доцент, к.ф.н. Григорьева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д., Обручкова И., Луткова М., Конон С., Макаренко М.",
+  "team_raw_en": "associate professor, сandidate of pharmaceutical sciences V.G. Yankova; associate professor, candidate of chemical sciences S.V. Gribanova; associate professor, candidate of pharmaceutical sciences V.Yu. Grigorieva; associate professor, candidate of pharmaceutical sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova, M. Lutkova, S. Konon, M. Makarenko.",
+  "collaboration_ru": "Институт теплофизики им. С.С. Кутателадзе СО РАН (Новосибирск)",
+  "collaboration_en": "the S.S. Kutateladze Institute of Thermophysics of the Siberian Branch of the Russian Academy of Sciences (Novosibirsk).",
+  "langs_available": [
+   "ru",
+   "en"
+  ],
+  "translation_status": "ok",
+  "url_ru": "http://innovativedrugsconference.sechenov.ru/ru/afkh/spray-quality-aerosols/",
+  "url_en": "http://innovativedrugsconference.sechenov.ru/en/afkh/spray-quality-aerosols/",
+  "status": null,
+  "years": null,
+  "funding": null,
+  "authors": [
+   {
+    "name_ru": "Янкова В.Г.",
+    "name_en": "V.G. Yankova",
+    "initials": "В.Г.",
+    "position_ru": "доцент, к.ф.н",
+    "position_en": "associate professor, сandidate of pharmaceutical sciences",
+    "role_ru": "участник",
+    "role_en": null,
+    "photo": "assets/avatars/V.G._Yankova.jpg",
+    "profile_url": "https://www.sechenov.ru/persons/…",
+    "orcid": null,
+    "scopus_id": null,
+    "researcher_id": null,
+    "elibrary_id": null,
+    "google_scholar": null,
+    "researchgate": null,
+    "is_lead": false
+   },
+   {
+    "name_ru": "Грибанова С.В.",
+    "name_en": "S.V. Gribanova",
+    "initials": "С.В.",
+    "position_ru": "доцент, к.ф.н. Янкова В.Г., доцент, к.х.н",
+    "position_en": "pharmaceutical sciences V.G. Yankova; associate professor, candidate of chemical sciences",
+    "role_ru": "участник",
+    "role_en": null,
+    "photo": "assets/avatars/S.V._Gribanova.jpg",
+    "profile_url": "https://www.sechenov.ru/persons/…",
+    "orcid": null,
+    "scopus_id": null,
+    "researcher_id": null,
+    "elibrary_id": null,
+    "google_scholar": null,
+    "researchgate": null,
+    "is_lead": false
+   },
+   {
+    "name_ru": "Григорьева В.Ю.",
+    "name_en": "V. Yu",
+    "initials": "В.Ю.",
+    "position_ru": "доцент, к.ф.н. Янкова В.Г., доцент, к.х.н. Грибанова С.В., доцент, к.ф.н",
+    "position_en": "emical sciences S.V. Gribanova; associate professor, candidate of pharmaceutical sciences",
+    "role_ru": "участник",
+    "role_en": null,
+    "photo": "assets/avatars/V._Yu.jpg",
+    "profile_url": "https://www.sechenov.ru/persons/…",
+    "orcid": null,
+    "scopus_id": null,
+    "researcher_id": null,
+    "elibrary_id": null,
+    "google_scholar": null,
+    "researchgate": null,
+    "is_lead": false
+   },
+   {
+    "name_ru": "Удянская И.Л.",
+    "name_en": "I.L. Udyanskaya",
+    "initials": "И.Л.",
+    "position_ru": "нкова В.Г., доцент, к.х.н. Грибанова С.В., доцент, к.ф.н. Григорьева В.Ю., доцент, к.ф.н",
+    "position_en": "ical sciences V.Yu. Grigorieva; associate professor, candidate of pharmaceutical sciences",
+    "role_ru": "участник",
+    "role_en": null,
+    "photo": "assets/avatars/I.L._Udyanskaya.jpg",
+    "profile_url": "https://www.sechenov.ru/persons/…",
+    "orcid": null,
+    "scopus_id": null,
+    "researcher_id": null,
+    "elibrary_id": null,
+    "google_scholar": null,
+    "researchgate": null,
+    "is_lead": false
+   },
+   {
+    "name_ru": "Пасивкина Д.",
+    "name_en": "D. Pasivkina",
+    "initials": "Д.",
+    "position_ru": "Грибанова С.В., доцент, к.ф.н. Григорьева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты:",
+    "position_en": "eva; associate professor, candidate of pharmaceutical sciences I.L. Udyanskaya; students:",
+    "role_ru": "студент",
+    "role_en": null,
+    "photo": "assets/avatars/D._Pasivkina.jpg",
+    "profile_url": "https://www.sechenov.ru/persons/…",
+    "orcid": null,
+    "scopus_id": null,
+    "researcher_id": null,
+    "elibrary_id": null,
+    "google_scholar": null,
+    "researchgate": null,
+    "is_lead": false
+   },
+   {
+    "name_ru": "Обручкова И.",
+    "name_en": "I. Obruchkova",
+    "initials": "И.",
+    "position_ru": "В., доцент, к.ф.н. Григорьева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д",
+    "position_en": "professor, candidate of pharmaceutical sciences I.L. Udyanskaya; students: D. Pasivkina",
+    "role_ru": "студент",
+    "role_en": null,
+    "photo": "assets/avatars/I._Obruchkova.jpg",
+    "profile_url": "https://www.sechenov.ru/persons/…",
+    "orcid": null,
+    "scopus_id": null,
+    "researcher_id": null,
+    "elibrary_id": null,
+    "google_scholar": null,
+    "researchgate": null,
+    "is_lead": false
+   },
+   {
+    "name_ru": "Луткова М.",
+    "name_en": "M. Lutkova",
+    "initials": "М.",
+    "position_ru": "ф.н. Григорьева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д., Обручкова И",
+    "position_en": "didate of pharmaceutical sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova",
+    "role_ru": "студент",
+    "role_en": null,
+    "photo": "assets/avatars/M._Lutkova.jpg",
+    "profile_url": "https://www.sechenov.ru/persons/…",
+    "orcid": null,
+    "scopus_id": null,
+    "researcher_id": null,
+    "elibrary_id": null,
+    "google_scholar": null,
+    "researchgate": null,
+    "is_lead": false
+   },
+   {
+    "name_ru": "Конон С.",
+    "name_en": "S. Konon",
+    "initials": "С.",
+    "position_ru": "ева В.Ю., доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д., Обручкова И., Луткова М",
+    "position_en": "armaceutical sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova, M. Lutkova",
+    "role_ru": "студент",
+    "role_en": null,
+    "photo": "assets/avatars/S._Konon.jpg",
+    "profile_url": "https://www.sechenov.ru/persons/…",
+    "orcid": null,
+    "scopus_id": null,
+    "researcher_id": null,
+    "elibrary_id": null,
+    "google_scholar": null,
+    "researchgate": null,
+    "is_lead": false
+   },
+   {
+    "name_ru": "Макаренко М.",
+    "name_en": "M. Makarenko",
+    "initials": "М.",
+    "position_ru": "доцент, к.ф.н. Удянская И.Л., студенты: Пасивкина Д., Обручкова И., Луткова М., Конон С",
+    "position_en": "al sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova, M. Lutkova, S. Konon",
+    "role_ru": "студент",
+    "role_en": null,
+    "photo": "assets/avatars/M._Makarenko.jpg",
+    "profile_url": "https://www.sechenov.ru/persons/…",
+    "orcid": null,
+    "scopus_id": null,
+    "researcher_id": null,
+    "elibrary_id": null,
+    "google_scholar": null,
+    "researchgate": null,
+    "is_lead": false
+   }
+  ],
+  "publications": [
+   {
+    "raw": "Грибанова С.В., Янкова В.Г., Удянская И.Л., Григорьева В.Ю., Слонская Т.К., Жукова А.А., Парфенов И.Д. Сравнение распылительной способности спреев для горла, содержащих гексэтидин. Инфекционные болезни. 2021; 19(1): 144–148. DOI: 10.20953/1729-9225- 2021-1-144-148",
+    "title": null,
+    "year": 2021,
+    "journal": null,
+    "doi": null,
+    "url": null
+   },
+   {
+    "raw": "Oleg A. Gobyzov, Mikhail N. Ryabov, Viktoriya G. Yankova, Svetlana V. Gribanov, Tatiana K. Slonskaya, Irina L. Udyanskaya, Anna A. Zhukova, Viktoriya Yu. Grigoryeva Comparative analysis of the dispersion quality of oxymetazoline nasal sprays Journal of Advanced Pharmaceutical Technology & Research , Volume 17, Issue 1( January March 2022), р.30-37",
+    "title": null,
+    "year": 2022,
+    "journal": null,
+    "doi": null,
+    "url": null
+   },
+   {
+    "raw": "Грибанова С.В., Янкова В.Г., Гобызов О.А., Рябов М.Н., Карпова А.С., Кедик С.А., Удянская И.Л., Григорьева В.Ю., Краснюк (мл.) И.И., Слонская Т.К., Жукова А.А. Изучение и анализ параметров распыления назальных спреев на основе фрамицетина. Вопросы практической педиатрии. 2022; 17(2): 99–106. DOI: 10.20953/1817-7646-2022-2-99-106",
+    "title": null,
+    "year": 2022,
+    "journal": null,
+    "doi": "10.20953/1817-7646-2022-2-99-106",
+    "url": "https://doi.org/10.20953/1817-7646-2022-2-99-106"
+   },
+   {
+    "raw": "Краснюк И.И. (мл), Слонская Т.К., Жукова А.А., Симонян Л.А. Комплексный анализ параметров распыления назальных спреев, содержащих антибиотики, противовоспалительный и сосудосуживающий компоненты. 2023; 18(3): 75–82. DOI: 10.20953/1817-7646-2023-3-75-82",
+    "title": null,
+    "year": 2023,
+    "journal": null,
+    "doi": "10.20953/1817-7646-2023-3-75-82",
+    "url": "https://doi.org/10.20953/1817-7646-2023-3-75-82"
+   },
+   {
+    "raw": "Янкова В.Г., Гобызов О.А., Рябов М.Н., Удянская И.Л., Григорьева В.Ю., Жукова А.А., Слонская Т.К., Плахотная О.Н., Станцов М.И., Карташов В.С., Якубович Л.М., Грибанова С.В. Оценка качества распыления комбинированного препарата для лечения инфекционно-воспалительных заболеваний горла методом теневой фотографии. Вопросы практической педиатрии. 2024; 19(3): 58–64. DOI: 10.20953/1817-7646-2024-3-58-64",
+    "title": null,
+    "year": 2024,
+    "journal": null,
+    "doi": "10.20953/1817-7646-2024-3-58-64",
+    "url": "https://doi.org/10.20953/1817-7646-2024-3-58-64"
+   },
+   {
+    "raw": "Янкова В.Г., Гобызов О.А., Рябов М.Н., Григорьева В.Ю., Удянская И.Л., Жукова А.А., Слонская Т.К., Плахотная О.Н., Эпштейн Н.Б., Помазкина М.П., Грибанова С.В. Качество распыления дозированных спреев: cравнительное исследование бензидаминсодержащих препаратов. Вопросы практической педиатрии. 2025; 20(5): 39–48. DOI: 10.20953/1817-7646-2025-5-39-48",
+    "title": null,
+    "year": 2025,
+    "journal": null,
+    "doi": "10.20953/1817-7646-2025-5-39-48",
+    "url": "https://doi.org/10.20953/1817-7646-2025-5-39-48"
+   }
+  ],
+  "images": [
+   {
+    "src": "assets/images/spray-quality-01.jpg",
+    "alt_ru": "Схема установки теневой фотографии",
+    "alt_en": "Shadow photography setup diagram",
+    "caption_ru": "Имитационная модель носовой полости",
+    "caption_en": "Nasal cavity simulation model"
+   }
+  ],
+  "links": [
+   {
+    "label_ru": "Институт теплофизики им. С. С. Кутателадзе",
+    "label_en": "S. S. Kutateladze Institute of Thermophysics",
+    "url": "https://www.itp.nsc.ru/"
+   }
+  ],
+  "source_file_ru": "АФКХ_рус.txt",
+  "source_file_en": "АКФХ_анг.txt",
+  "source_block_ru": 1,
+  "source_block_en": 3,
+  "review_flags": [
+   "broken_doi_in_source",
+   "no_lead_marked"
+  ]
+ },
+ "_department_context": {
+  "slug": "afkh",
+  "name_ru": "Кафедра аналитической, физической и коллоидной химии",
+  "name_en": "Department of Analytical, Physical and Colloid Chemistry",
+  "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+  "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+  "page_url": null
+ },
+ "_urls_explained": {
+  "url_ru": "русская страница проекта — сюда ведёт <slug>.ru QR",
+  "url_en": "английская страница проекта — сюда ведёт <slug>.en QR",
+  "_note": "Один проект = одна запись в данных и ДВА адреса. Не два проекта."
+ }
+}

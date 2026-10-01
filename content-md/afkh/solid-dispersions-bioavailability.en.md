@@ -1,11 +1,18 @@
 # Improving the bioavailability of poorly soluble medicinal products – solid dispersions in medicine and pharmacy
 
-Project team: head of the department, PhD, professor Krasnyuk I.I. (Jr.); candidate of pharmaceutical sciences, associate professor Grik V.V.; candidate of pharmaceutical sciences, associate professor Grigorieva V.Yu.; candidate of pharmaceutical sciences, associate professor Slonskaya T.K.; candidate of pharmaceutical sciences, associate professor Evgrafov A.A.; assistant Stantsov M.I.; postgraduate students: Terskikh K.A., Shifrin M.A., Bubnova M.A.
-The project is carried out jointly with the department of pharmaceutical technology of the of institute of pharmacy, Sechenov First Moscow State Medical University (Sechenov University) and the Laboratory of pharmaceutical technologies at the scientific and production site of the Center for Regenerative Medicine, Lomonosov Moscow State University
+## Project team
+
+head of the department, PhD, professor Krasnyuk I.I. (Jr.); candidate of pharmaceutical sciences, associate professor Grik V.V.; candidate of pharmaceutical sciences, associate professor Grigorieva V.Yu.; candidate of pharmaceutical sciences, associate professor Slonskaya T.K.; candidate of pharmaceutical sciences, associate professor Evgrafov A.A.; assistant Stantsov M.I.; postgraduate students: Terskikh K.A., Shifrin M.A., Bubnova M.A.
+
+## The project is carried out jointly with
+
+the department of pharmaceutical technology of the of institute of pharmacy, Sechenov First Moscow State Medical University (Sechenov University) and the Laboratory of pharmaceutical technologies at the scientific and production site of the Center for Regenerative Medicine, Lomonosov Moscow State University
 
 ## Project description
 
-Project goal: to develop innovative medicinal products (including fast dissolving ones) containing solid dispersions (SD) of low solubility active pharmaceutical substances (APS) with improved biopharmaceutical properties.
+## Project goal
+
+to develop innovative medicinal products (including fast dissolving ones) containing solid dispersions (SD) of low solubility active pharmaceutical substances (APS) with improved biopharmaceutical properties.
 
 ## Key tasks
 

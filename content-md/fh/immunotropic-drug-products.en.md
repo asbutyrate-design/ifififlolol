@@ -1,10 +1,14 @@
 # Pharmaceutical Development of High-Technology Immunotropic Drug Products
 
-Project Team: Doctor of Pharmaceutical Sciences, Professor Smirnov V.V.; Turenko V.N.; Bagaev D.E.; Bello Taye; Spiridonov A.V.; Dolgov D.S.
+## Project Team
+
+Doctor of Pharmaceutical Sciences, Professor Smirnov V.V.; Turenko V.N.; Bagaev D.E.; Bello Taye; Spiridonov A.V.; Dolgov D.S.
 
 ## Project Description
 
-Project Aim: To conduct the pharmaceutical development of drug products based on small interfering RNA (siRNA) and recombinant allergens (allergy vaccines) for the treatment of immune system diseases.
+## Project Aim
+
+To conduct the pharmaceutical development of drug products based on small interfering RNA (siRNA) and recombinant allergens (allergy vaccines) for the treatment of immune system diseases.
 
 ## Key Objectives
 

@@ -3,7 +3,10 @@
 ## Project Team
 
 Project Lead: E.O. Bakhrushina, Doctor of Pharmaceutical Sciences, Professor
-Project Team: M.M. Shumkova, PhD in Pharmaceutical Sciences; I.B. Mikhel; V.S. Pyzhov; P.S. Sakharova; E.V. Kashevarova, Resident; A.A. Ananyan, PhD Student.
+
+## Project Team
+
+M.M. Shumkova, PhD in Pharmaceutical Sciences; I.B. Mikhel; V.S. Pyzhov; P.S. Sakharova; E.V. Kashevarova, Resident; A.A. Ananyan, PhD Student.
 
 ## Project Description
 

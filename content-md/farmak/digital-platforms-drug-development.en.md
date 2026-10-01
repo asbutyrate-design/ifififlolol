@@ -1,10 +1,14 @@
 # Development of digital platforms for drug research and development
 
-Project team: к.х.н. Апполонова С.А., аспиранты Резванов П.А., Болдин А.А.
+## Project team
+
+к.х.н. Апполонова С.А., аспиранты Резванов П.А., Болдин А.А.
 
 ## Project description
 
-Objective: Development of digital platforms for: preclinical trial management, organotoxicity prediction, drug bioequivalence studies, and pharmacotherapy monitoring.
+## Objective
+
+Development of digital platforms for: preclinical trial management, organotoxicity prediction, drug bioequivalence studies, and pharmacotherapy monitoring.
 
 ## Key points
 

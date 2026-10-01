@@ -1,11 +1,15 @@
 # Calculator for Forecasting Costs and Consumption Volume of Antiepileptic Therapy
 
-Project Team: PhD, Associate Professor Zakharova O.V., PhD, Associate Professor Vaskova L.B.; PhD student Pozdnyakov G.A.
+## Project Team
+
+PhD, Associate Professor Zakharova O.V., PhD, Associate Professor Vaskova L.B.; PhD student Pozdnyakov G.A.
 The project is carried out at the Department of Organization and Economics of Pharmacy of the A.P. Nelyubin Institute of Pharmacy, Sechenov First Moscow State Medical University (Sechenov University), in collaboration with the Kozhevnikov Clinic of Nervous System Diseases of University Clinical Hospital No. 3, Sechenov University.
 
 ## Project Description
 
-Project Aim: development of an automated management decision support tool for planning the medicines supply for patients with epilepsy that forecasts costs and consumption volume of antiepileptic medicines at the healthcare organization level, taking into account the clinical and demographic characteristics of the patient cohort.
+## Project Aim
+
+development of an automated management decision support tool for planning the medicines supply for patients with epilepsy that forecasts costs and consumption volume of antiepileptic medicines at the healthcare organization level, taking into account the clinical and demographic characteristics of the patient cohort.
 
 ## Key Objectives
 

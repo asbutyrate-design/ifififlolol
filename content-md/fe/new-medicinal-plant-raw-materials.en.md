@@ -1,7 +1,10 @@
 # New types of medicinal plant raw materials: from handling to regulatory documentation
 
 Project leader: Doctor of Pharmaceutical Sciences, Professor Sergunova E.V.
-Project team: Ph.D. Associate Professor Kovaleva T.Yu., Ph.D. senior teacher Dorovskikh E.A., graduate student Pavlenko A.A., graduate student Tarasova A.V., graduate student Melnik A.A.
+
+## Project team
+
+Ph.D. Associate Professor Kovaleva T.Yu., Ph.D. senior teacher Dorovskikh E.A., graduate student Pavlenko A.A., graduate student Tarasova A.V., graduate student Melnik A.A.
 
 ## Project Goal
 

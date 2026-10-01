@@ -1,6 +1,8 @@
 # Study of the adsorption capacity of pharmaceutical enterosorbents
 
-- Project team: Associate professor, candidate of chemical sciences Zhukova A.A., students: Malysheva E., Glukhova E., Markelova A., Besedina A.
+## Project team
+
+Associate professor, candidate of chemical sciences Zhukova A.A., students: Malysheva E., Glukhova E., Markelova A., Besedina A.
 
 ## Project description
 

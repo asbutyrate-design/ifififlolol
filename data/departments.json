@@ -1,0 +1,131 @@
+{
+  "_comment": "Справочник кафедр. Ручной файл: правки здесь — единственное место, где заводятся новые кафедры. Проекты сюда НЕ пишутся, они собираются скриптом.",
+  "base_url": "http://innovativedrugsconference.sechenov.ru",
+  "url_scheme": "/{lang}/{dept}/{slug}/",
+  "_url_scheme_note": "Выбор схемы адресов — предмет ЭТАПА 4. Меняется ТОЛЬКО здесь; генератор подставит новое значение во все страницы и QR.",
+  "file2dept": {
+    "АФКХ_рус.txt": ["afkh", "ru"],
+    "АКФХ_анг.txt": ["afkh", "en"],
+    "БТ_рус.txt": ["bt", "ru"],
+    "БТ_анг.txt": ["bt", "en"],
+    "ОЭФ_рус.txt": ["oef", "ru"],
+    "ОЭФ_анг.txt": ["oef", "en"],
+    "ФАРМАК_рус.txt": ["farmak", "ru"],
+    "ФАРМАК_анг.txt": ["farmak", "en"],
+    "ФАРМАЦ_рус.txt": ["farmac", "ru"],
+    "ФАРМАЦ_анг.txt": ["farmac", "en"],
+    "ФЕ_рус.txt": ["fe", "ru"],
+    "ФЕ_анг.txt": ["fe", "en"],
+    "ФП_рус.txt": ["fp", "ru"],
+    "ФП_анг.txt": ["fp", "en"],
+    "ФТ_рус.txt": ["ft", "ru"],
+    "ФТ_анг.txt": ["ft", "en"],
+    "ФХ_рус.txt": ["fh", "ru"],
+    "ФХ_анг.txt": ["fh", "en"]
+  },
+  "_file2dept_note": "АКФХ_анг.txt — опечатка в имени файла (перестановка букв), по содержанию это английская версия АФКХ. Файл в /source не переименовывается, соответствие фиксируется здесь.",
+  "departments": [
+    {
+      "slug": "afkh",
+      "abbr": "АФКХ",
+      "name_ru": "Кафедра аналитической, физической и коллоидной химии",
+      "name_en": "Department of Analytical, Physical and Colloid Chemistry",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "ready"
+    },
+    {
+      "slug": "bt",
+      "abbr": "БТ",
+      "name_ru": "Кафедра биотехнологии",
+      "name_en": "Department of Biotechnology",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "ready"
+    },
+    {
+      "slug": "oef",
+      "abbr": "ОЭФ",
+      "name_ru": "Кафедра организации и экономики фармации",
+      "name_en": "Department of Organization and Economics of Pharmacy",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "ready"
+    },
+    {
+      "slug": "farmak",
+      "abbr": "ФАРМАК",
+      "name_ru": "Кафедра фармакологии",
+      "name_en": "Department of Pharmacology",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "ready"
+    },
+    {
+      "slug": "farmac",
+      "abbr": "ФАРМАЦ",
+      "name_ru": "Кафедра фармации",
+      "name_en": "Department of Pharmacy",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "ready"
+    },
+    {
+      "slug": "fe",
+      "abbr": "ФЕ",
+      "name_ru": "Кафедра фармацевтического естествознания",
+      "name_en": "Department of Pharmaceutical Natural Sciences",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "ready"
+    },
+    {
+      "slug": "fp",
+      "abbr": "ФП",
+      "name_ru": "Научно-исследовательский образовательный центр «Фарма-Премиум»",
+      "name_en": "Research and Educational Center «Pharma-Premium»",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "ready",
+      "_note": "Заказчик сообщил: от ФП ожидается ещё 2 проекта, файлы пока не досланы. В счётчиках появятся автоматически после досылки — код править не потребуется."
+    },
+    {
+      "slug": "ft",
+      "abbr": "ФТ",
+      "name_ru": "Кафедра фармацевтической технологии",
+      "name_en": "Department of Pharmaceutical Technology",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "ready"
+    },
+    {
+      "slug": "fh",
+      "abbr": "ФХ",
+      "name_ru": "Кафедра фармацевтической и токсикологической химии им. А. П. Арзамасцева",
+      "name_en": "A. P. Arzamastsev Department of Pharmaceutical and Toxicological Chemistry",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "ready"
+    },
+    {
+      "slug": "chemistry",
+      "abbr": "Химии",
+      "name_ru": "Кафедра химии",
+      "name_en": "Department of Chemistry",
+      "faculty_ru": "Институт фармации им. А. П. Нелюбина",
+      "faculty_en": "A. P. Nelyubin Institute of Pharmacy",
+      "page_url": null,
+      "status": "pending",
+      "_note": "Заказчик подтвердил: файлы пришлют позже. Кафедра заведена заранее, чтобы её появление не потребовало правки кода."
+    }
+  ]
+}

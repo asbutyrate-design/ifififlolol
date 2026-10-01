@@ -1,10 +1,14 @@
 # Development, Validation, and Implementation of Modern Methods for the Assessment of Bioequivalence of Generic Medicinal Products
 
-Project Team: Doctor of Pharmaceutical Sciences, Professor Ramenskaya G.V.; Candidate of Pharmaceutical Sciences, Associate Professor Medvedev Yu.V.; Candidate of Pharmaceutical Sciences, Associate Professor Melnikov E.S.; Candidate of Pharmaceutical Sciences Fisher E.N.
+## Project Team
+
+Doctor of Pharmaceutical Sciences, Professor Ramenskaya G.V.; Candidate of Pharmaceutical Sciences, Associate Professor Medvedev Yu.V.; Candidate of Pharmaceutical Sciences, Associate Professor Melnikov E.S.; Candidate of Pharmaceutical Sciences Fisher E.N.
 
 ## Project Description
 
-Project Aim: Scientific and methodological substantiation, development, and practical implementation of comprehensive approaches aimed at confirming the bioequivalence of generic medicinal products, optimizing their registration and review procedures in accordance with the current regulatory requirements of the Russian Federation and the Eurasian Economic Union (EAEU).
+## Project Aim
+
+Scientific and methodological substantiation, development, and practical implementation of comprehensive approaches aimed at confirming the bioequivalence of generic medicinal products, optimizing their registration and review procedures in accordance with the current regulatory requirements of the Russian Federation and the Eurasian Economic Union (EAEU).
 
 ## Key Objectives
 

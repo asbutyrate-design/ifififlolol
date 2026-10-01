@@ -5,7 +5,9 @@ The project is carried out at the Department of Pharmaceutical Natural Sciences,
 
 ## Project Description
 
-Project Goal: Development, optimization, and validation of modern methods for the qualitative and quantitative analysis of glycans in medicinal plant raw materials, herbal medicinal products, and herbal mixtures to improve the accuracy, selectivity, and reproducibility of pharmaceutical analysis.
+## Project Goal
+
+Development, optimization, and validation of modern methods for the qualitative and quantitative analysis of glycans in medicinal plant raw materials, herbal medicinal products, and herbal mixtures to improve the accuracy, selectivity, and reproducibility of pharmaceutical analysis.
 
 ## Key Objectives
 

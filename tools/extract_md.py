@@ -169,6 +169,32 @@ JUNK_LINE_RE = re.compile(
 )
 # Служебные combining-символы (\u0335) перед заголовками.
 COMBINING_RE = re.compile(r"[\u0300-\u036f\u0334-\u0338]")
+
+# Метка раздела, стоящая в НАЧАЛЕ строки, но с текстом в той же строке:
+#   «    Команда проекта: доцент, к.ф.н. Янкова В.Г., …»
+#   «Project Team Professor of the Department, …»
+# Такой строке положено стать заголовком ##, а хвост — обычным текстом.
+_ALL_LABELS = sorted(set(SECTION_LABELS["ru"]) | set(SECTION_LABELS["en"]),
+                     key=len, reverse=True)
+LABEL_INLINE_RE = re.compile(
+    r"^\s*(?P<h>" + "|".join(re.escape(l) for l in _ALL_LABELS) + r")\s*:\s*(?P<tail>\S.*)$",
+    re.IGNORECASE,
+)
+
+# Метки «совместно с», за которыми текст идёт БЕЗ двоеточия.
+JOINT_LABELS = ("Проект выполняется совместно с", "The project is carried out jointly with")
+
+# Метки команды, за которыми текст может идти БЕЗ двоеточия:
+#   «Project Team Professor of the Department, Doctor of …»
+# Ограничено только этими метками — иначе под правило попали бы обычные
+# предложения, начинающиеся со слов вроде «Publications on the project …».
+TEAM_LABELS = ("Команда проекта", "Project team", "Project Team")
+TEAM_INLINE_RE = re.compile(
+    r"^\s*(?P<h>" + "|".join(re.escape(l) for l in TEAM_LABELS) + r")(?:\s*:\s*|\s+)(?P<tail>\S.*)$",
+    re.IGNORECASE,
+)
+
+
 # "Стр." / нумерация страниц, осколки — оставляем, они не мешают.
 
 
@@ -262,6 +288,25 @@ def to_markdown(title: str, rest: str, lang: str) -> str:
             continue
         if JUNK_LINE_RE.match(line):
             continue  # мусорная строка-имя файла (подтверждено заказчиком)
+
+        # Метка раздела с текстом в той же строке: «Команда проекта: доцент, …»
+        lm = TEAM_INLINE_RE.match(line) or LABEL_INLINE_RE.match(line)
+        if lm:
+            out.append("")
+            out.append(f"## {lm.group('h').strip()}")
+            out.append("")
+            line = lm.group("tail").strip()
+        else:
+            # «Проект выполняется совместно с <учреждение>» — метка без двоеточия
+            for lb in JOINT_LABELS:
+                if line.strip().lower().startswith(lb.lower()):
+                    tail = norm_line(line.strip()[len(lb):]).lstrip(":").strip()
+                    if tail:
+                        out.append("")
+                        out.append(f"## {lb}")
+                        out.append("")
+                        line = tail
+                    break
 
         # «Заголовок и текст в одной строке» — только если текст непустой
         im = INLINE_HEADER_RE.match(line)

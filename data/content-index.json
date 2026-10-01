@@ -5,7 +5,7 @@
   "lang": "ru",
   "file": "content-md/afkh/spray-quality-aerosols.ru.md",
   "title": "Качество распыления фармацевтических аэрозолей и спреев",
-  "chars": 3089,
+  "chars": 3099,
   "source_file": "АФКХ_рус.txt",
   "source_block": 1
  },
@@ -15,7 +15,7 @@
   "lang": "en",
   "file": "content-md/afkh/spray-quality-aerosols.en.md",
   "title": "The quality of spraying pharmaceutical aerosols and sprays",
-  "chars": 4118,
+  "chars": 4124,
   "source_file": "АКФХ_анг.txt",
   "source_block": 3
  },
@@ -25,7 +25,7 @@
   "lang": "ru",
   "file": "content-md/afkh/solid-dispersions-bioavailability.ru.md",
   "title": "Повышение биодоступности малорастворимых лекарственных средств – твёрдые дисперсии в медицине и фармации",
-  "chars": 2873,
+  "chars": 2884,
   "source_file": "АФКХ_рус.txt",
   "source_block": 2
  },
@@ -35,7 +35,7 @@
   "lang": "en",
   "file": "content-md/afkh/solid-dispersions-bioavailability.en.md",
   "title": "Improving the bioavailability of poorly soluble medicinal products – solid dispersions in medicine and pharmacy",
-  "chars": 3114,
+  "chars": 3125,
   "source_file": "АКФХ_анг.txt",
   "source_block": 2
  },
@@ -45,7 +45,7 @@
   "lang": "ru",
   "file": "content-md/afkh/enterosorbents-adsorption.ru.md",
   "title": "Исследование адсорбционной способности аптечных энтеросорбентов",
-  "chars": 3037,
+  "chars": 3040,
   "source_file": "АФКХ_рус.txt",
   "source_block": 3
  },
@@ -55,7 +55,7 @@
   "lang": "en",
   "file": "content-md/afkh/enterosorbents-adsorption.en.md",
   "title": "Study of the adsorption capacity of pharmaceutical enterosorbents",
-  "chars": 3137,
+  "chars": 3138,
   "source_file": "АКФХ_анг.txt",
   "source_block": 1
  },
@@ -145,7 +145,7 @@
   "lang": "ru",
   "file": "content-md/oef/parkinson-net-info.ru.md",
   "title": "Чат-бот “PARKINSON_NET_INFO” - цифровая система информационной поддержки участников процесса терапии болезни Паркинсона",
-  "chars": 2297,
+  "chars": 2303,
   "source_file": "ОЭФ_рус.txt",
   "source_block": 1
  },
@@ -155,7 +155,7 @@
   "lang": "en",
   "file": "content-md/oef/parkinson-net-info.en.md",
   "title": "PARKINSON_NET_INFO’ Chatbot - a Digital Information Support System for Stakeholders in Parkinson's Disease Therapy",
-  "chars": 2417,
+  "chars": 2423,
   "source_file": "ОЭФ_анг.txt",
   "source_block": 1
  },
@@ -165,7 +165,7 @@
   "lang": "ru",
   "file": "content-md/oef/ai-pharmacy-business-processes.ru.md",
   "title": "Разработка и внедрение алгоритма применения искусственного интеллекта в управлении бизнес-процессами аптечной организации.",
-  "chars": 1931,
+  "chars": 1940,
   "source_file": "ОЭФ_рус.txt",
   "source_block": 2
  },
@@ -175,7 +175,7 @@
   "lang": "en",
   "file": "content-md/oef/ai-pharmacy-business-processes.en.md",
   "title": "Development and Implementation of an Algorithm for Applying Artificial Intelligence in Business Process Management of a Pharmacy",
-  "chars": 1848,
+  "chars": 1857,
   "source_file": "ОЭФ_анг.txt",
   "source_block": 5
  },
@@ -185,7 +185,7 @@
   "lang": "ru",
   "file": "content-md/oef/antiepileptic-cost-calculator.ru.md",
   "title": "Калькулятор прогнозирования затрат и объема потребления на противоэпилептическую терапию",
-  "chars": 2336,
+  "chars": 2342,
   "source_file": "ОЭФ_рус.txt",
   "source_block": 3
  },
@@ -195,7 +195,7 @@
   "lang": "en",
   "file": "content-md/oef/antiepileptic-cost-calculator.en.md",
   "title": "Calculator for Forecasting Costs and Consumption Volume of Antiepileptic Therapy",
-  "chars": 2339,
+  "chars": 2345,
   "source_file": "ОЭФ_анг.txt",
   "source_block": 2
  },
@@ -205,7 +205,7 @@
   "lang": "ru",
   "file": "content-md/oef/biologic-therapy-access.ru.md",
   "title": "Повышение доступности генно-инженерной биологической терапии с помощью цифровых решений",
-  "chars": 2945,
+  "chars": 2956,
   "source_file": "ОЭФ_рус.txt",
   "source_block": 4
  },
@@ -215,7 +215,7 @@
   "lang": "en",
   "file": "content-md/oef/biologic-therapy-access.en.md",
   "title": "Improving Access to Biologic Therapy through Digital Solutions",
-  "chars": 2949,
+  "chars": 2960,
   "source_file": "ОЭФ_анг.txt",
   "source_block": 3
  },
@@ -225,7 +225,7 @@
   "lang": "ru",
   "file": "content-md/oef/pharmaceutical-care-pregnant-arvi.ru.md",
   "title": "Экосистема «Информационное взаимодействие по оказанию фармацевтической помощи беременным с ОРВИ",
-  "chars": 2797,
+  "chars": 2803,
   "source_file": "ОЭФ_рус.txt",
   "source_block": 5
  },
@@ -235,7 +235,7 @@
   "lang": "en",
   "file": "content-md/oef/pharmaceutical-care-pregnant-arvi.en.md",
   "title": "Information Exchange in the Provision of Pharmaceutical Care to Pregnant Women with ARVI’ Ecosystem",
-  "chars": 3033,
+  "chars": 3039,
   "source_file": "ОЭФ_анг.txt",
   "source_block": 4
  },
@@ -245,7 +245,7 @@
   "lang": "ru",
   "file": "content-md/farmak/digital-platforms-drug-development.ru.md",
   "title": "Разработка цифровых платформ для исследований и разработки лекарственных средств",
-  "chars": 2359,
+  "chars": 2365,
   "source_file": "ФАРМАК_рус.txt",
   "source_block": 1
  },
@@ -255,7 +255,7 @@
   "lang": "en",
   "file": "content-md/farmak/digital-platforms-drug-development.en.md",
   "title": "Development of digital platforms for drug research and development",
-  "chars": 2057,
+  "chars": 2063,
   "source_file": "ФАРМАК_анг.txt",
   "source_block": 1
  },
@@ -265,7 +265,7 @@
   "lang": "ru",
   "file": "content-md/farmak/digital-prescribing.ru.md",
   "title": "Цифровая рецептура",
-  "chars": 1779,
+  "chars": 1785,
   "source_file": "ФАРМАК_рус.txt",
   "source_block": 2
  },
@@ -275,7 +275,7 @@
   "lang": "en",
   "file": "content-md/farmak/digital-prescribing.en.md",
   "title": "Digital Prescribing",
-  "chars": 1848,
+  "chars": 1854,
   "source_file": "ФАРМАК_анг.txt",
   "source_block": 2
  },
@@ -285,7 +285,7 @@
   "lang": "ru",
   "file": "content-md/farmak/preclinical-plant-raw-materials.ru.md",
   "title": "Проведение доклинических и клинических исследований инновационного состава/продукта на основе растительного сырья",
-  "chars": 1332,
+  "chars": 1338,
   "source_file": "ФАРМАК_рус.txt",
   "source_block": 3
  },
@@ -295,7 +295,7 @@
   "lang": "en",
   "file": "content-md/farmak/preclinical-plant-raw-materials.en.md",
   "title": "Conducting preclinical and clinical studies of an innovative composition/product based on plant-derived raw materials",
-  "chars": 1329,
+  "chars": 1335,
   "source_file": "ФАРМАК_анг.txt",
   "source_block": 3
  },
@@ -305,7 +305,7 @@
   "lang": "ru",
   "file": "content-md/farmak/drug-induced-hearing-loss.ru.md",
   "title": "Разработка защитных стратегий при лекарственно-индуцированных нарушениях слуха",
-  "chars": 2075,
+  "chars": 2081,
   "source_file": "ФАРМАК_рус.txt",
   "source_block": 4
  },
@@ -315,7 +315,7 @@
   "lang": "en",
   "file": "content-md/farmak/drug-induced-hearing-loss.en.md",
   "title": "Development of protective strategies for drug-induced hearing loss",
-  "chars": 2162,
+  "chars": 2168,
   "source_file": "ФАРМАК_анг.txt",
   "source_block": 4
  },
@@ -325,7 +325,7 @@
   "lang": "ru",
   "file": "content-md/farmak/neuroprotection-neuroregeneration.ru.md",
   "title": "Изучение механизмов нейропротекции и нейрорегенерации",
-  "chars": 3856,
+  "chars": 3867,
   "source_file": "ФАРМАК_рус.txt",
   "source_block": 5
  },
@@ -335,7 +335,7 @@
   "lang": "en",
   "file": "content-md/farmak/neuroprotection-neuroregeneration.en.md",
   "title": "Study of the mechanisms of neuroprotection and neuroregeneration",
-  "chars": 3959,
+  "chars": 3965,
   "source_file": "ФАРМАК_анг.txt",
   "source_block": 5
  },
@@ -345,7 +345,7 @@
   "lang": "ru",
   "file": "content-md/farmac/cdss-physician-pharmacist.ru.md",
   "title": "Оптимизация взаимоотношений фармацевтических и медицинских работников через систему поддержки принятия врачебных решений",
-  "chars": 1719,
+  "chars": 1722,
   "source_file": "ФАРМАЦ_рус.txt",
   "source_block": 1
  },
@@ -355,7 +355,7 @@
   "lang": "en",
   "file": "content-md/farmac/cdss-physician-pharmacist.en.md",
   "title": "Optimization of the relationship between pharmaceutical and medical professionals through a clinical decision support system",
-  "chars": 1689,
+  "chars": 1695,
   "source_file": "ФАРМАЦ_анг.txt",
   "source_block": 1
  },
@@ -365,7 +365,7 @@
   "lang": "ru",
   "file": "content-md/farmac/ai-environmental-programs.ru.md",
   "title": "Искусственный интеллект в системе продвижения экологических программ в фармацевтических организациях",
-  "chars": 4368,
+  "chars": 4374,
   "source_file": "ФАРМАЦ_рус.txt",
   "source_block": 2
  },
@@ -375,7 +375,7 @@
   "lang": "en",
   "file": "content-md/farmac/ai-environmental-programs.en.md",
   "title": "Artificial Intelligence in the System of Promoting Environmental Programs in Pharmaceutical Organizations",
-  "chars": 4552,
+  "chars": 4558,
   "source_file": "ФАРМАЦ_анг.txt",
   "source_block": 2
  },
@@ -385,7 +385,7 @@
   "lang": "ru",
   "file": "content-md/fe/plants-taxonomy-medicine.ru.md",
   "title": "Таксономия и ресурсы перспективных для использования в медицине растений",
-  "chars": 2948,
+  "chars": 2954,
   "source_file": "ФЕ_рус.txt",
   "source_block": 1
  },
@@ -395,7 +395,7 @@
   "lang": "en",
   "file": "content-md/fe/plants-taxonomy-medicine.en.md",
   "title": "Taxonomy and resources of plants promising for use in medicine",
-  "chars": 2983,
+  "chars": 2989,
   "source_file": "ФЕ_анг.txt",
   "source_block": 1
  },
@@ -405,7 +405,7 @@
   "lang": "ru",
   "file": "content-md/fe/new-medicinal-plant-raw-materials.ru.md",
   "title": "Новые перспективные виды лекарственного растительного сырья: от сбора до нормативной документации",
-  "chars": 5546,
+  "chars": 5553,
   "source_file": "ФЕ_рус.txt",
   "source_block": 2
  },
@@ -415,7 +415,7 @@
   "lang": "en",
   "file": "content-md/fe/new-medicinal-plant-raw-materials.en.md",
   "title": "New types of medicinal plant raw materials: from handling to regulatory documentation",
-  "chars": 5761,
+  "chars": 5765,
   "source_file": "ФЕ_анг.txt",
   "source_block": 2
  },
@@ -425,7 +425,7 @@
   "lang": "ru",
   "file": "content-md/fe/ionomic-profiles-database.ru.md",
   "title": "Создание базы иономных профилей лекарственного растительного сырья и препаратов на его основе",
-  "chars": 3120,
+  "chars": 3130,
   "source_file": "ФЕ_рус.txt",
   "source_block": 3
  },
@@ -435,7 +435,7 @@
   "lang": "en",
   "file": "content-md/fe/ionomic-profiles-database.en.md",
   "title": "Creation of a Database of Ionomic Profiles of Medicinal Plant Raw Materials and Preparations Based on Them",
-  "chars": 3331,
+  "chars": 3342,
   "source_file": "ФЕ_анг.txt",
   "source_block": 3
  },
@@ -445,7 +445,7 @@
   "lang": "ru",
   "file": "content-md/fe/glycans-plant-raw-materials.ru.md",
   "title": "Гликаны лекарственного растительного сырья",
-  "chars": 2464,
+  "chars": 2467,
   "source_file": "ФЕ_рус.txt",
   "source_block": 4
  },
@@ -455,7 +455,7 @@
   "lang": "en",
   "file": "content-md/fe/glycans-plant-raw-materials.en.md",
   "title": "Glycans of Medicinal Plant Raw Materials",
-  "chars": 2584,
+  "chars": 2587,
   "source_file": "ФЕ_анг.txt",
   "source_block": 4
  },
@@ -465,7 +465,7 @@
   "lang": "ru",
   "file": "content-md/fe/light-microscopy-quality-control.ru.md",
   "title": "Использование световой микроскопии в контроле качества лекарственного растительного сырья и лекарственных растительных препаратов",
-  "chars": 2782,
+  "chars": 2788,
   "source_file": "ФЕ_рус.txt",
   "source_block": 5
  },
@@ -475,7 +475,7 @@
   "lang": "en",
   "file": "content-md/fe/light-microscopy-quality-control.en.md",
   "title": "Use of light microscopy in the quality control of medicinal plant raw materials and medicinal plant preparations",
-  "chars": 2922,
+  "chars": 2925,
   "source_file": "ФЕ_анг.txt",
   "source_block": 5
  },
@@ -485,7 +485,7 @@
   "lang": "ru",
   "file": "content-md/fp/qbd-drug-development-strategy.ru.md",
   "title": "Стратегия разработки лекарственных препаратов на основе концепции Quality by Design (QbD)",
-  "chars": 5356,
+  "chars": 5359,
   "source_file": "ФП_рус.txt",
   "source_block": 1
  },
@@ -495,7 +495,7 @@
   "lang": "en",
   "file": "content-md/fp/qbd-drug-development-strategy.en.md",
   "title": "Drug Development Strategy Based on the Quality by Design (QbD) Concept",
-  "chars": 5060,
+  "chars": 5064,
   "source_file": "ФП_анг.txt",
   "source_block": 1
  },
@@ -505,7 +505,7 @@
   "lang": "ru",
   "file": "content-md/ft/in-situ-delivery-systems.ru.md",
   "title": "Фармацевтическая разработка стимулочувствительных in situ систем доставки: состав, технология, стандартизация и биофармацевтическая оценка",
-  "chars": 9785,
+  "chars": 9795,
   "source_file": "ФТ_рус.txt",
   "source_block": 1
  },
@@ -515,7 +515,7 @@
   "lang": "en",
   "file": "content-md/ft/in-situ-delivery-systems.en.md",
   "title": "Pharmaceutical development of stimulus-sensitive in situ delivery systems: composition, technology, standardisation and biopharmaceutical evaluation",
-  "chars": 9992,
+  "chars": 10002,
   "source_file": "ФТ_анг.txt",
   "source_block": 1
  },
@@ -525,7 +525,7 @@
   "lang": "ru",
   "file": "content-md/ft/chewing-gum-technology.ru.md",
   "title": "Разработка, стандартизация и масштабирование технологии производства лекарственных препаратов в форме жевательной резинки с местным или системным действием",
-  "chars": 9371,
+  "chars": 9396,
   "source_file": "ФТ_рус.txt",
   "source_block": 2
  },
@@ -535,7 +535,7 @@
   "lang": "en",
   "file": "content-md/ft/chewing-gum-technology.en.md",
   "title": "Development, standardisation and scaling of the manufacturing technology of medicinal products in the form of chewing gum with local or systemic action",
-  "chars": 9530,
+  "chars": 9553,
   "source_file": "ФТ_анг.txt",
   "source_block": 2
  },
@@ -545,7 +545,7 @@
   "lang": "ru",
   "file": "content-md/fh/chemical-toxicological-analysis.ru.md",
   "title": "Разработка и валидация методов химико-токсикологического и судебно-химического анализа наркотических, психотропных и других токсикологически значимых веществ",
-  "chars": 4932,
+  "chars": 4941,
   "source_file": "ФХ_рус.txt",
   "source_block": 1
  },
@@ -555,7 +555,7 @@
   "lang": "en",
   "file": "content-md/fh/chemical-toxicological-analysis.en.md",
   "title": "Development and Validation of Methods for Chemical-Toxicological and Forensic Chemical Analysis of Narcotic, Psychotropic, and Other Toxicologically Significant Substances",
-  "chars": 5293,
+  "chars": 5302,
   "source_file": "ФХ_анг.txt",
   "source_block": 1
  },
@@ -565,7 +565,7 @@
   "lang": "ru",
   "file": "content-md/fh/metabolism-pharmacokinetics.ru.md",
   "title": "Метаболизм и фармакокинетика лекарственных средств как научная основа персонализированной медицины и персонализированной фармации",
-  "chars": 4558,
+  "chars": 4566,
   "source_file": "ФХ_рус.txt",
   "source_block": 2
  },
@@ -575,7 +575,7 @@
   "lang": "en",
   "file": "content-md/fh/metabolism-pharmacokinetics.en.md",
   "title": "Metabolism and Pharmacokinetics of Medicinal Substances as the Scientific Basis of Personalized Medicine and Personalized Pharmacy",
-  "chars": 4662,
+  "chars": 4670,
   "source_file": "ФХ_анг.txt",
   "source_block": 2
  },
@@ -585,7 +585,7 @@
   "lang": "ru",
   "file": "content-md/fh/quality-control-medicinal-products.ru.md",
   "title": "Контроль качества лекарственных средств",
-  "chars": 3177,
+  "chars": 3183,
   "source_file": "ФХ_рус.txt",
   "source_block": 3
  },
@@ -595,7 +595,7 @@
   "lang": "en",
   "file": "content-md/fh/quality-control-medicinal-products.en.md",
   "title": "Quality Control of Medicinal Products",
-  "chars": 3385,
+  "chars": 3391,
   "source_file": "ФХ_анг.txt",
   "source_block": 3
  },
@@ -605,7 +605,7 @@
   "lang": "ru",
   "file": "content-md/fh/low-molecular-bioactive-compounds.ru.md",
   "title": "Синтез и исследование физико-химических свойств низкомолекулярных биологически-активных соединений",
-  "chars": 2509,
+  "chars": 2515,
   "source_file": "ФХ_рус.txt",
   "source_block": 4
  },
@@ -615,7 +615,7 @@
   "lang": "en",
   "file": "content-md/fh/low-molecular-bioactive-compounds.en.md",
   "title": "Synthesis and Investigation of the Physicochemical Properties of Low-Molecular-Weight Biologically Active Compounds",
-  "chars": 2783,
+  "chars": 2789,
   "source_file": "ФХ_анг.txt",
   "source_block": 4
  },
@@ -625,7 +625,7 @@
   "lang": "ru",
   "file": "content-md/fh/immunotropic-drug-products.ru.md",
   "title": "Фармацевтическая разработка высокотехнологичных иммунотропных препаратов",
-  "chars": 4404,
+  "chars": 4410,
   "source_file": "ФХ_рус.txt",
   "source_block": 5
  },
@@ -635,7 +635,7 @@
   "lang": "en",
   "file": "content-md/fh/immunotropic-drug-products.en.md",
   "title": "Pharmaceutical Development of High-Technology Immunotropic Drug Products",
-  "chars": 4642,
+  "chars": 4648,
   "source_file": "ФХ_анг.txt",
   "source_block": 5
  },
@@ -645,7 +645,7 @@
   "lang": "ru",
   "file": "content-md/fh/bioequivalence-assessment.ru.md",
   "title": "Разработка, валидация и внедрение современных методов оценки биоэквивалентности воспроизведенных лекарственных препаратов",
-  "chars": 4182,
+  "chars": 4188,
   "source_file": "ФХ_рус.txt",
   "source_block": 6
  },
@@ -655,7 +655,7 @@
   "lang": "en",
   "file": "content-md/fh/bioequivalence-assessment.en.md",
   "title": "Development, Validation, and Implementation of Modern Methods for the Assessment of Bioequivalence of Generic Medicinal Products",
-  "chars": 4359,
+  "chars": 4365,
   "source_file": "ФХ_анг.txt",
   "source_block": 6
  }

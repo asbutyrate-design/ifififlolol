@@ -1,11 +1,15 @@
 # Optimization of the relationship between pharmaceutical and medical professionals through a clinical decision support system
 
-Project team: Senior Lecturer Savinova O.V.,
+## Project team
+
+Senior Lecturer Savinova O.V.,
 students: Lagoda A.A., Bol D.Ya., Bukia A.G.
 
 ## Project description
 
-Project goal: improving the quality of interaction between pharmaceutical and medical workers through the use of a digital clinical decision support system (CDSS) as a single verified channel for providing up-to-date and objective information on the provision of medicines to patients to improve treatment outcomes.
+## Project goal
+
+improving the quality of interaction between pharmaceutical and medical workers through the use of a digital clinical decision support system (CDSS) as a single verified channel for providing up-to-date and objective information on the provision of medicines to patients to improve treatment outcomes.
 
 ## Key objectives
 

@@ -1,10 +1,14 @@
 # Synthesis and Investigation of the Physicochemical Properties of Low-Molecular-Weight Biologically Active Compounds
 
-Project Team: Candidate of Pharmaceutical Sciences, Associate Professor of the Department Kokorekin Vladimir Alekseevich; Candidate of Pharmaceutical Sciences, Senior Lecturer of the Department Turetsky Evgeny Aleksandrovich
+## Project Team
+
+Candidate of Pharmaceutical Sciences, Associate Professor of the Department Kokorekin Vladimir Alekseevich; Candidate of Pharmaceutical Sciences, Senior Lecturer of the Department Turetsky Evgeny Aleksandrovich
 
 ## Project Description
 
-Project Aim: Investigation of the prospects for the medical application of low-molecular-weight compounds obtained by methods of electro- and photocatalytic C–H bond functionalization, as well as modification of carbon nanostructures.
+## Project Aim
+
+Investigation of the prospects for the medical application of low-molecular-weight compounds obtained by methods of electro- and photocatalytic C–H bond functionalization, as well as modification of carbon nanostructures.
 
 ## Project Objectives
 

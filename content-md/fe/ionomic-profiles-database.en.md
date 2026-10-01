@@ -1,11 +1,18 @@
 # Creation of a Database of Ionomic Profiles of Medicinal Plant Raw Materials and Preparations Based on Them
 
-Project Team: Dr. of Pharmaceutical Sciences, Professor I.V. Gravel; postgraduate students: D.V. Levushkin, V.N. Shestopalova, O.S. Lavrova.
-The project is carried out jointly with the Center for Bioelementology and Human Ecology of the Federal State Autonomous Educational Institution of Higher Education “I.M. Sechenov First Moscow State Medical University” of the Ministry of Health of Russia (Sechenov University) and LLC “Analytical and Research Instruments”.
+## Project Team
+
+Dr. of Pharmaceutical Sciences, Professor I.V. Gravel; postgraduate students: D.V. Levushkin, V.N. Shestopalova, O.S. Lavrova.
+
+## The project is carried out jointly with
+
+the Center for Bioelementology and Human Ecology of the Federal State Autonomous Educational Institution of Higher Education “I.M. Sechenov First Moscow State Medical University” of the Ministry of Health of Russia (Sechenov University) and LLC “Analytical and Research Instruments”.
 
 ## Project Description
 
-Project Aim: Study of the elemental profiles of herbal medicinal preparations and raw materials as potential sources of macro- and microelements for humans.
+## Project Aim
+
+Study of the elemental profiles of herbal medicinal preparations and raw materials as potential sources of macro- and microelements for humans.
 
 ## Key Objectives
 

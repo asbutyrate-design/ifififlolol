@@ -1,11 +1,16 @@
 # Metabolism and Pharmacokinetics of Medicinal Substances as the Scientific Basis of Personalized Medicine and Personalized Pharmacy
 
-Project Team (based on authors of published works): Ramenskaya G.V.; Smirnov V.V.; Melnikov E.S.;
+## Project Team
+
+(based on authors of published works): Ramenskaya G.V.; Smirnov V.V.; Melnikov E.S.;
 
 ## Project Description
 
 This research area integrates studies of drug biotransformation, bioanalytical support for pharmacokinetics, and the investigation of individual variability in drug response. The scientific background includes the determination of drugs and metabolites, phenotyping of cytochrome P450 enzymes, correlation of metabolic and genetic characteristics, and analysis of peptide and recombinant drug products. Personalized pharmacy is considered as an applied development of these studies: the substantiation of individualized drug provision and pharmaceutical care for the patient.
-Project Aim: Development of comprehensive bioanalytical and pharmacokinetic approaches to the individualization of drug therapy, based on the study of drug metabolism, genetically determined variability, and drug exposure; establishment of a scientific and methodological foundation for personalized medicine and personalized pharmacy.
+
+## Project Aim
+
+Development of comprehensive bioanalytical and pharmacokinetic approaches to the individualization of drug therapy, based on the study of drug metabolism, genetically determined variability, and drug exposure; establishment of a scientific and methodological foundation for personalized medicine and personalized pharmacy.
 
 ## Key Objectives
 

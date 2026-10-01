@@ -1,11 +1,18 @@
 # Development and Implementation of an Algorithm for Applying Artificial Intelligence in Business Process Management of a Pharmacy
 
-- Project Team: PhD Associate Professor Zakharova O.V., PhD Associate Professor Gribova Ya.V., Senior lecturer Klyueva Yu.A., students: Zakatova K.A., Akimova S.S., Zakharchenko P.A.
-The project is carried out jointly with high-tech companies implementing projects in business development and optimization.
+## Project Team
+
+PhD Associate Professor Zakharova O.V., PhD Associate Professor Gribova Ya.V., Senior lecturer Klyueva Yu.A., students: Zakatova K.A., Akimova S.S., Zakharchenko P.A.
+
+## The project is carried out jointly with
+
+high-tech companies implementing projects in business development and optimization.
 
 ## Project Description
 
-Project Aim: To develop a methodological framework for business process reengineering in a pharmacy with the integration of artificial intelligence technologies
+## Project Aim
+
+To develop a methodological framework for business process reengineering in a pharmacy with the integration of artificial intelligence technologies
 
 ## Key Objectives
 

@@ -1,10 +1,14 @@
 # Study of the mechanisms of neuroprotection and neuroregeneration
 
-Project team: Associate Professor, Ph.D. Bakaeva Z.V., PhD students Zgodova A.E., Chernova S.S., students Lizunova N.V., Kislukhina E.N., Boyarkin D.P., Alekseev V.I.
+## Project team
+
+Associate Professor, Ph.D. Bakaeva Z.V., PhD students Zgodova A.E., Chernova S.S., students Lizunova N.V., Kislukhina E.N., Boyarkin D.P., Alekseev V.I.
 
 ## Project description
 
-Objective: Investigation of the molecular and cellular mechanisms underlying the neuroprotective and neuroregenerative effects of biologically active compounds following nervous tissue injury, aimed at identifying promising pharmacological approaches for the treatment of cerebral ischemia and neurotrauma.
+## Objective
+
+Investigation of the molecular and cellular mechanisms underlying the neuroprotective and neuroregenerative effects of biologically active compounds following nervous tissue injury, aimed at identifying promising pharmacological approaches for the treatment of cerebral ischemia and neurotrauma.
 The project is being conducted jointly with the Laboratory of Neurobiology and Fundamental Principles of Brain Development at the National Medical Research Center for Children's Health (Ministry of Health of Russia), Lomonosov Moscow State University, the Institute of General Pathology and Pathophysiology, and the Institute of Gene Biology of the Russian Academy of Sciences.
 
 ## Key points

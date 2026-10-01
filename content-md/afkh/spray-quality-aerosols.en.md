@@ -1,7 +1,12 @@
 # The quality of spraying pharmaceutical aerosols and sprays
 
-- Project team: associate professor, сandidate of pharmaceutical sciences V.G. Yankova; associate professor, candidate of chemical sciences S.V. Gribanova; associate professor, candidate of pharmaceutical sciences V.Yu. Grigorieva; associate professor, candidate of pharmaceutical sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova, M. Lutkova, S. Konon, M. Makarenko.
-The project is carried out jointly with the S.S. Kutateladze Institute of Thermophysics of the Siberian Branch of the Russian Academy of Sciences (Novosibirsk).
+## Project team
+
+associate professor, сandidate of pharmaceutical sciences V.G. Yankova; associate professor, candidate of chemical sciences S.V. Gribanova; associate professor, candidate of pharmaceutical sciences V.Yu. Grigorieva; associate professor, candidate of pharmaceutical sciences I.L. Udyanskaya; students: D. Pasivkina, I. Obruchkova, M. Lutkova, S. Konon, M. Makarenko.
+
+## The project is carried out jointly with
+
+the S.S. Kutateladze Institute of Thermophysics of the Siberian Branch of the Russian Academy of Sciences (Novosibirsk).
 
 ## Project description
 

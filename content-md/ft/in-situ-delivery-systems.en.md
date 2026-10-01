@@ -1,12 +1,18 @@
 # Pharmaceutical development of stimulus-sensitive in situ delivery systems: composition, technology, standardisation and biopharmaceutical evaluation
 
-Project team: PhD (Doctor of Pharmaceutical Sciences), Professor E.O. Bakhrushina; Senior Lecturer I.B. Mikhel; Assistant V.S. Pyzhov; Assistant M.V. Pomytkina; postgraduate students: N.O. Belyavsky, P.S. Sakharova, A.K. Kartashova; residents: E.V. Kashevarova; students: Ya.A. Avdonina, G.A. Gribanov, K.S. Leonova, E.S. Panova, A.A. Kasatikova, S.B. Konon, A.N. Golub.
+## Project team
 
-The project is carried out jointly with D.I. Mendeleev Russian University of Chemical Technology, the Moscow Institute of Physics and Technology, and the Gamaleya Research Centre for Epidemiology and Microbiology.
+PhD (Doctor of Pharmaceutical Sciences), Professor E.O. Bakhrushina; Senior Lecturer I.B. Mikhel; Assistant V.S. Pyzhov; Assistant M.V. Pomytkina; postgraduate students: N.O. Belyavsky, P.S. Sakharova, A.K. Kartashova; residents: E.V. Kashevarova; students: Ya.A. Avdonina, G.A. Gribanov, K.S. Leonova, E.S. Panova, A.A. Kasatikova, S.B. Konon, A.N. Golub.
+
+## The project is carried out jointly with
+
+D.I. Mendeleev Russian University of Chemical Technology, the Moscow Institute of Physics and Technology, and the Gamaleya Research Centre for Epidemiology and Microbiology.
 
 ## Project description
 
-Project goal: comprehensive development of stimulus-sensitive drug delivery systems, including the selection and substantiation of active pharmaceutical ingredients and excipients, formulation design, selection of the optimal technology, standardisation across all quality attributes, and scaling up of the manufacturing process to ensure reproducibility and stability of the finished product.
+## Project goal
+
+comprehensive development of stimulus-sensitive drug delivery systems, including the selection and substantiation of active pharmaceutical ingredients and excipients, formulation design, selection of the optimal technology, standardisation across all quality attributes, and scaling up of the manufacturing process to ensure reproducibility and stability of the finished product.
 
 ## Key objectives
 

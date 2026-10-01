@@ -1,12 +1,18 @@
 # Development and Validation of Methods for Chemical-Toxicological and Forensic Chemical Analysis of Narcotic, Psychotropic, and Other Toxicologically Significant Substances
 
 Division: Department of Pharmaceutical and Toxicological Chemistry named after A.P. Arzamastsev, Institute of Pharmacy named after A.P. Nelyubin, Sechenov University.
-Project Team (based on authors of published works): Doctor of Pharmaceutical Sciences, Professor Ramenskaya G.V.; Doctor of Biological Sciences, Professor Belova M.V.; Candidate of Pharmaceutical Sciences, Associate Professor Petukhov A.E.
+
+## Project Team
+
+(based on authors of published works): Doctor of Pharmaceutical Sciences, Professor Ramenskaya G.V.; Doctor of Biological Sciences, Professor Belova M.V.; Candidate of Pharmaceutical Sciences, Associate Professor Petukhov A.E.
 
 ## Project Description
 
 This research area integrates studies of narcotic and other psychoactive substances, laboratory diagnostics of acute drug poisonings, and the improvement of chemical-toxicological and forensic chemical analysis. Clinical-toxicological studies are represented, in particular, by collaborative research with the N.V. Sklifosovsky Research Institute of Emergency Medicine [1–4, 6, 7].
-Project Aim: Scientific and methodological substantiation, development, and validation of methods for the detection, identification, and quantitative determination of toxicologically significant substances in biological specimens for the purpose of establishing the cause of acute poisonings, correlating laboratory results with clinical manifestations, and improving the scientific rigor of chemical-toxicological and forensic chemical investigations.
+
+## Project Aim
+
+Scientific and methodological substantiation, development, and validation of methods for the detection, identification, and quantitative determination of toxicologically significant substances in biological specimens for the purpose of establishing the cause of acute poisonings, correlating laboratory results with clinical manifestations, and improving the scientific rigor of chemical-toxicological and forensic chemical investigations.
 
 ## Key Objectives
 

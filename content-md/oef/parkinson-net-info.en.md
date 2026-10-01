@@ -1,10 +1,14 @@
 # PARKINSON_NET_INFO’ Chatbot - a Digital Information Support System for Stakeholders in Parkinson's Disease Therapy
 
-Project Team: Professor of the Department, Doctor of Pharmaceutical Sciences, Professor Glembotskaya G.T.; Assistant, PhD student Kristeleva D.A.; Doctor of Medical Sciences, Professor of the Department of Nervous Diseases Shindryaeva N.N.
+## Project Team
+
+Professor of the Department, Doctor of Pharmaceutical Sciences, Professor Glembotskaya G.T.; Assistant, PhD student Kristeleva D.A.; Doctor of Medical Sciences, Professor of the Department of Nervous Diseases Shindryaeva N.N.
 
 ## Project Description
 
-Project Aim: to develop the digital chatbot “PARKINSON_NET_INFO” providing information support to physicians, pharmacy professionals and patients with Parkinson's disease and aimed at improving the quality of pharmacotherapy and medicines supply using modern digital technologies.
+## Project Aim
+
+to develop the digital chatbot “PARKINSON_NET_INFO” providing information support to physicians, pharmacy professionals and patients with Parkinson's disease and aimed at improving the quality of pharmacotherapy and medicines supply using modern digital technologies.
 
 ## Key Objectives
 

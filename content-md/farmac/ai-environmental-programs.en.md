@@ -1,10 +1,14 @@
 # Artificial Intelligence in the System of Promoting Environmental Programs in Pharmaceutical Organizations
 
-Project team: Doctor of Medical Sciences, Professor Babaskin D.V., students: Voronin A.N., Ilycheva E.E.
+## Project team
+
+Doctor of Medical Sciences, Professor Babaskin D.V., students: Voronin A.N., Ilycheva E.E.
 
 ## Project description
 
-Project goal: optimization of the system for promoting environmental programs in pharmaceutical organizations through the use of artificial intelligence technologies.
+## Project goal
+
+optimization of the system for promoting environmental programs in pharmaceutical organizations through the use of artificial intelligence technologies.
 
 ## Key objectives
 

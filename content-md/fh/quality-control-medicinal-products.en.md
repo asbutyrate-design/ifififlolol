@@ -1,10 +1,14 @@
 # Quality Control of Medicinal Products
 
-Project Team: Research staff of the Department of Pharmaceutical and Toxicological Chemistry named after A.P. Arzamastsev, Institute of Pharmacy named after A.P. Nelyubin, Sechenov University
+## Project Team
+
+Research staff of the Department of Pharmaceutical and Toxicological Chemistry named after A.P. Arzamastsev, Institute of Pharmacy named after A.P. Nelyubin, Sechenov University
 
 ## Project Description
 
-Project Aim: Development, validation, and implementation of a comprehensive set of analytical methods for the quality control of medicinal products, ensuring objective assessment of the authenticity, purity, and quantitative content of pharmaceutical substances and finished dosage forms in accordance with the requirements of the State Pharmacopoeia of the Russian Federation (SP RF), the Eurasian Economic Union (EAEU), and ICH.
+## Project Aim
+
+Development, validation, and implementation of a comprehensive set of analytical methods for the quality control of medicinal products, ensuring objective assessment of the authenticity, purity, and quantitative content of pharmaceutical substances and finished dosage forms in accordance with the requirements of the State Pharmacopoeia of the Russian Federation (SP RF), the Eurasian Economic Union (EAEU), and ICH.
 
 ## Key Objectives
 

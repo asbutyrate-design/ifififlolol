@@ -1,10 +1,14 @@
 # Taxonomy and resources of plants promising for use in medicine
 
-Project team: Head of the Department of Pharmaceutical Natural Sciences, Dr. Pharm. Sci. Luferov A.N., postgraduate student Melnik A.A., student Tinkt A.V.
+## Project team
+
+Head of the Department of Pharmaceutical Natural Sciences, Dr. Pharm. Sci. Luferov A.N., postgraduate student Melnik A.A., student Tinkt A.V.
 
 ## Project description
 
-Project objective: Study and analysis of the taxonomic composition, distribution and productivity of plants, increasing the efficiency of using their resources for practical pharmacy.
+## Project objective
+
+Study and analysis of the taxonomic composition, distribution and productivity of plants, increasing the efficiency of using their resources for practical pharmacy.
 
 ## Key tasks
 

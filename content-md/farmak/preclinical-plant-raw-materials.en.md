@@ -1,10 +1,14 @@
 # Conducting preclinical and clinical studies of an innovative composition/product based on plant-derived raw materials
 
-Project team: Associate professor, PhD Zavadich K.A., PhD student Kornopoltseva L.V.
+## Project team
+
+Associate professor, PhD Zavadich K.A., PhD student Kornopoltseva L.V.
 
 ## Project description
 
-Objective: Development of new medicinal products derived from medicinal plant materials that exhibit anti-inflammatory, cardioprotective, and antioxidant effects.
+## Objective
+
+Development of new medicinal products derived from medicinal plant materials that exhibit anti-inflammatory, cardioprotective, and antioxidant effects.
 The work is being carried out in collaboration with VILAR (All-Russian Scientific Research Institute of Medicinal and Aromatic Plants).
 
 ## Key points

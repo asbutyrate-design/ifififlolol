@@ -1,12 +1,18 @@
 # Development, standardisation and scaling of the manufacturing technology of medicinal products in the form of chewing gum with local or systemic action
 
-Project team: PhD (Doctor of Pharmaceutical Sciences), Professor E.O. Bakhrushina; PhD (Candidate of Pharmaceutical Sciences), Associate Professor S.I. Kosenkova; student: Yu.A. Saksonova.
+## Project team
 
-The project is carried out jointly with D.I. Mendeleev Russian University of Chemical Technology and the Federal Research Centre for Original and Promising Biomedical and Pharmaceutical Technologies.
+PhD (Doctor of Pharmaceutical Sciences), Professor E.O. Bakhrushina; PhD (Candidate of Pharmaceutical Sciences), Associate Professor S.I. Kosenkova; student: Yu.A. Saksonova.
+
+## The project is carried out jointly with
+
+D.I. Mendeleev Russian University of Chemical Technology and the Federal Research Centre for Original and Promising Biomedical and Pharmaceutical Technologies.
 
 ## Project description
 
-Project goal: Comprehensive development of medicinal products in the form of medicated chewing gum, including the selection and substantiation of active substances and excipients, formulation design, selection of the optimal technology and standardisation across all quality attributes. Scaling up of the manufacturing process to ensure reproducibility and stability of the finished product.
+## Project goal
+
+Comprehensive development of medicinal products in the form of medicated chewing gum, including the selection and substantiation of active substances and excipients, formulation design, selection of the optimal technology and standardisation across all quality attributes. Scaling up of the manufacturing process to ensure reproducibility and stability of the finished product.
 
 ## Key objectives
 
@@ -37,9 +43,14 @@ Formulation development, optimization, and evaluation of taste-masked medicated 
 Development and evaluation of a chewing gum containing antimicrobial peptide GH12 for caries prevention. European Journal of Oral Sciences. 2022. Vol. 130. No. 5. P. 12887. https://doi.org/10.1111/eos.12887
 
 Scientific project: "New generation transmucosal delivery: creation of applicative mucoadhesive systems"
-Project team: PhD, Professor Anurova M.N., PhD, Associate Professor Korol V.A., PhD student Petrulenko K.E, graduate student Kulmin A.R., resident Ivanova A.N.
 
-Project description: The aim of the project is to develop an innovative platform of applicative mucoadhesive dosage forms for effective local and systemic drug delivery, providing increased bioavailability, prolonged release, and protection of unstable drugs.
+## Project team
+
+PhD, Professor Anurova M.N., PhD, Associate Professor Korol V.A., PhD student Petrulenko K.E, graduate student Kulmin A.R., resident Ivanova A.N.
+
+## Project description
+
+The aim of the project is to develop an innovative platform of applicative mucoadhesive dosage forms for effective local and systemic drug delivery, providing increased bioavailability, prolonged release, and protection of unstable drugs.
 
 ## Key tasks
 
@@ -59,11 +70,15 @@ Anurova M.N., Bakhrushina E.O., Lapik I.V., Turaeva A.R., Demina N.B., Sysuev B.
 
 Development of Injectable Dosage Forms of Antitumour Drugs Taking into Account Modern Methods of Active Substance Delivery
 
-Project team: PhD, Professor I. I. Krasnyuk; PhD, Associate Professor Zh. M. Kozlova; postgraduate student S. D. Shcheglov; student R. A. Bandin.
+## Project team
+
+PhD, Professor I. I. Krasnyuk; PhD, Associate Professor Zh. M. Kozlova; postgraduate student S. D. Shcheglov; student R. A. Bandin.
 
 ## Project description
 
-Project goal: Pharmaceutical development of injectable dosage forms of antitumor drugs based on adaptive liposomal delivery systems (including biomimetic and targeted ones) that provide an increase in the half-life of the active substance in the body and targeted delivery to the tumor node to improve the efficacy of chemotherapy of malignant neoplasms.
+## Project goal
+
+Pharmaceutical development of injectable dosage forms of antitumor drugs based on adaptive liposomal delivery systems (including biomimetic and targeted ones) that provide an increase in the half-life of the active substance in the body and targeted delivery to the tumor node to improve the efficacy of chemotherapy of malignant neoplasms.
 
 ## Key objectives of the project
 

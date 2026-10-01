@@ -1,6 +1,8 @@
 # Use of light microscopy in the quality control of medicinal plant raw materials and medicinal plant preparations
 
-Project team: Dr. Pharm. Sci., Associate Professor Bobkova N.V., postgraduate student: Pham Phuong Nam, students: Diana Bayramkulova, Darya Gadetskaya.
+## Project team
+
+Dr. Pharm. Sci., Associate Professor Bobkova N.V., postgraduate student: Pham Phuong Nam, students: Diana Bayramkulova, Darya Gadetskaya.
 
 ## Project description
 

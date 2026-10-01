@@ -1,10 +1,14 @@
 # Information Exchange in the Provision of Pharmaceutical Care to Pregnant Women with ARVI’ Ecosystem
 
-Project Team: PhD, Associate Professor Gribova Ya.V., Lecturer Andrun A.S., student: Pershina A.R.
+## Project Team
+
+PhD, Associate Professor Gribova Ya.V., Lecturer Andrun A.S., student: Pershina A.R.
 
 ## Project Description
 
-Project Aim: to develop the PC software “PharmHelpMamaARVI” based on an optimal algorithm for pharmaceutical counseling of pregnant women with acute respiratory viral infections (ARVI), which will increase the confidence of pharmacists and the quality of the pharmaceutical care provided through modern digital technologies.
+## Project Aim
+
+to develop the PC software “PharmHelpMamaARVI” based on an optimal algorithm for pharmaceutical counseling of pregnant women with acute respiratory viral infections (ARVI), which will increase the confidence of pharmacists and the quality of the pharmaceutical care provided through modern digital technologies.
 
 ## Key Objectives
 
