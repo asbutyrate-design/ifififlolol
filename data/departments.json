@@ -1,6 +1,6 @@
 {
   "_comment": "Справочник кафедр. Ручной файл: правки здесь — единственное место, где заводятся новые кафедры. Проекты сюда НЕ пишутся, они собираются скриптом.",
-  "base_url": "http://innovativedrugsconference.sechenov.ru",
+  "base_url": "https://innovativedrugsconference.sechenov.ru",
   "url_scheme": "/{slug}_{suffix}",
   "_url_scheme_note": "Схема подтверждена заказчиком 2026-10-01: продолжение действующего порядка сайта (/about_rus, /program_eng). Адрес = /{slug}_{rus|eng}. Домен остаётся innovativedrugsconference.sechenov.ru.",
   "file2dept": {
