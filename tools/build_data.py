@@ -504,7 +504,9 @@ def parse_authors(
             f"{surname} {ini}", None, ini, before, role_for(before), lang,
         )
 
-    if lang == "en":
+    # Латинские написания ищем в блоках ЛЮБОГО языка: в русском тексте тоже
+    # бывают сотрудники, записанные латиницей («Bello Taye»).
+    if True:
         # 3) Инициалы + фамилия: «V.G. Yankova»
         for m in RE_EN_NAME.finditer(clean):
             ini, surname = re.sub(r"\s+", "", m.group(1)), m.group(2)
@@ -619,6 +621,41 @@ def parse_authors(
             if key in found:
                 continue
             full = f"{surname} {name_}" + (f" {patr}" if patr else "")
+            # Одно ФИО не должно распадаться на двух людей. «Pham Phuong Nam»
+            # давало «Pham Phuong» и «Phuong Nam», потому что каждая пара
+            # соседних слов выглядит правдоподобным «Фамилия Имя».
+            # Если слово уже вошло в ЧУЖОЕ полное имя как первое или второе —
+            # это то же самое ФИО, а не новый человек.
+            taken_words = set()
+            for rec_ in found.values():
+                nm = rec_.get("name_en") or ""
+                taken_words.update(nm.split())
+            # Если имя уже внутри чужой записи — не плодим второго человека.
+            # Но если за name_ идёт ЕЩЁ одно слово-имя, значит ФИО длиннее:
+            # «Pham Phuong Nam» — берём целиком, а не «Pham Phuong».
+            nxt2 = words[i + 2] if i + 2 < len(words) else ""
+            longer = (
+                nxt2
+                and nxt2[0].isupper()
+                and nxt2 not in NAME_STOPWORDS
+                and not re.search(r"(ovich|evich|ovna|evna)$", nxt2, re.I)
+            )
+            if (surname in taken_words or name_ in taken_words) and not longer:
+                continue
+            if longer:
+                full_candidate = f"{surname} {name_} {nxt2}"
+                if not re.search(
+                    rf"\b{re.escape(surname)}\s+{re.escape(name_)}\s+{re.escape(nxt2)}\b",
+                    team,
+                ):
+                    longer = False
+            if longer:
+                key2 = f"{surname} {name_} {nxt2}"
+                if key2 not in found:
+                    found[key2] = _mk_author(
+                        None, full_candidate, f"{name_[0]}.", "", "не указана", lang,
+                    )
+                continue
             found[key] = _mk_author(
                 None, full, f"{name_[0]}.", "", "не указана", lang,
             )

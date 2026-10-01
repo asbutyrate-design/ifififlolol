@@ -1,7 +1,7 @@
 {
  "meta": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-10-01T18:48:29Z",
+  "generated_at": "2026-10-01T18:51:26Z",
   "source_commit": null,
   "base_url": "http://innovativedrugsconference.sechenov.ru",
   "url_scheme": "/{lang}/{dept}/{slug}/",
@@ -3750,25 +3750,6 @@
       },
       {
        "name_ru": null,
-       "name_en": "Phuong Nam",
-       "initials": "N.",
-       "position_ru": null,
-       "position_en": "",
-       "role_ru": "не указана",
-       "role_en": null,
-       "photo": null,
-       "profile_url": null,
-       "orcid": null,
-       "scopus_id": null,
-       "researcher_id": null,
-       "elibrary_id": null,
-       "google_scholar": null,
-       "researchgate": null,
-       "is_lead": false,
-       "added_from_review": false
-      },
-      {
-       "name_ru": null,
        "name_en": "Diana Bayramkulova",
        "initials": "B.",
        "position_ru": null,
@@ -5539,7 +5520,7 @@
        "name_ru": null,
        "name_en": "Bello Taye",
        "initials": "T.",
-       "position_ru": null,
+       "position_ru": "",
        "position_en": "",
        "role_ru": "не указана",
        "role_en": null,
@@ -5572,7 +5553,6 @@
      "source_block_ru": 5,
      "source_block_en": 5,
      "review_flags": [
-      "en_only_author",
       "no_lead_marked"
      ]
     },
