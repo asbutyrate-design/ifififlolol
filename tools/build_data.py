@@ -52,6 +52,15 @@ RE_RU_FULLNAME = re.compile(
     r"([А-ЯЁ][а-яё]+(?:-[А-ЯЁ][а-яё]+)?)\s+"
     r"([А-ЯЁ][а-яё]+(?:ич|вна|чна|евич|овна|евна|ична|инична))\b"
 )
+
+# Фамилия + Имя ПОЛНОСТЬЮ, без отчества: «Байрамкулова Диана», «Фам Фыонг Нам».
+# Отчества в источниках есть не всегда, а инициалов может не быть вовсе —
+# без этого правила такие люди находились только в английской версии,
+# и возникало ложное «расхождение ru↔en»: в EN человек есть, в RU нет.
+RE_RU_NAME_FULL = re.compile(
+    r"\b([А-ЯЁ][а-яё]+(?:-[А-ЯЁ][а-яё]+)?)\s+"
+    r"([А-ЯЁ][а-яё]+(?:-[А-ЯЁ][а-яё]+)?)\b"
+)
 # Инициалы + фамилия (латиница): «V.G. Yankova», «E.A. Smolyarchuk»
 # Инициал в латинице бывает ДВУХБУКВЕННЫЙ: Ya., Yu., Ye., Zh., Kh., Ts., Sh.
 # Если допускать только одну букву, «Gribova Ya.V.» и «Medvedev Yu.V.» не находятся
@@ -548,7 +557,31 @@ def parse_authors(
     # бывают сотрудники, записанные латиницей («Bello Taye»), поэтому условие
     # не «lang == "en"», а проверка обоих языков.
     if lang in ("ru", "en"):
-        # 3) Инициалы + фамилия: «V.G. Yankova»
+        # 2б) Фамилия + Имя без отчества (кириллица): «Байрамкулова Диана».
+        #     Идёт ПОСЛЕ шага 2 (инициалы) и ДО латинских шагов.
+        for m in RE_RU_NAME_FULL.finditer(clean):
+            surname, name_ = m.group(1), m.group(2)
+            if not looks_like_surname(surname) or name_ in NAME_STOPWORDS:
+                continue
+            if len(name_) < 3:
+                continue
+            # отчество уже разобрано шагом 1 — здесь только без него
+            if PATRONYMIC_END.search(name_):
+                continue
+            # не часть «Фамилия Имя Отчество»: если следом отчество — пропускаем
+            tail = clean[m.end():m.end() + 40]
+            if re.match(r"\s+[А-ЯЁ][а-яё]+(?:ич|вна|чна|евич|овна|евна|ична|инична)\b", tail):
+                continue
+            key = f"{surname} {name_}"
+            if key in found:
+                continue
+            before = clean[max(0, m.start() - 90):m.start()]
+            found[key] = _mk_author(
+                f"{surname} {name_}", None, f"{name_[0]}.",
+                before, role_for(before), lang,
+            )
+
+    # 3) Инициалы + фамилия: «V.G. Yankova»
         for m in RE_EN_NAME.finditer(clean):
             ini, surname = re.sub(r"\s+", "", m.group(1)), m.group(2)
             if not looks_like_surname(surname):

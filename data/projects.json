@@ -1,7 +1,7 @@
 {
  "meta": {
   "schema_version": "1.0.0",
-  "generated_at": "2026-10-01T18:55:34Z",
+  "generated_at": "2026-10-01T18:58:15Z",
   "source_commit": null,
   "base_url": "http://innovativedrugsconference.sechenov.ru",
   "url_scheme": "/{lang}/{dept}/{slug}/",
@@ -3730,6 +3730,63 @@
        "added_from_review": false
       },
       {
+       "name_ru": "Фам Фыонг",
+       "name_en": null,
+       "initials": "Ф.",
+       "position_ru": "Бобкова Н.В",
+       "position_en": null,
+       "role_ru": "не указана",
+       "role_en": null,
+       "photo": null,
+       "profile_url": null,
+       "orcid": null,
+       "scopus_id": null,
+       "researcher_id": null,
+       "elibrary_id": null,
+       "google_scholar": null,
+       "researchgate": null,
+       "is_lead": false,
+       "added_from_review": false
+      },
+      {
+       "name_ru": "Байрамкулова Диана",
+       "name_en": null,
+       "initials": "Д.",
+       "position_ru": "Бобкова Н.В.,         , Фам Фыонг Нам",
+       "position_en": null,
+       "role_ru": "не указана",
+       "role_en": null,
+       "photo": null,
+       "profile_url": null,
+       "orcid": null,
+       "scopus_id": null,
+       "researcher_id": null,
+       "elibrary_id": null,
+       "google_scholar": null,
+       "researchgate": null,
+       "is_lead": false,
+       "added_from_review": false
+      },
+      {
+       "name_ru": "Гадецкая Дарья",
+       "name_en": null,
+       "initials": "Д.",
+       "position_ru": "Бобкова Н.В.,         , Фам Фыонг Нам,         , Байрамкулова Диана",
+       "position_en": null,
+       "role_ru": "не указана",
+       "role_en": null,
+       "photo": null,
+       "profile_url": null,
+       "orcid": null,
+       "scopus_id": null,
+       "researcher_id": null,
+       "elibrary_id": null,
+       "google_scholar": null,
+       "researchgate": null,
+       "is_lead": false,
+       "added_from_review": false
+      },
+      {
        "name_ru": null,
        "name_en": "Pham Phuong Nam",
        "initials": "P.",
@@ -3844,6 +3901,7 @@
      "source_block_ru": 5,
      "source_block_en": 5,
      "review_flags": [
+      "en_name_not_matched",
       "en_only_author"
      ]
     }
